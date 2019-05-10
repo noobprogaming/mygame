@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "alvin",
+            "password": "123",
+            "gender": "l",
+            "email": "alvinbintang@punyakita.tech",
+            "birth": "0000-00-00",
+            "joined": "2019-05-06"
+        },
+        {
+            "id": 2,
+            "name": "bintang",
+            "password": "2",
+            "gender": "l",
+            "email": "2@2",
+            "birth": "2019-05-23",
+            "joined": "2019-05-07"
+        },
+        {
+            "id": 3,
+            "name": "sdfasfasdf",
+            "password": "123",
+            "gender": "l",
+            "email": "dsf@adssfd",
+            "birth": "2019-05-03",
+            "joined": "2019-05-08"
+        },
+        {
+            "id": 4,
+            "name": "asd",
+            "password": "213",
+            "gender": "l",
+            "email": "ads@ads",
+            "birth": "2019-05-23",
+            "joined": "2019-05-08"
+        }
+    ],
+    "total": 4
+}

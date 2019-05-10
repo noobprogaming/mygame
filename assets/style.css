@@ -1,0 +1,208 @@
+/* Start General */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #e9e9e9;
+}
+.side1 {
+    width: 25%;
+    height: 500px;
+    background: #fff;
+    float: left;
+}
+.side2 {
+    width: 50%;
+    height: 500px;
+    background: #f8f8f8;
+    float: left;
+}
+
+.side3 {
+    width: 25%;
+    height: 500px;
+    background: #fff;
+    float: left;
+}
+
+.input-button {
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px 10px;
+    border: 2px solid green;
+    transition-duration: 0.2s;
+}
+.input-button:hover {
+    background-color: green;
+    color: white;
+}
+.input-text, textarea {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid rgb(180, 180, 180); 
+    width: 200px;
+    transition-duration: 0.2s;
+}
+.input-text:hover, textarea:hover {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+/*font awesome in input-text*/
+.inner-addon {
+    position: relative;
+}
+.inner-addon .fa {
+    position: absolute;
+    padding: 3px 6px;
+    pointer-events: none;
+}
+.left-addon .fa  { 
+    left: 0px;
+}
+.left-addon input  { 
+    padding-left: 30px; 
+}
+.inner-addon-tall input {
+    padding: 8px 5px 8px 30px;
+}
+.inner-addon-tall .fa {
+    padding: 10px;
+}
+
+/*dropdown menu login*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* End General */
+
+/* Start Navbar */
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: #000279;
+}
+nav ul {
+    background-color: #000279;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+nav ul > li {
+
+    padding: 15px;
+    display: inline-block;
+    transition: all .3s ease;
+}
+nav ul > li:not(:last-of-type) a:hover {
+    color: rgb(255, 0, 0);
+}
+nav ul > li:first-of-type {
+    background-color: rgb(140, 0, 255);
+}
+nav ul > li:last-of-type {
+    float: right;
+}
+nav ul > li:last-of-type a .fa {
+    font-size: 22px;
+}
+/* End Navbar */
+
+/* Start Menu Right */
+nav ul > li:last-of-type {
+    position: relative;
+    display: none;
+}
+nav ul > ol {
+    position: absolute;
+    top: 49px;
+    right: 0;
+    background: #333;
+    text-align: center;
+    list-style: none;
+    display: none;
+}
+nav ul > ol > li {
+    width: 100vw;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all .3s ease;
+}
+nav ul > ol > li:hover a {
+    margin: 20px;
+}
+nav ul > ol > li:hover {
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+}
+nav ul input {
+    margin-left: 10px;
+    opacity: .7;
+    padding: 5px;
+    display: none;
+}
+/* Start Menu Right */
+
+/* Start Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+#footer{
+    background: #2c3036;
+    height: 150px;
+}
+#bottom-footer{
+    padding-top: 5px;
+    background: #121416;
+    height: 30px;
+}
+/* End Footer */
+
+/* Start Media Query */
+@media screen and (max-width:680px){
+    nav ul > li:not(:first-child) {
+        display:none;
+    }
+    nav ul > li:last-of-type {
+        display: block;
+    }
+    nav ul input {
+        display: inline;
+    }
+}
+@media screen and (min-width:680px) {
+    nav ul > ol > li {
+        display:none;
+    }
+}
+/* End Media Query */
