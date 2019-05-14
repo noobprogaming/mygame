@@ -43,28 +43,28 @@ if(isset($_GET['msg'])){
         echo '<div class="container">';
         echo '<div class="alert-top alert alert-danger alert-dismissible fade show">';
         echo '  <button type="button" class="close" data-dismiss="alert">&times;</button>';
-        echo '  <strong>Login gagal!</strong> Username atau password salah!';
+        echo '  Username atau password salah!';
         echo '</div>';
         echo '</div>';
     }else if($_GET['msg'] == "logout"){
         echo '<div class="container">';
         echo '<div class="alert-top alert alert-info alert-dismissible fade show">';
         echo '  <button type="button" class="close" data-dismiss="alert">&times;</button>';
-        echo '  <strong>Anda telah logout!</strong>';
+        echo '  Anda telah keluar!';
         echo '</div>';
         echo '</div>';
     }else if($_GET['msg'] == "warning"){
         echo '<div class="container">';
         echo '<div class="alert-top alert alert-warning alert-dismissible fade show">';
         echo '  <button type="button" class="close" data-dismiss="alert">&times;</button>';
-        echo '  <strong>Anda harus login terlebih dahulu!</strong>';
+        echo '  Anda harus masuk terlebih dahulu!';
         echo '</div>';
         echo '</div>';
     }else if($_GET['msg'] == "success"){
         echo '<div class="container">';
-        echo '<div class="alert-top alert alert-success alert-dismissible fade show">';
-        echo '  <button type="button" class="close" data-dismiss="alert">&times;</button>';
-        echo '  <strong>Silakan login menggunakan data yang sudah Anda buat!</strong>';
+        echo '<div class="alert-top alert alert-success alert-dismissible fade show" role="alert">';
+        echo '  <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>';
+        echo '  Silakan masuk menggunakan data yang sudah Anda buat!';
         echo '</div>';
         echo '</div>';
     }
@@ -80,7 +80,7 @@ if(isset($_GET['msg'])){
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -88,7 +88,7 @@ if(isset($_GET['msg'])){
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item dropdown">
-                <a class="nav-link" href="login.php">Login</a>
+                <a class="nav-link" href="login.php">Akun</a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-content black-soft box-shadow"
                     aria-labelledby="navbarDropdown">
                     <form action="cek_login.php" method="post">
@@ -98,7 +98,7 @@ if(isset($_GET['msg'])){
                                     <td>
                                         <div class="inner-addon inner-addon-tall">
                                             <i class="fa fa-user"></i>
-                                            <input type="text" name="username" placeholder="ID Pengguna" id="uname"
+                                            <input type="text" name="username" placeholder="ID" id="uname"
                                                 class="input-text">
                                         </div>
                                     </td>
@@ -107,7 +107,7 @@ if(isset($_GET['msg'])){
                                     <td>
                                         <div class="inner-addon inner-addon-tall">
                                             <i class="fa fa-unlock"></i>
-                                            <input type="password" name="password" placeholder="Password" id="pass"
+                                            <input type="password" name="password" placeholder="Kata Sandi" id="pass"
                                                 class="input-text">
                                         </div>
                                     </td>
@@ -115,8 +115,8 @@ if(isset($_GET['msg'])){
                                 <tr>
                                     <td>
                                         <div class="btn-group">
-                                            <input type="submit" value="Login" class="btn btn-sm input-btn w100">
-                                            <input value="Register" class="btn btn-sm input-btn w100" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'">     
+                                            <input type="submit" value="Masuk" class="btn btn-sm input-btn w100">
+                                            <input value="Daftar" class="btn btn-sm input-btn w100" onclick="window.location.href='register.php'">     
                                         </div>
                                     </td>
                                 </tr>
@@ -192,7 +192,7 @@ if(isset($_GET['msg'])){
         <div class="col-lg-3">
             <a href="#" style="text-decoration: none;">
                 <div class="card mb-3 shadow">
-                    <img width="100%" height="140" src="assets/img/1.jpg" />
+                    <img width="100%" height="140" src="assets/img/1.jpg" class="img-fluid" />
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural
                             lead-in to
@@ -207,7 +207,7 @@ if(isset($_GET['msg'])){
         <div class="col-lg-3">
             <a href="#" style="text-decoration: none;">
                 <div class="card mb-3 shadow">
-                    <img width="100%" height="140" src="assets/img/2.jpg" />
+                    <img width="100%" height="140" src="assets/img/2.jpg" class="img-fluid" />
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural
                             lead-in to
@@ -223,7 +223,7 @@ if(isset($_GET['msg'])){
         <div class="col-lg-3">
             <a href="#" style="text-decoration: none;">
                 <div class="card mb-3 shadow">
-                    <img width="100%" height="140" src="assets/img/3.jpg" />
+                    <img width="100%" height="140" src="assets/img/3.jpg" class="img-fluid" />
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural
                             lead-in to
@@ -238,7 +238,7 @@ if(isset($_GET['msg'])){
         <div class="col-lg-3">
             <a href="#" style="text-decoration: none;">
                 <div class="card mb-3 shadow">
-                    <img width="100%" height="140" src="assets/img/1.jpg" />
+                    <img width="100%" height="140" src="assets/img/1.jpg" class="img-fluid" />
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural
                             lead-in to
@@ -323,7 +323,7 @@ if(isset($_GET['msg'])){
     <div class="row">
         <div class="col-md-4 p5rem" style="height: 300px;">
             <div class="row">
-                <h1 class="red">INI LOGO</h1>
+                <h1 class="red">LOGO</h1>
             </div>
             <div class="row my-3">
                 <div class="sosmed mx-1 my-1">
