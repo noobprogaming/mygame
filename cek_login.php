@@ -20,6 +20,6 @@ if($cek > 0){
 	$_SESSION['status'] = "login";
 	header("location:profile/index.php");
 }else{
-	header("location:index.php?pesan=gagal");
+	header("location:index.php?msg=failed");
 }
 ?>

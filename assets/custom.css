@@ -1,0 +1,277 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*:hover {
+    transition-duration: 0.2s;
+}
+
+.text-shadow {
+    text-shadow: 0 0 1px rgb(255, 23, 23), 0 0 5px rgb(139, 23, 23);
+}
+.box-shadow {
+    box-shadow: 0 0 1rem rgb(19, 19, 19);
+}
+
+
+.btn-menu {
+    display: inline;
+    border:0;
+    padding:.20rem .50rem;
+    font-size:1.25rem;
+    line-height:1;
+    background-color:transparent;
+    border-radius:.25rem;
+}
+.btn-menu:hover {
+    box-shadow: 0 0 5px rgb(255, 23, 23);
+}
+.btn-menu:focus,.btn-menu:active {
+    outline: none !important;
+ }
+
+.p5rem {
+    padding: 5rem;
+}
+
+.fo-ul {
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    text-align: left;
+}
+
+ul.navbar-nav a:hover {
+    color: rgb(255, 23, 23) !important;
+}
+
+ul.fo-ul a {
+    color: rgb(148, 148, 148);
+}
+
+ul.fo-ul a:hover {
+    color: rgb(255, 23, 23);
+    text-decoration: none;
+}
+
+.sosmed {
+    background-color: rgb(201, 201, 201);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    padding-top: 13px;
+
+}
+
+.sosmed:hover {
+    background-color: rgb(255, 23, 23);
+    color: white;
+}
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 2rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+    text-shadow: 1px 1px 2px rgb(19, 19, 19), 0 0 25px rgb(23, 23, 255), 0 0 5px rgb(23, 23, 139);
+}
+
+.black {
+    background-color: rgb(19, 19, 19);
+}
+.black-soft {
+    background-color: rgb(28, 28, 28);
+}
+.red {
+    background-color: rgb(255, 23, 23);
+}
+.fg-white {
+    color: rgb(255, 255, 255);
+}
+
+.navbar:hover {
+    background-color: rgb(19, 19, 19);
+    box-shadow: 0 0 1rem rgb(19, 19, 19);
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+@media (max-width: 480px) {
+    .px-5 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .mx-1 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .carousel {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 320px) {
+    .carousel-caption h1 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .carousel-caption p {
+        margin-bottom: 18rem;
+        font-size: 13px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        bottom: 30%;
+    }
+}
+
+@media (min-width: 480px) {
+    .carousel-caption h1 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .carousel-caption p {
+        margin-bottom: 11rem;
+        font-size: 17px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        bottom: 25%;
+    }
+}
+
+@media (min-width: 720px) {
+    .carousel-caption h1 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .carousel-caption p {
+        margin-bottom: 3rem;
+        font-size: 15px;
+    }
+    .carousel-indicators {
+        display: flex;
+        bottom: 5%;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-menu {
+        display: none;
+    }
+}
+
+.w100 {
+    width: 100px;
+}
+
+.input-btn {
+    border-radius: 0.3rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(139, 23, 23);
+    padding: 0.1rem 0.5rem;
+    border: 2px solid rgb(139, 23, 23);
+    cursor: pointer;
+}
+.input-btn:hover {
+    background-color: rgb(255, 23, 23);
+    border: 2px solid rgb(255, 23, 23);
+    color: white;
+}
+.input-text {
+    border-radius: 0.3rem;
+    padding: 0.1rem 0.5rem;
+    border: 1px solid rgb(201, 201, 201);
+    font-size: 14px;
+    width: 200px;
+    height: 30px;
+}
+.input-text:hover {
+    box-shadow: 0 0 5px rgb(255, 23, 23);
+}
+
+/*font awesome in input-text*/
+.inner-addon {
+    position: relative;
+}
+.inner-addon .fa {
+    position: absolute;
+    padding: 0.1rem 0.5rem;
+    pointer-events: none;
+}
+.inner-addon-tall input {
+    padding: 0.5rem 2rem;
+}
+.inner-addon-tall .fa {
+    padding: 0.5rem;
+}
+
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+
+/* Featurettes
+  ------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
