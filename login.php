@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -11,7 +12,8 @@
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="assets/custom.css">
     <style>
-        table, td {
+        table,
+        td {
             margin: 0 auto;
             margin-top: 8%;
             padding: 5px;
@@ -23,6 +25,7 @@
         }
     </style>
 </head>
+
 <body>
     <form method="post" action="cek_login.php">
         <table>
@@ -49,12 +52,12 @@
             </tr>
             <tr>
                 <td>
-                    <a href="register.php" class="form-text">Belum punya akun?</a><br>
+                    <input type="submit" value="Masuk" class="btn-sm input-btn" style="width: 200px;">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="submit" value="Masuk" class="btn-sm input-btn" style="width: 200px;">
+                    <a href="register.php" class="form-text">Belum punya akun?</a><br>
                 </td>
             </tr>
         </table>
