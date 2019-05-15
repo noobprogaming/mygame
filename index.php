@@ -85,7 +85,7 @@ if(isset($_GET['msg'])){
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
@@ -143,10 +143,10 @@ if(isset($_GET['msg'])){
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner carousel-fit">
             <div class="carousel-item active">
                 <a href="#">
-                    <img class="carousel-img img-fluid" src="assets/img/1.jpg">
+                    <img class="img-fluid" src="assets/img/1.jpg" style="position: relative;">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1>Example headline.</h1>
@@ -159,7 +159,7 @@ if(isset($_GET['msg'])){
             </div>
             <div class="carousel-item">
                 <a href="#">
-                    <img class="carousel-img img-fluid" src="assets/img/2.jpg">
+                    <img class="img-fluid" src="assets/img/2.jpg">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1>Another example headline.</h1>
@@ -172,7 +172,7 @@ if(isset($_GET['msg'])){
             </div>
             <div class="carousel-item">
                 <a href="#">
-                    <img class="carousel-img img-fluid" src="assets/img/3.jpg">
+                    <img class="img-fluid" src="assets/img/3.jpg">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1>One more for good measure.</h1>
@@ -185,12 +185,10 @@ if(isset($_GET['msg'])){
             </div>
         </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="fa fa-backward fg-red" aria-hidden="true"></span>
         </a>
         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="fa fa-forward fg-red" aria-hidden="true"></span>
         </a>
     </div>
 

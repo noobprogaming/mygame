@@ -44,8 +44,8 @@ $sql_user = ("
     $result = $koneksi->query($sql_min);
     while($row=$result->fetch_assoc()){
         extract($row);
-        $m_idgame = $row ['id_game'];
-        $m_name = $row ['name_game'];
+        $idgame = $row ['id_game'];
+        $namegame = $row ['name_game'];
         $m_idcpu = $row ['min_cpu'];
         $m_idvga = $row ['min_vga'];
         $m_idram = $row ['min_ram'];
@@ -57,8 +57,6 @@ $sql_user = ("
     $result = $koneksi->query($sql_rec);
     while($row=$result->fetch_assoc()){
         extract($row);
-        $r_idgame = $row ['id_game'];
-        $r_name = $row ['name_game'];
         $r_idcpu = $row ['rec_cpu'];
         $r_idvga = $row ['rec_vga'];
         $r_idram = $row ['rec_ram'];
