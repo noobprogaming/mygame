@@ -143,11 +143,11 @@ if(isset($_GET['msg'])){
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner carousel-fit">
-            <div class="carousel-item active">
+        <div class="carousel-inner">
+            <div class="carousel-item active" >
                 <a href="#">
                     <img class="img-fluid" src="assets/img/1.jpg" style="position: relative;">
-                    <div class="container">
+                    <div class="container ">
                         <div class="carousel-caption text-left">
                             <h1>Example headline.</h1>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
@@ -194,7 +194,7 @@ if(isset($_GET['msg'])){
 
     <div class="container-fluid px-5 marketing">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div class="card mb-3 shadow">
                         <img width="100%" height="140" src="assets/img/1.jpg" class="img-fluid" />
@@ -209,7 +209,7 @@ if(isset($_GET['msg'])){
                     </div>
                 </a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div class="card mb-3 shadow">
                         <img width="100%" height="140" src="assets/img/2.jpg" class="img-fluid" />
@@ -225,7 +225,7 @@ if(isset($_GET['msg'])){
                 </a>
 
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div class="card mb-3 shadow">
                         <img width="100%" height="140" src="assets/img/3.jpg" class="img-fluid" />
@@ -240,7 +240,7 @@ if(isset($_GET['msg'])){
                     </div>
                 </a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div class="card mb-3 shadow">
                         <img width="100%" height="140" src="assets/img/1.jpg" class="img-fluid" />
