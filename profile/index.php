@@ -97,11 +97,11 @@ include '../sql.php';
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="#">
-                    <img class="carousel-img img-fluid" src="../assets/img/1.jpg">
-                    <div class="container">
+                    <img class="img-fluid" src="../assets/img/1.jpg" style="position: relative;">
+                    <div class="container ">
                         <div class="carousel-caption text-left">
                             <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                            <p>Cras justo odio, fdghfghfac facilisis in, egestas eget quam.
                                 Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
                                 vehicula ut id elit.</p>
                         </div>
@@ -110,7 +110,7 @@ include '../sql.php';
             </div>
             <div class="carousel-item">
                 <a href="#">
-                    <img class="carousel-img img-fluid" src="../assets/img/2.jpg">
+                    <img class="img-fluid" src="../assets/img/2.jpg">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1>Another example headline.</h1>
@@ -123,7 +123,7 @@ include '../sql.php';
             </div>
             <div class="carousel-item">
                 <a href="#">
-                    <img class="carousel-img img-fluid" src="../assets/img/3.jpg">
+                    <img class="img-fluid" src="../assets/img/3.jpg">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1>One more for good measure.</h1>
@@ -143,308 +143,205 @@ include '../sql.php';
         </a>
     </div>
 
+    <div class="container-fluid px-5 marketing">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <table>
-                                <tr>
-                                    <td colspan="2">
-                                        <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
-                                            style="border-radius: 50%; width: 150px; height: 150px">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>ID</td>
-                                    <td><?php echo $u_id; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>Nama</td>
-                                    <td><?php echo $u_name; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>Password</td>
-                                    <td><?php echo $u_password; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>Jenis Kelamin</td>
-                                    <td>
-                                        <a id="gender"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Email</td>
-                                    <td><?php echo $u_email; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>Tanggal Lahir</td>
-                                    <td><?php echo $u_birth; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>Bergabung Sejak</td>
-                                    <td><?php echo $u_joined; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>CPU</td>
-                                    <td><?php echo $u_cpu; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>VGA</td>
-                                    <td><?php echo $u_vga; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>RAM</td>
-                                    <td><?php echo $u_ram; ?></td>
-                                </tr>
-                            </table>
-                        </p>
+            <div class="col-lg-3 bright">
+                <a href="#" style="text-decoration: none;">
+                    <div class="card mb-3 shadow">
+                        <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
-                    <img width="100%" height="140" src="../assets/img/1.jpg" />
-                    <div class="card-body">
-                        <p class="card-text">
-                            <table>
-                                <tr>
-                                    <td><?php echo $namegame; ?></td>
-                                </tr>
-                                <tr>
-                                    <td> - - - </td>
-                                </tr>
-                                <tr>
-                                    <td>Minimum Specification:</td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $m_ncpu; ?></td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $m_nvga; ?></td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $m_nram; ?></td>
-                                </tr>
-                                <tr>
-                                    <td> - - - </td>
-                                </tr>
-                                <tr>
-                                    <td>Recomended Specification:</td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $r_ncpu; ?></td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $r_nvga; ?></td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $r_nram; ?></td>
-                                </tr>
-                            </table>
-                        </p>
+            <div class="col-lg-3 bright">
+                <a href="#" style="text-decoration: none;">
+                    <div class="card mb-3 shadow">
+                        <img width="100%" height="140" src="../assets/img/2.jpg" class="img-fluid" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </a>
+
             </div>
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <p id="greeting">null</p>
-                            <p>CPU punyamu </p>
-                            <p id="baca1">null</p>
-                            <p>VGA punyamu </p>
-                            <p id="baca2">null</p>
-                            <p>RAM punyamu </p>
-                            <p id="baca3">null</p>
-                        </p>
+            <div class="col-lg-3 bright">
+                <a href="#" style="text-decoration: none;">
+                    <div class="card mb-3 shadow">
+                        <img width="100%" height="140" src="../assets/img/3.jpg" class="img-fluid" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="col-lg-3 bright">
+                <a href="#" style="text-decoration: none;">
+                    <div class="card mb-3 shadow">
+                        <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
+
+        <hr class="featurette-divider">
+
         <div class="row">
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <form method="post" action="../update.php" enctype="multipart/form-data">
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
-                                                style="border-radius: 50%; width: 150px; height: 150px;">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="inner-addon left-addon inner-addon-tall">
-                                                <i class="fa fa-id-badge"></i>
-                                                <input type="te" name="uname" placeholder="ID Pengguna"
-                                                    class="input-text" value="<?php echo $u_id; ?>" readonly="readonly">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="inner-addon left-addon inner-addon-tall">
-                                                <i class="fa fa-user"></i>
-                                                <input type="text" name="name" placeholder="Nama Lengkap"
-                                                    class="input-text" value="<?php echo $u_name; ?>">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="inner-addon left-addon inner-addon-tall">
-                                                <i class="fa fa-envelope"></i>
-                                                <input type="email" name="email" placeholder="E-mail" class="input-text"
-                                                    value="<?php echo $u_email; ?>">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="inner-addon left-addon inner-addon-tall">
-                                                <i class="fa fa-unlock"></i>
-                                                <input type="password" name="password" placeholder="Password"
-                                                    class="input-text" value="<?php echo $u_password; ?>">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="file" name="pp" accept="image/*">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="inner-addon left-addon inner-addon-tall">
-                                                <label class="rdb">Laki-laki
-                                                    <input type="radio" id="l" name="gender" value="l" <?php if ($u_gender == 'l') { echo ' checked="checked"'; } ?>>
-                                                    <span class="rdb-check"></span>
-                                                </label>
-                                                <label class="rdb">Pepempuan
-                                                    <input type="radio" id="p" name="gender" value="p" <?php if ($u_gender == 'p') { echo ' checked="checked"'; } ?>>
-                                                    <span class="rdb-check"></span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="inner-addon left-addon inner-addon-tall">
-                                                <i class="fa fa-birthday-cake"></i>
-                                                <input type="date" name="birth" placeholder="Password"
-                                                    class="input-text" value="<?php echo $u_birth; ?>">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select name="u_idcpu" class="input-text" style="width: 75px;">
-                                                <option>-- CPU --</option>
-                                                <option value="1"
-                                                    <?php if ($u_idcpu == 1) { echo ' selected="selected"'; } ?>>i3
-                                                </option>
-                                                <option value="2"
-                                                    <?php if ($u_idcpu == 2) { echo ' selected="selected"'; } ?>>i5
-                                                </option>
-                                                <option value="3"
-                                                    <?php if ($u_idcpu == 3) { echo ' selected="selected"'; } ?>>i7
-                                                </option>
-                                                <option value="4"
-                                                    <?php if ($u_idcpu == 4) { echo ' selected="selected"'; } ?>>i9
-                                                </option>
-                                            </select>
-                                            <select name="u_idvga" class="input-text" style="width: 80px;">
-                                                <option>-- VGA --</option>
-                                                <option value="1"
-                                                    <?php if ($u_idvga == 1) { echo ' selected="selected"'; } ?>>GT210
-                                                </option>
-                                                <option value="2"
-                                                    <?php if ($u_idvga == 2) { echo ' selected="selected"'; } ?>>GT730
-                                                </option>
-                                                <option value="3"
-                                                    <?php if ($u_idvga == 3) { echo ' selected="selected"'; } ?>>GTX1050
-                                                </option>
-                                                <option value="4"
-                                                    <?php if ($u_idvga == 4) { echo ' selected="selected"'; } ?>>RTX2080
-                                                </option>
-                                            </select>
-                                            <select name="u_idram" class="input-text" style="width: 75px;">
-                                                <option>-- RAM --</option>
-                                                <option value="1"
-                                                    <?php if ($u_idram == 1) { echo ' selected="selected"'; } ?>>2GB
-                                                </option>
-                                                <option value="2"
-                                                    <?php if ($u_idram == 2) { echo ' selected="selected"'; } ?>>4GB
-                                                </option>
-                                                <option value="3"
-                                                    <?php if ($u_idram == 3) { echo ' selected="selected"'; } ?>>8GB
-                                                </option>
-                                                <option value="4"
-                                                    <?php if ($u_idram == 4) { echo ' selected="selected"'; } ?>>16GB
-                                                </option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="submit" value="Update" class="input-btn">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </form>
-                        </p>
+            <div class="col-md-3">
+                <h4>ARTIKEL</h4>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
+                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                            mind.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                <hr class="divider">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
+                                your
+                                mind.</span></h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis
+                            euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                            dapibus,
+                            tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                                yourself.</span></h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis
+                            euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                            dapibus,
+                            tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-3">
+                <div class="row">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card mb-3 shadow">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card mb-3 shadow">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card mb-3 shadow">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+
+            
+
         </div>
 
         <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                        mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                    focusable="false" role="img" aria-label="Placeholder: 500x500">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                        yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                    focusable="false" role="img" aria-label="Placeholder: 500x500">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
 
     </div>
 
@@ -516,68 +413,6 @@ include '../sql.php';
     </footer>
 
 </body>
-<script>
-    function time() {
-
-        var time = new Date().getHours();
-        if (time < 10) {
-            x = "Good morning";
-        } else if (time < 20) {
-            x = "Good day";
-        } else {
-            x = "Good evening";
-        }
-        document.getElementById("greeting").innerHTML = x;
-
-        var u_gender = "<?php echo $u_gender; ?>"
-        if (u_gender === 'l') {
-            u_gender = "Laki-laki";
-        } else if (u_gender === 'p') {
-            u_gender = "Perempuan";
-        } else {
-            u_gender = "-";
-        }
-        document.getElementById("gender").innerHTML = u_gender;
-
-        var u_cpu = "<?php echo $u_idcpu; ?>";
-        var m_cpu = "<?php echo $m_idcpu; ?>";
-        var r_cpu = "<?php echo $r_idcpu; ?>";
-        if (u_cpu >= r_cpu) {
-            u_cpu = "JOS MANTAP";
-        } else if (u_cpu >= m_cpu && u_cpu <= r_cpu) {
-            u_cpu = "OKELAH";
-        } else if (u_cpu <= m_cpu) {
-            u_cpu = "LAG BOS";
-        }
-        document.getElementById("baca1").innerHTML = u_cpu;
-
-        var u_vga = "<?php echo $u_idvga; ?>";
-        var m_vga = "<?php echo $m_idvga; ?>";
-        var r_vga = "<?php echo $r_idvga; ?>";
-        if (u_vga >= r_vga) {
-            u_vga = "JOS MANTAP";
-        } else if (u_vga >= m_vga && u_vga <= r_vga) {
-            u_vga = "OKELAH";
-        } else if (u_vga <= m_vga) {
-            u_vga = "LAG BOS";
-        }
-        document.getElementById("baca2").innerHTML = u_vga;
-
-        var u_ram = "<?php echo $u_idram; ?>";
-        var m_ram = "<?php echo $m_idram; ?>";
-        var r_ram = "<?php echo $r_idram; ?>";
-        if (u_ram >= r_ram) {
-            u_ram = "JOS MANTAP";
-        } else if (u_ram >= m_ram && u_ram <= r_ram) {
-            u_ram = "OKELAH";
-        } else if (u_ram <= m_ram) {
-            u_ram = "LAG BOS";
-        }
-        document.getElementById("baca3").innerHTML = u_ram;
-
-    }
-</script>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
