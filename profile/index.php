@@ -143,93 +143,6 @@ include '../sql.php';
         </a>
     </div>
 
-    <div class="container-fluid px-5 marketing">
-        <div class="row">
-            <div class="col-lg-3 bright">
-                <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
-                        <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 bright">
-                <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
-                        <img width="100%" height="140" src="../assets/img/2.jpg" class="img-fluid" />
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-            <div class="col-lg-3 bright">
-                <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
-                        <img width="100%" height="140" src="../assets/img/3.jpg" class="img-fluid" />
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 bright">
-                <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
-                        <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                        mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                    focusable="false" role="img" aria-label="Placeholder: 500x500">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
-            </div>
-        </div>
-
-
         <div class="row">
             <div class="col-lg-4">
                 <div class="card mb-3 shadow">
@@ -400,20 +313,20 @@ include '../sql.php';
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="file" name="pp" accept="image/*" class="input-text">
+                                            <input type="file" name="pp" accept="image/*">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="inner-addon left-addon inner-addon-tall">
-                                                <input type="radio" id="l" name="gender" value="l" class="input-text"
-                                                    style="width: 15px;"
-                                                    <?php if ($u_gender == 'l') { echo ' checked="checked"'; } ?>><label
-                                                    for="l" style="margin-right: 10px;">Laki-laki</label>
-                                                <input type="radio" id="p" name="gender" value="p" class="input-text"
-                                                    style="width: 15px;"
-                                                    <?php if ($u_gender == 'p') { echo ' checked="checked"'; } ?>><label
-                                                    for="p">Perempuan</label>
+                                                <label class="rdb">Laki-laki
+                                                    <input type="radio" id="l" name="gender" value="l" <?php if ($u_gender == 'l') { echo ' checked="checked"'; } ?>>
+                                                    <span class="rdb-check"></span>
+                                                </label>
+                                                <label class="rdb">Pepempuan
+                                                    <input type="radio" id="p" name="gender" value="p" <?php if ($u_gender == 'p') { echo ' checked="checked"'; } ?>>
+                                                    <span class="rdb-check"></span>
+                                                </label>
                                             </div>
                                         </td>
                                     </tr>

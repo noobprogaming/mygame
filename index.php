@@ -144,7 +144,7 @@ if(isset($_GET['msg'])){
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active" >
+            <div class="carousel-item active">
                 <a href="#">
                     <img class="img-fluid" src="assets/img/1.jpg" style="position: relative;">
                     <div class="container ">
@@ -261,7 +261,7 @@ if(isset($_GET['msg'])){
 
         <div class="row">
             <div class="col-md-3">
-                <p>ARTIKEL</p>
+                <h4>ARTIKEL</h4>
                 <hr class="divider">
                 <p>ARTIKEL</p>
                 <hr class="divider">
@@ -295,54 +295,102 @@ if(isset($_GET['msg'])){
             <div class="col-md-3">
                 <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                    <hr class="divider">
-                    <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
+                <hr class="divider">
+                <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                    <hr class="divider">
-                    <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
+                <hr class="divider">
+                <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                    <hr class="divider">
-                    <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
+                <hr class="divider">
+                <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                    <hr class="divider">
-                    <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
+                <hr class="divider">
+                <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                    <hr class="divider">
+                <hr class="divider">
             </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                        mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
+                                your
+                                mind.</span></h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis
+                            euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                            dapibus,
+                            tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                                yourself.</span></h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis
+                            euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                            dapibus,
+                            tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
+                    </div>
+                </div>
             </div>
-            <div class="col-md-5">
-                <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
+
+            <div class="col-md-3">
+                <div class="row">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card mb-3 shadow">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card mb-3 shadow">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="card mb-3 shadow">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
             </div>
+
+            
+
         </div>
 
         <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                        yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
 
     </div>
 
