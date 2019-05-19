@@ -34,8 +34,8 @@ include '../sql.php';
 ?>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
-            <a class="navbar-brand text-shadow" href="#">Punyakita</a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+            <a class="navbar-brand text-shadow" href="index.php">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars text-white"></i>
@@ -43,10 +43,13 @@ include '../sql.php';
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="compare.php">Compare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.php">Profile</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
