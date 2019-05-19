@@ -34,7 +34,7 @@
             z-index: 999;
             position: fixed;
             top: 10%;
-            width: 82%;
+            width: 50%;
             margin-left: 0 auto;
             margin-right: 0 auto;
         }

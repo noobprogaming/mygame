@@ -477,7 +477,7 @@ include '../sql.php';
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="submit" value="Update" class="input-button">
+                                            <input type="submit" value="Update" class="input-btn">
                                         </td>
                                     </tr>
                                 </table>
