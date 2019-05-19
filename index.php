@@ -259,6 +259,60 @@ if(isset($_GET['msg'])){
 
         <hr class="featurette-divider">
 
+        <div class="row">
+            <div class="col-md-3">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+                <p>ARTIKEL</p>
+                <hr class="divider">
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
+                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                            mind.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                    <hr class="divider">
+                    <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                    <hr class="divider">
+                    <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                    <hr class="divider">
+                    <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                    <hr class="divider">
+                    <img width="100" height="100" src="assets/img/1.jpg" class="img-fluid" />
+                <p>ARTIKEL</p>
+                    <hr class="divider">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
         <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
@@ -268,13 +322,7 @@ if(isset($_GET['msg'])){
                     tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                    focusable="false" role="img" aria-label="Placeholder: 500x500">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
+                <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
             </div>
         </div>
 
@@ -289,37 +337,12 @@ if(isset($_GET['msg'])){
                     tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                    focusable="false" role="img" aria-label="Placeholder: 500x500">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
+                <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
             </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                    height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                    focusable="false" role="img" aria-label="Placeholder: 500x500">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                        dy=".3em">500x500</text>
-                </svg>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
 
     </div>
 

@@ -57,7 +57,7 @@
                                             <div class="inner-addon left-addon inner-addon-tall">
                                                 <i class="fa fa-id-badge"></i>
                                                 <input type="text" name="name" placeholder="Nama Lengkap"
-                                                    class="input-text">
+                                                    class="input-text" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -66,7 +66,7 @@
                                             <div class="inner-addon left-addon inner-addon-tall">
                                                 <i class="fa fa-envelope"></i>
                                                 <input type="email" name="email" placeholder="E-mail"
-                                                    class="input-text">
+                                                    class="input-text" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -75,7 +75,7 @@
                                             <div class="inner-addon left-addon inner-addon-tall">
                                                 <i class="fa fa-unlock"></i>
                                                 <input type="password" name="password" placeholder="Password"
-                                                    class="input-text">
+                                                    class="input-text" required>
                                             </div>
                                         </td>
                                     </tr>
