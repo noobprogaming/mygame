@@ -150,7 +150,7 @@ if(isset($_GET['msg'])){
                     <div class="container ">
                         <div class="carousel-caption text-left">
                             <h1>Example headline.</h1>
-                            <p>Cras justo odio, gdapibus ac facilisis in, egestas eget quam.
+                            <p>Cras justo odio, fdghfghfac facilisis in, egestas eget quam.
                                 Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
                                 vehicula ut id elit.</p>
                         </div>
