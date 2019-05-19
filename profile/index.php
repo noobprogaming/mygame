@@ -145,10 +145,10 @@ include '../sql.php';
 
     <div class="container-fluid px-5 marketing">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div class="card mb-3 shadow">
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
@@ -160,10 +160,10 @@ include '../sql.php';
                     </div>
                 </a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div class="card mb-3 shadow">
-                        <img width="100%" height="140" src="../assets/img/2.jpg" />
+                        <img width="100%" height="140" src="../assets/img/2.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
@@ -176,10 +176,10 @@ include '../sql.php';
                 </a>
 
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div class="card mb-3 shadow">
-                        <img width="100%" height="140" src="../assets/img/3.jpg" />
+                        <img width="100%" height="140" src="../assets/img/3.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
@@ -191,10 +191,10 @@ include '../sql.php';
                     </div>
                 </a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div class="card mb-3 shadow">
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
@@ -207,6 +207,29 @@ include '../sql.php';
                 </a>
             </div>
         </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                    tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                    focusable="false" role="img" aria-label="Placeholder: 500x500">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg>
+            </div>
+        </div>
+
+
         <div class="row">
             <div class="col-lg-4">
                 <div class="card mb-3 shadow">
