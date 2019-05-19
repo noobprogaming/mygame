@@ -12,6 +12,9 @@
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="assets/custom.css">
     <style>
+        .carousel-inner{
+            height: 600px;;
+        }
         table,
         td {
             margin: 0 auto;
@@ -27,7 +30,7 @@
 </head>
 
 <body>
-    <table style="width: 100%;">
+    <table style="width: 100%;" >
         <tr>
             <td>
                 <form method="post" action="tambah.php">
