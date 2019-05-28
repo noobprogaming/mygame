@@ -27,7 +27,7 @@
     </style>
 </head>
 
-<body onload="time()">
+<body onload="gender()">
     <?php 
 session_start();
 if($_SESSION['status']!="login"){
@@ -60,7 +60,7 @@ include '../sql.php';
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#"><i class="fa fa-user"> </i> <?php echo $u_id; ?></a>
+                        <a class="nav-link" href="profile.php"><i class="fa fa-user"> </i> <?php echo $u_id; ?></a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-content black-soft box-shadow"
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
@@ -126,7 +126,7 @@ include '../sql.php';
                                 <tr>
                                     <td>Jenis Kelamin</td>
                                     <td>
-                                        <a id="gender"></a>
+                                        <div id="gender"></div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -142,16 +142,36 @@ include '../sql.php';
                                     <td><?php echo $u_joined; ?></td>
                                 </tr>
                                 <tr>
-                                    <td>CPU</td>
+                                    <td>Processor</td>
                                     <td><?php echo $u_cpu; ?></td>
                                 </tr>
                                 <tr>
-                                    <td>VGA</td>
+                                    <td>Graphic Card</td>
                                     <td><?php echo $u_vga; ?></td>
                                 </tr>
                                 <tr>
                                     <td>RAM</td>
                                     <td><?php echo $u_ram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>SSD</td>
+                                    <td><?php echo $u_ssd; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Hard Disk</td>
+                                    <td><?php echo $u_hdd; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Power Supply</td>
+                                    <td><?php echo $u_psu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Keyboard</td>
+                                    <td><?php echo $u_kb; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Mouse</td>
+                                    <td><?php echo $u_mouse; ?></td>
                                 </tr>
                             </table>
                         </p>
@@ -163,14 +183,15 @@ include '../sql.php';
                     <div class="card-body">
                         <p class="card-text">
                             <form method="post" action="../update.php" enctype="multipart/form-data">
-                                <table class="table">
+                                <table>
                                     <tr>
-                                        <td>
+                                        <td colspan=2>
                                             <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
                                                 style="border-radius: 50%; width: 150px; height: 150px;">
                                         </td>
                                     </tr>
                                     <tr>
+                                    <td>ID</td>
                                         <td>
                                             <div class="inner-addon left-addon inner-addon-tall">
                                                 <i class="fa fa-id-badge"></i>
@@ -180,6 +201,7 @@ include '../sql.php';
                                         </td>
                                     </tr>
                                     <tr>
+                                    <td>Nama Lengkap</td>
                                         <td>
                                             <div class="inner-addon left-addon inner-addon-tall">
                                                 <i class="fa fa-user"></i>
@@ -189,6 +211,7 @@ include '../sql.php';
                                         </td>
                                     </tr>
                                     <tr>
+                                    <td>Email</td>
                                         <td>
                                             <div class="inner-addon left-addon inner-addon-tall">
                                                 <i class="fa fa-envelope"></i>
@@ -198,6 +221,7 @@ include '../sql.php';
                                         </td>
                                     </tr>
                                     <tr>
+                                    <td>Password</td>
                                         <td>
                                             <div class="inner-addon left-addon inner-addon-tall">
                                                 <i class="fa fa-unlock"></i>
@@ -207,18 +231,20 @@ include '../sql.php';
                                         </td>
                                     </tr>
                                     <tr>
+                                    <td>Foto Profil</td>
                                         <td>
                                             <input type="file" name="pp" accept="image/*">
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>Jenis Kelamin</td>
                                         <td>
                                             <div class="inner-addon left-addon inner-addon-tall">
                                                 <label class="rdb">Laki-laki
                                                     <input type="radio" id="l" name="gender" value="l" <?php if ($u_gender == 'l') { echo ' checked="checked"'; } ?>>
                                                     <span class="rdb-check"></span>
                                                 </label>
-                                                <label class="rdb">Pepempuan
+                                                <label class="rdb">Perempuan
                                                     <input type="radio" id="p" name="gender" value="p" <?php if ($u_gender == 'p') { echo ' checked="checked"'; } ?>>
                                                     <span class="rdb-check"></span>
                                                 </label>
@@ -226,6 +252,7 @@ include '../sql.php';
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>Tanggal Lahir</td>
                                         <td>
                                             <div class="inner-addon left-addon inner-addon-tall">
                                                 <i class="fa fa-birthday-cake"></i>
@@ -235,51 +262,153 @@ include '../sql.php';
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>Processor</td>
                                         <td>
-                                            <select name="u_idcpu" class="input-text" style="width: 75px;">
-                                                <option>-- CPU --</option>
-                                                <option value="1"
-                                                    <?php if ($u_idcpu == 1) { echo ' selected="selected"'; } ?>>i3
-                                                </option>
-                                                <option value="2"
-                                                    <?php if ($u_idcpu == 2) { echo ' selected="selected"'; } ?>>i5
-                                                </option>
-                                                <option value="3"
-                                                    <?php if ($u_idcpu == 3) { echo ' selected="selected"'; } ?>>i7
-                                                </option>
-                                                <option value="4"
-                                                    <?php if ($u_idcpu == 4) { echo ' selected="selected"'; } ?>>i9
-                                                </option>
+                                            <select name="u_idcpu" class="input-text" style="width: 200px;">
+                                            <option>-- CPU --</option>
+                                            <?php
+                                                $result = $koneksi->query($sql_cpu);
+                                                while($row=$result->fetch_assoc()){
+                                                    extract($row);
+                                                    $id_cpu = $row ['id_cpu'];
+                                                    $name_cpu = $row ['name_cpu'];
+                                                    echo "
+                                                    <option value='$id_cpu'>$name_cpu</option>";                                                    
+                                                }
+                                                echo "<option value='$id_cpu' if($u_idcpu == $id_cpu) selected=selected>$name_cpu</option>";
+                                            ?>
                                             </select>
-                                            <select name="u_idvga" class="input-text" style="width: 80px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graphic Card</td>
+                                        <td>
+                                            <select name="u_idvga" class="input-text" style="width: 200px;">
                                                 <option>-- VGA --</option>
-                                                <option value="1"
-                                                    <?php if ($u_idvga == 1) { echo ' selected="selected"'; } ?>>GT210
-                                                </option>
-                                                <option value="2"
-                                                    <?php if ($u_idvga == 2) { echo ' selected="selected"'; } ?>>GT730
-                                                </option>
-                                                <option value="3"
-                                                    <?php if ($u_idvga == 3) { echo ' selected="selected"'; } ?>>GTX1050
-                                                </option>
-                                                <option value="4"
-                                                    <?php if ($u_idvga == 4) { echo ' selected="selected"'; } ?>>RTX2080
-                                                </option>
+                                                <?php
+                                                $result = $koneksi->query($sql_vga);
+                                                while($row=$result->fetch_assoc()){
+                                                    extract($row);
+                                                    $id_vga = $row ['id_vga'];
+                                                    $name_vga = $row ['name_vga'];
+                                                    echo "
+                                                    <option value='$id_vga'>$name_vga</option>";                                                    
+                                                }
+                                                echo "<option value='$id_vga' if($u_idvga == $id_vga) selected=selected>$name_vga</option>";
+                                            ?>
                                             </select>
-                                            <select name="u_idram" class="input-text" style="width: 75px;">
-                                                <option>-- RAM --</option>
-                                                <option value="1"
-                                                    <?php if ($u_idram == 1) { echo ' selected="selected"'; } ?>>2GB
-                                                </option>
-                                                <option value="2"
-                                                    <?php if ($u_idram == 2) { echo ' selected="selected"'; } ?>>4GB
-                                                </option>
-                                                <option value="3"
-                                                    <?php if ($u_idram == 3) { echo ' selected="selected"'; } ?>>8GB
-                                                </option>
-                                                <option value="4"
-                                                    <?php if ($u_idram == 4) { echo ' selected="selected"'; } ?>>16GB
-                                                </option>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>RAM</td>
+                                        <td>
+                                            <select name="u_idram" class="input-text" style="width: 200px;">
+                                            <?php
+                                                $result = $koneksi->query($sql_ram);
+                                                while($row=$result->fetch_assoc()){
+                                                    extract($row);
+                                                    $id_ram = $row ['id_ram'];
+                                                    $name_ram = $row ['name_ram'];
+                                                    echo "
+                                                    <option value='$id_ram'>$name_ram</option>";                                                    
+                                                }
+                                                echo "<option value='$id_ram' if($u_idram == $id_ram) selected=selected>$name_ram</option>";
+                                            ?>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>SSD</td>
+                                        <td>
+                                            <select name="u_idssd" class="input-text" style="width: 200px;">
+                                            <option>-- SSD --</option>
+                                            <?php
+                                                $result = $koneksi->query($sql_ssd);
+                                                while($row=$result->fetch_assoc()){
+                                                    extract($row);
+                                                    $id_ssd = $row ['id_ssd'];
+                                                    $name_ssd = $row ['name_ssd'];
+                                                    echo "
+                                                    <option value='$id_ssd'>$name_ssd</option>";                                                    
+                                                }
+                                                echo "<option value='$id_ssd' if($u_idssd == $id_ssd) selected=selected>$name_ssd</option>";
+                                            ?>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hard Disk</td>
+                                        <td>
+                                            <select name="u_idhdd" class="input-text" style="width: 200px;">
+                                            <option>-- HDD --</option>
+                                            <?php
+                                                $result = $koneksi->query($sql_hdd);
+                                                while($row=$result->fetch_assoc()){
+                                                    extract($row);
+                                                    $id_hdd = $row ['id_hdd'];
+                                                    $name_hdd = $row ['name_hdd'];
+                                                    echo "
+                                                    <option value='$id_hdd'>$name_hdd</option>";                                                    
+                                                }
+                                                echo "<option value='$id_hdd' if($u_idhdd == $id_hdd) selected=selected>$name_hdd</option>";
+                                            ?>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Power Supply</td>
+                                        <td>
+                                            <select name="u_idpsu" class="input-text" style="width: 200px;">
+                                            <option>-- PSU --</option>
+                                            <?php
+                                                $result = $koneksi->query($sql_psu);
+                                                while($row=$result->fetch_assoc()){
+                                                    extract($row);
+                                                    $id_psu = $row ['id_psu'];
+                                                    $name_psu = $row ['name_psu'];
+                                                    echo "
+                                                    <option value='$id_psu'>$name_psu</option>";                                                    
+                                                }
+                                                echo "<option value='$id_psu' if($u_idpsu == $id_psu) selected=selected>$name_psu</option>";
+                                            ?>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Keyboard</td>
+                                        <td>
+                                            <select name="u_idkb" class="input-text" style="width: 200px;">
+                                            <option>-- KB --</option>
+                                            <?php
+                                                $result = $koneksi->query($sql_kb);
+                                                while($row=$result->fetch_assoc()){
+                                                    extract($row);
+                                                    $id_kb = $row ['id_kb'];
+                                                    $name_kb = $row ['name_kb'];
+                                                    echo "
+                                                    <option value='$id_kb'>$name_kb</option>";                                                    
+                                                }
+                                                echo "<option value='$id_kb' if($u_idkb == $id_kb) selected=selected>$name_kb</option>";
+                                            ?>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mouse</td>
+                                        <td>
+                                            <select name="u_idmouse" class="input-text" style="width: 200px;">
+                                            <option>-- Mouse --</option>
+                                            <?php
+                                                $result = $koneksi->query($sql_mouse);
+                                                while($row=$result->fetch_assoc()){
+                                                    extract($row);
+                                                    $id_mouse = $row ['id_mouse'];
+                                                    $name_mouse = $row ['name_mouse'];
+                                                    echo "
+                                                    <option value='$id_mouse'>$name_mouse</option>";                                                    
+                                                }
+                                                echo "<option value='$id_mouse' if($u_idmouse == $id_mouse) selected=selected>$name_mouse</option>";
+                                            ?>
                                             </select>
                                         </td>
                                     </tr>
@@ -375,16 +504,18 @@ include '../sql.php';
             x = "Good evening";
         }
         document.getElementById("greeting").innerHTML = x;
+    }
 
-        var u_gender = "<?php echo $u_gender; ?>"
-        if (u_gender === 'l') {
-            u_gender = "Laki-laki";
-        } else if (u_gender === 'p') {
-            u_gender = "Perempuan";
-        } else {
-            u_gender = "-";
-        }
-        document.getElementById("gender").innerHTML = u_gender;
+    function gender() {
+    var u_gender = "<?php echo $u_gender; ?>";
+    if (u_gender === 'l') {
+        u_gender = "Laki-laki";
+    } else if (u_gender === 'p') {
+        u_gender = "Perempuan";
+    } else {
+        u_gender = "-";
+    }
+    document.getElementById("gender").innerHTML = u_gender;
     }
 </script>
 

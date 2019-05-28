@@ -21,12 +21,12 @@
         if(move_uploaded_file($_FILES['pp']['tmp_name'], "assets/img/photo/" . $newfilename)) {
             echo "The file ".  basename( $_FILES['pp']['name']). 
             " has been uploaded";
-            header("location:profile/index.php");
+            header("location:profile/profile.php");
         }else{
             echo "There was an error uploading the file, please try again!";
         }
     }
     
-    header("location:profile/index.php");
+    header("location:profile/profile.php");
 
 ?>

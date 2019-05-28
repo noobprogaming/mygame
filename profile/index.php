@@ -54,7 +54,7 @@ include '../sql.php';
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#"><i class="fa fa-user"> </i> <?php echo $u_id; ?></a>
+                        <a class="nav-link" href="profile.php"><i class="fa fa-user"> </i> <?php echo $u_id; ?></a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-content black-soft box-shadow"
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">

@@ -27,7 +27,7 @@
     </style>
 </head>
 
-<body onload="time()">
+<body onload="compare()">
     <?php 
 session_start();
 if($_SESSION['status']!="login"){
@@ -60,7 +60,7 @@ include '../sql.php';
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#"><i class="fa fa-user"> </i> <?php echo $u_id; ?></a>
+                        <a class="nav-link" href="profile.php"><i class="fa fa-user"> </i> <?php echo $u_id; ?></a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-content black-soft box-shadow"
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
@@ -120,16 +120,36 @@ include '../sql.php';
                                     <td><?php echo $u_name; ?></td>
                                 </tr>
                                 <tr>
-                                    <td>CPU</td>
+                                    <td>Processor</td>
                                     <td><?php echo $u_cpu; ?></td>
                                 </tr>
                                 <tr>
-                                    <td>VGA</td>
+                                    <td>Graphic Card</td>
                                     <td><?php echo $u_vga; ?></td>
                                 </tr>
                                 <tr>
                                     <td>RAM</td>
                                     <td><?php echo $u_ram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>SSD</td>
+                                    <td><?php echo $u_ssd; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Hard Disk</td>
+                                    <td><?php echo $u_hdd; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Power Supply</td>
+                                    <td><?php echo $u_psu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Keyboard</td>
+                                    <td><?php echo $u_kb; ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Mouse</td>
+                                    <td><?php echo $u_mouse; ?></td>
                                 </tr>
                             </table>
                         </p>
@@ -161,6 +181,9 @@ include '../sql.php';
                                     <td><?php echo $m_nram; ?></td>
                                 </tr>
                                 <tr>
+                                    <td><?php echo $r_storage; ?>GB Storage</td>
+                                </tr>
+                                <tr>
                                     <td> - - - </td>
                                 </tr>
                                 <tr>
@@ -175,6 +198,9 @@ include '../sql.php';
                                 <tr>
                                     <td><?php echo $r_nram; ?></td>
                                 </tr>
+                                <tr>
+                                    <td><?php echo $r_storage; ?>GB Storage</td>
+                                </tr>
                             </table>
                         </p>
                     </div>
@@ -184,13 +210,16 @@ include '../sql.php';
                 <div class="card mb-3 shadow">
                     <div class="card-body">
                         <p class="card-text">
-                            <p id="greeting">null</p>
-                            <p>CPU punyamu </p>
-                            <p id="baca1">null</p>
-                            <p>VGA punyamu </p>
-                            <p id="baca2">null</p>
-                            <p>RAM punyamu </p>
-                            <p id="baca3">null</p>
+                            <div>CPU nilai: </div>
+                            <div id="v-cpu">-</div>
+                            <div>VGA nilai: </div>
+                            <div id="v-vga">-</div>
+                            <div>RAM nilai: </div>
+                            <div id="v-ram">-</div>
+                            <div>SSD nilai: </div>
+                            <div id="v-ssd">-</div>
+                            <div>HDD nilai: </div>
+                            <div id="v-hdd">-</div>
                         </p>
                     </div>
                 </div>
@@ -266,18 +295,34 @@ include '../sql.php';
 
 </body>
 <script>
-    function time() {
+    function compare() {
+        var u_cpu = "<?php echo $u_idcpu; ?>";
+        var r_cpu = "<?php echo $r_idcpu; ?>";
+        u_cpu = (u_cpu / r_cpu * 100) - (4 / 100);
+        document.getElementById("v-cpu").innerHTML = u_cpu;
 
-        var time = new Date().getHours();
-        if (time < 10) {
-            x = "Good morning";
-        } else if (time < 20) {
-            x = "Good day";
-        } else {
-            x = "Good evening";
-        }
-        document.getElementById("greeting").innerHTML = x;
+        var u_vga = "<?php echo $u_idvga; ?>";
+        var r_vga = "<?php echo $r_idvga; ?>";
+        u_vga = u_vga / r_vga * 100 - (5 / 100);
+        document.getElementById("v-vga").innerHTML = u_vga;
 
+        var u_ram = "<?php echo $u_idram; ?>";
+        var r_ram = "<?php echo $r_idram; ?>";
+        u_ram = u_ram / r_ram * 100 - (3 / 100);
+        document.getElementById("v-ram").innerHTML = u_ram;
+
+        var u_ssd = "<?php echo $u_idssd; ?>";
+        var r_storage = "<?php echo $r_storage; ?>";
+        u_ssd = u_ssd / r_storage * 100 - (3 / 100);
+        document.getElementById("v-ssd").innerHTML = u_ssd;
+
+        var u_hdd = "<?php echo $u_idhdd; ?>";
+        var r_storage = "<?php echo $r_storage; ?>";
+        u_hdd = u_hdd / r_storage * 100 - (8 / 100);
+        document.getElementById("v-hdd").innerHTML = u_hdd;
+    }
+
+    function old() {
         var u_cpu = "<?php echo $u_idcpu; ?>";
         var m_cpu = "<?php echo $m_idcpu; ?>";
         var r_cpu = "<?php echo $r_idcpu; ?>";
@@ -288,7 +333,7 @@ include '../sql.php';
         } else if (u_cpu <= m_cpu) {
             u_cpu = "LAG BOS";
         }
-        document.getElementById("baca1").innerHTML = u_cpu;
+        document.getElementById("v-cpu").innerHTML = u_cpu;
 
         var u_vga = "<?php echo $u_idvga; ?>";
         var m_vga = "<?php echo $m_idvga; ?>";
@@ -300,7 +345,7 @@ include '../sql.php';
         } else if (u_vga <= m_vga) {
             u_vga = "LAG BOS";
         }
-        document.getElementById("baca2").innerHTML = u_vga;
+        document.getElementById("v-vga").innerHTML = u_vga;
 
         var u_ram = "<?php echo $u_idram; ?>";
         var m_ram = "<?php echo $m_idram; ?>";
@@ -312,7 +357,7 @@ include '../sql.php';
         } else if (u_ram <= m_ram) {
             u_ram = "LAG BOS";
         }
-        document.getElementById("baca3").innerHTML = u_ram;
+        document.getElementById("v-ram").innerHTML = u_ram;
 
     }
 </script>
