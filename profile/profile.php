@@ -274,7 +274,7 @@ include '../sql.php';
                                                     $name_cpu = $row ['name_cpu'];
                                                     echo "
                                                     <option value='$id_cpu'>$name_cpu</option>";                                                    
-                                                }
+                                                };
                                                 echo "<option value='$id_cpu' if($u_idcpu == $id_cpu) selected=selected>$name_cpu</option>";
                                             ?>
                                             </select>
@@ -494,17 +494,6 @@ include '../sql.php';
 </body>
 <script>
     function time() {
-
-        var time = new Date().getHours();
-        if (time < 10) {
-            x = "Good morning";
-        } else if (time < 20) {
-            x = "Good day";
-        } else {
-            x = "Good evening";
-        }
-        document.getElementById("greeting").innerHTML = x;
-    }
 
     function gender() {
     var u_gender = "<?php echo $u_gender; ?>";

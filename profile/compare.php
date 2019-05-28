@@ -298,27 +298,27 @@ include '../sql.php';
     function compare() {
         var u_cpu = "<?php echo $u_idcpu; ?>";
         var r_cpu = "<?php echo $r_idcpu; ?>";
-        u_cpu = (u_cpu / r_cpu * 100) - (4 / 100);
+        u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
         document.getElementById("v-cpu").innerHTML = u_cpu;
 
         var u_vga = "<?php echo $u_idvga; ?>";
         var r_vga = "<?php echo $r_idvga; ?>";
-        u_vga = u_vga / r_vga * 100 - (5 / 100);
+        u_vga = u_vga / r_vga * 100 * (95 / 100);
         document.getElementById("v-vga").innerHTML = u_vga;
 
         var u_ram = "<?php echo $u_idram; ?>";
         var r_ram = "<?php echo $r_idram; ?>";
-        u_ram = u_ram / r_ram * 100 - (3 / 100);
+        u_ram = u_ram / r_ram * 100 * (97 / 100);
         document.getElementById("v-ram").innerHTML = u_ram;
 
         var u_ssd = "<?php echo $u_idssd; ?>";
         var r_storage = "<?php echo $r_storage; ?>";
-        u_ssd = u_ssd / r_storage * 100 - (3 / 100);
+        u_ssd = u_ssd / r_storage * 100 * (95 / 99);
         document.getElementById("v-ssd").innerHTML = u_ssd;
 
         var u_hdd = "<?php echo $u_idhdd; ?>";
         var r_storage = "<?php echo $r_storage; ?>";
-        u_hdd = u_hdd / r_storage * 100 - (8 / 100);
+        u_hdd = u_hdd / r_storage * 100 * (90 / 99);
         document.getElementById("v-hdd").innerHTML = u_hdd;
     }
 
