@@ -12,21 +12,29 @@
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="../assets/custom.css">
     <style>
-        table, 
+        table,
         td {
             margin: 0 auto;
             padding: 5px;
             text-align: center;
         }
+
         .navbar {
             background-color: rgb(19, 19, 19);
             box-shadow: 0 0 1rem rgb(19, 19, 19);
             position: relative;
         }
 
+        .gg {
+            color: rgb(255, 23, 23);
+            font-size: 26px;
+            font-weight: bold;
+            font-style: italic;
+        }
     </style>
 </head>
-<body onload="compare()">
+
+<body onload="gender()">
     <?php 
 session_start();
 if($_SESSION['status']!="login"){
@@ -39,7 +47,7 @@ include '../sql.php';
 ?>
 
     <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
             <a class="navbar-brand text-shadow" href="index.php">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,10 +59,10 @@ include '../sql.php';
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="compare.php">Compare</a>
+                        <a class="nav-link" href="compare.php">Compare</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="profile.php">Profile</a>
+                        <a class="nav-link active" href="profile.php">Profile</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -96,135 +104,154 @@ include '../sql.php';
         </nav>
     </header>
 
-    <hr class="divider">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
-                    <div class="card-body">
-                        <p class="card-text">
+    <div class="row">
+        <div class="col-lg-11 mx-5 my-5">
+            <p class="gg text-center" style="font-size: 30px;">
+                DAFTAR
+            </p>
+            <div class="card mb-3 shadow">
+                <form method="post" action="tambah.php">
+                    <div class="row px-5 py-5">
+                        <div class="col-lg-6">
                             <table>
+
                                 <tr>
-                                    <td colspan="2">
-                                        <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
-                                            style="border-radius: 50%; width: 150px; height: 150px">
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-user"></i>
+                                            <input type="text" name="uname" placeholder="ID Pengguna" class="input-text"
+                                                required>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>ID</td>
-                                    <td><?php echo $u_id; ?></td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-id-badge"></i>
+                                            <input type="text" name="name" placeholder="Nama Lengkap" class="input-text"
+                                                required>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Nama</td>
-                                    <td><?php echo $u_name; ?></td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-envelope"></i>
+                                            <input type="email" name="email" placeholder="E-mail" class="input-text"
+                                                required>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Processor</td>
-                                    <td><?php echo $u_cpu; ?></td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-unlock"></i>
+                                            <input type="password" name="password" placeholder="Password"
+                                                class="input-text" required>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Graphic Card</td>
-                                    <td><?php echo $u_vga; ?></td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <label class="rdb">Laki-laki
+                                                <input type="radio" id="l" name="gender" value="l">
+                                                <span class="rdb-check"></span>
+                                            </label>
+                                            <label class="rdb">Perempuan
+                                                <input type="radio" id="p" name="gender" value="p">
+                                                <span class="rdb-check"></span>
+                                            </label>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>RAM</td>
-                                    <td><?php echo $u_ram; ?></td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-birthday-cake"></i>
+                                            <input type="date" name="birth" placeholder="Password" class="input-text">
+                                        </div>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td>SSD</td>
-                                    <td><?php echo $u_ssd; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>Hard Disk</td>
-                                    <td><?php echo $u_hdd; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>Power Supply</td>
-                                    <td><?php echo $u_psu; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>Keyboard</td>
-                                    <td><?php echo $u_kb; ?></td>
-                                </tr>
-                                <tr>
-                                    <td>Mouse</td>
-                                    <td><?php echo $u_mouse; ?></td>
-                                </tr>
+
                             </table>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
-                    <img width="100%" height="140" src="../assets/img/1.jpg" />
-                    <div class="card-body">
-                        <p class="card-text">
+                        </div>
+                        <div class="col-lg-6">
                             <table>
                                 <tr>
-                                    <td><?php echo $namegame; ?></td>
+                                    <td>
+                                        <img src="https://image.flaticon.com/icons/svg/270/270014.svg" ; width="150px">
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td> - - - </td>
+                                    <td>
+                                        <select name="u_idcpu" class="input-text">
+                                            <option>CPU</option>
+                                            <option value="1">i3</option>
+                                            <option value="2">i5</option>
+                                            <option value="3">i7</option>
+                                            <option value="4">i9</option>
+                                        </select>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Minimum Specification:</td>
+                                    <td>
+                                        <select name="u_idvga" class="input-text">
+                                            <option>VGA</option>
+                                            <option value="1">GT210</option>
+                                            <option value="2">GT730</option>
+                                            <option value="3">GTX1050</option>
+                                            <option value="4">RTX2080</option>
+                                        </select>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><?php echo $m_ncpu; ?></td>
+                                    <td>
+                                        <select name="u_idram" class="input-text">
+                                            <option>RAM</option>
+                                            <option value="1">2GB</option>
+                                            <option value="2">4GB</option>
+                                            <option value="3">8GB</option>
+                                            <option value="4">16GB</option>
+                                        </select>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><?php echo $m_nvga; ?></td>
+                                    <td>
+                                        <select class="input-text">
+                                            <option>SSD</option>
+                                        </select>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><?php echo $m_nram; ?></td>
+                                    <td>
+                                        <select class="input-text">
+                                            <option>HDD</option>
+                                        </select>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td><?php echo $r_storage; ?>GB Storage</td>
+                                    <td>
+                                        <select class="input-text">
+                                            <option>MB</option>
+                                        </select>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td> - - - </td>
-                                </tr>
-                                <tr>
-                                    <td>Recomended Specification:</td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $r_ncpu; ?></td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $r_nvga; ?></td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $r_nram; ?></td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $r_storage; ?>GB Storage</td>
+                                    <td>
+                                        <input type="submit" value="Daftar" class="btn-sm input-btn"
+                                            style="width: 200px;">
+                                    </td>
                                 </tr>
                             </table>
-                        </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <div>CPU nilai: </div>
-                            <div id="v-cpu">-</div>
-                            <div>VGA nilai: </div>
-                            <div id="v-vga">-</div>
-                            <div>RAM nilai: </div>
-                            <div id="v-ram">-</div>
-                            <div>SSD nilai: </div>
-                            <div id="v-ssd">-</div>
-                            <div>HDD nilai: </div>
-                            <div id="v-hdd">-</div>
-                        </p>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
-
+    </div>
+    </form>
+    </div>
 
     <footer class="page-footer text-center black-soft">
         <div class="row" style="margin-right: 0!important;">
@@ -293,73 +320,6 @@ include '../sql.php';
     </footer>
 
 </body>
-<script>
-    function compare() {
-        var u_cpu = "<?php echo $u_idcpu; ?>";
-        var r_cpu = "<?php echo $r_idcpu; ?>";
-        u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
-        document.getElementById("v-cpu").innerHTML = u_cpu;
-
-        var u_vga = "<?php echo $u_idvga; ?>";
-        var r_vga = "<?php echo $r_idvga; ?>";
-        u_vga = u_vga / r_vga * 100 * (95 / 100);
-        document.getElementById("v-vga").innerHTML = u_vga;
-
-        var u_ram = "<?php echo $u_idram; ?>";
-        var r_ram = "<?php echo $r_idram; ?>";
-        u_ram = u_ram / r_ram * 100 * (97 / 100);
-        document.getElementById("v-ram").innerHTML = u_ram;
-
-        var u_ssd = "<?php echo $u_idssd; ?>";
-        var r_storage = "<?php echo $r_storage; ?>";
-        u_ssd = u_ssd / r_storage * 100 * (95 / 99);
-        document.getElementById("v-ssd").innerHTML = u_ssd;
-
-        var u_hdd = "<?php echo $u_idhdd; ?>";
-        var r_storage = "<?php echo $r_storage; ?>";
-        u_hdd = u_hdd / r_storage * 100 * (90 / 99);
-        document.getElementById("v-hdd").innerHTML = u_hdd;
-    }
-
-    function old() {
-        var u_cpu = "<?php echo $u_idcpu; ?>";
-        var m_cpu = "<?php echo $m_idcpu; ?>";
-        var r_cpu = "<?php echo $r_idcpu; ?>";
-        if (u_cpu >= r_cpu) {
-            u_cpu = "JOS MANTAP";
-        } else if (u_cpu >= m_cpu && u_cpu <= r_cpu) {
-            u_cpu = "OKELAH";
-        } else if (u_cpu <= m_cpu) {
-            u_cpu = "LAG BOS";
-        }
-        document.getElementById("v-cpu").innerHTML = u_cpu;
-
-        var u_vga = "<?php echo $u_idvga; ?>";
-        var m_vga = "<?php echo $m_idvga; ?>";
-        var r_vga = "<?php echo $r_idvga; ?>";
-        if (u_vga >= r_vga) {
-            u_vga = "JOS MANTAP";
-        } else if (u_vga >= m_vga && u_vga <= r_vga) {
-            u_vga = "OKELAH";
-        } else if (u_vga <= m_vga) {
-            u_vga = "LAG BOS";
-        }
-        document.getElementById("v-vga").innerHTML = u_vga;
-
-        var u_ram = "<?php echo $u_idram; ?>";
-        var m_ram = "<?php echo $m_idram; ?>";
-        var r_ram = "<?php echo $r_idram; ?>";
-        if (u_ram >= r_ram) {
-            u_ram = "JOS MANTAP";
-        } else if (u_ram >= m_ram && u_ram <= r_ram) {
-            u_ram = "OKELAH";
-        } else if (u_ram <= m_ram) {
-            u_ram = "LAG BOS";
-        }
-        document.getElementById("v-ram").innerHTML = u_ram;
-
-    }
-</script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
