@@ -106,10 +106,22 @@ include '../sql.php';
 
     <div class="row">
         <div class="col-lg-11 mx-5 my-5">
-            <p class="gg text-center" style="font-size: 30px;">
-                DAFTAR
+            <p class="gg" style="font-size: 30px;">
+                NEWS CS-GO NEW UPDATE
             </p>
-            <div class="card mb-3 shadow">
+            <div class="card shadow mx-3 px-0 py-0">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <img class="img-fluid" src="../assets/img/1.jpg">
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img-fluid" src="../assets/img/2.jpg">
+                        <img class="img-fluid" src="../assets/img/3.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow mx-3 my-3">
                 <form method="post" action="tambah.php">
                     <div class="row px-5 py-5">
                         <div class="col-lg-6">
