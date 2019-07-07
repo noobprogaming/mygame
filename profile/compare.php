@@ -12,20 +12,36 @@
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="../assets/custom.css">
     <style>
-        table, 
+        table,
         td {
             margin: 0 auto;
             padding: 5px;
             text-align: center;
         }
+
         .navbar {
             background-color: rgb(19, 19, 19);
             box-shadow: 0 0 1rem rgb(19, 19, 19);
             position: relative;
         }
 
+        .gg {
+            color: rgb(255, 23, 23);
+            font-size: 26px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .dd {
+            color: white;
+        }
+
+        .dd:hover {
+            color: rgb(255, 23, 23);
+        }
     </style>
 </head>
+
 <body onload="compare()">
     <?php 
 session_start();
@@ -39,7 +55,7 @@ include '../sql.php';
 ?>
 
     <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
             <a class="navbar-brand text-shadow" href="index.php">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,11 +66,27 @@ include '../sql.php';
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="compare.php">Compare</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="compare.php">Compare</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="profile.php">Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="game.php">Game</a>
+                        <div class="dropdown-menu dropdown-content black-soft box-shadow"
+                            aria-labelledby="navbarDropdown">
+                            <div class="px-3 py-1" style="color: white;">
+                                <ul style="list-style: none;">
+                                    <a href="genre.php" style="text-decoration: none;">
+                                        <li class="dd">Genre</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.php">Katalog</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -96,11 +128,15 @@ include '../sql.php';
         </nav>
     </header>
 
-    <hr class="divider">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
+    <div class="row">
+        <div class="mx-5 my-5">
+            <p class="gg" style="font-size: 30px;">
+                COMPARE
+            </p>
+        </div>
+        <div class="card shadow col-lg-11 mx-auto">
+            <div class="row">
+                <div class="col-lg-4">
                     <div class="card-body">
                         <p class="card-text">
                             <table>
@@ -154,9 +190,7 @@ include '../sql.php';
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
+                <div class="col-lg-4">
                     <img width="100%" height="140" src="../assets/img/1.jpg" />
                     <div class="card-body">
                         <p class="card-text">
@@ -204,9 +238,7 @@ include '../sql.php';
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card mb-3 shadow">
+                <div class="col-lg-4">
                     <div class="card-body">
                         <p class="card-text">
                             <div>CPU nilai: </div>
@@ -224,6 +256,7 @@ include '../sql.php';
                 </div>
             </div>
         </div>
+    </div>
 
 
     <footer class="page-footer text-center black-soft">
@@ -298,26 +331,31 @@ include '../sql.php';
         var u_cpu = "<?php echo $u_idcpu; ?>";
         var r_cpu = "<?php echo $r_idcpu; ?>";
         u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+        var u_cpu = u_cpu.toFixed(2);
         document.getElementById("v-cpu").innerHTML = u_cpu;
 
         var u_vga = "<?php echo $u_idvga; ?>";
         var r_vga = "<?php echo $r_idvga; ?>";
         u_vga = u_vga / r_vga * 100 * (95 / 100);
+        var u_vga = u_vga.toFixed(2);
         document.getElementById("v-vga").innerHTML = u_vga;
 
         var u_ram = "<?php echo $u_idram; ?>";
         var r_ram = "<?php echo $r_idram; ?>";
         u_ram = u_ram / r_ram * 100 * (97 / 100);
+        var u_ram = u_ram.toFixed(2);
         document.getElementById("v-ram").innerHTML = u_ram;
 
         var u_ssd = "<?php echo $u_idssd; ?>";
         var r_storage = "<?php echo $r_storage; ?>";
         u_ssd = u_ssd / r_storage * 100 * (95 / 99);
+        var u_ssd = u_ssd.toFixed(2);
         document.getElementById("v-ssd").innerHTML = u_ssd;
 
         var u_hdd = "<?php echo $u_idhdd; ?>";
         var r_storage = "<?php echo $r_storage; ?>";
         u_hdd = u_hdd / r_storage * 100 * (90 / 99);
+        var u_hdd = u_hdd.toFixed(2);
         document.getElementById("v-hdd").innerHTML = u_hdd;
     }
 
@@ -356,6 +394,7 @@ include '../sql.php';
         } else if (u_ram <= m_ram) {
             u_ram = "LAG BOS";
         }
+        if (u_ram.length > 3) u_ram = str.substring(0, 3);
         document.getElementById("v-ram").innerHTML = u_ram;
 
     }

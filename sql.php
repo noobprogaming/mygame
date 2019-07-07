@@ -13,6 +13,9 @@
         INNER JOIN kb ON kb.id_kb=rig.id_kb
         INNER JOIN mouse ON mouse.id_mouse=rig.id_mouse WHERE rig.id='$username';
     ");
+    $sql_age = ("
+    SELECT DATEDIFF((SELECT CURDATE()), (SELECT birth FROM user WHERE id='alvin'))/365 AS age;
+    ");    
     $sql_min = ("
     SELECT id_game, name_game, min_cpu, min_vga, min_ram, cpu.name_cpu, vga.name_vga, ram.name_ram
     FROM game
@@ -62,6 +65,12 @@
         $u_psu = $row ['name_psu'];
         $u_kb = $row ['name_kb'];
         $u_mouse = $row ['name_mouse'];
+    }
+
+    $result = $koneksi->query($sql_age);
+    while($row=$result->fetch_assoc()){
+        extract($row); 
+        $u_age = $row ['age'];
     }
 
     $result = $koneksi->query($sql_min);

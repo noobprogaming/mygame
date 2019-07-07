@@ -18,18 +18,22 @@
             padding: 5px;
             text-align: center;
         }
-
         .navbar {
             background-color: rgb(19, 19, 19);
             box-shadow: 0 0 1rem rgb(19, 19, 19);
             position: relative;
         }
-
         .gg {
             color: rgb(255, 23, 23);
             font-size: 26px;
             font-weight: bold;
             font-style: italic;
+        }
+        .dd {
+            color: white;
+        }
+        .dd:hover {
+            color: rgb(255, 23, 23);
         }
     </style>
 </head>
@@ -62,7 +66,23 @@ include '../sql.php';
                         <a class="nav-link" href="compare.php">Compare</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="profile.php">Profile</a>
+                        <a class="nav-link" href="profile.php">Profile</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link" href="game.php">Game</a>
+                        <div class="dropdown-menu dropdown-content black-soft box-shadow"
+                            aria-labelledby="navbarDropdown">
+                            <div class="px-3 py-1" style="color: white;">
+                                <ul style="list-style: none;">
+                                    <a href="genre.php" style="text-decoration: none;">
+                                        <li class="dd">Genre</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.php">Katalog</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -105,28 +125,27 @@ include '../sql.php';
     </header>
 
     <div class="row">
-        <div class="col-lg-11 mx-5 my-5">
+        <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
                 NEWS CS-GO NEW UPDATE
             </p>
-            <div class="card shadow mx-3 px-0 py-0">
+            <div class="card shadow col-lg-12 mx-auto my-5">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 px-0 py-0">
                         <img class="img-fluid" src="../assets/img/1.jpg">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 px-0 py-0">
                         <img class="img-fluid" src="../assets/img/2.jpg">
                         <img class="img-fluid" src="../assets/img/3.jpg">
                     </div>
                 </div>
             </div>
 
-            <div class="card shadow mx-3 my-3">
+            <div class="card shadow col-lg-12 mx-auto">
                 <form method="post" action="tambah.php">
                     <div class="row px-5 py-5">
                         <div class="col-lg-6">
                             <table>
-
                                 <tr>
                                     <td>
                                         <div class="inner-addon left-addon inner-addon-tall">

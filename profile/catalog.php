@@ -18,6 +18,14 @@
             padding: 5px;
             text-align: center;
         }
+
+        .dd {
+            color: rgb(255, 255, 255);
+        }
+
+        .dd:hover {
+            color: rgb(255, 23, 23);
+        }
     </style>
 </head>
 
@@ -42,7 +50,7 @@ include '../sql.php';
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
@@ -50,6 +58,22 @@ include '../sql.php';
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="profile.php">Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="game.php">Game</a>
+                        <div class="dropdown-menu dropdown-content black-soft box-shadow"
+                            aria-labelledby="navbarDropdown">
+                            <div class="px-3 py-1" style="color: rgb(255, 255, 255);">
+                                <ul style="list-style: none;">
+                                    <a href="genre.php" style="text-decoration: none;">
+                                        <li class="dd">Genre</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="catalog.php">Katalog</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -163,7 +187,7 @@ include '../sql.php';
                     <div>
                         <img width="100%" height="140" src="../assets/img/2.jpg" class="img-fluid" />
                         <div class="card-body">
-                        <h3 class="text-center">MOUSE</h3>
+                            <h3 class="text-center">MOUSE</h3>
                         </div>
                     </div>
                 </a>
@@ -174,7 +198,7 @@ include '../sql.php';
                     <div>
                         <img width="100%" height="140" src="../assets/img/3.jpg" class="img-fluid" />
                         <div class="card-body">
-                        <h3 class="text-center">MOUSE</h3>
+                            <h3 class="text-center">MOUSE</h3>
                         </div>
                     </div>
                 </a>
@@ -184,7 +208,7 @@ include '../sql.php';
                     <div>
                         <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
                         <div class="card-body">
-                        <h3 class="text-center">MOUSE</h3>
+                            <h3 class="text-center">MOUSE</h3>
                         </div>
                     </div>
                 </a>

@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id"
+        content="562498474090-rmhpeunoatnlg7lv8b9buije5n0n2r9t.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <title>Punyakita</title>
     <link rel="icon" type="image/png" href="/assets/img/google.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -41,33 +45,33 @@
     </style>
 </head>
 
-<body>
+<body onload="alert()">
     <?php 
 if(isset($_GET['msg'])){
     if($_GET['msg'] == "failed"){
         echo '<div class="container">';
-        echo '<div class="alert-top alert alert-danger alert-dismissible fade show">';
+        echo '<div class="alert-top alert alert-danger" id="myalert">';
         echo '  <button type="button" class="close" data-dismiss="alert">&times;</button>';
         echo '  ID atau kata sandi, salah!';
         echo '</div>';
         echo '</div>';
     }else if($_GET['msg'] == "logout"){
         echo '<div class="container">';
-        echo '<div class="alert-top alert alert-info alert-dismissible fade show">';
+        echo '<div class="alert-top alert alert-info" id="myalert">';
         echo '  <button type="button" class="close" data-dismiss="alert">&times;</button>';
         echo '  Anda telah keluar!';
         echo '</div>';
         echo '</div>';
     }else if($_GET['msg'] == "warning"){
         echo '<div class="container">';
-        echo '<div class="alert-top alert alert-warning alert-dismissible fade show">';
+        echo '<div class="alert-top alert alert-warning" id="myalert">';
         echo '  <button type="button" class="close" data-dismiss="alert">&times;</button>';
         echo '  Anda harus masuk terlebih dahulu!';
         echo '</div>';
         echo '</div>';
     }else if($_GET['msg'] == "success"){
         echo '<div class="container">';
-        echo '<div class="alert-top alert alert-success alert-dismissible fade show" role="alert">';
+        echo '<div class="alert-top alert alert-success" id="myalert" role="alert">';
         echo '  <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>';
         echo '  Silakan masuk menggunakan data yang sudah Anda buat!';
         echo '</div>';
@@ -85,10 +89,10 @@ if(isset($_GET['msg'])){
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Beranda</a>
+                        <a class="nav-link" href="index.php">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="profile/game.php">Game</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -114,6 +118,14 @@ if(isset($_GET['msg'])){
                                                     <i class="fa fa-unlock"></i>
                                                     <input type="password" name="password" placeholder="Kata Sandi"
                                                         id="pass" class="input-text">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <div class="g-signin2" style="width: 200px; height: 30px"
+                                                        data-onsuccess="onSignIn" data-theme="dark"></div>
                                                 </div>
                                             </td>
                                         </tr>
@@ -196,7 +208,7 @@ if(isset($_GET['msg'])){
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
+                    <div class="card shadow">
                         <img width="100%" height="140" src="assets/img/1.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
@@ -211,7 +223,7 @@ if(isset($_GET['msg'])){
             </div>
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
+                    <div class="card shadow">
                         <img width="100%" height="140" src="assets/img/2.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
@@ -227,7 +239,7 @@ if(isset($_GET['msg'])){
             </div>
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
+                    <div class="card shadow">
                         <img width="100%" height="140" src="assets/img/3.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
@@ -242,7 +254,7 @@ if(isset($_GET['msg'])){
             </div>
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
+                    <div class="card shadow">
                         <img width="100%" height="140" src="assets/img/1.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
@@ -352,7 +364,7 @@ if(isset($_GET['msg'])){
             <div class="col-md-3">
                 <div class="row">
                     <a href="#" style="text-decoration: none;">
-                        <div class="card mb-3 shadow">
+                        <div class="card shadow">
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to
@@ -363,7 +375,7 @@ if(isset($_GET['msg'])){
                 </div>
                 <div class="row">
                     <a href="#" style="text-decoration: none;">
-                        <div class="card mb-3 shadow">
+                        <div class="card shadow">
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to
@@ -374,7 +386,7 @@ if(isset($_GET['msg'])){
                 </div>
                 <div class="row">
                     <a href="#" style="text-decoration: none;">
-                        <div class="card mb-3 shadow">
+                        <div class="card shadow">
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to
@@ -383,10 +395,10 @@ if(isset($_GET['msg'])){
                         </div>
                     </a>
                 </div>
-                
+
             </div>
 
-            
+
 
         </div>
 
@@ -462,6 +474,27 @@ if(isset($_GET['msg'])){
     </footer>
 
 </body>
+<script>
+    function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        document.write('Full Name: ' + profile.getName());
+        document.write('Given Name: ' + profile.getGivenName());
+        document.write('Family Name: ' + profile.getFamilyName());
+        document.write("Image URL: " + profile.getImageUrl());
+        document.write("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        document.write("ID Token: " + id_token);
+    }
+
+    function alert() {
+        setTimeout(function () {
+            $('#myalert').hide();
+        }, 5000);
+    }
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>

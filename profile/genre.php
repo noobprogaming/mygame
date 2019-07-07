@@ -18,18 +18,22 @@
             padding: 5px;
             text-align: center;
         }
-
         .navbar {
             background-color: rgb(19, 19, 19);
             box-shadow: 0 0 1rem rgb(19, 19, 19);
             position: relative;
         }
-
         .gg {
             color: rgb(255, 23, 23);
             font-size: 26px;
             font-weight: bold;
             font-style: italic;
+        }
+        .dd {
+            color: white;
+        }
+        .dd:hover {
+            color: rgb(255, 23, 23);
         }
     </style>
 </head>
@@ -62,7 +66,23 @@ include '../sql.php';
                         <a class="nav-link" href="compare.php">Compare</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="profile.php">Profile</a>
+                        <a class="nav-link" href="profile.php">Profile</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link" href="game.php">Game</a>
+                        <div class="dropdown-menu dropdown-content black-soft box-shadow"
+                            aria-labelledby="navbarDropdown">
+                            <div class="px-3 py-1" style="color: white;">
+                                <ul style="list-style: none;">
+                                    <a href="genre.php" style="text-decoration: none;">
+                                        <li class="dd">Genre</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.php">Katalog</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -105,11 +125,12 @@ include '../sql.php';
     </header>
 
     <div class="row">
-        <div class="col-lg-11 mx-5 my-5">
+        <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
                 GAME GENRE
             </p>
-            <div class="card mb-3 shadow">
+        </div>
+        <div class="card shadow col-lg-11 mx-auto">
                 <div class="row">
                     <div class="col-lg-3 px-5 py-3">
                         <div class="card-body">
@@ -176,73 +197,73 @@ include '../sql.php';
                 </div>
 
             </div>
+    </div>
+    
+    <footer class="page-footer text-center black-soft">
+        <div class="row" style="margin-right: 0!important;">
+            <div class="col-md-4 p5rem" style="height: 300px;">
+                <div class="row">
+                    <h1 class="red">LOGO</h1>
+                </div>
+                <div class="row my-3">
+                    <div class="sosmed mx-1 my-1">
+                        <i class="fa fa-facebook fa-lg"></i>
+                    </div>
+                    <div class="sosmed mx-1 my-1">
+                        <i class="fa fa-twitter fa-lg"></i>
+                    </div>
+                    <div class="sosmed mx-1 my-1">
+                        <i class="fa fa-instagram fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p5rem text-white">
+                <ul class="fo-ul">
+                    <li class="text-white">TEXT-JUDUL</li>
+                    <li>
+                        <a href="#">
+                            ABC
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            DEF
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            GHI
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 p5rem text-white">
+                <ul class="fo-ul">
+                    <li class="text-white">TEXT-JUDUL</li>
+                    <li>
+                        <a href="#">
+                            ABC
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            DEF
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            GHI
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <footer class="page-footer text-center black-soft">
-            <div class="row" style="margin-right: 0!important;">
-                <div class="col-md-4 p5rem" style="height: 300px;">
-                    <div class="row">
-                        <h1 class="red">LOGO</h1>
-                    </div>
-                    <div class="row my-3">
-                        <div class="sosmed mx-1 my-1">
-                            <i class="fa fa-facebook fa-lg"></i>
-                        </div>
-                        <div class="sosmed mx-1 my-1">
-                            <i class="fa fa-twitter fa-lg"></i>
-                        </div>
-                        <div class="sosmed mx-1 my-1">
-                            <i class="fa fa-instagram fa-lg"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 p5rem text-white">
-                    <ul class="fo-ul">
-                        <li class="text-white">TEXT-JUDUL</li>
-                        <li>
-                            <a href="#">
-                                ABC
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                DEF
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                GHI
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 p5rem text-white">
-                    <ul class="fo-ul">
-                        <li class="text-white">TEXT-JUDUL</li>
-                        <li>
-                            <a href="#">
-                                ABC
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                DEF
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                GHI
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="red" style="height: 1px;">
-            </div>
-            <div class="pb-4 black text-white" style="height: 50px; padding-top: 10px;">
-                <p> © 2019 Tech </p>
-            </div>
-        </footer>
+        <div class="red" style="height: 1px;">
+        </div>
+        <div class="pb-4 black text-white" style="height: 50px; padding-top: 10px;">
+            <p> © 2019 Tech </p>
+        </div>
+    </footer>
 
 </body>
 

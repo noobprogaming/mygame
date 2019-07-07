@@ -18,6 +18,13 @@
             padding: 5px;
             text-align: center;
         }
+        
+        .dd {
+            color: rgb(255, 255, 255);
+        }
+        .dd:hover {
+            color: rgb(255, 23, 23);
+        }
     </style>
 </head>
 
@@ -50,6 +57,22 @@ include '../sql.php';
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="profile.php">Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="game.php">Game</a>
+                        <div class="dropdown-menu dropdown-content black-soft box-shadow"
+                            aria-labelledby="navbarDropdown">
+                            <div class="px-3 py-1" style="color: rgb(255, 255, 255);">
+                                <ul style="list-style: none;">
+                                    <a href="genre.php" style="text-decoration: none;">
+                                        <li class="dd">Genre</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.php">Katalog</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -150,7 +173,7 @@ include '../sql.php';
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
+                    <div class="card shadow">
                         <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
@@ -165,7 +188,7 @@ include '../sql.php';
             </div>
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
+                    <div class="card shadow">
                         <img width="100%" height="140" src="../assets/img/2.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
@@ -181,7 +204,7 @@ include '../sql.php';
             </div>
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
+                    <div class="card shadow">
                         <img width="100%" height="140" src="../assets/img/3.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
@@ -196,7 +219,7 @@ include '../sql.php';
             </div>
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
-                    <div class="card mb-3 shadow">
+                    <div class="card shadow">
                         <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural
