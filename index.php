@@ -477,6 +477,7 @@ if(isset($_GET['msg'])){
 <script>
     function onSignIn(googleUser) {
         // Useful data for your client-side scripts:
+        
         var profile = googleUser.getBasicProfile();
         document.write('Full Name: ' + profile.getName());
         document.write('Given Name: ' + profile.getGivenName());
@@ -488,7 +489,7 @@ if(isset($_GET['msg'])){
         var id_token = googleUser.getAuthResponse().id_token;
         document.write("ID Token: " + id_token);
     }
-
+    
     function alert() {
         setTimeout(function () {
             $('#myalert').hide();

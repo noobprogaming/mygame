@@ -18,10 +18,66 @@
             padding: 5px;
         }
 
+        ul.navbar-nav .nav-item .dropdown-menu td {
+            text-align: center;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
         .navbar {
             background-color: rgb(19, 19, 19);
             box-shadow: 0 0 1rem rgb(19, 19, 19);
             position: relative;
+        }
+
+        input[type='file'] {
+            color: transparent;
+        }
+
+        .input-file::-webkit-file-upload-button {
+            width: 0px;
+            visibility: hidden;
+        }
+
+        .input-file::before {
+            content: 'Pilih fotomu';
+            border: 1px solid #999;
+            border-radius: 0.1rem;
+            padding: 5px 8px;
+            cursor: pointer;
+            text-shadow: 1px 1px #fff;
+            font-weight: 700;
+            font-size: 10pt;
+            color: black;
+        }
+
+        .input-file:hover::before {
+            border-color: black;
+        }
+
+        .input-file:active::before {
+            background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
         }
 
         .gg {
@@ -35,7 +91,7 @@
             color: white;
         }
 
-        =.dd:hover {
+        .dd:hover {
             color: rgb(255, 23, 23);
         }
     </style>
@@ -135,134 +191,181 @@ include '../sql.php';
         </div>
         <div class="card shadow col-lg-11 mx-auto">
             <div class="row px-5 py-5">
-                <div class="col-lg-4" id="1">
-                    <table border="1">
-                        <tr>
-                            <td colspan="3" align="center">
-                                <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
-                                    style="border-radius: 50%; width: 150px; height: 150px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="font-size: 20px; font-weight: bold;">
-                                <?php echo $u_name; ?>
-                            </td>
-                            <td>
-                                <div id="gender"></div>
-                            </td>
-                            <td align="right">
-                                <button id="btnEdit" class="btn btn-sm input-btn w100">Edit</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa fa-user"></i></td>
-                            <td colspan="2"><?php echo $u_id; ?></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa fa-envelope"></i></td>
-                            <td colspan="2"><?php echo $u_email; ?></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa fa-birthday-cake"></i></td>
-                            <td>
-                                <div id="age">-</div>
-                            </td>
-                            <td>y.o</td>
-                        </tr>
-                        <tr>
-                            <td>Bergabung Sejak</td>
-                            <td colspan="2"><?php echo $u_joined; ?></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-lg-4" id="2">
-                    <form method="post" action="../update.php" enctype="multipart/form-data">
+
+                <div class="row col-lg-12" id="1">
+                    <div class="col-lg-5">
+                        <table border="1">
+                            <tr>
+                                <td colspan="4" align="center">
+                                    <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
+                                        style="border-radius: 50%; width: 150px; height: 150px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td style="font-size: 20px; font-weight: bold; width: 100%;">
+                                    <?php echo $u_name; ?>
+                                </td>
+                                <td>
+                                    <div id="gender"></div>
+                                </td>
+                                <td align="right">
+                                    <button id="btnEdit" class="btn btn-sm input-btn w100">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 1px;"><i class="fa fa-user"></i></td>
+                                <td colspan="3"><?php echo $u_id; ?></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-envelope"></i></td>
+                                <td colspan="3"><?php echo $u_email; ?></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-birthday-cake"></i></td>
+                                <td colspan="2">
+                                    <div id="age">-</div>
+                                </td>
+                                <td>y.o</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Bergabung Sejak</td>
+                                <td colspan="2"><?php echo $u_joined; ?></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-lg-7">
                         <table>
                             <tr>
-                                <td colspan=2>
-                                    <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
-                                        style="border-radius: 50%; width: 150px; height: 150px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>ID</td>
-                                <td>
-                                    <div class="inner-addon left-addon inner-addon-tall">
-                                        <i class="fa fa-id-badge"></i>
-                                        <input type="te" name="uname" placeholder="ID Pengguna" class="input-text"
-                                            value="<?php echo $u_id; ?>" readonly="readonly">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nama Lengkap</td>
-                                <td>
-                                    <div class="inner-addon left-addon inner-addon-tall">
-                                        <i class="fa fa-user"></i>
-                                        <input type="text" name="name" placeholder="Nama Lengkap" class="input-text"
-                                            value="<?php echo $u_name; ?>">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>
-                                    <div class="inner-addon left-addon inner-addon-tall">
-                                        <i class="fa fa-envelope"></i>
-                                        <input type="email" name="email" placeholder="E-mail" class="input-text"
-                                            value="<?php echo $u_email; ?>">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Password</td>
-                                <td>
-                                    <div class="inner-addon left-addon inner-addon-tall">
-                                        <i class="fa fa-unlock"></i>
-                                        <input type="password" name="password" placeholder="Password" class="input-text"
-                                            value="<?php echo $u_password; ?>">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Foto Profil</td>
-                                <td>
-                                    <input type="file" name="pp" accept="image/*">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Jenis Kelamin</td>
-                                <td>
-                                    <div class="inner-addon left-addon inner-addon-tall">
-                                        <label class="rdb">Laki-laki
-                                            <input type="radio" id="l" name="gender" value="l"
-                                                <?php if ($u_gender == 'l') { echo ' checked="checked"'; } ?>>
-                                            <span class="rdb-check"></span>
-                                        </label>
-                                        <label class="rdb">Perempuan
-                                            <input type="radio" id="p" name="gender" value="p"
-                                                <?php if ($u_gender == 'p') { echo ' checked="checked"'; } ?>>
-                                            <span class="rdb-check"></span>
-                                        </label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Tanggal Lahir</td>
-                                <td>
-                                    <div class="inner-addon left-addon inner-addon-tall">
-                                        <i class="fa fa-birthday-cake"></i>
-                                        <input type="date" name="birth" placeholder="Password" class="input-text"
-                                            value="<?php echo $u_birth; ?>">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
                                 <td>Processor</td>
-                                <td>
-                                    <select name="u_idcpu" class="input-text" style="width: 200px;">
-                                        <option>-- CPU --</option>
-                                        <?php
+                                <td><?php echo $u_cpu; ?></td>
+                            </tr>
+                            <tr>
+                                <td>Graphic Card</td>
+                                <td><?php echo $u_vga; ?></td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td><?php echo $u_ram; ?></td>
+                            </tr>
+                            <tr>
+                                <td>SSD</td>
+                                <td><?php echo $u_ssd; ?></td>
+                            </tr>
+                            <tr>
+                                <td>Hard Disk</td>
+                                <td><?php echo $u_hdd; ?></td>
+                            </tr>
+                            <tr>
+                                <td>Power Supply</td>
+                                <td><?php echo $u_psu; ?></td>
+                            </tr>
+                            <tr>
+                                <td>Keyboard</td>
+                                <td><?php echo $u_kb; ?></td>
+                            </tr>
+                            <tr>
+                                <td>Mouse</td>
+                                <td><?php echo $u_mouse; ?></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-lg-12" id="2">
+                    <div class="tab">
+                        <button class="tablinks" id="s1">Slide 1</button>
+                        <button class="tablinks" id="s2">Slide 2</button>
+                    </div>
+                    <form method="post" action="../update.php" enctype="multipart/form-data">
+                        <div id="slide1">
+                            <table>
+                                <tr>
+                                    <td style="width: 300px;">Foto Profil</td>
+                                    <td>
+                                        <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
+                                            style="border-radius: 50%; width: 150px; height: 150px;">
+                                        <input type="file" name="pp" accept="image/*" class="input-file">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ID</td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-id-badge"></i>
+                                            <input type="te" name="uname" placeholder="ID Pengguna" class="input-text"
+                                                value="<?php echo $u_id; ?>" readonly="readonly"
+                                                style="background-color: rgb(201, 201, 201)">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nama Lengkap</td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-user"></i>
+                                            <input type="text" name="name" placeholder="Nama Lengkap" class="input-text"
+                                                value="<?php echo $u_name; ?>">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-envelope"></i>
+                                            <input type="email" name="email" placeholder="E-mail" class="input-text"
+                                                value="<?php echo $u_email; ?>">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-unlock"></i>
+                                            <input type="password" name="password" placeholder="Password"
+                                                class="input-text" value="<?php echo $u_password; ?>">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jenis Kelamin</td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <label class="rdb">Laki-laki
+                                                <input type="radio" id="l" name="gender" value="l"
+                                                    <?php if ($u_gender == 'l') { echo ' checked="checked"'; } ?>>
+                                                <span class="rdb-check"></span>
+                                            </label>
+                                            <label class="rdb">Perempuan
+                                                <input type="radio" id="p" name="gender" value="p"
+                                                    <?php if ($u_gender == 'p') { echo ' checked="checked"'; } ?>>
+                                                <span class="rdb-check"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tanggal Lahir</td>
+                                    <td>
+                                        <div class="inner-addon left-addon inner-addon-tall">
+                                            <i class="fa fa-birthday-cake"></i>
+                                            <input type="date" name="birth" placeholder="Password" class="input-text"
+                                                value="<?php echo $u_birth; ?>">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="slide2">
+                            <table>
+                                <tr>
+                                    <td>Processor</td>
+                                    <td>
+                                        <select name="u_idcpu" class="input-text" style="width: 200px;">
+                                            <option>-- CPU --</option>
+                                            <?php
                                                     $result = $koneksi->query($sql_cpu);
                                                     while($row=$result->fetch_assoc()){
                                                         extract($row);
@@ -273,15 +376,15 @@ include '../sql.php';
                                                     };
                                                     echo "<option value='$u_idcpu' style='font-weight: bold' selected=selected>$u_cpu</option>";
                                                 ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Graphic Card</td>
-                                <td>
-                                    <select name="u_idvga" class="input-text" style="width: 200px;">
-                                        <option>-- VGA --</option>
-                                        <?php
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Graphic Card</td>
+                                    <td>
+                                        <select name="u_idvga" class="input-text" style="width: 200px;">
+                                            <option>-- VGA --</option>
+                                            <?php
                                                     $result = $koneksi->query($sql_vga);
                                                     while($row=$result->fetch_assoc()){
                                                         extract($row);
@@ -292,14 +395,14 @@ include '../sql.php';
                                                     }
                                                     echo "<option value='$u_idvga' style='font-weight: bold' selected=selected>$u_vga</option>";
                                                 ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>RAM</td>
-                                <td>
-                                    <select name="u_idram" class="input-text" style="width: 200px;">
-                                        <?php
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>RAM</td>
+                                    <td>
+                                        <select name="u_idram" class="input-text" style="width: 200px;">
+                                            <?php
                                                     $result = $koneksi->query($sql_ram);
                                                     while($row=$result->fetch_assoc()){
                                                         extract($row);
@@ -310,15 +413,15 @@ include '../sql.php';
                                                     }
                                                     echo "<option value='$u_idram' style='font-weight: bold' selected=selected>$u_ram</option>";
                                                 ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>SSD</td>
-                                <td>
-                                    <select name="u_idssd" class="input-text" style="width: 200px;">
-                                        <option>-- SSD --</option>
-                                        <?php
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SSD</td>
+                                    <td>
+                                        <select name="u_idssd" class="input-text" style="width: 200px;">
+                                            <option>-- SSD --</option>
+                                            <?php
                                                     $result = $koneksi->query($sql_ssd);
                                                     while($row=$result->fetch_assoc()){
                                                         extract($row);
@@ -329,15 +432,15 @@ include '../sql.php';
                                                     }
                                                     echo "<option value='$u_idssd' style='font-weight: bold' selected=selected>$u_ssd</option>";
                                                 ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Hard Disk</td>
-                                <td>
-                                    <select name="u_idhdd" class="input-text" style="width: 200px;">
-                                        <option>-- HDD --</option>
-                                        <?php
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Hard Disk</td>
+                                    <td>
+                                        <select name="u_idhdd" class="input-text" style="width: 200px;">
+                                            <option>-- HDD --</option>
+                                            <?php
                                                     $result = $koneksi->query($sql_hdd);
                                                     while($row=$result->fetch_assoc()){
                                                         extract($row);
@@ -348,15 +451,15 @@ include '../sql.php';
                                                     }
                                                     echo "<option value='$u_idhdd' style='font-weight: bold' selected=selected>$u_hdd</option>";
                                                 ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Power Supply</td>
-                                <td>
-                                    <select name="u_idpsu" class="input-text" style="width: 200px;">
-                                        <option>-- PSU --</option>
-                                        <?php
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Power Supply</td>
+                                    <td>
+                                        <select name="u_idpsu" class="input-text" style="width: 200px;">
+                                            <option>-- PSU --</option>
+                                            <?php
                                                     $result = $koneksi->query($sql_psu);
                                                     while($row=$result->fetch_assoc()){
                                                         extract($row);
@@ -367,15 +470,15 @@ include '../sql.php';
                                                     }
                                                     echo "<option value='$u_idpsu' style='font-weight: bold' selected=selected>$u_psu</option>";
                                                 ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Keyboard</td>
-                                <td>
-                                    <select name="u_idkb" class="input-text" style="width: 200px;">
-                                        <option>-- KB --</option>
-                                        <?php
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Keyboard</td>
+                                    <td>
+                                        <select name="u_idkb" class="input-text" style="width: 200px;">
+                                            <option>-- KB --</option>
+                                            <?php
                                                     $result = $koneksi->query($sql_kb);
                                                     while($row=$result->fetch_assoc()){
                                                         extract($row);
@@ -386,15 +489,15 @@ include '../sql.php';
                                                     }
                                                     echo "<option value='$u_idkb' style='font-weight: bold' selected=selected>$u_kb</option>";
                                                 ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Mouse</td>
-                                <td>
-                                    <select name="u_idmouse" class="input-text" style="width: 200px;">
-                                        <option>-- Mouse --</option>
-                                        <?php
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mouse</td>
+                                    <td>
+                                        <select name="u_idmouse" class="input-text" style="width: 200px;">
+                                            <option>-- Mouse --</option>
+                                            <?php
                                                     $result = $koneksi->query($sql_mouse);
                                                     while($row=$result->fetch_assoc()){
                                                         extract($row);
@@ -405,17 +508,19 @@ include '../sql.php';
                                                     }
                                                     echo "<option value='$u_idmouse' style='font-weight: bold' selected=selected>$u_mouse</option>";
                                                 ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="submit" value="Update" class="btn btn-sm input-btn w100">
-                                </td>
-                            </tr>
-                        </table>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="submit" value="Update" class="btn btn-sm input-btn w100">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </form>
                 </div>
+
             </div>
         </div>
     </div>
@@ -489,7 +594,7 @@ include '../sql.php';
 </body>
 <script>
     function profile() {
-        
+
         var u_gender = "<?php echo $u_gender; ?>";
         if (u_gender === 'l') {
             u_gender = "♂";
@@ -504,10 +609,22 @@ include '../sql.php';
         document.getElementById("age").innerHTML = u_age;
 
         $('#2').hide();
+        $('#slide2').hide();
+
+        $('#s1').on('click', function () {
+            $('#slide2').hide();
+            $('#slide1').show();
+        });
+
+        $('#s2').on('click', function () {
+            $('#slide1').hide();
+            $('#slide2').show();
+        });
+
 
         $('#btnEdit').on('click', function () {
-                $('#1').hide();
-                $('#2').show();
+            $('#1').hide();
+            $('#2').show();
         });
     }
 </script>

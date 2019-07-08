@@ -16,6 +16,9 @@
         td {
             margin: 0 auto;
             padding: 5px;
+        }
+
+        ul.navbar-nav .nav-item .dropdown-menu td {
             text-align: center;
         }
 
