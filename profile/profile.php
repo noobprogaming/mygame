@@ -101,7 +101,7 @@ if($_SESSION['status']!="login"){
 }
 
 include '../koneksi.php';
-$username=$_SESSION['username'];
+$email=$_SESSION['email'];
 include '../sql.php';
 ?>
 
