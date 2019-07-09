@@ -12,7 +12,7 @@
         content="562498474090-rmhpeunoatnlg7lv8b9buije5n0n2r9t.apps.googleusercontent.com">
 
     <title>Punyakita</title>
-    <link rel="icon" type="image/png" href="/assets/img/google.png" />
+    <link rel="icon" type="image/png" href="assets\img\lg.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -125,8 +125,8 @@ if(isset($_GET['msg'])){
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
-        <img src="assets\img\lg.png" height="30px" width="30px">
-            <a class="navbar-brand text-shadow" href="#">Punyakita</a>
+        <img src="assets\img\lg.png" style="height: 30px; width: 30px;">
+            <a class="navbar-brand text-shadow mx-3" href="#">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars text-white"></i>
@@ -442,7 +442,7 @@ if(isset($_GET['msg'])){
         <div class="row" style="margin-right: 0!important;">
             <div class="col-md-4 p5rem" style="height: 300px;">
                 <div class="row">
-                    <img src="assets\img\lg.png" height="125px" width="125px">
+                    <img src="assets\img\lg.png" style="height: 140px; width: 140px;">
                 </div>
                 <div class="row my-3">
                     <div class="sosmed mx-1 my-1">
