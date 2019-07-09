@@ -126,8 +126,8 @@ include '../sql.php';
 
     <div class="row">
         <div class="mx-5 my-5">
-            <p class="gg" style="font-size: 30px;">
-                NEWS CS-GO NEW UPDATE
+            <p class="gg" style="font-size: 50px;">
+                GAME GENRE
             </p>
             <div class="card shadow col-lg-12 mx-auto my-5">
                 <div class="row">

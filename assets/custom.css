@@ -1,11 +1,16 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: my;
     -webkit-transition: 0.2s;
     -webkit-transition-delay: 0.1s;
 }
 
 *:hover {
     transition: 0.2s;
+}
+
+@font-face {
+    font-family: my;
+    src: url("Biko_Regular.otf");
 }
 
 ::-webkit-scrollbar {
@@ -168,9 +173,9 @@
 .sosmed {
     background-color: rgb(201, 201, 201);
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    padding-top: 13px;
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
 }
 
 .sosmed:hover {
@@ -237,7 +242,7 @@ ul.fo-ul a:hover {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     z-index: 10;
-    text-shadow: 1px 1px 2px rgb(19, 19, 19), 0 0 25px rgb(23, 23, 255), 0 0 5px rgb(23, 23, 139);
+    text-shadow: 1px 1px 2px rgb(19, 19, 19), 0 0 25px rgb(255, 23, 23), 0 0 5px rgb(139, 23, 23);
 }
 
 .carousel-indicators li {
@@ -325,13 +330,13 @@ ul.fo-ul a:hover {
     }
 
     .carousel-caption h1 {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: bold;
     }
 
     .carousel-caption p {
         margin-bottom: 3rem;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .carousel-indicators {

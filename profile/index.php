@@ -171,6 +171,7 @@ include '../sql.php';
     </div>
 
     <div class="container-fluid px-5 marketing">
+    <button onclick="myFunction()">Sign Out</button>
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
@@ -441,6 +442,11 @@ include '../sql.php';
 
 </body>
 <script src="google.js"></script>
+<script>
+function myFunction() {
+location.href = 'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://punyakita.tech';
+}
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>

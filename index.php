@@ -125,6 +125,7 @@ if(isset($_GET['msg'])){
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+        <img src="assets\img\lg.png" height="30px" width="30px">
             <a class="navbar-brand text-shadow" href="#">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -201,26 +202,22 @@ if(isset($_GET['msg'])){
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="#">
-                    <img class="img-fluid" src="assets/img/1.jpg" style="position: relative;">
-                    <div class="container ">
+                <img class="img-fluid" src="assets/img/2.jpg">
+                    <div class="container">
                         <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, fdghfghfac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                vehicula ut id elit.</p>
+                            <h1>Anthem: Seperti Istana Pasir!</h1>
+                            <p>Anthem akan meminta Anda berperan menjadi seorang pilot Javelin di tengah dunia yang lore-nya diracik dengan teknologi bernama Anthem of Creation.</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="#">
-                    <img class="img-fluid" src="assets/img/2.jpg">
-                    <div class="container">
+                <img class="img-fluid" src="assets/img/1.jpg" style="position: relative;">
+                    <div class="container ">
                         <div class="carousel-caption text-left">
-                            <h1>Another example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                vehicula ut id elit.</p>
+                            <h1>Metro Exodus: Arah Baru Mengagumkan!</h1>
+                            <p>Metro Exodus tentu saja diposisikan sebagai seri sekuel dari apa yang terjadi di Metro: Last Light.</p>
                         </div>
                     </div>
                 </a>
@@ -260,9 +257,6 @@ if(isset($_GET['msg'])){
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
                         </div>
                     </div>
                 </a>
@@ -275,9 +269,6 @@ if(isset($_GET['msg'])){
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
                         </div>
                     </div>
                 </a>
@@ -291,9 +282,6 @@ if(isset($_GET['msg'])){
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
                         </div>
                     </div>
                 </a>
@@ -306,9 +294,6 @@ if(isset($_GET['msg'])){
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
                         </div>
                     </div>
                 </a>
@@ -457,7 +442,7 @@ if(isset($_GET['msg'])){
         <div class="row" style="margin-right: 0!important;">
             <div class="col-md-4 p5rem" style="height: 300px;">
                 <div class="row">
-                    <h1 class="red">LOGO</h1>
+                    <img src="assets\img\lg.png" height="125px" width="125px">
                 </div>
                 <div class="row my-3">
                     <div class="sosmed mx-1 my-1">
