@@ -36,7 +36,7 @@ if($_SESSION['status']!="login"){
 }
 
 include '../koneksi.php';
-$username=$_SESSION['username'];
+$email=$_SESSION['email'];
 include '../sql.php';
 ?>
 
@@ -102,11 +102,12 @@ include '../sql.php';
                                         <tr>
                                             <td>
                                                 <input type="submit" value="Logout" class="btn btn-sm input-btn w100">
-                                            </td>
+                                                </td>
                                         </tr>
                                     </table>
                                 </div>
                             </form>
+                            <button onclick="signOut();" class="g-signin2">G-SignOut</button>
                         </div>
                     </li>
                 </ul>
@@ -439,6 +440,7 @@ include '../sql.php';
     </footer>
 
 </body>
+<script src="google.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>

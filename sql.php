@@ -1,5 +1,4 @@
 <?php
-
     $sql_user = ("
     SELECT user.id, name, password, gender, email, birth, joined, rig.id_cpu, rig.id_vga, rig.id_ram, rig.id_ssd, rig.id_hdd, rig.id_psu, rig.id_kb, rig.id_mouse, cpu.name_cpu, vga.name_vga, ram.name_ram, ssd.name_ssd, hdd.name_hdd, psu.name_psu, kb.name_kb, mouse.name_mouse 
     FROM user 
@@ -11,7 +10,7 @@
         INNER JOIN hdd ON hdd.id_hdd=rig.id_hdd
         INNER JOIN psu ON psu.id_psu=rig.id_psu
         INNER JOIN kb ON kb.id_kb=rig.id_kb
-        INNER JOIN mouse ON mouse.id_mouse=rig.id_mouse WHERE rig.id='$username';
+        INNER JOIN mouse ON mouse.id_mouse=rig.id_mouse WHERE user.email='$email';
     ");
     $sql_age = ("
     SELECT DATEDIFF((SELECT CURDATE()), (SELECT birth FROM user WHERE id='alvin'))/365 AS age;

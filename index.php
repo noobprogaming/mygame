@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google-signin-scope" content="profile email">
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id"
         content="562498474090-rmhpeunoatnlg7lv8b9buije5n0n2r9t.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
     <title>Punyakita</title>
     <link rel="icon" type="image/png" href="/assets/img/google.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="assets/custom.css">
+
     <style>
         table,
         td {
@@ -41,6 +44,21 @@
             width: 50%;
             margin-left: 0 auto;
             margin-right: 0 auto;
+        }
+
+        .alert {
+            animation-name: fadeInOpacity;
+            animation-duration: 0.2s;
+        }
+
+        @keyframes fadeInOpacity {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -79,6 +97,32 @@ if(isset($_GET['msg'])){
     }
 }
 ?>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <button onclick="signOut();" class="btn btn-danger">Sign out</button>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
             <a class="navbar-brand text-shadow" href="#">Punyakita</a>
@@ -107,8 +151,7 @@ if(isset($_GET['msg'])){
                                             <td>
                                                 <div class="inner-addon inner-addon-tall">
                                                     <i class="fa fa-user"></i>
-                                                    <input type="text" name="username" placeholder="ID" id="uname"
-                                                        class="input-text">
+                                                    <input type="text" name="email" placeholder="Email" class="input-text">
                                                 </div>
                                             </td>
                                         </tr>
@@ -205,6 +248,9 @@ if(isset($_GET['msg'])){
     </div>
 
     <div class="container-fluid px-5 marketing">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Open modal
+        </button>
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
@@ -474,31 +520,7 @@ if(isset($_GET['msg'])){
     </footer>
 
 </body>
-<script>
-    function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        
-        var profile = googleUser.getBasicProfile();
-        document.write('Full Name: ' + profile.getName());
-        document.write('Given Name: ' + profile.getGivenName());
-        document.write('Family Name: ' + profile.getFamilyName());
-        document.write("Image URL: " + profile.getImageUrl());
-        document.write("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        document.write("ID Token: " + id_token);
-    }
-    
-    function alert() {
-        setTimeout(function () {
-            $('#myalert').hide();
-        }, 5000);
-    }
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
+<script src="google.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

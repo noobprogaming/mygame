@@ -38,7 +38,7 @@
                 <td>
                     <div class="inner-addon inner-addon-tall">
                         <i class="fa fa-user"></i>
-                        <input type="text" name="username" placeholder="ID" id="uname" class="input-text">
+                        <input type="text" name="email" placeholder="Email" id="uname" class="input-text">
                     </div>
                 </td>
             </tr>

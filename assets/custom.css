@@ -41,6 +41,11 @@
     color: rgb(255, 255, 255);
 }
 
+.img-profile:hover {
+    filter: brightness(130%);
+    transform: scale(1.05, 1.05);
+}
+
 .btn-menu {
     display: inline;
     border: 0;

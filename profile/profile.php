@@ -76,10 +76,6 @@
             border-color: black;
         }
 
-        .input-file:active::before {
-            background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
-        }
-
         .gg {
             color: rgb(255, 23, 23);
             font-size: 26px;
@@ -194,7 +190,7 @@ include '../sql.php';
 
                 <div class="row col-lg-12" id="1">
                     <div class="col-lg-5">
-                        <table border="1">
+                        <table>
                             <tr>
                                 <td colspan="4" align="center">
                                     <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
@@ -233,8 +229,13 @@ include '../sql.php';
                                 <td colspan="2"><?php echo $u_joined; ?></td>
                             </tr>
                         </table>
+                        <hr class="featurette-divider">
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-2">
+                        <hr class="featurette-divider" style="transform: rotate(90deg);">
+                    </div>
+                    <div class="col-lg-5">
+
                         <table>
                             <tr>
                                 <td>Processor</td>
