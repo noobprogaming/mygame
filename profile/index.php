@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id"
+        content="562498474090-rmhpeunoatnlg7lv8b9buije5n0n2r9t.apps.googleusercontent.com">
+
     <title>Punyakita</title>
-    <link rel="icon" type="image/png" href="../assets/img/google.png" />
+    <link rel="icon" type="image/png" href="../assets/img/lg.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -18,10 +24,11 @@
             padding: 5px;
             text-align: center;
         }
-        
+
         .dd {
             color: rgb(255, 255, 255);
         }
+
         .dd:hover {
             color: rgb(255, 23, 23);
         }
@@ -41,8 +48,9 @@ include '../sql.php';
 ?>
 
     <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
-            <a class="navbar-brand text-shadow" href="index.php">Punyakita</a>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+            <img src="../assets/img/lg.png" style="height: 30px; width: 30px;">
+            <a class="navbar-brand text-shadow mx-3" href="index.php">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars text-white"></i>
@@ -86,8 +94,8 @@ include '../sql.php';
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
-                                                    <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
-                                                        alt="Tidak ada foto" class="img-profile">
+                                                    <img src="<?php echo $u_pp; ?>" alt="Tidak ada foto"
+                                                        class="img-profile">
                                                 </a>
                                             </td>
                                         </tr>
@@ -101,13 +109,14 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" class="btn btn-sm input-btn w100">
-                                                </td>
+                                                <input type="submit" value="Logout"
+                                                    class="btn btn-sm input-btn w100"><button onclick="signOut();"
+                                                    class="g-signin2">G-SignOut</button>
+                                            </td>
                                         </tr>
                                     </table>
                                 </div>
                             </form>
-                            <button onclick="signOut();" class="g-signin2">G-SignOut</button>
                         </div>
                     </li>
                 </ul>
@@ -171,7 +180,9 @@ include '../sql.php';
     </div>
 
     <div class="container-fluid px-5 marketing">
-    <button onclick="myFunction()">Sign Out</button>
+        <?php echo $email ?>
+        <button onclick="myFunction()">Sign Out</button>
+        <?php echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'; ?>
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
@@ -362,10 +373,10 @@ include '../sql.php';
                         </div>
                     </a>
                 </div>
-                
+
             </div>
 
-            
+
 
         </div>
 
@@ -378,7 +389,7 @@ include '../sql.php';
         <div class="row" style="margin-right: 0!important;">
             <div class="col-md-4 p5rem" style="height: 300px;">
                 <div class="row">
-                    <h1 class="red">LOGO</h1>
+                    <img src="../assets/img/lg.png" style="height: 140px; width: 140px;">
                 </div>
                 <div class="row my-3">
                     <div class="sosmed mx-1 my-1">
@@ -441,11 +452,12 @@ include '../sql.php';
     </footer>
 
 </body>
-<script src="google.js"></script>
+<script src="../assets/custom.js"></script>
 <script>
-function myFunction() {
-location.href = 'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://punyakita.tech';
-}
+    function myFunction() {
+        location.href =
+            'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://punyakita.tech';
+    }
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

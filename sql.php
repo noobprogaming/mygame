@@ -1,6 +1,6 @@
 <?php
     $sql_user = ("
-    SELECT user.id, name, password, gender, email, birth, joined, rig.id_cpu, rig.id_vga, rig.id_ram, rig.id_ssd, rig.id_hdd, rig.id_psu, rig.id_kb, rig.id_mouse, cpu.name_cpu, vga.name_vga, ram.name_ram, ssd.name_ssd, hdd.name_hdd, psu.name_psu, kb.name_kb, mouse.name_mouse 
+    SELECT user.id, name, password, gender, email, birth, joined, pp, rig.id_cpu, rig.id_vga, rig.id_ram, rig.id_ssd, rig.id_hdd, rig.id_psu, rig.id_kb, rig.id_mouse, cpu.name_cpu, vga.name_vga, ram.name_ram, ssd.name_ssd, hdd.name_hdd, psu.name_psu, kb.name_kb, mouse.name_mouse 
     FROM user 
         INNER JOIN rig ON rig.id=user.id
         INNER JOIN cpu ON cpu.id_cpu=rig.id_cpu
@@ -48,6 +48,7 @@
         $u_email = $row ['email'];
         $u_birth = $row ['birth'];
         $u_joined = $row ['joined'];
+        $u_pp = $row ['pp'];
         $u_idcpu = $row ['id_cpu'];
         $u_idvga = $row ['id_vga'];
         $u_idram = $row ['id_ram'];
