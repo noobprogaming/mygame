@@ -100,7 +100,7 @@
 </head>
 
 <body onload="profile()">
-    <?php 
+<?php 
 session_start();
 if($_SESSION['status']!="login"){
 	header("location:../index.php?msg=warning");
@@ -190,6 +190,7 @@ include '../sql.php';
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
                 PROFILE
+                <?php echo $u_pp ?>
             </p>
         </div>
         <div class="card shadow col-lg-11 mx-auto">

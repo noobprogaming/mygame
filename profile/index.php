@@ -35,7 +35,7 @@
     </style>
 </head>
 
-<body onload="time()">
+<body>
     <?php 
 session_start();
 if($_SESSION['status']!="login"){
@@ -180,9 +180,6 @@ include '../sql.php';
     </div>
 
     <div class="container-fluid px-5 marketing">
-        <?php echo $email ?>
-        <button onclick="myFunction()">Sign Out</button>
-        <?php echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'; ?>
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
