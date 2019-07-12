@@ -209,7 +209,7 @@ include '../sql.php';
                                 lama hingga para kru berupaya bergerak ke sana, lengkap dengan semua tantangan yang ada. Misi utamanya tentu 
                                 saja, mencari “rumah baru” untuk Artyom, Anna, dan para Spartans yang percaya pada mereka.
 
-                                Misi untuk mencari sebuah rumah baru pun dimulai.
+                                Misi untuk mencari sebuah rumah baru pun akhirnya dimulai.
 
 
                                 </p>
