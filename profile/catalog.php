@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id"
+        content="562498474090-rmhpeunoatnlg7lv8b9buije5n0n2r9t.apps.googleusercontent.com">
+
     <title>Punyakita</title>
-    <link rel="icon" type="image/png" href="../assets/img/google.png" />
+    <link rel="icon" type="image/png" href="../assets/img/lg.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -43,7 +49,8 @@ include '../sql.php';
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
-            <a class="navbar-brand text-shadow" href="index.php">Punyakita</a>
+            <img src="../assets/img/lg.png" style="height: 30px; width: 30px;">
+            <a class="navbar-brand text-shadow mx-3" href="index.php">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars text-white"></i>
@@ -87,7 +94,7 @@ include '../sql.php';
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
-                                                    <img src="../assets/img/photo/<?php echo $u_id.'.jpg'; ?>"
+                                                    <img src="<?php echo $u_pp; ?>"
                                                         alt="Tidak ada foto" class="img-profile">
                                                 </a>
                                             </td>
@@ -102,7 +109,7 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" class="btn btn-sm input-btn w100">
+                                                <input type="submit" value="Logout" class="btn btn-sm input-btn w100"><button onclick="signOut();" class="g-signin2">G-SignOut</button>
                                             </td>
                                         </tr>
                                     </table>
@@ -357,7 +364,7 @@ include '../sql.php';
         <div class="row" style="margin-right: 0!important;">
             <div class="col-md-4 p5rem" style="height: 300px;">
                 <div class="row">
-                    <h1 class="red">LOGO</h1>
+                    <img src="../assets/img/lg.png" style="height: 140px; width: 140px;">
                 </div>
                 <div class="row my-3">
                     <div class="sosmed mx-1 my-1">

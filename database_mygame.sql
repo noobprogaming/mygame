@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 03, 2019 at 02:32 PM
--- Server version: 10.2.23-MariaDB
--- PHP Version: 7.2.18
+-- Waktu pembuatan: 11 Jul 2019 pada 05.21
+-- Versi server: 10.2.23-MariaDB
+-- Versi PHP: 7.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cpu`
+-- Struktur dari tabel `cpu`
 --
 
 CREATE TABLE `cpu` (
@@ -34,7 +34,7 @@ CREATE TABLE `cpu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `cpu`
+-- Dumping data untuk tabel `cpu`
 --
 
 INSERT INTO `cpu` (`id_cpu`, `name_cpu`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `cpu` (`id_cpu`, `name_cpu`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `game`
+-- Struktur dari tabel `game`
 --
 
 CREATE TABLE `game` (
@@ -62,7 +62,7 @@ CREATE TABLE `game` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `game`
+-- Dumping data untuk tabel `game`
 --
 
 INSERT INTO `game` (`id_game`, `name_game`, `min_cpu`, `min_vga`, `min_ram`, `rec_cpu`, `rec_vga`, `rec_ram`, `rec_storage`) VALUES
@@ -71,7 +71,7 @@ INSERT INTO `game` (`id_game`, `name_game`, `min_cpu`, `min_vga`, `min_ram`, `re
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hdd`
+-- Struktur dari tabel `hdd`
 --
 
 CREATE TABLE `hdd` (
@@ -80,7 +80,7 @@ CREATE TABLE `hdd` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `hdd`
+-- Dumping data untuk tabel `hdd`
 --
 
 INSERT INTO `hdd` (`id_hdd`, `name_hdd`) VALUES
@@ -89,7 +89,7 @@ INSERT INTO `hdd` (`id_hdd`, `name_hdd`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kb`
+-- Struktur dari tabel `kb`
 --
 
 CREATE TABLE `kb` (
@@ -98,7 +98,7 @@ CREATE TABLE `kb` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kb`
+-- Dumping data untuk tabel `kb`
 --
 
 INSERT INTO `kb` (`id_kb`, `name_kb`) VALUES
@@ -107,7 +107,7 @@ INSERT INTO `kb` (`id_kb`, `name_kb`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mouse`
+-- Struktur dari tabel `mouse`
 --
 
 CREATE TABLE `mouse` (
@@ -116,7 +116,7 @@ CREATE TABLE `mouse` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mouse`
+-- Dumping data untuk tabel `mouse`
 --
 
 INSERT INTO `mouse` (`id_mouse`, `name_mouse`) VALUES
@@ -125,7 +125,7 @@ INSERT INTO `mouse` (`id_mouse`, `name_mouse`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `psu`
+-- Struktur dari tabel `psu`
 --
 
 CREATE TABLE `psu` (
@@ -134,7 +134,7 @@ CREATE TABLE `psu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `psu`
+-- Dumping data untuk tabel `psu`
 --
 
 INSERT INTO `psu` (`id_psu`, `name_psu`) VALUES
@@ -143,7 +143,7 @@ INSERT INTO `psu` (`id_psu`, `name_psu`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ram`
+-- Struktur dari tabel `ram`
 --
 
 CREATE TABLE `ram` (
@@ -152,7 +152,7 @@ CREATE TABLE `ram` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ram`
+-- Dumping data untuk tabel `ram`
 --
 
 INSERT INTO `ram` (`id_ram`, `name_ram`) VALUES
@@ -164,32 +164,34 @@ INSERT INTO `ram` (`id_ram`, `name_ram`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rig`
+-- Struktur dari tabel `rig`
 --
 
 CREATE TABLE `rig` (
-  `id` char(12) NOT NULL,
-  `id_cpu` int(11) DEFAULT NULL,
-  `id_vga` int(11) DEFAULT NULL,
-  `id_ram` int(11) DEFAULT NULL,
-  `id_ssd` int(11) DEFAULT NULL,
-  `id_hdd` int(11) DEFAULT NULL,
-  `id_psu` int(11) DEFAULT NULL,
-  `id_kb` int(11) DEFAULT NULL,
-  `id_mouse` int(11) DEFAULT NULL
+  `id` char(21) NOT NULL,
+  `id_cpu` int(11) DEFAULT 1,
+  `id_vga` int(11) DEFAULT 1,
+  `id_ram` int(11) DEFAULT 1,
+  `id_ssd` int(11) DEFAULT 60,
+  `id_hdd` int(11) DEFAULT 60,
+  `id_psu` int(11) DEFAULT 1,
+  `id_kb` int(11) DEFAULT 1,
+  `id_mouse` int(11) DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `rig`
+-- Dumping data untuk tabel `rig`
 --
 
 INSERT INTO `rig` (`id`, `id_cpu`, `id_vga`, `id_ram`, `id_ssd`, `id_hdd`, `id_psu`, `id_kb`, `id_mouse`) VALUES
-('alvin', 4, 4, 4, 60, 60, 1, 1, 1);
+('alvin', 4, 2, 4, 60, 60, 1, 1, 1),
+('107689815419695513268', 1, 1, 1, 60, 60, 1, 1, 1),
+('115870629020183890718', 1, 1, 1, 60, 60, 1, 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ssd`
+-- Struktur dari tabel `ssd`
 --
 
 CREATE TABLE `ssd` (
@@ -198,7 +200,7 @@ CREATE TABLE `ssd` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ssd`
+-- Dumping data untuk tabel `ssd`
 --
 
 INSERT INTO `ssd` (`id_ssd`, `name_ssd`) VALUES
@@ -207,30 +209,33 @@ INSERT INTO `ssd` (`id_ssd`, `name_ssd`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
-  `id` char(12) NOT NULL,
+  `id` char(21) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `gender` char(1) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `birth` date DEFAULT NULL,
-  `joined` date DEFAULT NULL
+  `joined` date DEFAULT NULL,
+  `pp` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
-INSERT INTO `user` (`id`, `name`, `password`, `gender`, `email`, `birth`, `joined`) VALUES
-('alvin', 'Alvin Bintang', 'alvin', 'l', 'alvinbintang@punyakita.tech', '2019-05-01', '2019-05-14');
+INSERT INTO `user` (`id`, `name`, `password`, `gender`, `email`, `birth`, `joined`, `pp`) VALUES
+('107689815419695513268', '', NULL, NULL, 'alvin.1157@students.amikom.ac.id', NULL, '2019-07-11', 'https://lh5.googleusercontent.com/-17K7hkI2XEA/AAAAAAAAAAI/AAAAAAAAABU/sE2UcGuUZ4c/s96-c/photo.jpg'),
+('115870629020183890718', 'aurel lintang', NULL, NULL, 'aurellintang@gmail.com', NULL, '2019-07-11', 'https://lh5.googleusercontent.com/-OP3w0fCCq6g/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcBUCO2LDILi_nmX9Oqx9lriRHR_w/s96-c/photo.jpg'),
+('alvin', 'Alvin Bintang R', 'alvin', 'l', 'alvinbintang@punyakita.tech', '1999-03-02', '2019-05-14', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `vga`
+-- Struktur dari tabel `vga`
 --
 
 CREATE TABLE `vga` (
@@ -239,7 +244,7 @@ CREATE TABLE `vga` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `vga`
+-- Dumping data untuk tabel `vga`
 --
 
 INSERT INTO `vga` (`id_vga`, `name_vga`) VALUES
@@ -253,71 +258,71 @@ INSERT INTO `vga` (`id_vga`, `name_vga`) VALUES
 --
 
 --
--- Indexes for table `cpu`
+-- Indeks untuk tabel `cpu`
 --
 ALTER TABLE `cpu`
   ADD PRIMARY KEY (`id_cpu`);
 
 --
--- Indexes for table `game`
+-- Indeks untuk tabel `game`
 --
 ALTER TABLE `game`
   ADD PRIMARY KEY (`id_game`);
 
 --
--- Indexes for table `hdd`
+-- Indeks untuk tabel `hdd`
 --
 ALTER TABLE `hdd`
   ADD PRIMARY KEY (`id_hdd`);
 
 --
--- Indexes for table `kb`
+-- Indeks untuk tabel `kb`
 --
 ALTER TABLE `kb`
   ADD PRIMARY KEY (`id_kb`);
 
 --
--- Indexes for table `mouse`
+-- Indeks untuk tabel `mouse`
 --
 ALTER TABLE `mouse`
   ADD PRIMARY KEY (`id_mouse`);
 
 --
--- Indexes for table `psu`
+-- Indeks untuk tabel `psu`
 --
 ALTER TABLE `psu`
   ADD PRIMARY KEY (`id_psu`);
 
 --
--- Indexes for table `ram`
+-- Indeks untuk tabel `ram`
 --
 ALTER TABLE `ram`
   ADD PRIMARY KEY (`id_ram`);
 
 --
--- Indexes for table `ssd`
+-- Indeks untuk tabel `ssd`
 --
 ALTER TABLE `ssd`
   ADD PRIMARY KEY (`id_ssd`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `vga`
+-- Indeks untuk tabel `vga`
 --
 ALTER TABLE `vga`
   ADD PRIMARY KEY (`id_vga`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `game`
+-- AUTO_INCREMENT untuk tabel `game`
 --
 ALTER TABLE `game`
   MODIFY `id_game` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;

@@ -24,7 +24,8 @@ function onSignIn(googleUser) {
             data: {
                 id: profile.getId(),
                 name: profile.getName(),
-                email: profile.getEmail()
+                email: profile.getEmail(),
+                pp: profile.getImageUrl()
             }
         }).done(function (data) {
             console.log(data);

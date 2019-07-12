@@ -12,7 +12,7 @@
         content="562498474090-rmhpeunoatnlg7lv8b9buije5n0n2r9t.apps.googleusercontent.com">
 
     <title>Punyakita</title>
-    <link rel="icon" type="image/png" href="assets\img\lg.png" />
+    <link rel="icon" type="image/png" href="assets/img/lg.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -97,24 +97,20 @@ if(isset($_GET['msg'])){
     }
 }
 ?>
-
-    <!-- The Modal -->
+    <!--
     <div class="modal fade" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
 
-                <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title">Modal Heading</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
-                <!-- Modal body -->
                 <div class="modal-body">
                     <button onclick="signOut();" class="btn btn-danger">Sign out</button>
                 </div>
 
-                <!-- Modal footer -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
@@ -123,10 +119,15 @@ if(isset($_GET['msg'])){
         </div>
     </div>
 
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Open modal
+        </button>
+    -->
+
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
-        <img src="assets\img\lg.png" style="height: 30px; width: 30px;">
-            <a class="navbar-brand text-shadow mx-3" href="#">Punyakita</a>
+            <img src="assets/img/lg.png" style="height: 30px; width: 30px;">
+            <a class="navbar-brand text-shadow mx-3" href="index.php">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars text-white"></i>
@@ -145,14 +146,15 @@ if(isset($_GET['msg'])){
                         <a class="nav-link" href="login.php">Akun</a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-content black-soft box-shadow"
                             aria-labelledby="navbarDropdown">
-                            <form action="cek_login.php" method="post">
+                            <form action="sign.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
                                     <table>
                                         <tr>
                                             <td>
                                                 <div class="inner-addon inner-addon-tall">
                                                     <i class="fa fa-user"></i>
-                                                    <input type="text" name="email" placeholder="Email" class="input-text">
+                                                    <input type="text" name="email" placeholder="Email"
+                                                        class="input-text">
                                                 </div>
                                             </td>
                                         </tr>
@@ -202,22 +204,24 @@ if(isset($_GET['msg'])){
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="#">
-                <img class="img-fluid" src="assets/img/2.jpg">
+                    <img class="img-fluid" src="assets/img/2.jpg">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1>Anthem: Seperti Istana Pasir!</h1>
-                            <p>Anthem akan meminta Anda berperan menjadi seorang pilot Javelin di tengah dunia yang lore-nya diracik dengan teknologi bernama Anthem of Creation.</p>
+                            <p>Anthem akan meminta Anda berperan menjadi seorang pilot Javelin di tengah dunia yang
+                                lore-nya diracik dengan teknologi bernama Anthem of Creation.</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="#">
-                <img class="img-fluid" src="assets/img/1.jpg" style="position: relative;">
+                    <img class="img-fluid" src="assets/img/1.jpg" style="position: relative;">
                     <div class="container ">
                         <div class="carousel-caption text-left">
                             <h1>Metro Exodus: Arah Baru Mengagumkan!</h1>
-                            <p>Metro Exodus tentu saja diposisikan sebagai seri sekuel dari apa yang terjadi di Metro: Last Light.</p>
+                            <p>Metro Exodus tentu saja diposisikan sebagai seri sekuel dari apa yang terjadi di Metro:
+                                Last Light.</p>
                         </div>
                     </div>
                 </a>
@@ -245,9 +249,6 @@ if(isset($_GET['msg'])){
     </div>
 
     <div class="container-fluid px-5 marketing">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-            Open modal
-        </button>
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
@@ -442,7 +443,7 @@ if(isset($_GET['msg'])){
         <div class="row" style="margin-right: 0!important;">
             <div class="col-md-4 p5rem" style="height: 300px;">
                 <div class="row">
-                    <img src="assets\img\lg.png" style="height: 140px; width: 140px;">
+                    <img src="assets/img/lg.png" style="height: 140px; width: 140px;">
                 </div>
                 <div class="row my-3">
                     <div class="sosmed mx-1 my-1">
@@ -505,7 +506,7 @@ if(isset($_GET['msg'])){
     </footer>
 
 </body>
-<script src="google.js"></script>
+<script src="/assets/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

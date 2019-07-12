@@ -19,6 +19,7 @@
             padding: 5px;
             text-align: center;
         }
+
         .form-text:hover {
             color: rgb(255, 23, 23);
             text-decoration: none;
@@ -27,11 +28,11 @@
 </head>
 
 <body>
-    <form method="post" action="cek_login.php">
+    <form method="post" action="sign.php">
         <table>
             <tr>
                 <td>
-                    <img src="https://image.flaticon.com/icons/svg/270/270014.svg"; width="150px">
+                    <img src="https://image.flaticon.com/icons/svg/270/270014.svg" ; width="150px">
                 </td>
             </tr>
             <tr>

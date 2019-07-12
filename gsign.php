@@ -1,25 +1,26 @@
 <?php
 	session_start();
 
+	include 'koneksi.php';
+
+	$email = $_POST["email"];
 	$_SESSION["id"] = $_POST["id"];
 	$_SESSION["name"] = $_POST["name"];
 	$_SESSION["email"] = $_POST["email"];
+	$_SESSION["pp"] = $_POST["pp"];
 
-	$mysqli = new mysqli("localhost","u614737895_pk","dev_varokah","u614737895_pk");
-
-	$gsql = "SELECT * FROM user WHERE email='".$_POST["email"]."'";
+	$gsql = "SELECT email FROM user WHERE email='".$_POST["email"]."'";
 	$gresult = $mysqli->query($gsql);
 
 	if(!empty($gresult->fetch_assoc())){
-		$gsql2 = "UPDATE user SET id='".$_POST["id"]."' WHERE email='".$_POST["email"]."'";
+		$gsql2 = "UPDATE user SET id='".$_POST["id"]."', name='".$_POST["name"]."', pp='".$_POST["pp"]."' WHERE email='".$_POST["email"]."'";
 	}else{
-		$gsql2 = "INSERT INTO user (name, email, id) VALUES ('".$_POST["name"]."', '".$_POST["email"]."', '".$_POST["id"]."')";
+		$gsql2 = "INSERT INTO user (id, name, email, pp) VALUES ('".$_POST["id"]."', '".$_POST["name"]."', '".$_POST["email"]."', '".$_POST["pp"]."')";
+		$gsql3 = "INSERT INTO rig VALUES ('".$_POST["id"]."','1','1','1','60','60','1','1','1')";
+		$mysqli->query($gsql3);
 	}
 
 	$mysqli->query($gsql2);
 
-	echo "Updated Successful";
-
-	$_SESSION['email'] = $email;
 	$_SESSION['status'] = "login";
 ?>
