@@ -220,7 +220,7 @@ CREATE TABLE `user` (
   `email` varchar(255) DEFAULT NULL,
   `birth` date DEFAULT NULL,
   `joined` date DEFAULT NULL,
-  `pp` longtext NOT NULL
+  `pp` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
