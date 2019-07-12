@@ -24,20 +24,24 @@
             padding: 5px;
             text-align: center;
         }
+
         .navbar {
             background-color: rgb(19, 19, 19);
             box-shadow: 0 0 1rem rgb(19, 19, 19);
             position: relative;
         }
+
         .gg {
             color: rgb(255, 23, 23);
             font-size: 26px;
             font-weight: bold;
             font-style: italic;
         }
+
         .dd {
             color: white;
         }
+
         .dd:hover {
             color: rgb(255, 23, 23);
         }
@@ -103,8 +107,8 @@ include '../sql.php';
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
-                                                    <img src="<?php echo $u_pp; ?>"
-                                                        alt="Tidak ada foto" class="img-profile">
+                                                    <img src="<?php echo $u_pp; ?>" alt="Tidak ada foto"
+                                                        class="img-profile">
                                                 </a>
                                             </td>
                                         </tr>
@@ -118,7 +122,9 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" class="btn btn-sm input-btn w100"><button onclick="signOut();" class="g-signin2">G-SignOut</button>
+                                                <input type="submit" value="Logout"
+                                                    class="btn btn-sm input-btn w100"><button onclick="signOut();"
+                                                    class="g-signin2">G-SignOut</button>
                                             </td>
                                         </tr>
                                     </table>
@@ -136,7 +142,7 @@ include '../sql.php';
             <p class="gg" style="font-size: 50px;">
                 GAME GENRE
             </p>
-            <div class="card shadow col-lg-12 mx-auto my-5">
+            <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
                         <img class="img-fluid" src="../assets/img/1.jpg">
@@ -148,10 +154,90 @@ include '../sql.php';
                 </div>
             </div>
 
-            <div class="card shadow col-lg-12 mx-auto">
-                
-            </div>
+            <div class="col-lg-12 mx-auto">
+                <div class="row">
+                    <div class="col-lg-8 my-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
+                            </div>
+                            <div class="col-lg-8">
+                                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                                        yourself.</span></h2>
+                                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
+                                    porta
+                                    felis
+                                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                    Fusce
+                                    dapibus,
+                                    tellus ac cursus commodo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 my-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
+                            </div>
+                            <div class="col-lg-8">
+                                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                                        yourself.</span></h2>
+                                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
+                                    porta
+                                    felis
+                                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                    Fusce
+                                    dapibus,
+                                    tellus ac cursus commodo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 my-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
+                            </div>
+                            <div class="col-lg-8">
+                                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                                        yourself.</span></h2>
+                                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
+                                    porta
+                                    felis
+                                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                    Fusce
+                                    dapibus,
+                                    tellus ac cursus commodo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 my-3">
+                                <h4>ARTIKEL</h4>
+                                <hr class="divider">
+                                <p>ARTIKEL</p>
+                                <hr class="divider">
+                                <p>ARTIKEL</p>
+                                <hr class="divider">
+                                <p>ARTIKEL</p>
+                                <hr class="divider">
+                                <p>ARTIKEL</p>
+                                <hr class="divider">
+                                <p>ARTIKEL</p>
+                                <hr class="divider">
+                                <p>ARTIKEL</p>
+                                <hr class="divider">
+                                <p>ARTIKEL</p>
+                                <hr class="divider">
+                                <p>ARTIKEL</p>
+                                <hr class="divider">
+                                <p>ARTIKEL</p>
+                                <hr class="divider">
+                        </div>
+                    </div>
+                </div>
         </div>
+    </div>
+    </div>
+    </div>
     </div>
     </form>
     </div>

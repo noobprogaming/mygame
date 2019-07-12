@@ -190,7 +190,6 @@ include '../sql.php';
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
                 PROFILE
-                <?php echo $u_pp ?>
             </p>
         </div>
         <div class="card shadow col-lg-11 mx-auto">

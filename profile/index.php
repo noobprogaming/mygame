@@ -112,9 +112,8 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout"
-                                                    class="btn btn-sm input-btn w100"><button onclick="signOut();"
-                                                    class="g-signin2">G-SignOut</button>
+                                                <input type="submit" value="Logout" onclick="signOut();"
+                                                    class="btn btn-sm input-btn w100">
                                             </td>
                                         </tr>
                                     </table>
