@@ -217,25 +217,26 @@ include '../sql.php';
                         </div>
                     </div>
                     <div class="col-lg-4 my-3">
-                                <h4>ARTIKEL</h4>
+                                <h4>Artikel</h4>
                                 <hr class="divider">
-                                <p>ARTIKEL</p>
+                                <p class="artikel">Spesifikasi PC untuk Man of Medan</p>
                                 <hr class="divider">
-                                <p>ARTIKEL</p>
+                                <p class="artikel">Spesifikasi PC untuk Code Vein</p>
                                 <hr class="divider">
-                                <p>ARTIKEL</p>
+                                <p class="artikel">Kingdom Under Fire II Tetap Hidup, 
+                                Versi PC Tuju Barat Tahun Ini</p>
                                 <hr class="divider">
-                                <p>ARTIKEL</p>
+                                <p class="artikel">Menjajal DEMO Pamali: Horror Indonesia Potensial!</p>
                                 <hr class="divider">
-                                <p>ARTIKEL</p>
+                                <p class="artikel">Microsoft akan Hadirkan Login Windows 10 Tanpa Password</p>
                                 <hr class="divider">
-                                <p>ARTIKEL</p>
+                                <p class="artikel">Review Cuphead: Kartun untuk Kaum Masokis!</p>
                                 <hr class="divider">
-                                <p>ARTIKEL</p>
+                                <p class="artikel">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
                                 <hr class="divider">
-                                <p>ARTIKEL</p>
+                                <p class="artikel">Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!L</p>
                                 <hr class="divider">
-                                <p>ARTIKEL</p>
+                                <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
                                 <hr class="divider">
                         </div>
                     </div>

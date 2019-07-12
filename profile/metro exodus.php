@@ -45,6 +45,15 @@
         .dd:hover {
             color: rgb(255, 23, 23);
         }
+
+        .artikel {
+            color:rgb(255, 23, 23);
+        }
+
+        .artikel:hover {
+            color:rgb(139, 23, 23);
+            cursor: pointer;
+        }
     </style>
 </head>
 

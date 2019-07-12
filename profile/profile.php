@@ -301,7 +301,12 @@ include '../sql.php';
                                     <td>
                                         <img src="<?php echo $u_pp; ?>"
                                             style="border-radius: 50%; width: 150px; height: 150px;">
-                                        <input type="file" name="pp" accept="image/*" class="input-file">
+                                            <?php
+                                            if($_SESSION['google'] != "true"){
+                                                echo "<input type='file' name='pp' accept='image/*' class='input-file'>";
+                                            }
+                                            ?>
+                                        
                                     </td>
                                 </tr>
                                 <tr>

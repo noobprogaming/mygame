@@ -1,5 +1,5 @@
 * {
-    font-family: my;
+    font-family: my, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-transition: 0.2s;
     -webkit-transition-delay: 0.1s;
 }

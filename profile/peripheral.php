@@ -32,6 +32,15 @@
         .dd:hover {
             color: rgb(255, 23, 23);
         }
+
+        .artikel {
+            color:rgb(255, 23, 23);
+        }
+
+        .artikel:hover {
+            color:rgb(139, 23, 23);
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -233,28 +242,29 @@ include '../sql.php';
         <hr class="featurette-divider">
 
         <div class="row">
-            <div class="col-md-3">
-                <h4>ARTIKEL</h4>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-            </div>
+                                <div class="col-md-3">
+                                <h4>Artikel</h4>
+                                <hr class="divider">
+                                <p class="artikel">Spesifikasi PC untuk Man of Medan</p>
+                                <hr class="divider">
+                                <p class="artikel">Spesifikasi PC untuk Code Vein</p>
+                                <hr class="divider">
+                                <p class="artikel">Kingdom Under Fire II Tetap Hidup, 
+                                Versi PC Tuju Barat Tahun Ini</p>
+                                <hr class="divider">
+                                <p class="artikel">Menjajal DEMO Pamali: Horror Indonesia Potensial!</p>
+                                <hr class="divider">
+                                <p class="artikel">Microsoft akan Hadirkan Login Windows 10 Tanpa Password</p>
+                                <hr class="divider">
+                                <p class="artikel">Review Cuphead: Kartun untuk Kaum Masokis!</p>
+                                <hr class="divider">
+                                <p class="artikel">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
+                                <hr class="divider">
+                                <p class="artikel">Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!L</p>
+                                <hr class="divider">
+                                <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
+                                <hr class="divider">
+                        </div>
             <div class="col-md-6">
                 <div>
                     <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />

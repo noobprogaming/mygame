@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id"
         content="562498474090-rmhpeunoatnlg7lv8b9buije5n0n2r9t.apps.googleusercontent.com">
@@ -31,6 +30,15 @@
 
         .dd:hover {
             color: rgb(255, 23, 23);
+        }
+
+        .artikel {
+            color:rgb(255, 23, 23);
+        }
+
+        .artikel:hover {
+            color:rgb(139, 23, 23);
+            cursor: pointer;
         }
     </style>
 </head>
@@ -114,13 +122,11 @@ include '../sql.php';
                                             <td>
                                                 <input type="submit" value="Logout" onclick="signOut();"
                                                     class="btn btn-sm input-btn w100">
-                                                <button onclick="signOut();">Out
-                                                </button>
-                                                <button onclick="myFunction();">Out
-                                                </button>
+                                                
                                             </td>
                                         </tr>
                                     </table>
+                                    
                                 </div>
                             </form>
                         </div>
@@ -186,6 +192,7 @@ include '../sql.php';
     </div>
 
     <div class="container-fluid px-5 marketing">
+    <button onclick="signOut()">Try it</button>
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
@@ -254,26 +261,27 @@ include '../sql.php';
 
         <div class="row">
             <div class="col-md-3">
-                <h4>ARTIKEL</h4>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
-                <p>ARTIKEL</p>
-                <hr class="divider">
+            <h4>Artikel</h4>
+                                <hr class="divider">
+                                <p class="artikel">Spesifikasi PC untuk Man of Medan</p>
+                                <hr class="divider">
+                                <p class="artikel">Spesifikasi PC untuk Code Vein</p>
+                                <hr class="divider">
+                                <p class="artikel">Kingdom Under Fire II Tetap Hidup, 
+                                Versi PC Tuju Barat Tahun Ini</p>
+                                <hr class="divider">
+                                <p class="artikel">Menjajal DEMO Pamali: Horror Indonesia Potensial!</p>
+                                <hr class="divider">
+                                <p class="artikel">Microsoft akan Hadirkan Login Windows 10 Tanpa Password</p>
+                                <hr class="divider">
+                                <p class="artikel">Review Cuphead: Kartun untuk Kaum Masokis!</p>
+                                <hr class="divider">
+                                <p class="artikel">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
+                                <hr class="divider">
+                                <p class="artikel">Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!L</p>
+                                <hr class="divider">
+                                <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
+                                <hr class="divider">
             </div>
             <div class="col-md-6">
                 <div>
@@ -450,13 +458,9 @@ include '../sql.php';
 
 </body>
 <script src="../assets/custom.js"></script>
-<script>
-    function myFunction() {
-        location.href =
-            'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://punyakita.tech';
-    }
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
