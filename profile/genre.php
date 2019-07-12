@@ -76,20 +76,23 @@ include '../sql.php';
                         <a class="nav-link" href="profile.php">Profile</a>
                     </li>
                     <li class="nav-item active dropdown">
-                        <a class="nav-link" href="game.php">Game</a>
+                        <a class="nav-link">PC</a>
                         <div class="dropdown-menu dropdown-content black-soft box-shadow"
                             aria-labelledby="navbarDropdown">
-                            <div class="px-3 py-1" style="color: white;">
-                                <ul style="list-style: none;">
+                            <div class="px-3 py-1" style="color: rgb(255, 255, 255);">
+                                <ul style="list-style: none; width: 170px;">
+                                    <a href="news.php" style="text-decoration: none;">
+                                        <li class="dd my-3">News</li>
+                                    </a>
                                     <a href="genre.php" style="text-decoration: none;">
-                                        <li class="dd">Genre</li>
+                                        <li class="dd my-3">Game</li>
+                                    </a>
+                                    <a href="peripheral.php" style="text-decoration: none;">
+                                        <li class="dd my-3">Periferal</li>
                                     </a>
                                 </ul>
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="catalog.php">Katalog</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -118,7 +121,12 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" class="btn btn-sm input-btn w100"><button onclick="signOut();" class="g-signin2">G-SignOut</button>
+                                            <input type="submit" value="Logout" onclick="signOut();"
+                                                    class="btn btn-sm input-btn w100">
+                                                <button onclick="signOut();">Out
+                                                </button>
+                                                <button onclick="myFunction();">Out
+                                                </button>
                                             </td>
                                         </tr>
                                     </table>
