@@ -20,7 +20,7 @@ function onSignIn(googleUser) {
     if (profile) {
         $.ajax({
             type: 'POST',
-            url: 'gsign.php',
+            url: '../gsign.php',
             data: {
                 id: profile.getId(),
                 name: profile.getName(),
