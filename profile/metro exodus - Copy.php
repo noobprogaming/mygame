@@ -159,49 +159,49 @@ include '../sql.php';
                     <div class="col-lg-8 my-3">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h2 class="featurette-heading">Review Deus Ex : Mabkind Divided Semakin Semakin sempurna</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/2.jpg" class="img-fluid" /><br>
-                                Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu ruang yang sama, memang sulit untuk membedakan mana yang 
-                                sejatinya sebuah game RPG, mana game action, dan mana sebuah platfomer murni. Ada kecenderungan untuk mengambil elemen-elemen 
-                                terbaik dari masing-masing genre tersebut dan kemudian melahirkan sesuatu yang lebih kompleks, namun tetap punya identitas kuat 
-                                di dalamnya. Bagi para penggemar action RPG, Deus Ex dari Eidos Montreal dan Square Enix memang punya posisi tersendiri di hati. 
-                                Sempat populer di masa lalu, franchise ini seolah berhasil menemukan kembali denyut jantungnya setelah rilis Human Revolution 
-                                yang berhasil secara kualitas dan kuantitas penjualan. Dan kini sang seri sekuel – Deus Ex: Mankind Divided akhirnya tiba.
-                                Anda yang sempat membaca artikel preview kami sebelumnya tentu sudah punya sedikit gambaran soal apa yang ditawarkan game 
-                                yang satu ini. Dari core gameplay yang ada, ia masih menawarkan cita rasa yang sama dengan Human Revolution sebagai basis. 
-                                Implementasi engine terbaru – Dawn Engine memang meninggalkan kesan kualitas visual yang lebih modern dengan peralihan platform 
-                                generasi saat ini. Namun satu yang membuat kami jatuh hati adalah keberhasilan untuk memperbaiki beberapa masalah krusial di seri 
-                                sebelumnya, terutama yang berhubungan dengan keputusan untuk terus memainkan game ini dengan pendekatan non-lethal. Apakah 
-                                impresi pertama yang super positif tersebut berakhir hingga permainan selesai? Ini tentu saja, jadi pertanyaan utamanya.
-                                Lantas, apa yang sebenarnya ditawarkan oleh Deus Ex: Mankind Divided ini? Mengapa kami menyebutnya sebagai game yang semakin 
-                                sempurna? Review ini akan membahasnya lebih dalam untuk Anda!
-                                <img width="500" height="500" src="../assets/img/photo/deus.jpg" class="img-fluid"/>><br>
-                                Deus Ex: Mankind Divided sendiri diposisikan sebagai sebuah seri sekuel langsung dari Human Revolution, seri yang sempat 
-                                dirilis tahun 2011 silam. Dua tahun setelah event di Human Revolution dimana manusia-manusia dengan Augmentasi sempat tak 
-                                terkontrol karena aksi dari sebuah organisasi rahasia bernama Illuminati, manusia mulai mengembangkan rasa takut yang tak 
-                                rasional untuk kelompok yang satu ini. Rasisme tumbuh dan menjadikan manusia dengan augmentasi seperti ini sebagai kelas 
-                                sosial kedua yang pantas untuk dijauhi, dengan sebuah kota yang bahkan dibangun eksklusif untuk memuat mereka.
-                                Namun alih-alih semakin membaik, teror tersebut justru semakin menguat setelah sebuah kelompok teroris berisikan manusia-
-                                manusia dengan augmentasi mulai melancarkan serangan mereka. Tak jelas motif seperti apa yang diusung, tak jelas pula siapa
-                                yang bergerak di belakangnya, namun aksi mereka membuat banyak mereka yang tak berdosa harus meregang nyawa. Adam Jensen 
-                                kini bergabung dengan pasukan anti-teroris bernama Task Force 29 untuk memecahkan kasus yang satu ini. Operasi yang mereka
-                                lakukan di Dubai mengkonfirmasikan bahwa memang, ada kelompok  manusia dengan augmentasi yang terlibat. 
-                                <img width="500" height="500" src="../assets/img/photo/ds ex.jpg" class="img-fluid"/>><br>
-                                Dari siapa dan 
-                                atas kepentingan siapa? Itu jadi salah satu misteri yang harus dijawab Jensen.Terus ditekan karena manusia yang paranoid 
-                                terhadap kemampuan mereka, beberapa manusia augmentasi yang berusaha melawan balik melakukan serangakaian aksi terorisme.
-                                Adam Jensen dipanggil untuk menyelidiki siapa yang sebenarnya bertanggung jawab.Di sisi lain, ia bekerja sebagai seorang 
-                                double agent. Fakta bahwa siapa sebenarnya Illuminati membuat Jensen terlibat dalam sebuah kelompok hacktivist bernama 
-                                Juggernaut Collective yang juga bertanya-tanya soal hal yang sama. Kelompok ini dipimpin oleh seorang hacker tanpa wajah 
-                                bernama Janus yang sepertinya selalu mendapatkan informasi yang dibutuhkan tanpa kesulitan apapun. Jensen pun kini terlibat
-                                 dalam dua kepentingan yang bisa saja saling bertabrakan satu sama lain – usaha untuk menemukan siapa yang bertanggung 
-                                 jawab di rangkaian aksi teror manusia dengan augmentasi yang terjadi dan tentu saja, membongkar siapa itu Illuminati.
-                                Namun di sisi lain, Jensen berfungsi sebagai double agent untuk membongkar Illuminati – pihak yang bertanggung jawab 
-                                atas event dua tahun yang lalu.Berita baiknya? Anda yang tidak pernah mencicipi Deus Ex: Human Revolution tak usah khawatir
-                                 bahwa Anda tak akan mendapatkan esensi cerita yang tentu saja, dibutuhkan untuk menikmati seri sekuel ini. Anda bisa 
-                                 memulai game ini dengan  menonton sebuah video re-cap berdurasi 11 menit yang disediakan oleh Eidos Montreal untuk 
-                                 memberikan secara langsung plot seperti apa yang menjadi basis untuk Mankind Divided ini. Tak perlu lagi harus mencari
-                                  internet hanya untuk mengerti, sebuah  fitur yang tentu saja pantas untuk disambut baik.
+                                <h2 class="featurette-heading">Review Metro Exodus: Arah Baru Mengagumkan!</h2>
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/4.jpg" class="img-fluid" /><br>
+                                Anda yang sudah membaca preview kami sebelumnya sepertinya sudah punya gambaran cukup jelas apa yang ditawarkan dengan 
+                                4A Games untuk seri yang sebenarnya didasarkan pada novel Metro 2035 ini. Ada begitu banyak perubahan signifikan 
+                                disuntikkan dan tentu saja penyempurnaan di sisi presentasi yang terlihat begitu fenomenal, terutama jika Anda 
+                                menggunakan teknologi kartu grafis NVIDIA RTX dan menyalakan fitur Ray-Tracing yang ada. Namun perubahan paling signifikan 
+                                yang paling kami sambut baik adalah kesempatan untuk menjelajahi dunia dan lore Metro yang seharusnya yang kali ini, tidak 
+                                lagi “terkunci” pada terowongan-terowongan gelap. Kesemuanya dibungkus dalam konsep gameplay semi open-world yang kini 
+                                memberikan Anda begitu banyak lokasi menarik untuk dijelajahi.Lantas, apa yang sebenarnya ditawarkan oleh Metro Exodus? 
+                                Mengapa kami menyebutnya sebagai sebuah game dengan arah baru yang mengagumkan? Review ini akan membahasnya lebih dalam 
+                                untuk Anda.<br>
+                                <img width="500" height="500" src="../assets/img/photo/MET.jpg" class="img-fluid"/>><br>
+                                Anda kembali berperan sebagai Artyom – yang mengikuti “Good Ending” di Last Light yang canon, hidup dan punya ambisi 
+                                yang baru.Metro Exodus tentu saja diposisikan sebagai seri sekuel dari apa yang terjadi di Metro: Last Light. Jika 
+                                Anda termasuk gamer yang mendapatkan bad ending di seri sebelumnya, sebuah seri sekuel tentu saja terdengar mustahil
+                                mengingat sosok Artyom – sang karakter utama tewas di ending tersebut. Namun ending yang dihitung sebagai canon adalah
+                                good ending, dimana Artyom berhasil selamat dari konflik seri sebelumnya dan kini kembali di Exodus untuk melanjutkan
+                                petualangannya.Seperti nama yang ia usung, Exodus berfokus tidak lagi pada terowongan kereta bawah tanah Moscow yang
+                                menjadi basis dunia untuk 2033 dan Last Light. Setelah apa yang terjadi di seri sebelumnya, Artyom menjadi sangat
+                                terobsesi untuk membuktikan pada penduduk Moscow yang tinggal di Metro bahwa mereka bukan satu-satunya yang selamat
+                                dari kiamat kecil yang terjadi. Bahwa ada komunitas di luar sana yang masih hidup, tumbuh, dan berkembang. Mimpi
+                                tersebut terus ia kejar dengan terus mengeksplorasi dunia luar dan berupaya mencari bukti yang memang mendukung
+                                teorinya tersebut. Hingga pada akhirnya, sebuah bukti yang ia butuhkan akhirnya tiba.
+ 
+                                <img width="500" height="500" src="../assets/img/photo/troex.jpg" class="img-fluid"/>><br>
+                                Penelusuran menemukan sebuah kereta api aktif yang sempat memuat tawanan dari luar kota Moscow di dalamnya.
+                                Dalam misi ekspedisinya bersama dengan sang istri – Anna, Artyom tiba-tiba menemukan sebuah kereta api yang 
+                                berjalan aktif melintasi rel. Bersama dengannya adalah para tawanan yang mengaku bahwa mereka semua datang 
+                                dari luar Moscow. Pertempuran besar melawan kelompok penawan ternyata membuka fakta bahwa satu-satunya alasan 
+                                Moscow begitu “sunyi” dari interfensi sinyal luar bukan karena tidak adanya lagi kehidupan di luar sana, 
+                                tetapi karena pelacak sinyal yang pada akhirnya berhasil dihancurkan oleh Artyom. Bersama dengannya, mereka 
+                                juga berhasil mengamankan sang kereta api yang mereka beri nama “Aurora”.Pasukan Spartans yang sempat 
+                                diperintahkan untuk mengamankan kembali Aurora dan menahan Artyom serta Anna kini menjadi salah satu kelompok 
+                                baru yang matanya terbuka. Setelah memikirkan matang langkah mereka selanjutnya, kesemuanya setuju bahwa langkah
+                                logis terbaik yang bisa mereka tempuh saat ini adalah dengan membawa Aurora ke wilayah yang lain, mencari 
+                                mereka yang berhasil selamat. Apalagi sinyal radio yang mereka terima juga memberi sinyal bahwa  setidaknya ada
+                                satu lokasi militer yang sepertinya selamat. Sebuah tempat bernama Moscow Defense Command sepertinya masih 
+                                aktif dan meminta mereka yang berhasil selamat untuk berkumpul dan berkoordinasi di sana. Tidak perlu menunggu
+                                lama hingga para kru berupaya bergerak ke sana, lengkap dengan semua tantangan yang ada. Misi utamanya tentu 
+                                saja, mencari “rumah baru” untuk Artyom, Anna, dan para Spartans yang percaya pada mereka.
+
+                                Misi untuk mencari sebuah rumah baru pun dimulai.
+
 
                                 </p>
                             </div>
