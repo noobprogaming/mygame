@@ -275,11 +275,9 @@ include '../sql.php';
             <div class="col-md-6">
                 <div>
                     <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                            mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">Review Metro Exodus:  <span class="text-muted">Arah Baru Mengagumkan!</span></h2>
+                    <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang lebih banyak didominasi soal 
+                        kebijakan publishing aneh yang diambil oleh Koch Media dan Deep Silver.</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -307,17 +305,13 @@ include '../sql.php';
             <div class="col-md-9">
                 <div class="row featurette">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
-                                your
-                                mind.</span></h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
-                            felis
-                            euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
-                            dapibus,
-                            tellus ac cursus commodo.</p>
+                        <h2 class="featurette-heading">Review Anthem: <span class="text-muted">Frostbite Engine di Game Open-World</span></h2>
+                        <p class="lead">Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
+                            Gamer mana yang belum pernah mendengar nama Frostbite Engine sebelumnya? Engine racikan DICE tersebut kini memang menjadi basis untuk hampir semua 
+                            game yang diracik oleh EA, terlepas dari genre apapun yang mereka usung. </p>
                     </div>
                     <div class="col-md-5">
-                        <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
+                        <img width="500" height="500" src="../assets\img\photo\8.jpg" class="img-fluid" />
                     </div>
                 </div>
 
