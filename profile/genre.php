@@ -134,7 +134,7 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                GAME GENRE
+                GAME
             </p>
         </div>
         <div class="card shadow col-lg-11 mx-auto">
@@ -145,7 +145,8 @@ include '../sql.php';
                                 POPULAR
                             </p>
                         </div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/Game/popular/p1.jpg" />
+                        <b>Apex Legend</b>
                     </div>
                     <div class="col-lg-3 px-5 py-3">
                         <div class="card-body">
@@ -153,7 +154,8 @@ include '../sql.php';
                                 TOP 5 FPS
                             </p>
                         </div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/Game/fps/f1.jpg" />
+                        <b>CS : GO</b>
                     </div>
                     <div class="col-lg-3 px-5 py-3">
                         <div class="card-body">
@@ -161,7 +163,8 @@ include '../sql.php';
                                 TOP 5 RPG
                             </p>
                         </div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/Game/rpg/r1.jpg" />
+                        <b>Dota 2</b>
                     </div>
                     <div class="col-lg-3 px-5 py-3">
                         <div class="card-body">
@@ -169,7 +172,8 @@ include '../sql.php';
                                 TOP 5 RACING
                             </p>
                         </div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/Game/racing/a1.jpg" />
+                        <b>Forza Horizon 4</b>
                     </div>
                 </div>
                 <div class="row">
@@ -178,28 +182,134 @@ include '../sql.php';
                             <p class="card-text gg">
                             </p>
                         </div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/Game/popular/p2.jpg" />
+                        <b>Fornite</b>
                     </div>
                     <div class="col-lg-3 px-5 py-3">
                         <div class="card-body">
                             <p class="card-text gg">
                             </p>
                         </div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/Game/fps/f2.jpg" />
+                        <b>Fornite</b>
                     </div>
                     <div class="col-lg-3 px-5 py-3">
                         <div class="card-body">
                             <p class="card-text gg">
                             </p>
                         </div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/Game/rpg/r2.jpg" />
+                        <b>GTA V</b>
                     </div>
                     <div class="col-lg-3 px-5 py-3">
                         <div class="card-body">
                             <p class="card-text gg">
                             </p>
                         </div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" />
+                        <img width="100%" height="140" src="../assets/img/Game/racing/a2.jpg" />
+                        <b>Dirty Rally 2.0</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/popular/p3.jpg" />
+                        <b>PUBG</b>
+                    </div>
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/fps/f3.jpg" />
+                        <b>PUBG</b>
+                    </div>
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/rpg/r3.jpg" />
+                        <b>The Witcher 3</b>
+                    </div>
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/racing/a3.jpg" />
+                        <b>F1 2019</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/popular/p4.jpg" />
+                        <b>GTA V</b>
+                    </div>
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/fps/f4.jpg" />
+                        <b>Apex Legend</b>
+                    </div>
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/rpg/r4.jpg" />
+                        <b>Assassin's Creed Odyssey</b>
+                    </div>
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/racing/a4.jpg" />
+                        <b>The Crew</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/popular/p5.jpg" />
+                        <b>The Witcher 3</b>
+                    </div>
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/fps/f5.png" />
+                        <b>Overwatch</b>
+                    </div>
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/rpg/r5.jpg" />
+                        <b>Persona 5</b>
+                    </div>
+                    <div class="col-lg-3 px-5 py-3">
+                        <div class="card-body">
+                            <p class="card-text gg">
+                            </p>
+                        </div>
+                        <img width="100%" height="140" src="../assets/img/Game/racing/a5.jpg" />
+                        <b>Project Cars 2</b>
                     </div>
                 </div>
 
