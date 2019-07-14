@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id"
         content="562498474090-rmhpeunoatnlg7lv8b9buije5n0n2r9t.apps.googleusercontent.com">
@@ -17,86 +16,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="../assets/custom.css">
-    <style>
-        table,
-        td {
-            margin: 0 auto;
-            padding: 5px;
-        }
-
-        ul.navbar-nav .nav-item .dropdown-menu td {
-            text-align: center;
-        }
-
-        /* Style the tab */
-        .tab {
-            overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-        }
-
-        /* Style the buttons that are used to open the tab content */
-        .tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-            background-color: #ddd;
-        }
-
-        .navbar {
-            background-color: rgb(19, 19, 19);
-            box-shadow: 0 0 1rem rgb(19, 19, 19);
-            position: relative;
-        }
-
-        input[type='file'] {
-            color: transparent;
-        }
-
-        .input-file::-webkit-file-upload-button {
-            width: 0px;
-            visibility: hidden;
-        }
-
-        .input-file::before {
-            content: 'Pilih fotomu';
-            border: 1px solid #999;
-            border-radius: 0.1rem;
-            padding: 5px 8px;
-            cursor: pointer;
-            text-shadow: 1px 1px #fff;
-            font-weight: 700;
-            font-size: 10pt;
-            color: black;
-        }
-
-        .input-file:hover::before {
-            border-color: black;
-        }
-
-        .gg {
-            color: rgb(255, 23, 23);
-            font-size: 26px;
-            font-weight: bold;
-            font-style: italic;
-        }
-
-        .dd {
-            color: white;
-        }
-
-        .dd:hover {
-            color: rgb(255, 23, 23);
-        }
-    </style>
 </head>
 
 <body onload="profile()">
@@ -113,7 +32,7 @@ include '../sql.php';
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
-            <img src="../assets/img/lg.png" style="height: 30px; width: 30px;">
+            <img src="../assets/img/lg.png" class="logo logo-small">
             <a class="navbar-brand text-shadow mx-3" href="index.php">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -149,6 +68,12 @@ include '../sql.php';
                             </div>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <div class="search-box">
+                            <input type="text" autocomplete="off" placeholder="Cari . . " />
+                            <div class="result"></div>
+                        </div>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item dropdown">
@@ -157,7 +82,7 @@ include '../sql.php';
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
-                                    <table>
+                                    <table align="center">
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
@@ -173,18 +98,13 @@ include '../sql.php';
                                                 </a>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td>
-                                            <input type="submit" value="Logout" onclick="signOut();"
+                                                <input type="submit" value="Logout" onclick="signOut();"
                                                     class="btn btn-sm input-btn w100">
-                                                <button onclick="signOut();">Out
-                                                </button>
-                                                <button onclick="myFunction();">Out
-                                                </button>
                                             </td>
                                         </tr>
-                                    </table>
+                                    </table>                                    
                                 </div>
                             </form>
                         </div>
@@ -244,7 +164,7 @@ include '../sql.php';
                                 <td colspan="2"><?php echo $u_joined; ?></td>
                             </tr>
                         </table>
-                        <hr>
+                        <hr class="my-5">
                     </div>
                     <div class="col-lg-2">
                         <hr class="featurette-divider" style="transform: rotate(90deg);">
@@ -353,12 +273,14 @@ include '../sql.php';
                                 <tr>
                                     <td>Jenis Kelamin</td>
                                     <td>
-                                        <div class="inner-addon left-addon inner-addon-tall">
+                                        <div style="float: left;">
                                             <label class="rdb">Laki-laki
                                                 <input type="radio" id="l" name="gender" value="l"
                                                     <?php if ($u_gender == 'l') { echo ' checked="checked"'; } ?>>
                                                 <span class="rdb-check"></span>
                                             </label>
+                                            </div>
+                                            <div style="display: inline-block">
                                             <label class="rdb">Perempuan
                                                 <input type="radio" id="p" name="gender" value="p"
                                                     <?php if ($u_gender == 'p') { echo ' checked="checked"'; } ?>>
@@ -555,7 +477,7 @@ include '../sql.php';
         <div class="row" style="margin-right: 0!important;">
             <div class="col-md-4 p5rem" style="height: 300px;">
                 <div class="row">
-                    <img src="../assets/img/lg.png" style="height: 140px; width: 140px;">
+                    <img src="../assets/img/lg.png" class="logo logo-big">
                 </div>
                 <div class="row my-3">
                     <div class="sosmed mx-1 my-1">
@@ -654,15 +576,13 @@ include '../sql.php';
         });
     }
 </script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="../assets/custom.js"></script>
+<script src="../assets/search.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
-
 </html>

@@ -1,3 +1,5 @@
+/* SignIn Google */
+
 function onSignIn(googleUser) {
     /*
     // Useful data for your client-side scripts:
@@ -36,7 +38,9 @@ function onSignIn(googleUser) {
     }
 }
 
+/* -- */
 
+/* SignOut Google */
 function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
@@ -45,11 +49,4 @@ function signOut() {
     gapi.auth.signOut();
 }
 
-function alert() {
-    setTimeout(function () {
-        $('#myalert').css({"opacity": "0"});
-    }, 5000);
-    setTimeout(function () {
-        $('#myalert').hide();
-    }, 10000);
-}
+/* -- */

@@ -13,6 +13,7 @@ $cek = mysqli_num_rows($data);
 if($cek > 0){
 	$_SESSION['email'] = $email;
 	$_SESSION['status'] = "login";
+	$_SESSION['google'] = "false";
 	header("location:profile/index.php");
 }else{
 	header("location:index.php?msg=failed");

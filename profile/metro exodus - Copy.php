@@ -38,22 +38,9 @@
             font-style: italic;
         }
 
-        .dd {
-            color: white;
-        }
+        
 
-        .dd:hover {
-            color: rgb(255, 23, 23);
-        }
-
-        .artikel {
-            color:rgb(255, 23, 23);
-        }
-
-        .artikel:hover {
-            color:rgb(139, 23, 23);
-            cursor: pointer;
-        }
+        
     </style>
 </head>
 
@@ -71,7 +58,7 @@ include '../sql.php';
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
-            <img src="../assets/img/lg.png" style="height: 30px; width: 30px;">
+            <img src="../assets/img/lg.png" class="logo logo-small">
             <a class="navbar-brand text-shadow mx-3" href="index.php">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -253,7 +240,7 @@ include '../sql.php';
         <div class="row" style="margin-right: 0!important;">
             <div class="col-md-4 p5rem" style="height: 300px;">
                 <div class="row">
-                    <img src="../assets/img/lg.png" style="height: 140px; width: 140px;">
+                    <img src="../assets/img/lg.png" class="logo logo-big">
                 </div>
                 <div class="row my-3">
                     <div class="sosmed mx-1 my-1">

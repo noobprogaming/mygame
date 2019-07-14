@@ -18,17 +18,23 @@
     width: 8px;
     height: 8px;
 }
+
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 3px grey;
 }
+
 ::-webkit-scrollbar-thumb {
     background: rgb(201, 201, 201);
     border-radius: 0.1rem;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(148, 148, 148);
 }
+
 /* -- */
+
+/* Text Shadow */
 
 .text-shadow {
     text-shadow: 0 0 1px rgb(255, 23, 23), 0 0 5px rgb(139, 23, 23);
@@ -37,6 +43,10 @@
 .box-shadow {
     box-shadow: 0 0 1rem rgb(19, 19, 19);
 }
+
+/* -- */
+
+/* Image Profile */
 
 .img-profile {
     border-radius: 50%;
@@ -49,6 +59,10 @@
     filter: brightness(130%);
     transform: scale(1.05, 1.05);
 }
+
+/* -- */
+
+/* Button & Input */
 
 .btn-menu {
     display: inline;
@@ -97,11 +111,15 @@
     box-shadow: 0 0 5px rgb(255, 23, 23);
 }
 
+/* -- */
+
 /* Radio Button */
+
 .rdb {
     display: block;
     position: relative;
 }
+
 .rdb-check {
     position: absolute;
     left: 0;
@@ -110,20 +128,25 @@
     background-color: rgb(201, 201, 201);
     border-radius: 100%;
 }
+
 .rdb:hover input~.rdb-check {
     background-color: rgb(255, 23, 23);
 }
+
 .rdb input:checked~.rdb-check {
     background-color: rgb(255, 23, 23);
 }
+
 .rdb-check:after {
     content: "";
     position: absolute;
     display: none;
 }
+
 .rdb input:checked~.rdb-check:after {
     display: block;
 }
+
 .rdb .rdb-check:after {
     top: 6px;
     left: 6px;
@@ -132,11 +155,60 @@
     border-radius: 100%;
     background: rgb(255, 255, 255);
 }
+
 .rdb input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
+
+/* -- */
+
+/* Input File */
+.tab {
+    overflow: hidden;
+    border: 1px solid rgb(201, 201, 201);
+    background-color: rgb(255, 255, 255);
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: rgb(148, 148, 148);
+}
+
+input[type='file'] {
+    color: transparent;
+}
+
+.input-file::-webkit-file-upload-button {
+    width: 0px;
+    visibility: hidden;
+}
+
+.input-file::before {
+    content: 'Pilih fotomu';
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 0.1rem;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+    color: rgb(19, 19, 19);
+}
+
+.input-file:hover::before {
+    border-color: rgb(19, 19, 19);
+}
+
 /* -- */
 
 
@@ -144,36 +216,37 @@
 .inner-addon {
     position: relative;
 }
+
 .inner-addon .fa {
     position: absolute;
     padding: 0.1rem 0.5rem;
     pointer-events: none;
 }
+
 .inner-addon-tall input {
     padding: 0.5rem 2rem;
 }
+
 .inner-addon-tall .fa {
     padding: 0.5rem;
 }
+
 /* -- */
 
-.dropdown {
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+/* - Judul Artikel - */
+
+.artikel {
+    color: rgb(255, 23, 23);
 }
 
-.sosmed {
-    background-color: rgb(201, 201, 201);
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    padding-top: 8px;
+.artikel:hover {
+    color: rgb(139, 23, 23);
+    cursor: pointer;
 }
+/* -- */
 
-.sosmed:hover {
-    background-color: rgb(255, 23, 23);
-    color: rgb(255, 255, 255);
-}
 
+/* Color */
 .black {
     background-color: rgb(19, 19, 19);
 }
@@ -194,6 +267,9 @@
     color: rgb(255, 23, 23);
 }
 
+/* -- */
+
+/* Layout */
 .w100 {
     width: 100px;
 }
@@ -201,6 +277,49 @@
 .p5rem {
     padding: 5rem;
 }
+/* -- */
+
+/* Sosmed Icon */
+
+.sosmed .fa-facebook {
+    background-color: rgb(59, 89, 152);
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+}
+
+.sosmed .fa-twitter {
+    background-color: rgb(0, 132, 180);
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+}
+
+.sosmed .fa-instagram {
+    background-color: rgb(253, 29, 29);
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+}
+
+.sosmed:hover {
+    filter: brightness(130%);
+    transform: scale(1.1, 1.1);
+}
+
+.sosmed:active {
+    filter: brightness(100%);
+}
+
+/* -- */
+
+/* Header Judul */
 
 .fo-ul {
     color: rgb(255, 255, 255);
@@ -224,6 +343,125 @@ ul.fo-ul a:hover {
     color: rgb(255, 23, 23);
     text-decoration: none;
 }
+
+/* -- */
+
+
+
+/* Dropdown Header */
+
+.dropdown {
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.dd {
+    color: rgb(255, 255, 255);
+}
+
+.dd:hover {
+    color: rgb(255, 23, 23);
+}
+
+/* -- */
+
+/* Table */
+td {
+    margin: 0 auto;
+    padding: 5px;
+}
+/* -- */
+
+/* Search Box */
+.search-box {
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.search-box input[type="text"] {
+    height: 28px;
+    padding: 5px 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.result {
+    position: absolute;
+    z-index: 998;
+}
+
+.search-box input[type="text"],
+.result {
+    width: 100%;
+}
+
+/* Formatting result items */
+.result p {
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.result p:hover {
+    background: rgb(201, 201, 201);
+}
+
+/* -- */
+
+/* Mbuh Opo*/
+.navbar {
+    background-color: rgb(19, 19, 19);
+    box-shadow: 0 0 1rem rgb(19, 19, 19);
+    position: relative;
+}
+
+.gg {
+    color: rgb(255, 23, 23);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/**/
+
+
+/* Alert */
+#message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#inner-message {
+    margin: 0 auto;
+}
+
+.alert-top {
+    z-index: 999;
+    position: fixed;
+    top: 10%;
+    width: 50%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.alert {
+    animation-name: fadeInOpacity;
+    animation-duration: 0.2s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/**/
 
 /* Carousel base class */
 .carousel {
@@ -250,6 +488,38 @@ ul.fo-ul a:hover {
     height: 32rem;
 }
 
+
+/* Logo */
+
+.logo-small {
+    height: 30px; 
+    width: 30px;
+}
+
+.logo-big {
+    height: 140px; 
+    width: 140px;
+}
+
+.logo {
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+            transition:         transform .1s ease-in-out;
+  }
+.logo:hover {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+            filter: brightness(200%)
+  }
+.logo:active {
+-webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+        filter: brightness(150%)
+}
+
+.navbar-brand:hover {
+    filter: brightness(150%)
+}
+/**/
 
 @media (max-width: 480px) {
     .px-5 {

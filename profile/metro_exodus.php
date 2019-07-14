@@ -16,9 +16,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="../assets/custom.css">
-    <style>
-
-    </style>
 </head>
 
 <body onload="gender()">
@@ -85,7 +82,7 @@ include '../sql.php';
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
-                                    <table>
+                                    <table align="center">
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
@@ -106,10 +103,6 @@ include '../sql.php';
                                             <td>
                                                 <input type="submit" value="Logout" onclick="signOut();"
                                                     class="btn btn-sm input-btn w100">
-                                                <button onclick="signOut();">Out
-                                                </button>
-                                                <button onclick="myFunction();">Out
-                                                </button>
                                             </td>
                                         </tr>
                                     </table>
@@ -144,58 +137,54 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-md-7 order-md-2">
-                                <h2>Review Deus Ex : Mabkind Divided Semakin Semakin sempurna</h2>
-                                <p class="lead">Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu
-                                    ruang yang sama,
-                                    memang sulit untuk membedakan mana yang sejatinya sebuah game RPG, mana game action,
-                                    dan mana sebuah platfomer murni.
-                                </p>
-                                <div class="artikel">Baca Selanjutnya</div>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                                <img width="500" height="500" src="../assets/img/photo/2 (2).jpg" class="img-fluid" />
-                            </div>
-                        </div>
-
-                        <hr class="my-5">
-
-                        <div class="row">
-                            <div class="col-md-7 order-md-2">
+                            <div class="col-md-12">
                             <h2>Review Metro Exodus: Arah Baru Mengagumkan!</h2>
-                                <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang
-                                    lebih banyak didominasi soal kebijakan publishing aneh yang diambil oleh Koch Media
-                                    dan Deep Silver.
-                                    Bahwa alih-alih memanfaatkan user masif Steam yang sudah menempuh angka ratusan
-                                    juta,
-                                    mereka lebih memilih untuk “mengunci” deal eksklusivitas dengan Epic Games Store
-                                    yang memang menjanjikan bagi hasil yang lebih
-                                    menguntungkan.</p>
-                                <div class="artikel">Baca Selanjutnya</div>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                            <img width="500" height="500" src="../assets/img/photo/MET.jpg" class="img-fluid" />
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/2.jpg" class="img-fluid" /><br>
+                                Anda yang sudah membaca preview kami sebelumnya sepertinya sudah punya gambaran cukup jelas apa yang ditawarkan dengan 
+                                4A Games untuk seri yang sebenarnya didasarkan pada novel Metro 2035 ini. Ada begitu banyak perubahan signifikan 
+                                disuntikkan dan tentu saja penyempurnaan di sisi presentasi yang terlihat begitu fenomenal, terutama jika Anda 
+                                menggunakan teknologi kartu grafis NVIDIA RTX dan menyalakan fitur Ray-Tracing yang ada. Namun perubahan paling signifikan 
+                                yang paling kami sambut baik adalah kesempatan untuk menjelajahi dunia dan lore Metro yang seharusnya yang kali ini, tidak 
+                                lagi “terkunci” pada terowongan-terowongan gelap. Kesemuanya dibungkus dalam konsep gameplay semi open-world yang kini 
+                                memberikan Anda begitu banyak lokasi menarik untuk dijelajahi.Lantas, apa yang sebenarnya ditawarkan oleh Metro Exodus? 
+                                Mengapa kami menyebutnya sebagai sebuah game dengan arah baru yang mengagumkan? Review ini akan membahasnya lebih dalam 
+                                untuk Anda.<br>
+                                <img width="500" height="500" src="../assets/img/photo/MET.jpg" class="img-fluid"/>><br>
+                                Anda kembali berperan sebagai Artyom – yang mengikuti “Good Ending” di Last Light yang canon, hidup dan punya ambisi 
+                                yang baru.Metro Exodus tentu saja diposisikan sebagai seri sekuel dari apa yang terjadi di Metro: Last Light. Jika 
+                                Anda termasuk gamer yang mendapatkan bad ending di seri sebelumnya, sebuah seri sekuel tentu saja terdengar mustahil
+                                mengingat sosok Artyom – sang karakter utama tewas di ending tersebut. Namun ending yang dihitung sebagai canon adalah
+                                good ending, dimana Artyom berhasil selamat dari konflik seri sebelumnya dan kini kembali di Exodus untuk melanjutkan
+                                petualangannya.Seperti nama yang ia usung, Exodus berfokus tidak lagi pada terowongan kereta bawah tanah Moscow yang
+                                menjadi basis dunia untuk 2033 dan Last Light. Setelah apa yang terjadi di seri sebelumnya, Artyom menjadi sangat
+                                terobsesi untuk membuktikan pada penduduk Moscow yang tinggal di Metro bahwa mereka bukan satu-satunya yang selamat
+                                dari kiamat kecil yang terjadi. Bahwa ada komunitas di luar sana yang masih hidup, tumbuh, dan berkembang. Mimpi
+                                tersebut terus ia kejar dengan terus mengeksplorasi dunia luar dan berupaya mencari bukti yang memang mendukung
+                                teorinya tersebut. Hingga pada akhirnya, sebuah bukti yang ia butuhkan akhirnya tiba.
+ 
+                                <img width="500" height="500" src="../assets/img/photo/troex.jpg" class="img-fluid"/>><br>
+                                Penelusuran menemukan sebuah kereta api aktif yang sempat memuat tawanan dari luar kota Moscow di dalamnya.
+                                Dalam misi ekspedisinya bersama dengan sang istri – Anna, Artyom tiba-tiba menemukan sebuah kereta api yang 
+                                berjalan aktif melintasi rel. Bersama dengannya adalah para tawanan yang mengaku bahwa mereka semua datang 
+                                dari luar Moscow. Pertempuran besar melawan kelompok penawan ternyata membuka fakta bahwa satu-satunya alasan 
+                                Moscow begitu “sunyi” dari interfensi sinyal luar bukan karena tidak adanya lagi kehidupan di luar sana, 
+                                tetapi karena pelacak sinyal yang pada akhirnya berhasil dihancurkan oleh Artyom. Bersama dengannya, mereka 
+                                juga berhasil mengamankan sang kereta api yang mereka beri nama “Aurora”.Pasukan Spartans yang sempat 
+                                diperintahkan untuk mengamankan kembali Aurora dan menahan Artyom serta Anna kini menjadi salah satu kelompok 
+                                baru yang matanya terbuka. Setelah memikirkan matang langkah mereka selanjutnya, kesemuanya setuju bahwa langkah
+                                logis terbaik yang bisa mereka tempuh saat ini adalah dengan membawa Aurora ke wilayah yang lain, mencari 
+                                mereka yang berhasil selamat. Apalagi sinyal radio yang mereka terima juga memberi sinyal bahwa  setidaknya ada
+                                satu lokasi militer yang sepertinya selamat. Sebuah tempat bernama Moscow Defense Command sepertinya masih 
+                                aktif dan meminta mereka yang berhasil selamat untuk berkumpul dan berkoordinasi di sana. Tidak perlu menunggu
+                                lama hingga para kru berupaya bergerak ke sana, lengkap dengan semua tantangan yang ada. Misi utamanya tentu 
+                                saja, mencari “rumah baru” untuk Artyom, Anna, dan para Spartans yang percaya pada mereka.
+
+                                Misi untuk mencari sebuah rumah baru pun dimulai.
+
+
+                                </p>
                             </div>
                         </div>
-
-                        <hr class="my-5">
-
-                        <div class="row">
-                            <div class="col-md-7 order-md-2">
-                            <h2>Review Anthem: Frostbite Engine di Game Open-World </h2>
-                                <p class="lead">Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
-                                    Gamer mana yang belum pernah mendengar nama Frostbite Engine sebelumnya? Engine
-                                    racikan DICE tersebut kini
-                                    memang menjadi basis untuk hampir semua game yang diracik oleh EA, terlepas dari
-                                    genre apapun yang mereka usung. </p>
-                                <div class="artikel">Baca Selanjutnya</div>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                            <img width="500" height="500" src="../assets/img/photo/8.jpg" class="img-fluid" />
-                            </div>
-                        </div>
-
-                        <hr class="my-5">
                     </div>
 
                     <div class="col-md-3">
