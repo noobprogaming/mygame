@@ -15,7 +15,7 @@
     $cek = mysqli_num_rows($data);
     if($cek == 0){
         $sql_signup = "INSERT INTO user VALUES ('$uname','$name','$pass','$gend','$mail','$born',now()); INSERT INTO rig(id) SELECT id FROM user WHERE id='$uname'; UPDATE rig SET id_cpu='$in_cpu', id_vga='$in_vga', id_ram='$in_ram' WHERE id='$uname';";
-        mysqli_query($koneksi,$sql_signup);
+        mysqli_multi_query($koneksi,$sql_signup);
         
         header("location:index.php?pesan=success");
     }else{
