@@ -79,13 +79,13 @@ include '../sql.php';
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                         <a class="nav-link" href="profile.php"><i class="fa fa-user"> </i> <?php echo $u_id; ?></a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-content black-soft box-shadow"
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
-                                    <table>
+                                    <table align="center">
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
@@ -106,10 +106,6 @@ include '../sql.php';
                                             <td>
                                                 <input type="submit" value="Logout" onclick="signOut();"
                                                     class="btn btn-sm input-btn w100">
-                                                <button onclick="signOut();">Out
-                                                </button>
-                                                <button onclick="myFunction();">Out
-                                                </button>
                                             </td>
                                         </tr>
                                     </table>
