@@ -31,11 +31,14 @@
         padding-bottom: 1rem;
     }
 
-    .inner-addon, .input-btn, select {
+    .inner-addon,
+    .input-btn,
+    select {
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
         margin: 0.2rem;
     }
+
     .form-text:hover {
         color: rgb(255, 23, 23);
         text-decoration: none;
@@ -46,24 +49,30 @@
         background-color: rgb(255, 255, 255);
         color: rgb(255, 23, 23);
     }
+
     #s1 {
-        margin-top: 2.3rem;
+        margin-top: 3.1rem;
         margin-left: -16rem;
     }
+
     #s2 {
         margin-top: 1.2rem;
         margin-left: 16rem;
     }
+
     button:hover {
         color: rgb(139, 23, 23);
     }
-
 </style>
 </head>
 
 <body onload="profile()">
-
-        <div class="table">
+    <?php 
+include 'koneksi.php';
+$email = "";
+include 'sql.php';
+?>
+    <div class="table">
         <form method="post" action="tambah.php">
             <div style="height: 100%">
                 <div id="slide1">
@@ -132,60 +141,142 @@
                 <div id="slide2">
                     <tr>
                         <td>
-                            <img src="assets/img/lg.png" class="logo logo-big my-3" />>
+                            <h4 class="my-3">Masukkan spesifikasi komputer Anda</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <select name="u_idcpu" class="input-text">
-                                <option>CPU</option>
-                                <option value="1">i3</option>
-                                <option value="2">i5</option>
-                                <option value="3">i7</option>
-                                <option value="4">i9</option>
+                            <select name="u_idcpu" class="input-text" style="width: 200px;">
+                                <option>-- CPU --</option>
+                                <?php
+                                                    $result = $koneksi->query($sql_cpu);
+                                                    while($row=$result->fetch_assoc()){
+                                                        extract($row);
+                                                        $id_cpu = $row ['id_cpu'];
+                                                        $name_cpu = $row ['name_cpu'];
+                                                        echo "
+                                                        <option value='$id_cpu'>$name_cpu</option>";                                                    
+                                                    };
+                                                ?>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <select name="u_idvga" class="input-text">
-                                <option>VGA</option>
-                                <option value="1">GT210</option>
-                                <option value="2">GT730</option>
-                                <option value="3">GTX1050</option>
-                                <option value="4">RTX2080</option>
+                            <select name="u_idvga" class="input-text" style="width: 200px;">
+                                <option>-- VGA --</option>
+                                <?php
+                                                    $result = $koneksi->query($sql_vga);
+                                                    while($row=$result->fetch_assoc()){
+                                                        extract($row);
+                                                        $id_vga = $row ['id_vga'];
+                                                        $name_vga = $row ['name_vga'];
+                                                        echo "
+                                                        <option value='$id_vga'>$name_vga</option>";                                                    
+                                                    }
+                                                ?>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <select name="u_idram" class="input-text">
-                                <option>RAM</option>
-                                <option value="1">2GB</option>
-                                <option value="2">4GB</option>
-                                <option value="3">8GB</option>
-                                <option value="4">16GB</option>
+                            <select name="u_idram" class="input-text" style="width: 200px;">
+                                <option>-- RAM --</option>
+                                <?php
+                                                    $result = $koneksi->query($sql_ram);
+                                                    while($row=$result->fetch_assoc()){
+                                                        extract($row);
+                                                        $id_ram = $row ['id_ram'];
+                                                        $name_ram = $row ['name_ram'];
+                                                        echo "
+                                                        <option value='$id_ram'>$name_ram</option>";                                                    
+                                                    }
+                                                ?>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <select class="input-text">
-                                <option>SSD</option>
+                            <select name="u_idssd" class="input-text" style="width: 200px;">
+                                <option>-- SSD --</option>
+                                <?php
+                                                    $result = $koneksi->query($sql_ssd);
+                                                    while($row=$result->fetch_assoc()){
+                                                        extract($row);
+                                                        $id_ssd = $row ['id_ssd'];
+                                                        $name_ssd = $row ['name_ssd'];
+                                                        echo "
+                                                        <option value='$id_ssd'>$name_ssd</option>";                                                    
+                                                    }
+                                                ?>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <select class="input-text">
-                                <option>HDD</option>
+                            <select name="u_idhdd" class="input-text" style="width: 200px;">
+                                <option>-- HDD --</option>
+                                <?php
+                                                    $result = $koneksi->query($sql_hdd);
+                                                    while($row=$result->fetch_assoc()){
+                                                        extract($row);
+                                                        $id_hdd = $row ['id_hdd'];
+                                                        $name_hdd = $row ['name_hdd'];
+                                                        echo "
+                                                        <option value='$id_hdd'>$name_hdd</option>";                                                    
+                                                    }
+                                                ?>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <select class="input-text">
-                                <option>MB</option>
+                            <select name="u_idpsu" class="input-text" style="width: 200px;">
+                                <option>-- PSU --</option>
+                                <?php
+                                                    $result = $koneksi->query($sql_psu);
+                                                    while($row=$result->fetch_assoc()){
+                                                        extract($row);
+                                                        $id_psu = $row ['id_psu'];
+                                                        $name_psu = $row ['name_psu'];
+                                                        echo "
+                                                        <option value='$id_psu'>$name_psu</option>";                                                    
+                                                    }
+                                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="u_idkb" class="input-text" style="width: 200px;">
+                                <option>-- KB --</option>
+                                <?php
+                                                    $result = $koneksi->query($sql_kb);
+                                                    while($row=$result->fetch_assoc()){
+                                                        extract($row);
+                                                        $id_kb = $row ['id_kb'];
+                                                        $name_kb = $row ['name_kb'];
+                                                        echo "
+                                                        <option value='$id_kb'>$name_kb</option>";                                                    
+                                                    }
+                                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="u_idmouse" class="input-text" style="width: 200px;">
+                                <option>-- Mouse --</option>
+                                <?php
+                                                    $result = $koneksi->query($sql_mouse);
+                                                    while($row=$result->fetch_assoc()){
+                                                        extract($row);
+                                                        $id_mouse = $row ['id_mouse'];
+                                                        $name_mouse = $row ['name_mouse'];
+                                                        echo "
+                                                        <option value='$id_mouse'>$name_mouse</option>";                                                    
+                                                    }
+                                                ?>
                             </select>
                         </td>
                     </tr>
@@ -196,10 +287,10 @@
                     </tr>
                 </div>
             </div>
-            </form>
-            <button id="s1">Kembali</button>
-            <button id="s2">Lanjut</button>
-        </div>
+        </form>
+        <button id="s1">Kembali</button>
+        <button id="s2">Lanjut</button>
+    </div>
 
 </body>
 <script>

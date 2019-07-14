@@ -25,6 +25,19 @@ if($_SESSION['status']!="login"){
 	header("location:../index.php?msg=warning");
 }
 
+if(isset($_GET['msg'])){
+    if($_GET['msg'] == "success"){
+        echo '<div class="container">';
+        echo '<div class="alert-top alert alert-success" id="myalert" role="alert">';
+        echo '  <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>';
+        echo '  Selamat datang ';
+        echo $_SESSION['name'];
+        echo ' ! Silakan lengkapi profil Anda!';
+        echo '</div>';
+        echo '</div>';
+    }
+}
+
 include '../koneksi.php';
 $email=$_SESSION['email'];
 include '../sql.php';
@@ -350,6 +363,7 @@ include '../sql.php';
                                     <td>RAM</td>
                                     <td>
                                         <select name="u_idram" class="input-text" style="width: 200px;">
+                                        <option>-- RAM --</option>
                                             <?php
                                                     $result = $koneksi->query($sql_ram);
                                                     while($row=$result->fetch_assoc()){
@@ -568,7 +582,6 @@ include '../sql.php';
             $('#slide1').hide();
             $('#slide2').show();
         });
-
 
         $('#btnEdit').on('click', function () {
             $('#1').hide();

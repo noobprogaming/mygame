@@ -43,13 +43,6 @@ if(isset($_GET['msg'])){
         echo '  Anda harus masuk terlebih dahulu!';
         echo '</div>';
         echo '</div>';
-    }else if($_GET['msg'] == "success"){
-        echo '<div class="container">';
-        echo '<div class="alert-top alert alert-success" id="myalert" role="alert">';
-        echo '  <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>';
-        echo '  Silakan masuk menggunakan data yang sudah Anda buat!';
-        echo '</div>';
-        echo '</div>';
     }
 }
 ?>
