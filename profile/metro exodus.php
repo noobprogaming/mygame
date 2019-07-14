@@ -174,7 +174,7 @@ include '../sql.php';
                     <div class="col-lg-8 my-3">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h2 class="featurette-heading">Review Metro Exodus: Arah Baru Mengagumkan!</h2>
+                                <h2>Review Metro Exodus: Arah Baru Mengagumkan!</h2>
                                 <p class="lead"><img width="500" height="500" src="../assets/img/photo/2.jpg" class="img-fluid" /><br>
                                 Anda yang sudah membaca preview kami sebelumnya sepertinya sudah punya gambaran cukup jelas apa yang ditawarkan dengan 
                                 4A Games untuk seri yang sebenarnya didasarkan pada novel Metro 2035 ini. Ada begitu banyak perubahan signifikan 

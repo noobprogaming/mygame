@@ -40,6 +40,8 @@
             color:rgb(139, 23, 23);
             cursor: pointer;
         }
+
+
     </style>
 </head>
 
@@ -91,6 +93,12 @@ include '../sql.php';
                                     </a>
                                 </ul>
                             </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                                        <div class="search-box">
+                            <input type="text" autocomplete="off" placeholder="Search" />
+                            <div class="result"></div>
                         </div>
                     </li>
                 </ul>
@@ -191,7 +199,7 @@ include '../sql.php';
         </a>
     </div>
 
-    <div class="container-fluid px-5 marketing">
+    <div class="container-fluid px-5 ">
     <button onclick="signOut()">Try it</button>
         <div class="row">
             <div class="col-lg-3 bright">
@@ -257,7 +265,7 @@ include '../sql.php';
             </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr>
 
         <div class="row">
             <div class="col-md-3">
@@ -286,7 +294,7 @@ include '../sql.php';
             <div class="col-md-6">
                 <div>
                     <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
-                    <h2 class="featurette-heading">Review Metro Exodus:  <span class="text-muted">Arah Baru Mengagumkan!</span></h2>
+                    <h2>Review Metro Exodus:  <span class="text-muted">Arah Baru Mengagumkan!</span></h2>
                     <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang lebih banyak didominasi soal 
                         kebijakan publishing aneh yang diambil oleh Koch Media dan Deep Silver.</p>
                 </div>
@@ -310,13 +318,13 @@ include '../sql.php';
             </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr>
 
         <div class="row">
             <div class="col-md-9">
                 <div class="row featurette">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading">Review Anthem: <span class="text-muted">Frostbite Engine di Game Open-World</span></h2>
+                        <h2>Review Anthem: <span class="text-muted">Frostbite Engine di Game Open-World</span></h2>
                         <p class="lead">Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
                             Gamer mana yang belum pernah mendengar nama Frostbite Engine sebelumnya? Engine racikan DICE tersebut kini memang menjadi basis untuk hampir semua 
                             game yang diracik oleh EA, terlepas dari genre apapun yang mereka usung. </p>
@@ -326,11 +334,11 @@ include '../sql.php';
                     </div>
                 </div>
 
-                <hr class="featurette-divider">
+                <hr>
 
                 <div class="row featurette">
                     <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                        <h2>Oh yeah, it’s that good. <span class="text-muted">See for
                                 yourself.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
                             felis
@@ -385,7 +393,7 @@ include '../sql.php';
 
         </div>
 
-        <hr class="featurette-divider">
+        <hr>
 
     </div>
 
@@ -456,11 +464,34 @@ include '../sql.php';
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $('.search-box input[type="text"]').on("keyup input", function(){
+        /* Get input value on change */
+        var inputVal = $(this).val();
+        var resultDropdown = $(this).siblings(".result");
+        if(inputVal.length){
+            $.get("backend-search.php", {term: inputVal}).done(function(data){
+                // Display the returned data in browser
+                resultDropdown.html(data);
+            });
+        } else{
+            resultDropdown.empty();
+        }
+    });
+    
+    // Set search input value on click of result item
+    $(document).on("click", ".result p", function(){
+        $(this).parents(".search-box").find('input[type="text"]').val($(this).text());
+        $(this).parent(".result").empty();
+    });
+});
+</script>
 </body>
 <script src="../assets/custom.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

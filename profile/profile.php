@@ -244,7 +244,7 @@ include '../sql.php';
                                 <td colspan="2"><?php echo $u_joined; ?></td>
                             </tr>
                         </table>
-                        <hr class="featurette-divider">
+                        <hr>
                     </div>
                     <div class="col-lg-2">
                         <hr class="featurette-divider" style="transform: rotate(90deg);">

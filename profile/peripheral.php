@@ -194,7 +194,7 @@ include '../sql.php';
         </a>
     </div>
 
-    <div class="container-fluid px-5 marketing">
+    <div class="container-fluid px-5 ">
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
@@ -239,7 +239,7 @@ include '../sql.php';
             </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr>
 
         <div class="row">
                                 <div class="col-md-3">
@@ -268,7 +268,7 @@ include '../sql.php';
             <div class="col-md-6">
                 <div>
                     <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                    <h2>First featurette heading. <span class="text-muted">It’ll blow your
                             mind.</span></h2>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
                         euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
@@ -294,13 +294,13 @@ include '../sql.php';
             </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr>
 
         <div class="row">
             <div class="col-md-9">
                 <div class="row featurette">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
+                        <h2>First featurette heading. <span class="text-muted">It’ll blow
                                 your
                                 mind.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
@@ -314,11 +314,11 @@ include '../sql.php';
                     </div>
                 </div>
 
-                <hr class="featurette-divider">
+                <hr>
 
                 <div class="row featurette">
                     <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                        <h2>Oh yeah, it’s that good. <span class="text-muted">See for
                                 yourself.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
                             felis
@@ -373,7 +373,7 @@ include '../sql.php';
 
         </div>
 
-        <hr class="featurette-divider">
+        <hr>
 
     </div>
 

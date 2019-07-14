@@ -168,7 +168,7 @@ include '../sql.php';
                                 <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
                             </div>
                             <div class="col-lg-8">
-                                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                                <h2>Oh yeah, it’s that good. <span class="text-muted">See for
                                         yourself.</span></h2>
                                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
                                     porta
@@ -186,7 +186,7 @@ include '../sql.php';
                                 <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
                             </div>
                             <div class="col-lg-8">
-                                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                                <h2>Oh yeah, it’s that good. <span class="text-muted">See for
                                         yourself.</span></h2>
                                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
                                     porta
@@ -204,7 +204,7 @@ include '../sql.php';
                                 <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
                             </div>
                             <div class="col-lg-8">
-                                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                                <h2>Oh yeah, it’s that good. <span class="text-muted">See for
                                         yourself.</span></h2>
                                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
                                     porta

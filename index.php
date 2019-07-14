@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id"
         content="562498474090-rmhpeunoatnlg7lv8b9buije5n0n2r9t.apps.googleusercontent.com">
@@ -248,7 +247,7 @@ if(isset($_GET['msg'])){
         </a>
     </div>
 
-    <div class="container-fluid px-5 marketing">
+    <div class="container-fluid px-5 ">
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
@@ -301,36 +300,36 @@ if(isset($_GET['msg'])){
             </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr>
 
         <div class="row">
-                                <div class="col-lg-4 my-3">
-                                <h4>Artikel</h4>
-                                <hr class="divider">
-                                <p class="artikel">Spesifikasi PC untuk Man of Medan</p>
-                                <hr class="divider">
-                                <p class="artikel">Spesifikasi PC untuk Code Vein</p>
-                                <hr class="divider">
-                                <p class="artikel">Kingdom Under Fire II Tetap Hidup, 
-                                Versi PC Tuju Barat Tahun Ini</p>
-                                <hr class="divider">
-                                <p class="artikel">Menjajal DEMO Pamali: Horror Indonesia Potensial!</p>
-                                <hr class="divider">
-                                <p class="artikel">Microsoft akan Hadirkan Login Windows 10 Tanpa Password</p>
-                                <hr class="divider">
-                                <p class="artikel">Review Cuphead: Kartun untuk Kaum Masokis!</p>
-                                <hr class="divider">
-                                <p class="artikel">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
-                                <hr class="divider">
-                                <p class="artikel">Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!L</p>
-                                <hr class="divider">
-                                <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
-                                <hr class="divider">
-                        </div>
+            <div class="col-lg-4 my-3">
+                <h4>Artikel</h4>
+                <hr class="divider">
+                <p class="artikel">Spesifikasi PC untuk Man of Medan</p>
+                <hr class="divider">
+                <p class="artikel">Spesifikasi PC untuk Code Vein</p>
+                <hr class="divider">
+                <p class="artikel">Kingdom Under Fire II Tetap Hidup,
+                    Versi PC Tuju Barat Tahun Ini</p>
+                <hr class="divider">
+                <p class="artikel">Menjajal DEMO Pamali: Horror Indonesia Potensial!</p>
+                <hr class="divider">
+                <p class="artikel">Microsoft akan Hadirkan Login Windows 10 Tanpa Password</p>
+                <hr class="divider">
+                <p class="artikel">Review Cuphead: Kartun untuk Kaum Masokis!</p>
+                <hr class="divider">
+                <p class="artikel">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
+                <hr class="divider">
+                <p class="artikel">Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!L</p>
+                <hr class="divider">
+                <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
+                <hr class="divider">
+            </div>
             <div class="col-md-6">
                 <div>
                     <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
+                    <h2>First featurette heading. <span class="text-muted">It’ll blow your
                             mind.</span></h2>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
                         euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
@@ -356,13 +355,13 @@ if(isset($_GET['msg'])){
             </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr>
 
         <div class="row">
             <div class="col-md-9">
                 <div class="row featurette">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
+                        <h2>First featurette heading. <span class="text-muted">It’ll blow
                                 your
                                 mind.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
@@ -376,11 +375,11 @@ if(isset($_GET['msg'])){
                     </div>
                 </div>
 
-                <hr class="featurette-divider">
+                <hr>
 
                 <div class="row featurette">
                     <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                        <h2>Oh yeah, it’s that good. <span class="text-muted">See for
                                 yourself.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
                             felis
@@ -435,7 +434,7 @@ if(isset($_GET['msg'])){
 
         </div>
 
-        <hr class="featurette-divider">
+        <hr>
 
     </div>
 
@@ -508,6 +507,7 @@ if(isset($_GET['msg'])){
 
 </body>
 <script src="/assets/custom.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

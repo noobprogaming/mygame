@@ -165,7 +165,7 @@ include '../sql.php';
                     <div class="col-lg-8 my-3">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h2 class="featurette-heading">Review Deus Ex : Mabkind Divided Semakin Semakin sempurna</h2>
+                                <h2>Review Deus Ex : Mabkind Divided Semakin Semakin sempurna</h2>
                                 <p class="lead"><img width="500" height="500" src="../assets/img/photo/2 (2).jpg" class="img-fluid" /><br>
                                 Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu ruang yang sama, memang sulit untuk membedakan mana yang 
                                 sejatinya sebuah game RPG, mana game action, dan mana sebuah platfomer murni. Ada kecenderungan untuk mengambil elemen-elemen 

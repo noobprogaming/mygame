@@ -177,7 +177,7 @@ include '../sql.php';
                                 <img width="500" height="500" src="../assets/img/photo/2 (2).jpg" class="img-fluid" />
                             </div>
                             <div class="col-lg-8">
-                                <h2 class="featurette-heading">Review Deus Ex : Mabkind Divided Semakin Semakin sempurna</h2>
+                                <h2>Review Deus Ex : Mabkind Divided Semakin Semakin sempurna</h2>
                                 <p class="lead">Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu ruang yang sama, 
                                 memang sulit untuk membedakan mana yang sejatinya sebuah game RPG, mana game action, 
                                 dan mana sebuah platfomer murni. 
@@ -191,7 +191,7 @@ include '../sql.php';
                                 <img width="500" height="500" src="../assets/img/photo/MET.jpg" class="img-fluid" />
                             </div>
                             <div class="col-lg-8">
-                                <h2 class="featurette-heading">Review Metro Exodus: Arah Baru Mengagumkan!</h2>
+                                <h2>Review Metro Exodus: Arah Baru Mengagumkan!</h2>
                                 <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang lebih banyak didominasi soal kebijakan publishing aneh yang diambil oleh Koch Media dan Deep Silver. 
                                 Bahwa alih-alih memanfaatkan user masif Steam yang sudah menempuh angka ratusan juta, 
                                 mereka lebih memilih untuk “mengunci” deal eksklusivitas dengan Epic Games Store yang memang menjanjikan bagi hasil yang lebih 
@@ -205,7 +205,7 @@ include '../sql.php';
                                 <img width="500" height="500" src="../assets/img/photo/8.jpg" class="img-fluid" />
                             </div>
                             <div class="col-lg-8">
-                                <h2 class="featurette-heading">Review Anthem: Frostbite Engine di Game Open-World </h2>
+                                <h2>Review Anthem: Frostbite Engine di Game Open-World </h2>
                                 <p class="lead">Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
                                 Gamer mana yang belum pernah mendengar nama Frostbite Engine sebelumnya? Engine racikan DICE tersebut kini
                                 memang menjadi basis untuk hampir semua game yang diracik oleh EA, terlepas dari 
