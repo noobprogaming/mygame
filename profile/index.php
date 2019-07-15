@@ -410,20 +410,20 @@ include '../sql.php';
             </div>
             <div class="col-md-4 p5rem text-white">
                 <ul class="fo-ul">
-                    <li class="text-white">TEXT-JUDUL</li>
+                    <li class="text-white">GAME</li>
                     <li>
                         <a href="#">
-                            ABC
+                            NEWS
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            DEF
+                            GAME
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            GHI
+                            PERIPHERAL
                         </a>
                     </li>
                 </ul>
