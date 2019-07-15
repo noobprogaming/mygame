@@ -153,8 +153,7 @@ include '../sql.php';
                                         Sale Event yang paling ditunggu para Gamer, yaitu Steam Summer Sale 
                                         memang sudah dimulai. Ratusan hingga ribuan game bisa kamu dapatkan 
                                         di event yang satu ini. Maulai dari game lawas hingga terbaru bisa kamu 
-                                        dapatkan. Buat kamu yang masih bingung ingin membeli game apa saja, 
-                                        berikut adalah daftar game PC dengan penawaran terbaik di Steam Summer Sale.
+                                        dapatkan. Buat kamu yang masih bingung ingin membeli game apa saja, berikut adalah daftar game PC dengan penawaran terbaik di Steam Summer Sale.
 
                                     <img width="500" height="500" src="../assets/img/photo/66.jpg"class="img-fluid" /><br>
                                     <img width="500" height="500" src="../assets/img/photo/ne.jpg"
