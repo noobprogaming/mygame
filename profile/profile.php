@@ -113,8 +113,13 @@ include '../sql.php';
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" onclick="signOut();"
-                                                    class="btn btn-sm input-btn w100">
+                                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
                                             </td>
                                         </tr>
                                     </table>                                    
@@ -603,6 +608,7 @@ include '../sql.php';
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

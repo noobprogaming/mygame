@@ -16,6 +16,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="../assets/custom.css">
+    <style>
+
+    </style>
 </head>
 
 <body onload="gender()">
@@ -27,6 +30,7 @@ if($_SESSION['status']!="login"){
 
 include '../koneksi.php';
 $email=$_SESSION['email'];
+$id_game=$_GET['id'];
 include '../sql.php';
 ?>
 
@@ -82,7 +86,7 @@ include '../sql.php';
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
-                                    <table align="center">
+                                    <table>
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
@@ -103,6 +107,10 @@ include '../sql.php';
                                             <td>
                                                 <input type="submit" value="Logout" onclick="signOut();"
                                                     class="btn btn-sm input-btn w100">
+                                                <button onclick="signOut();">Out
+                                                </button>
+                                                <button onclick="myFunction();">Out
+                                                </button>
                                             </td>
                                         </tr>
                                     </table>
@@ -118,16 +126,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                FAR CRY 5
+                GAME GENRE
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/fc1.jpg">
+                        <img class="img-fluid" src="../assets/img/1.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
                         <img class="img-fluid" src="../assets/img/2.jpg">
-                        <img class="img-fluid" src="../assets/img/photo/fc3.jpg">
+                        <img class="img-fluid" src="../assets/img/3.jpg">
                     </div>
                 </div>
             </div>
@@ -137,48 +145,38 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-md-12">
-                            <h2>Preview Far Cry New Dawn: Kiamat Artistik!</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/far.jpg" class="img-fluid" /><br>
-                                Hampir sebagian besar gamer yang mengenal dengan baik franchise Far Cry sepertinya sudah mengetahui strategi rutin
-                                yang selalu ditawarkan oleh Ubisoft untuknya. Bahwa di sela-sela seri utama yang dilepas secara berkala, mereka
-                                selalu menghadirkan satu seri spin-off yang punya tema yang unik. Kita sempat bertemu dengan Blood Dragon yang
-                                mengingatkan Anda pada film-film sci-fi di era tahun 80-an hingga Primal yang mengambil tema pra-sejarah. Untuk
-                                tahun 2019 ini, Ubisoft mempersiapkan Far Cry New Dawn yang juga dilepas di awal tahun. Namun berbeda dengan
-                                seri sebelumnya yang tidak punya keterkaitan cerita, New Dawn hadir sebagai sekuel langsung dari event yang
-                                terjadi di Far Cry 5. Setelah menunggu cukup lama, kesempatan untuk menjajalnya secara langsung akhirnya tiba!<br>
-                                <h2>Kesan Pertama</h2>
-                                <img width="500" height="500" src="../assets/img/photo/cry.jpg" class="img-fluid"/>><br>
-                                Far Cry New Dawn bukanlah game post-apocalyptic. Ia sepertinya lebih tepat disebut sebagai game post post-apocalyptic,
-                                dimana dunia sudah berbenah dan membaik setelah apa yang terjadi di akhir Far Cry 5 yang lalu. Manusia kembali
-                                berusaha membangun peradaban lewat komunitas-komunitas kecil yang kini mulai membangun sistem ekonomi lewat 
-                                sistem barter.<br>
-                                Kemampuan dan kebutuhan untuk berburu dan mengembangkan senjata untuk bertahan hidup melalui proses crafting
-                                menjadi kunci, yang juga mengharuskan Anda mengumpulkan ragam resource dari peradaban sebelumnya. Kondisi
-                                seperti ini membuat setting Hope County milik Far Cry New Dawn berujung begitu cerah dan penuh warna
-                                dibandingkan game bertema serupa yang lain. Bunga warna-warni dan binatang-binatang dengan bulu cerah 
-                                yang melalui proses mutasi akan “menyambut” setiap aksi eksplorasi yang Anda lewati. Yang menarik? 
-                                Highwaymen yang notabene merupakan klan antagonis yang Anda lawan juga secara mengejutkan punya sisi
-                                artistik mereka sendiri yang disajikan lewat seni mural penuh warna cerah yang bisa Anda temukan di
-                                beragam sudut area. Ini membuat dunia Far Cry New Dawn tidak terasa mengancam sama sekali.
-                                <img width="500" height="500" src="../assets/img/photo/new.jpg" class="img-fluid"/>><br>
-                                Penelusuran menemukan sebuah kereta api aktif yang sempat memuat tawanan dari luar kota Moscow di dalamnya.
-                                Dalam misi ekspedisinya bersama dengan sang istri – Anna, Artyom tiba-tiba menemukan sebuah kereta api yang 
-                                berjalan aktif melintasi rel. Bersama dengannya adalah para tawanan yang mengaku bahwa mereka semua datang 
-                                dari luar Moscow. Pertempuran besar melawan kelompok penawan ternyata membuka fakta bahwa satu-satunya alasan 
-                                Moscow begitu “sunyi” dari interfensi sinyal luar bukan karena tidak adanya lagi kehidupan di luar sana, 
-                                tetapi karena pelacak sinyal yang pada akhirnya berhasil dihancurkan oleh Artyom. Bersama dengannya, mereka 
-                                juga berhasil mengamankan sang kereta api yang mereka beri nama “Aurora”.Pasukan Spartans yang sempat 
-                                diperintahkan untuk mengamankan kembali Aurora dan menahan Artyom serta Anna kini menjadi salah satu kelompok 
-                                baru yang matanya terbuka. Setelah memikirkan matang langkah mereka selanjutnya, kesemuanya setuju bahwa langkah
-                                logis terbaik yang bisa mereka tempuh saat ini adalah dengan membawa Aurora ke wilayah yang lain, mencari 
-                                mereka yang berhasil selamat. Apalagi sinyal radio yang mereka terima juga memberi sinyal bahwa  setidaknya ada
-                                satu lokasi militer yang sepertinya selamat. Sebuah tempat bernama Moscow Defense Command sepertinya masih 
-                                aktif dan meminta mereka yang berhasil selamat untuk berkumpul dan berkoordinasi di sana. Tidak perlu menunggu
-                                lama hingga para kru berupaya bergerak ke sana, lengkap dengan semua tantangan yang ada. Misi utamanya tentu 
-                                saja, mencari “rumah baru” untuk Artyom, Anna, dan para Spartans yang percaya pada mereka.
+                        <div class="col-md-12">
+                                
+                                    
+                                    <h2>Siapkan Ruang Penyimpanan di PS4 Kalian Karena Cyberpunk 2077 Memakan Tempat yang Cukup Besar!</h2>
+                                    <img width="500" height="500" src="../assets/img/photo/1.jpg"
+                                        class="img-fluid" /><br>
+                                        Coba tebak kira-kira berapa besar ruang penyimpanan minimum yang dibutuhkan 
+                                        untuk memainkan Cyberpunk 2077?
+                                        Setelah mengetahui tanggal rilis game garapan CD Projekt Red ini, yaitu 
+                                        pada tanggal 16 April 2020, fan semakin tak sabar untuk bisa melompat 
+                                        ke Night City dan nongkrong bareng si ganteng Keanu Reeves. Berdasarkan 
+                                        informasi dari Playstation Store, kemungkinan besar Cyberpunk 2077 akan
+                                        membutuhkan ruang penyimpanan yang tidak kecil. 
+                                        
+                                        Dilansir dari comicbook.com, ruang penyimpanan minimum yang dibutuhkan 
+                                        untuk bisa memainkan game ini adalah 80GB. Walaupun total memory itu bukan 
+                                        ukuran tertinggi seperti pada Red Dead Redemption 2 yang bisa mencapai 100GB, 
+                                        itu adalah jumlah yang cukup besar. Dan ada kemungkinan juga kalau ukurannya 
+                                        akan lebih dari itu.
 
-                                Misi untuk mencari sebuah rumah baru pun dimulai.
+                                        <img width="500" height="500" src="../assets/img/photo/22.jpg"
+                                        class="img-fluid" /><br>
+
+                                        Masih belum diketahui apakah pada versi PC dan Xbox One ukurannya akan sama 
+                                        atau tidak, namun nampaknya tak akan berbeda jauh dari itu. Dengan game 
+                                        sedetail itu, wajar saja jika ukurannya mencapai 80GB. Bagaimanapun, kita 
+                                        harus menunggu sampai gamenya benar-benar rilis sampai mengetahui ukuran 
+                                        yang sesungguhnya. Hapus game-game yang sekiranya sudah tak diperlukan 
+                                        agar kalian bisa menikmati suasana kota di malam hari bersama Keanu Reeves!
+                                        
+                                        Sumber: comicbook.com
+
 
 
                                 </p>
@@ -208,6 +206,51 @@ include '../sql.php';
                         <hr>
                         <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
                         <hr>
+                        <div class="col-lg-12">
+                            <table>
+                                <tr>
+                                <hr>
+                                    <td><?php echo $namegame; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Recomended Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nram; ?></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div>CPU nilai: </div>
+                            <div id="v-cpu">-</div>
+                            <div>VGA nilai: </div>
+                            <div id="v-vga">-</div>
+                            <div>RAM nilai: </div>
+                            <div id="v-ram">-</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -281,9 +324,31 @@ include '../sql.php';
     </footer>
 
 </body>
+<script>
+function compare() {
+    var u_cpu = "<?php echo $u_idcpu; ?>";
+    var r_cpu = "<?php echo $r_idcpu; ?>";
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    var u_cpu = u_cpu.toFixed(2);
+    document.getElementById("v-cpu").innerHTML = u_cpu;
+
+    var u_vga = "<?php echo $u_idvga; ?>";
+    var r_vga = "<?php echo $r_idvga; ?>";
+    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    var u_vga = u_vga.toFixed(2);
+    document.getElementById("v-vga").innerHTML = u_vga;
+
+    var u_ram = "<?php echo $u_idram; ?>";
+    var r_ram = "<?php echo $r_idram; ?>";
+    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    var u_ram = u_ram.toFixed(2);
+    document.getElementById("v-ram").innerHTML = u_ram;
+}
+</script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

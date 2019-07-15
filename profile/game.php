@@ -101,8 +101,13 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" onclick="signOut();"
-                                                    class="btn btn-sm input-btn w100">
+                                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
                                             </td>
                                         </tr>
                                     </table>
@@ -147,7 +152,7 @@ include '../sql.php';
                                 <div class="artikel">Baca Selanjutnya</div>
                             </div>
                             <div class="col-md-5 order-md-1">
-                                <img width="500" height="500" src="../assets/img/photo/2 (2).jpg" class="img-fluid" />
+                                <img width="500" height="500" src="../assets/img/photo/deus.jpg" class="img-fluid" />
                             </div>
                         </div>
 
@@ -213,6 +218,51 @@ include '../sql.php';
                         <hr>
                         <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
                         <hr>
+                        <div class="col-lg-12">
+                            <table>
+                                <tr>
+                                <hr>
+                                    <td><?php echo $namegame; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Recomended Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nram; ?></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div>CPU nilai: </div>
+                            <div id="v-cpu">-</div>
+                            <div>VGA nilai: </div>
+                            <div id="v-vga">-</div>
+                            <div>RAM nilai: </div>
+                            <div id="v-ram">-</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -286,9 +336,31 @@ include '../sql.php';
     </footer>
 
 </body>
+<script>
+function compare() {
+    var u_cpu = "<?php echo $u_idcpu; ?>";
+    var r_cpu = "<?php echo $r_idcpu; ?>";
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    var u_cpu = u_cpu.toFixed(2);
+    document.getElementById("v-cpu").innerHTML = u_cpu;
+
+    var u_vga = "<?php echo $u_idvga; ?>";
+    var r_vga = "<?php echo $r_idvga; ?>";
+    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    var u_vga = u_vga.toFixed(2);
+    document.getElementById("v-vga").innerHTML = u_vga;
+
+    var u_ram = "<?php echo $u_idram; ?>";
+    var r_ram = "<?php echo $r_idram; ?>";
+    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    var u_ram = u_ram.toFixed(2);
+    document.getElementById("v-ram").innerHTML = u_ram;
+}
+</script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

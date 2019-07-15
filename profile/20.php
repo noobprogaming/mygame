@@ -30,6 +30,7 @@ if($_SESSION['status']!="login"){
 
 include '../koneksi.php';
 $email=$_SESSION['email'];
+$id_game=$_GET['id'];
 include '../sql.php';
 ?>
 
@@ -125,16 +126,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                DEUS EX
+                GAME GENRE
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/de1.jpg">
+                        <img class="img-fluid" src="../assets/img/1.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/de2.jpg">
-                        <img class="img-fluid" src="../assets/img/photo/de3.jpg">
+                        <img class="img-fluid" src="../assets/img/2.jpg">
+                        <img class="img-fluid" src="../assets/img/3.jpg">
                     </div>
                 </div>
             </div>
@@ -145,89 +146,31 @@ include '../sql.php';
                     <div class="col-md-9">
                         <div class="row">
                         <div class="col-md-12">
-                                <h2>Review Deus Ex : Mankind Divided Semakin Semakin sempurna</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/deu.jpg"
+                                
+                                    <h2>Bocoran Sebut Red Dead Redemption 2 Juga Segera Meluncur untuk PC</h2>`
+                                    <img width="500" height="500" src="../assets/img/photo/55.jpg"
                                         class="img-fluid" /><br>
-                                    Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu ruang yang
-                                    sama, memang sulit untuk membedakan mana yang
-                                    sejatinya sebuah game RPG, mana game action, dan mana sebuah platfomer murni. Ada
-                                    kecenderungan untuk mengambil elemen-elemen
-                                    terbaik dari masing-masing genre tersebut dan kemudian melahirkan sesuatu yang lebih
-                                    kompleks, namun tetap punya identitas kuat
-                                    di dalamnya. Bagi para penggemar action RPG, Deus Ex dari Eidos Montreal dan Square
-                                    Enix memang punya posisi tersendiri di hati.
-                                    Sempat populer di masa lalu, franchise ini seolah berhasil menemukan kembali denyut
-                                    jantungnya setelah rilis Human Revolution
-                                    yang berhasil secara kualitas dan kuantitas penjualan. Dan kini sang seri sekuel –
-                                    Deus Ex: Mankind Divided akhirnya tiba.
-                                    Anda yang sempat membaca artikel preview kami sebelumnya tentu sudah punya sedikit
-                                    gambaran soal apa yang ditawarkan game
-                                    yang satu ini. Dari core gameplay yang ada, ia masih menawarkan cita rasa yang sama
-                                    dengan Human Revolution sebagai basis.
-                                    Implementasi engine terbaru – Dawn Engine memang meninggalkan kesan kualitas visual
-                                    yang lebih modern dengan peralihan platform
-                                    generasi saat ini. Namun satu yang membuat kami jatuh hati adalah keberhasilan untuk
-                                    memperbaiki beberapa masalah krusial di seri
-                                    sebelumnya, terutama yang berhubungan dengan keputusan untuk terus memainkan game
-                                    ini dengan pendekatan non-lethal. Apakah
-                                    impresi pertama yang super positif tersebut berakhir hingga permainan selesai? Ini
-                                    tentu saja, jadi pertanyaan utamanya.
-                                    Lantas, apa yang sebenarnya ditawarkan oleh Deus Ex: Mankind Divided ini? Mengapa
-                                    kami menyebutnya sebagai game yang semakin
-                                    sempurna? Review ini akan membahasnya lebih dalam untuk Anda!<br>
-                                    <img width="500" height="500" src="../assets/img/photo/deus.jpg"
-                                        class="img-fluid" />><br>
-                                    Deus Ex: Mankind Divided sendiri diposisikan sebagai sebuah seri sekuel langsung
-                                    dari Human Revolution, seri yang sempat
-                                    dirilis tahun 2011 silam. Dua tahun setelah event di Human Revolution dimana
-                                    manusia-manusia dengan Augmentasi sempat tak
-                                    terkontrol karena aksi dari sebuah organisasi rahasia bernama Illuminati, manusia
-                                    mulai mengembangkan rasa takut yang tak
-                                    rasional untuk kelompok yang satu ini. Rasisme tumbuh dan menjadikan manusia dengan
-                                    augmentasi seperti ini sebagai kelas
-                                    sosial kedua yang pantas untuk dijauhi, dengan sebuah kota yang bahkan dibangun
-                                    eksklusif untuk memuat mereka.
-                                    Namun alih-alih semakin membaik, teror tersebut justru semakin menguat setelah
-                                    sebuah kelompok teroris berisikan manusia-
-                                    manusia dengan augmentasi mulai melancarkan serangan mereka. Tak jelas motif seperti
-                                    apa yang diusung, tak jelas pula siapa
-                                    yang bergerak di belakangnya, namun aksi mereka membuat banyak mereka yang tak
-                                    berdosa harus meregang nyawa. Adam Jensen
-                                    kini bergabung dengan pasukan anti-teroris bernama Task Force 29 untuk memecahkan
-                                    kasus yang satu ini. Operasi yang mereka
-                                    lakukan di Dubai mengkonfirmasikan bahwa memang, ada kelompok manusia dengan
-                                    augmentasi yang terlibat.
-                                    <img width="500" height="500" src="../assets/img/photo/ds ex.jpg"
-                                        class="img-fluid" />><br>
-                                    Dari siapa dan
-                                    atas kepentingan siapa? Itu jadi salah satu misteri yang harus dijawab Jensen.Terus
-                                    ditekan karena manusia yang paranoid
-                                    terhadap kemampuan mereka, beberapa manusia augmentasi yang berusaha melawan balik
-                                    melakukan serangakaian aksi terorisme.
-                                    Adam Jensen dipanggil untuk menyelidiki siapa yang sebenarnya bertanggung jawab.Di
-                                    sisi lain, ia bekerja sebagai seorang
-                                    double agent. Fakta bahwa siapa sebenarnya Illuminati membuat Jensen terlibat dalam
-                                    sebuah kelompok hacktivist bernama
-                                    Juggernaut Collective yang juga bertanya-tanya soal hal yang sama. Kelompok ini
-                                    dipimpin oleh seorang hacker tanpa wajah
-                                    bernama Janus yang sepertinya selalu mendapatkan informasi yang dibutuhkan tanpa
-                                    kesulitan apapun. Jensen pun kini terlibat
-                                    dalam dua kepentingan yang bisa saja saling bertabrakan satu sama lain – usaha untuk
-                                    menemukan siapa yang bertanggung
-                                    jawab di rangkaian aksi teror manusia dengan augmentasi yang terjadi dan tentu saja,
-                                    membongkar siapa itu Illuminati.
-                                    Namun di sisi lain, Jensen berfungsi sebagai double agent untuk membongkar
-                                    Illuminati – pihak yang bertanggung jawab
-                                    atas event dua tahun yang lalu.Berita baiknya? Anda yang tidak pernah mencicipi Deus
-                                    Ex: Human Revolution tak usah khawatir
-                                    bahwa Anda tak akan mendapatkan esensi cerita yang tentu saja, dibutuhkan untuk
-                                    menikmati seri sekuel ini. Anda bisa
-                                    memulai game ini dengan menonton sebuah video re-cap berdurasi 11 menit yang
-                                    disediakan oleh Eidos Montreal untuk
-                                    memberikan secara langsung plot seperti apa yang menjadi basis untuk Mankind Divided
-                                    ini. Tak perlu lagi harus mencari
-                                    internet hanya untuk mengerti, sebuah fitur yang tentu saja pantas untuk disambut
-                                    baik.
+
+                                        Tidak lagi eksklusif dikonsol, Red Dead Redemption 2 dikabarkan juga akan hadir untuk PC.
+                                        Red Dead Redemption 2 merupakan game bertema kehidupan koboi buatan Rockstar Games. 
+                                        Setelah lebih dulu meluncur dikonsol PlayStation 4 dan Xbox One, kini RDR2 digosipkan 
+                                        juga akan segera menuju PC.
+                                        Mengutip VG247.com, seorang bernama @JakoMako51 mengklaim telah menemukan petunjuk 
+                                        tentang adanya Red Dead Redemption 2 di PC.
+                                        Melalui akun Twitternya @JakoMako51, ia menjelaskan jika petunjuk tersebut berupa 
+                                        'source code' di situs Rockstar Social Club. Petunjuk ini berisi referensi 
+                                        'RDR2_PC_Accomplishments' yang menunjukkan jika Red Redemption 2 versi PC memang ada.
+                                    
+                                    <img width="500" height="500" src="../assets/img/photo/6.jpg"
+                                        class="img-fluid" /><br>
+                                        Ini bukan satu-satunya petunjuk mengenai keberadaan RDR2 2 versi PC. Program 
+                                        di dalam aplikasi companion app buat Rockstar juga mencantumkan referensi RDR 2 
+                                        versi PC. Belum lagi halaman Linkedin salah satu developer juga mencantumkan bukti 
+                                        yang seakan menunjukkan keberadaan RDR2 versi PC, di mana ia menulis jika ia ikut 
+                                        terlibat dalam pembuatan RDR2 untuk versi konsol dan juga PC. 
+                                        Bagaimana menurut kalian nih gaes, apakah Rockstar Games akan mencari keuntungan 
+                                        lebih dengan merilis Red Dead Redemption 2 di PC? Ikuti terus DuniaGames.co.id 
+                                        untuk informasi menarik seputar game lainnya ya
 
                                 </p>
                             </div>
@@ -256,6 +199,51 @@ include '../sql.php';
                         <hr>
                         <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
                         <hr>
+                        <div class="col-lg-12">
+                            <table>
+                                <tr>
+                                <hr>
+                                    <td><?php echo $namegame; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Recomended Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nram; ?></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div>CPU nilai: </div>
+                            <div id="v-cpu">-</div>
+                            <div>VGA nilai: </div>
+                            <div id="v-vga">-</div>
+                            <div>RAM nilai: </div>
+                            <div id="v-ram">-</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -329,9 +317,31 @@ include '../sql.php';
     </footer>
 
 </body>
+<script>
+function compare() {
+    var u_cpu = "<?php echo $u_idcpu; ?>";
+    var r_cpu = "<?php echo $r_idcpu; ?>";
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    var u_cpu = u_cpu.toFixed(2);
+    document.getElementById("v-cpu").innerHTML = u_cpu;
+
+    var u_vga = "<?php echo $u_idvga; ?>";
+    var r_vga = "<?php echo $r_idvga; ?>";
+    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    var u_vga = u_vga.toFixed(2);
+    document.getElementById("v-vga").innerHTML = u_vga;
+
+    var u_ram = "<?php echo $u_idram; ?>";
+    var r_ram = "<?php echo $r_idram; ?>";
+    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    var u_ram = u_ram.toFixed(2);
+    document.getElementById("v-ram").innerHTML = u_ram;
+}
+</script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

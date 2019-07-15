@@ -104,8 +104,13 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" onclick="signOut();"
-                                                    class="btn btn-sm input-btn w100">
+                                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
                                             </td>
                                         </tr>
                                     </table>
@@ -204,9 +209,6 @@ include '../sql.php';
                                     <td><?php echo $m_nram; ?></td>
                                 </tr>
                                 <tr>
-                                    <td><?php echo $r_storage; ?>GB Storage</td>
-                                </tr>
-                                <tr>
                                     <td> - - - </td>
                                 </tr>
                                 <tr>
@@ -220,9 +222,6 @@ include '../sql.php';
                                 </tr>
                                 <tr>
                                     <td><?php echo $r_nram; ?></td>
-                                </tr>
-                                <tr>
-                                    <td><?php echo $r_storage; ?>GB Storage</td>
                                 </tr>
                             </table>
                         </p>
@@ -317,81 +316,42 @@ include '../sql.php';
 
 </body>
 <script>
-    function compare() {
-        var u_cpu = "<?php echo $u_idcpu; ?>";
-        var r_cpu = "<?php echo $r_idcpu; ?>";
-        u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
-        var u_cpu = u_cpu.toFixed(2);
-        document.getElementById("v-cpu").innerHTML = u_cpu;
+function compare() {
+    var u_cpu = "<?php echo $u_idcpu; ?>";
+    var r_cpu = "<?php echo $r_idcpu; ?>";
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    var u_cpu = u_cpu.toFixed(2);
+    document.getElementById("v-cpu").innerHTML = u_cpu;
 
-        var u_vga = "<?php echo $u_idvga; ?>";
-        var r_vga = "<?php echo $r_idvga; ?>";
-        u_vga = u_vga / r_vga * 100 * (95 / 100);
-        var u_vga = u_vga.toFixed(2);
-        document.getElementById("v-vga").innerHTML = u_vga;
+    var u_vga = "<?php echo $u_idvga; ?>";
+    var r_vga = "<?php echo $r_idvga; ?>";
+    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    var u_vga = u_vga.toFixed(2);
+    document.getElementById("v-vga").innerHTML = u_vga;
 
-        var u_ram = "<?php echo $u_idram; ?>";
-        var r_ram = "<?php echo $r_idram; ?>";
-        u_ram = u_ram / r_ram * 100 * (97 / 100);
-        var u_ram = u_ram.toFixed(2);
-        document.getElementById("v-ram").innerHTML = u_ram;
+    var u_ram = "<?php echo $u_idram; ?>";
+    var r_ram = "<?php echo $r_idram; ?>";
+    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    var u_ram = u_ram.toFixed(2);
+    document.getElementById("v-ram").innerHTML = u_ram;
 
-        var u_ssd = "<?php echo $u_idssd; ?>";
-        var r_storage = "<?php echo $r_storage; ?>";
-        u_ssd = u_ssd / r_storage * 100 * (95 / 99);
-        var u_ssd = u_ssd.toFixed(2);
-        document.getElementById("v-ssd").innerHTML = u_ssd;
+    var u_ssd = "<?php echo $u_idssd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_ssd = u_ssd / r_storage * 100 * (95 / 99);
+    var u_ssd = u_ssd.toFixed(2);
+    document.getElementById("v-ssd").innerHTML = u_ssd;
 
-        var u_hdd = "<?php echo $u_idhdd; ?>";
-        var r_storage = "<?php echo $r_storage; ?>";
-        u_hdd = u_hdd / r_storage * 100 * (90 / 99);
-        var u_hdd = u_hdd.toFixed(2);
-        document.getElementById("v-hdd").innerHTML = u_hdd;
-    }
-
-    function old() {
-        var u_cpu = "<?php echo $u_idcpu; ?>";
-        var m_cpu = "<?php echo $m_idcpu; ?>";
-        var r_cpu = "<?php echo $r_idcpu; ?>";
-        if (u_cpu >= r_cpu) {
-            u_cpu = "JOS MANTAP";
-        } else if (u_cpu >= m_cpu && u_cpu <= r_cpu) {
-            u_cpu = "OKELAH";
-        } else if (u_cpu <= m_cpu) {
-            u_cpu = "LAG BOS";
-        }
-        document.getElementById("v-cpu").innerHTML = u_cpu;
-
-        var u_vga = "<?php echo $u_idvga; ?>";
-        var m_vga = "<?php echo $m_idvga; ?>";
-        var r_vga = "<?php echo $r_idvga; ?>";
-        if (u_vga >= r_vga) {
-            u_vga = "JOS MANTAP";
-        } else if (u_vga >= m_vga && u_vga <= r_vga) {
-            u_vga = "OKELAH";
-        } else if (u_vga <= m_vga) {
-            u_vga = "LAG BOS";
-        }
-        document.getElementById("v-vga").innerHTML = u_vga;
-
-        var u_ram = "<?php echo $u_idram; ?>";
-        var m_ram = "<?php echo $m_idram; ?>";
-        var r_ram = "<?php echo $r_idram; ?>";
-        if (u_ram >= r_ram) {
-            u_ram = "JOS MANTAP";
-        } else if (u_ram >= m_ram && u_ram <= r_ram) {
-            u_ram = "OKELAH";
-        } else if (u_ram <= m_ram) {
-            u_ram = "LAG BOS";
-        }
-        if (u_ram.length > 3) u_ram = str.substring(0, 3);
-        document.getElementById("v-ram").innerHTML = u_ram;
-
-    }
+    var u_hdd = "<?php echo $u_idhdd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_hdd = u_hdd / r_storage * 100 * (90 / 99);
+    var u_hdd = u_hdd.toFixed(2);
+    document.getElementById("v-hdd").innerHTML = u_hdd;
+}
 </script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

@@ -27,6 +27,7 @@ if($_SESSION['status']!="login"){
 
 include '../koneksi.php';
 $email=$_SESSION['email'];
+$id_game=$_GET['id'];
 include '../sql.php';
 ?>
 
@@ -118,16 +119,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                CODE VEIN
+                GTA V
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/vein3.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/gtadep2.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/vein4.jpg">
-                        <img class="img-fluid" src="../assets/img/photo/vein5.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/gtadep1.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/gtadep3.jpg">
                     </div>
                 </div>
             </div>
@@ -138,41 +139,54 @@ include '../sql.php';
                     <div class="col-md-9">
                         <div class="row">
                             <div class="col-md-12">
-                            <h2>Code Vein akan dirilis pada tanggal 27 September 2019</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/vein.jpg" class="img-fluid" /><br>
-                                Dalam beberapa bulan ke depan, setelah melewati fase absen informasi yang mengkhawatirkan, 
-                                Bandai Namco akhirnya siap untuk menawarkan Code Vein ke publik lewat platform rilis yang sudah diumumkan sebelumnya. 
-                                Ia memang seringkali disebut sebagai Dark Souls dengan cita rasa anime yang kental, walaupun pada akhirnya, 
-                                ia harus diakui mengusung beberapa mekanik baru dan berbeda. Kita berbicara soal sistem companion, persenjataan, 
-                                hingga ritme pertarungan yang begitu Anda jajal, akan terasa memiliki identitas uniknya sendiri. Maka bagi gamer PC, 
-                                seiring dengan waktu rilis yang semakin dekat, ini berarti kebutuhan untuk mulai mempersiapkan diri.<br>
-                                <img width="500" height="500" src="../assets/img/photo/vein2.jpg" class="img-fluid"/>><br>
-                                Setelah menunggu cukup lama, halaman pre-order Code Vein untuk Steam akhirnya dibuka juga. 
-                                Bersama dengan harga resmi untuk proses pre-order yang sudah ditentukan (sekitar 499 ribu Rupiah untuk region Indonesia), 
-                                informasi terkait spesifikasi PC resmi untuk bisa menjalankannya di kualitas paling optimal juga akhirnya dilepas. 
-                                Diracik dengan menggunakan Unreal Engine 4, 
-                                gamer yang tertarik untuk membeli Deluxe Edition yang lebih mahal juga akan otomatis dipersenjatai dengan “Season Pass” dan set kostum di dalamnya.
-                                <br>
-                                <br>
-                                <br>
-                                Minimum Requirements<br>
-                                •	Requires a 64-bit processor and operating system<br>
-                                •	OS: Windows 7 SP1 or Windows 10 (64-bit)<br>
-                                •	Processor: Intel Core i5-2300<br>
-                                •	Memory: 6 GB RAM<br>
-                                •	Graphics: GeForce GTX 760 or Radeon HD 7850<br>
-                                •	DirectX: Version 11<br>
-                                •	Network: Broadband Internet connection<br>
-                                •	Sound Card: DirectX compatible soundcard or onboard chipset<br><br>
-                                Recommended Requirements<br>
-                                •	Requires a 64-bit processor and operating system<br>
-                                •	OS: Windows 7 SP1 or Windows 10 (64-bit)<br>
-                                •	Processor: Intel Core i5-7400 or AMD Ryzen 3 2200G<br>
-                                •	Memory: 8 GB RAM<br>
-                                •	Graphics: GeForce GTX 960 or Radeon R9 380X<br>
-                                •	DirectX: Version 12<br>
-                                •	Network: Broadband Internet connection<br>
-                                •	Sound Card: DirectX compatible soundcard or onboard chipset<br>
+                            <h2>Review GTA V (PC): Versi Paling Sempurna!</h2>
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/gta1.jpg" class="img-fluid" /><br>
+                                Sebuah skenario yang tidak pernah kami pikirkan sebenarnya, bahwa kami, dengan tanpa rasa berkeberatan, 
+                                rela menggelontorkan dana ekstra untuk membeli game yang sama tiga kali, di tiga platform yang berbeda. 
+                                Menarik, karena di sisi lain, kerelaan kami juga menjadi semacam bukti bahwa Rockstar telah mengeksekusi 
+                                sebuah strategi marketing yang luar biasa. Di Playstation 3, kami menyebutnya sebagai game open world 
+                                terbaik karena impresi gameplay yang fantastis. Sebuah dunia yang terbuka dengan segudang aktivitas, 
+                                dari perspektif tiga karakter dengan kepribadian yang unik, bersama dengan dukungan GTA Online – yang 
+                                bisa disimpulkan, sebagai fitur impian para pecinta GTA selama ini. Namun siapa yang menyangka, GTA V 
+                                versi Playstation 3 ternyata bukanlah yang terakhir.<br>Mata gamer mana yang tidak tergoda setelah Rockstar 
+                                memastikan sebuah proses Remaster GTA V untuk konsol platform generasi terbaru – Playstation 4 dan Xbox 
+                                One. Ia tidak menawarkan ekstra konten di sisi cerita yang menggoda, namun dukungan fitur unik, membuat 
+                                versi ini kembali sulit ditolak. GTA V versi Playstation 4 yang kami cicipi menghadirkan Los Santos yang 
+                                lebih indah, lewat kepadatan dan variasi beragam elemen pendukung – seperti NPC, tanaman, dan hewan di 
+                                tekstur lebih tinggi. Tidak hanya itu saja, dukungan sudut pandang baru ala FPS memungkinkan gamer untuk 
+                                mencicipi game yang sama, namun dengan pengalaman yang berbeda. Semua momen ikoniknya terasa lebih 
+                                personal ketika dicicipi dari sudut pandang orang pertama.<br>Namun resolusi kami untuk menjadikan Playstation 
+                                4 sebagai versi terakhir yang kami cicipi, apalagi didukung dengan betapa tidak masuk akalnya sebuah 
+                                skenario dimana kami harus menggelontorkan uang untuk tiga game sama yang tidak punya konten ekstra 
+                                apapun seolah hancur berantakan setelah versi PC ini akhirnya tiba di pasaran. Rockstar menyebutnya 
+                                sebagai versi yang terbaik, sebuah versi bagaimana seharusnya GTA V dinikmati. Resolusi lebih tinggi, 
+                                framerate lebih baik, hingga dukunga fitur eksklusif membuatnya kembali terlihat menggoda.Lantas, apa 
+                                yang sebenarnya ditawarkan oleh GTA V Versi PC ini? Mengapa kami menyebutnya sebagai versi yang paling sempurna?<br>
+                                <h2>Optimalisasi Mumpuni</h2>
+                                <img width="500" height="500" src="../assets/img/photo/gta2.jpg" class="img-fluid"/><br>
+                                “Mohon maaf, kami butuh waktu ekstra untuk memastikan kualitas sesuai dengan standar yang kami inginkan”, 
+                                Anda sudah pasti pernah mendengar alasan klise yang boleh terbilang, selalu meluncur bersama dengan 
+                                pengumuman penundaan rilis ini. Rockstar sempat melemparkan kalimat yang sama dua kali, setelah GTA V 
+                                PC diundur dari akhir Januari, menuju ke Maret, yang tanggal rilisnya kemudian dipindahkan kembli ke 
+                                14 April 2015 kemarin.Alasan seperti ini memang terdengar begitu “manis”, sebuah pembelaan yang bisa 
+                                dimengerti apalagi melihat banyak game yang terburu-buru berakhir menjadi produk bencana yang sulit 
+                                untuk dinikmati. Berita baik untuk Anda – semua gamer PC yang sudah lama menantikan game ini? Rockstar 
+                                tidak mengumbar omong kosong.<br>Rockstar berhasil  menghadirkan optimalisasi yang luar biasa dan pantas 
+                                untuk diacungi jempol di GTA V versi PC ini. Salah satu bukti yang paling kuat mengakar pada segudang 
+                                opsi grafis yang disematkan untuk membantu gamer yang berangkat dari varian kemampuan rig untuk 
+                                beradaptasi dengan mesin gaming mereka. Semua detail ditawarkan, bahkan hingga kesempatan untuk mengatur 
+                                seberapa padat NPC yang akan Anda temui di Los Santos dan seberapa bervariasinya bentuk mereka. Anda 
+                                yang punya PC dengan kemampuan di ambang batas, bisa mengurangi elemen-elemen yang menurut Anda pribadi, 
+                                memang tidak akan berkontribusi signifikan pada pengalaman bermain yang Anda dapatkan. Jika ada satu 
+                                kata yang bisa disimpulkan untuk mendefinisikan kerja keras Rockstar di GTA V PC, maka tidak ada kata 
+                                lain yang lebih tepat selain kata: NIAT!<br><br>
+                                <img width="500" height="500" src="../assets/img/photo/gta3.jpg" class="img-fluid"/><br>
+                                Segudang opsi grafis yang bisa Anda tweak. Rockstar mendefinisikan ulang sebuah game “port” yang niat. <br><br>
+                                <img width="500" height="500" src="../assets/img/photo/gta4.jpg" class="img-fluid"/><br>
+                                Dukungan DX10 yang dipertahankan membuat banyak rig lawas tetap relevan dan bisa diandalkan untuk memainkan game ini.<br><br>
+                                <img width="500" height="500" src="../assets/img/photo/det.jpg" class="img-fluid"/><br> 
+                                Dat detail..<br><br>
+                                Lantas, seberapa hebatnya optimalisasi ini? Kami sendiri memang masih belum bisa berbicara banyak saat ini, namun pengujian awal yang dilakukan oleh kru JagatReview membuktikan bahwa ia bisa berjalan dalam kualitas visual yang lebih baik dari versi Playstation 3, dengan sebuah PC yang dibangun dengan teknologi tujuh tahun yang lalu. Benar sekali, Anda tidak salah membaca kalimat kami sebelumnya. Komponen PC berumur tujuh tahun masih bisa menikmati game ini dengan pengalaman bermain yang cukup mumpuni. Dukungan DirectX10 adalah keputusan terbaik yang bisa dilakukan Rockstar, membuat game ini terasa begitu “terjangkau”, bahkan untuk gamer yang sudah angkat tangan bisa mampu menikmati game-game teranyar.
 
                             </div>
                         </div>
@@ -200,6 +214,51 @@ include '../sql.php';
                         <hr>
                         <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
                         <hr>
+                        <div class="col-lg-12">
+                            <table>
+                                <tr>
+                                <hr>
+                                    <td><?php echo $namegame; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Recomended Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nram; ?></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div>CPU nilai: </div>
+                            <div id="v-cpu">-</div>
+                            <div>VGA nilai: </div>
+                            <div id="v-vga">-</div>
+                            <div>RAM nilai: </div>
+                            <div id="v-ram">-</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -273,9 +332,31 @@ include '../sql.php';
     </footer>
 
 </body>
+<script>
+function compare() {
+    var u_cpu = "<?php echo $u_idcpu; ?>";
+    var r_cpu = "<?php echo $r_idcpu; ?>";
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    var u_cpu = u_cpu.toFixed(2);
+    document.getElementById("v-cpu").innerHTML = u_cpu;
+
+    var u_vga = "<?php echo $u_idvga; ?>";
+    var r_vga = "<?php echo $r_idvga; ?>";
+    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    var u_vga = u_vga.toFixed(2);
+    document.getElementById("v-vga").innerHTML = u_vga;
+
+    var u_ram = "<?php echo $u_idram; ?>";
+    var r_ram = "<?php echo $r_idram; ?>";
+    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    var u_ram = u_ram.toFixed(2);
+    document.getElementById("v-ram").innerHTML = u_ram;
+}
+</script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

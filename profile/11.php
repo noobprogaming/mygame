@@ -16,9 +16,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="../assets/custom.css">
-    <style>
-
-    </style>
 </head>
 
 <body onload="gender()">
@@ -30,6 +27,7 @@ if($_SESSION['status']!="login"){
 
 include '../koneksi.php';
 $email=$_SESSION['email'];
+$id_game=$_GET['id'];
 include '../sql.php';
 ?>
 
@@ -85,7 +83,7 @@ include '../sql.php';
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
-                                    <table>
+                                    <table align="center">
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
@@ -104,12 +102,13 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" onclick="signOut();"
-                                                    class="btn btn-sm input-btn w100">
-                                                <button onclick="signOut();">Out
-                                                </button>
-                                                <button onclick="myFunction();">Out
-                                                </button>
+                                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
                                             </td>
                                         </tr>
                                     </table>
@@ -125,16 +124,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                PAMALI : INDONESIAN FOLKLORE HORROR
+                FAR CRY 5
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                    <img class="img-fluid" src="../assets/img/photo/pamraw3.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/fc1.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/pamraw2.jpg">
-                        <img class="img-fluid" src="../assets/img/photo/pamraw1.jpg">
+                        <img class="img-fluid" src="../assets/img/2.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/fc3.jpg">
                     </div>
                 </div>
             </div>
@@ -144,63 +143,50 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                        <div class="col-md-12">
-                                <h2>Review PAMALI: Kreativitas dalam Ketakutan!</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/pam1.jpg"
-                                        class="img-fluid" /><br>
-                                        Hype terkait PAMALI memang sempat kuat ketika versi demo perdana yang keluar memperlihatkan konten
-                                        potensial yang menjanjikan. Sang studio developer – StoryTale Studios punya visi dan misi yang
-                                        jelas soal apa yang hendak mereka racik dan tema seperti apa yang hendak didorong. Namun kami
-                                        sendiri termasuk gamer yang cukup pesimis dengan demo tersebut, terutama karena struktur cerita
-                                        tidak jelas yang mengitari konsep “Pamali” – yang memang begitu kuat cita rasa kultural
-                                        Indonesia-nya. Di sisi lain, ia juga hadir dengan tingkat cahaya yang begitu rendah hingga
-                                        sulit menikmati atmosfer yang ada. Setelah menantikannya cukup lama, versi finalnya akhirnya
-                                        tersedia. Sebagai game episodik yang rencananya akan menghadirkan 4 skenario berbeda dengan
-                                        fokus pada makhluk halus yang juga berbeda-beda, proses review ini didasarkan pada skenario
-                                        yang tersedia saat ia ditulis – yakni Skenario 1 – “The White Lady” yang difokuskan pada
-                                        sosok Kuntilanak itu sendiri. Ia tentu saja tidak merepresentasikan kualitas 3 skenario
-                                        sisa yang tentu saja, belum kami jajal sama sekali.Lantas, apa yang sebenarnya ditawarkan
-                                        oleh PAMALI ini? Mengapa kami menyebutnya sebagai game yang menawarkan kreativitas dalam
-                                        ketakutan? Review ini akan membahasnya lebih dalam untuk Anda.<br>
-                                        <h2>Plot</h2>
-                                    <img width="500" height="500" src="../assets/img/photo/pam2.jpg"
-                                        class="img-fluid" /><br>
-                                        Mengejutkan dan kreatif adalah dua kata yang akan kami pilih untuk menjelaskan plot yang
-                                        ditawarkan oleh StoryTale Studios di skenario “The White Lady” PAMALI. Di versi demo, 
-                                        ada sinyal bahwa Anda sekedar berperan sebagai anak muda yang kebetulan mendapatkan warisan
-                                        rumah dari saudara perempuannya yang baru saja meninggal. Namun kedangkalan cerita tersebut 
-                                        ternyata berujung menjadi sesuatu yang lebih di versi finalnya. PAMALI hadir dengan kisah 
-                                        yang secara cerdas, rasional untuk menyatukan empat episode cerita yang ia persiapkan.Anda 
-                                        ternyata berperan sebagai seorang developer game horror yang tengah sibuk meracik game 
-                                        terbarunya. Di tengah kesibukan Anda merampungkannya, ada perintah dari atasan untuk melakukan 
-                                        proses research soal cerita-cerita supranatural dari beragam pelosok untuk memastikan bahwa 
-                                        game yang Anda racik merepresentasikan hal yang seharusnya. Salah satu dari cerita tersebut 
-                                        melibatkan “White Lady” itu sendiri dan berujung menjadi kisah yang harus Anda selami dan 
-                                        cermati. Pola cerita kreatif yang kini membuat format episodiknya menjadi sesuatu yang bisa 
-                                        dicerna secara rasional. Sementara untuk skenario “The White Lady” itu sendiri, Anda berperan 
-                                        sebagai seorang anak muda yang berusaha menjual rumah milik orang tuanya. Kotor dan cukup lama 
-                                        ditinggalkan, Anda juga diharuskan untuk mengumpulkan berkas-berkas penting di dalamnya sekaligus 
-                                        membantu membersihkannya agar terlihat menarik di mata para peminat. Namun seperti yang bisa 
-                                        diprediksi, rumah ini bukanlah rumah sembarangan. Ada aura yang ketidaktenangan yang kental 
-                                        di sini, dimana suara dan penampakan terjadi di beragam sudut. Lampu yang menyala sendiri, nomor 
-                                        rumah yang menolak untuk ditegakkan, hingga beragam benda paranormal tersimpan di ragam sudut. 
-                                        Aksi hendak menjual rumah ini berujung menjadi soal mempertahankan kewarasan.
-                                    <br>
-                                    <h2>META</h2>
-                                    <img width="500" height="500" src="../assets/img/photo/pam3.jpg" class="img-fluid"/><br>
-                                    Salah satu desain yang membuat kami jatuh hati dengan PAMALI adalah bagaimana ia berujung 
-                                    meracik sebuah cerita yang tidak hanya cerdas saja untuk membuat presentasi empat skenario 
-                                    tersebut sebagai sesuatu yang rasional, tetapi juga membangunnya sebagai sesuatu yang meta 
-                                    di dalamnya. Berperan sebagai developer yang berusaha meracik sebuah game horror adalah keputusan 
-                                    yang fantastis di mata kami. Perasaan meta yang Anda dapatkan membuat Anda merasa seolah tengah 
-                                    berperan sebagai salah satu anggota tim developer StoryTale Studios itu sendiri, dan kami 
-                                    menyukainya. Hal ini diperkuat dengan beragam email balasan yang masuk ke dalam komputer 
-                                    Anda salah satu objek interaktif yang bisa Anda buka dalam permainan, semakin mendorong sensasi 
-                                    tersebut. Email-email yang kebanyakan bercerita soal demo game horror terbaru sang developer 
-                                    in-game tersebut juga terasa mewakili beragam komentar yang mungkin masuk ketika demo PAMALI 
-                                    pertama kali beredar. Mengambil kacamata seorang developer sebagai fokus juga memungkinkan 
-                                    developer menyuntikkan ragam pesan “PSA” dan “Tutorial” yang diarahkan pada Anda, tapi didesain 
-                                    seolah-olah sebagai pesan untuk sang developer, karakter utama yang Anda gunakan. Cerdas!
+                            <div class="col-md-12">
+                            <h2>Preview Far Cry New Dawn: Kiamat Artistik!</h2>
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/far.jpg" class="img-fluid" /><br>
+                                Hampir sebagian besar gamer yang mengenal dengan baik franchise Far Cry sepertinya sudah mengetahui strategi rutin
+                                yang selalu ditawarkan oleh Ubisoft untuknya. Bahwa di sela-sela seri utama yang dilepas secara berkala, mereka
+                                selalu menghadirkan satu seri spin-off yang punya tema yang unik. Kita sempat bertemu dengan Blood Dragon yang
+                                mengingatkan Anda pada film-film sci-fi di era tahun 80-an hingga Primal yang mengambil tema pra-sejarah. Untuk
+                                tahun 2019 ini, Ubisoft mempersiapkan Far Cry New Dawn yang juga dilepas di awal tahun. Namun berbeda dengan
+                                seri sebelumnya yang tidak punya keterkaitan cerita, New Dawn hadir sebagai sekuel langsung dari event yang
+                                terjadi di Far Cry 5. Setelah menunggu cukup lama, kesempatan untuk menjajalnya secara langsung akhirnya tiba!<br>
+                                <h2>Kesan Pertama</h2>
+                                <img width="500" height="500" src="../assets/img/photo/cry.jpg" class="img-fluid"/>><br>
+                                Far Cry New Dawn bukanlah game post-apocalyptic. Ia sepertinya lebih tepat disebut sebagai game post post-apocalyptic,
+                                dimana dunia sudah berbenah dan membaik setelah apa yang terjadi di akhir Far Cry 5 yang lalu. Manusia kembali
+                                berusaha membangun peradaban lewat komunitas-komunitas kecil yang kini mulai membangun sistem ekonomi lewat 
+                                sistem barter.<br>
+                                Kemampuan dan kebutuhan untuk berburu dan mengembangkan senjata untuk bertahan hidup melalui proses crafting
+                                menjadi kunci, yang juga mengharuskan Anda mengumpulkan ragam resource dari peradaban sebelumnya. Kondisi
+                                seperti ini membuat setting Hope County milik Far Cry New Dawn berujung begitu cerah dan penuh warna
+                                dibandingkan game bertema serupa yang lain. Bunga warna-warni dan binatang-binatang dengan bulu cerah 
+                                yang melalui proses mutasi akan “menyambut” setiap aksi eksplorasi yang Anda lewati. Yang menarik? 
+                                Highwaymen yang notabene merupakan klan antagonis yang Anda lawan juga secara mengejutkan punya sisi
+                                artistik mereka sendiri yang disajikan lewat seni mural penuh warna cerah yang bisa Anda temukan di
+                                beragam sudut area. Ini membuat dunia Far Cry New Dawn tidak terasa mengancam sama sekali.
+                                <img width="500" height="500" src="../assets/img/photo/new.jpg" class="img-fluid"/>><br>
+                                Penelusuran menemukan sebuah kereta api aktif yang sempat memuat tawanan dari luar kota Moscow di dalamnya.
+                                Dalam misi ekspedisinya bersama dengan sang istri – Anna, Artyom tiba-tiba menemukan sebuah kereta api yang 
+                                berjalan aktif melintasi rel. Bersama dengannya adalah para tawanan yang mengaku bahwa mereka semua datang 
+                                dari luar Moscow. Pertempuran besar melawan kelompok penawan ternyata membuka fakta bahwa satu-satunya alasan 
+                                Moscow begitu “sunyi” dari interfensi sinyal luar bukan karena tidak adanya lagi kehidupan di luar sana, 
+                                tetapi karena pelacak sinyal yang pada akhirnya berhasil dihancurkan oleh Artyom. Bersama dengannya, mereka 
+                                juga berhasil mengamankan sang kereta api yang mereka beri nama “Aurora”.Pasukan Spartans yang sempat 
+                                diperintahkan untuk mengamankan kembali Aurora dan menahan Artyom serta Anna kini menjadi salah satu kelompok 
+                                baru yang matanya terbuka. Setelah memikirkan matang langkah mereka selanjutnya, kesemuanya setuju bahwa langkah
+                                logis terbaik yang bisa mereka tempuh saat ini adalah dengan membawa Aurora ke wilayah yang lain, mencari 
+                                mereka yang berhasil selamat. Apalagi sinyal radio yang mereka terima juga memberi sinyal bahwa  setidaknya ada
+                                satu lokasi militer yang sepertinya selamat. Sebuah tempat bernama Moscow Defense Command sepertinya masih 
+                                aktif dan meminta mereka yang berhasil selamat untuk berkumpul dan berkoordinasi di sana. Tidak perlu menunggu
+                                lama hingga para kru berupaya bergerak ke sana, lengkap dengan semua tantangan yang ada. Misi utamanya tentu 
+                                saja, mencari “rumah baru” untuk Artyom, Anna, dan para Spartans yang percaya pada mereka.
+
+                                Misi untuk mencari sebuah rumah baru pun dimulai.
+
+
                                 </p>
                             </div>
                         </div>
@@ -228,6 +214,51 @@ include '../sql.php';
                         <hr>
                         <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
                         <hr>
+                        <div class="col-lg-12">
+                            <table>
+                                <tr>
+                                <hr>
+                                    <td><?php echo $namegame; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Recomended Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nram; ?></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div>CPU nilai: </div>
+                            <div id="v-cpu">-</div>
+                            <div>VGA nilai: </div>
+                            <div id="v-vga">-</div>
+                            <div>RAM nilai: </div>
+                            <div id="v-ram">-</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,9 +332,31 @@ include '../sql.php';
     </footer>
 
 </body>
+<script>
+function compare() {
+    var u_cpu = "<?php echo $u_idcpu; ?>";
+    var r_cpu = "<?php echo $r_idcpu; ?>";
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    var u_cpu = u_cpu.toFixed(2);
+    document.getElementById("v-cpu").innerHTML = u_cpu;
+
+    var u_vga = "<?php echo $u_idvga; ?>";
+    var r_vga = "<?php echo $r_idvga; ?>";
+    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    var u_vga = u_vga.toFixed(2);
+    document.getElementById("v-vga").innerHTML = u_vga;
+
+    var u_ram = "<?php echo $u_idram; ?>";
+    var r_ram = "<?php echo $r_idram; ?>";
+    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    var u_ram = u_ram.toFixed(2);
+    document.getElementById("v-ram").innerHTML = u_ram;
+}
+</script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

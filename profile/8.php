@@ -30,6 +30,7 @@ if($_SESSION['status']!="login"){
 
 include '../koneksi.php';
 $email=$_SESSION['email'];
+$id_game=$_GET['id'];
 include '../sql.php';
 ?>
 
@@ -125,16 +126,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                DOTA 2
+                CS GO
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/da1.png">
+                        <img class="img-fluid" src="../assets/img/photo/cs1.png">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/da2.jpg">
-                        <img class="img-fluid" src="../assets/img/photo/da3.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/cs2.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/cs3.jpg">
                     </div>
                 </div>
             </div>
@@ -145,27 +146,13 @@ include '../sql.php';
                     <div class="col-md-9">
                         <div class="row">
                         <div class="col-md-12">
-                                <h2>Review DOTA 2: Versi yang Lebih Sempurna!</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/dot1.jpg"
+                                <h2>Pemain Pro CS: GO Tertangkap Gunakan Cheat Saat Turnamen LAN</h2>
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/cs.jpg"
                                         class="img-fluid" /><br>
-                                        Sebuah mod yang berhasil menarik hati jutaan gamer di seluruh dunia, Defense of The Ancients (DOTA) memang menjadi fenomena tersendiri. Mengubah mekanik awal yang ditawarkan oleh Warcraft III, IceFrog menyuntikkan sensasi RPG yang lebih kental dengan membawa pertempuran hero sebagai fokus utama. Tidak lagi harus dipusingkan dengan strategi membangun unit, gamer kini dibawa dalam mode PvP yang cepat, intens, dan pastinya – memacu adrenalin. Berfokus membangun karakter dengan perannya masing-masing dan memainkan peran terbaik dalam pertempuran tim, DOTA bahkan diakui sebagai salah satu game kompetitif yang seringkali dipertandingkan di kancah internasional. Tidak salah jika Valve tertarik untuk mengakuisisi nama yang satu ini.<BR>
-
-                                        Perjalanan akuisisi Valve atas nama DOTA memang bukan perkara mudah. Sempat mengalami konflik dengan Blizzard sebagai pemilik Warcraft III, perseteruan ini untungnya berakhir damai. Valve berkesempatan untuk terus melanjutkan terus proyek ambisius ini, menawarkan berbagai modifikasi di sisi visual dan tentu saja mekanik gameplay yang lebih seimbang. Memasuki proses beta dan berhasil menjaring ratusan ribu gamer selama proses ini, Valve akhirnya siap untuk keluar dari fase yang satu ini. Setahun sejak rilis betanya, Valve akhirnya secara resmi merilis DOTA 2 secara bebas kepada publik. Sembari memastikan proses peralihan ini tidak akan mengganggu pengalaman mereka yang sudah masuk ke dalam masa beta, DOTA 2 akhirnya terbuka bagi setiap gamer lewat sistem F2P yang ia usung.<BR>
-
-                                        Mengingat masa beta yang sudah berakhir dan eksistensinya sebagai sebuah game resmi yang terbuka secara komersil, ini menjadi momen yang tepat bagi JagatPlay untuk melemparkan beberapa impresi yang sempat kami tangkap, tentu saja – selama setahun terakhir ini. Apa saja yang berubah? Menjadi lebih baik atau lebih buruk? Atau ia masih belum mampu menundukkan popularitas DOTA pertama?<BR>
-                                        <br>
-                                    <h2>Beradaptasi dengan Sisi Visual yang Baru</h2>
-                                    <img width="500" height="500" src="../assets/img/photo/dot2.jpg"
-                                        class="img-fluid" /><br>
-                                        Urusan hak dagang atas nama memang memaksa Valve untuk melakukan beberapa penyesuaian, mengingat versi pertama DOTA memang dibangun dari model karakter dari beberapa game ikonik Blizzard – dari Warcraft III hingga Starcraft. Untuk memastikan game MOBA teranyar mereka ini tidak terus melewati proses hukum, Valve akhirnya mengubah beberapa aspek yang signifikan, terutama di sisi kosmetik.<br>
-
-                                        Salah satu yang paling signifikan adalah perubahan model karakter yang digunakan. Walaupun hadir dengan model karakter yang jauh berbeda dengan lebih halus, Anda tetap dapat menemukan beberapa ciri utama karakter yang tetap dipertahankan dari seri pertamanya. Konsep ini mempermudah para gamer DOTA pertama untuk menyesuaikan diri dengan cepat, terutama mereka yang belum familiar dengan desain baru hero yang ada.  Tidak hanya dari model  karakter, Valve juga menyuntikkan nama yang lebih “umum” untuk mencegah permasalahan lebih jauh.<br>
-
-                                    <img width="500" height="500" src="../assets/img/photo/dot3.jpg"
-                                        class="img-fluid" /><br>
-                                        Perubahan visualisasi ini juga diterapkan untuk beragam desain item dan persenjataan yang ditawarkan di toko. Memang butuh waktu lebih lama bagi para gamer pendatang baru ataupun mereka yang sempat mencicipi DOTA pertama untuk menguasai aspek ini lebih dalam. Tidak hanya sekedar mempelajari desain item dan resep yang untungnya, sedikit terbantu dari penjelasan yang tetap disertakan ketika Anda melakukan hover di setiap item yang ada, Anda juga mulai harus menghafal kembali lokasi item yang kini ditempatkan dalam pengakategorian yang berbeda. Setiap hero juga akan hadir dengan rekomendasi item untuk memaksimalkan kemampuan terbaiknya, membantu para pendatang baru untuk lebih dapat menguasai game ini dengan lebih cepat.<br><br>
-                                        Perubahan visualisasi berarti juga berpengaruh langsung pada animasi gerak setiap karakter yang ada. Tidak berpengaruh besar bagi para pemain DOTA yang baru, namun perubahan animasi ini akan memaksa para pemain veteran untuk menyesuaikan ritme gameplay kembali. Sementara mereka yang tumbuh besar bersama dengan game MOBA yang lain, DOTA 2 mungkin akan terasa lebih lambat. Mengapa animasi sangat signifikan? Karena animasi gerak dan serangan akan sangat menentukan seberapa baik Anda tampil dalam DOTA 2. Anda menjadikanya sebagai pondasi untuk melakukan creeping yang efektif dan tentu saja, melakukan kombinasi skill yang lebih mumpuni.
-
+                                        Pemain professional di game-game berbasis multiplayer kompetitif adalah sosok yang seharusnya menginspirasi gamer yang lain, soal kemampuan dan aksi seperti apa yang bisa dicapai jika alih-alih sekedar bermain, kita berusaha mempelajari dan menguasainya dengan serius. Menjadi idola, mereka juga seharusnya mulai mencitrakan semangat kompetitif yang seharusnya, meminimalisir perilaku toxic hingga tentu saja menghindari cheat. Namun sayangnya, untuk urusan terakhir, ia masih beberapa kali mengemuka. Kasus cheat yang dilakukan pemain pro memang sempat beberapa kali terjadi. Namun cukup berani untuk membawanya ke turnamen LAN yang disaksikan oleh banyak penonton? Setidaknya pemain pro bodoh yang satu ini cukup gila untuk melakukannya.<br><br>
+                                        Kasus inilah yang terjadi pada turnamen LAN CS: GO – xTREMESLAND yang diselenggarakan di China. Salah satu pemain OpTic India bernama Nikhil “forsaken” Kumawat tertangkap tangan menggunakan cheat aim-bot di turnamen LAN tersebut. Tim panitia menyebut bahwa selama turnamen berlangsung, platform anti-cheat mereka tiba-tiba bereaksi, yang kemudian diikuti dengan proses inspeksi ke PC milik “forsaken” ini. Sebuah aplikasi pihak ketiga misterius berjalan di latar belakang. “forsaken” berhasil menutup dan menghapus program ini ketika terciduk, namun panitia berhasil memulihkan beberapa file sebagai barang bukti. Aksi aim-bot ini juga terlihat jelas mengunci saat melihat gameplay dari perspektif “forsaken” itu sendiri.
+                                    <br>
+                                        Aksi memalukan “forsaken” ini berbuntut menyedihkan untuk anggota tim CS: GO lain yang tidak tahu-menahu soal cheat yang mereka gunakan. Optic India sendiri mengutuk keras apa yang ia lakukan dan sekaligus menegaskan bahwa mereka tidak pernah mendukung tingkah laku yang justru berpotensi mengancam integritas scene kompetitif di region ini. Sayangnya, tidak terselamatkan, Optic India berakhir bubar dan semua anggota tim yang lain juga dibebastugaskan.<br>
 
                                 </p>
                             </div>
@@ -194,6 +181,51 @@ include '../sql.php';
                         <hr>
                         <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
                         <hr>
+                        <div class="col-lg-12">
+                            <table>
+                                <tr>
+                                <hr>
+                                    <td><?php echo $namegame; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Recomended Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nram; ?></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div>CPU nilai: </div>
+                            <div id="v-cpu">-</div>
+                            <div>VGA nilai: </div>
+                            <div id="v-vga">-</div>
+                            <div>RAM nilai: </div>
+                            <div id="v-ram">-</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,9 +299,31 @@ include '../sql.php';
     </footer>
 
 </body>
+<script>
+function compare() {
+    var u_cpu = "<?php echo $u_idcpu; ?>";
+    var r_cpu = "<?php echo $r_idcpu; ?>";
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    var u_cpu = u_cpu.toFixed(2);
+    document.getElementById("v-cpu").innerHTML = u_cpu;
+
+    var u_vga = "<?php echo $u_idvga; ?>";
+    var r_vga = "<?php echo $r_idvga; ?>";
+    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    var u_vga = u_vga.toFixed(2);
+    document.getElementById("v-vga").innerHTML = u_vga;
+
+    var u_ram = "<?php echo $u_idram; ?>";
+    var r_ram = "<?php echo $r_idram; ?>";
+    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    var u_ram = u_ram.toFixed(2);
+    document.getElementById("v-ram").innerHTML = u_ram;
+}
+</script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

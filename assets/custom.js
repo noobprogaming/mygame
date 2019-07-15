@@ -40,7 +40,10 @@ function onSignIn(googleUser) {
 
 /* -- */
 
-/* SignOut Google */
+/* 
+
+SignOut Google 
+
 function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
@@ -48,5 +51,4 @@ function signOut() {
     });
     gapi.auth.signOut();
 }
-
-/* -- */
+*/

@@ -30,6 +30,7 @@ if($_SESSION['status']!="login"){
 
 include '../koneksi.php';
 $email=$_SESSION['email'];
+$id_game=$_GET['id'];
 include '../sql.php';
 ?>
 
@@ -125,16 +126,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                PESONA 5
+                GAME GENRE
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/pes1.png">
+                        <img class="img-fluid" src="../assets/img/1.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/pes3.jpg">
-                        <img class="img-fluid" src="../assets/img/photo/pes4.jpg">
+                        <img class="img-fluid" src="../assets/img/2.jpg">
+                        <img class="img-fluid" src="../assets/img/3.jpg">
                     </div>
                 </div>
             </div>
@@ -145,33 +146,51 @@ include '../sql.php';
                     <div class="col-md-9">
                         <div class="row">
                         <div class="col-md-12">
-                                <h2>Persona 5 Royal Usung Serangan Kombinasi Baru – Show Time</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/p5r.png"
+                                <h2>Inilah Daftar Game PC dengan Penawaran Terbaik di Steam Summer Sale</h2>
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/n.jpg"
                                         class="img-fluid" /><br>
-                                        Mengkombinasikan konsep menjadi sekelompok anak muda penyelamat dunia yang 
-                                        masih tetap harus menjalani hidup mereka sehari-hari sebagai pelajar adalah
-                                        hal yang membuat seri Persona tampil sebagai JRPG yang unik dan memesona 
-                                        di saat yang sama. Namun balutan mekanik JRPG dengan tingkat kesullitan 
-                                        menantang yang juga butuh strategi dan pemahaman soal kelemahan musuh juga
-                                        lah yang membuat banyak gamer terus bergerak menembus cerita yang penuh misteri.
-                                        Mengikuti format rilis di seri-seri Persona sebelumnya, Persona 5 juga memastikan 
-                                        rilis ulang dengan konten baru yang disebut sebagai Persona 5 Royal beberapa waktu yang lalu.<br>
-                                    <img width="500" height="500" src="../assets/img/photo/p5r2.png"
-                                        class="img-fluid" />><br>
-                                        eperti seri Golden untuk Persona 4, Persona 5 Royal juga akan memuat beberapa
-                                        konten yang akan menyempurnakan pengalaman yang ada, termasuk kehadiran karakter
-                                        dan mekanik baru di dalamnya. Salah satu tambahan mekanik yang ditawarkan disebut 
-                                        sebagai Show Time – yang notabene merupakan serangan kolaborasi dua karakter yang 
-                                        tentu saja siap menghasilkan damage lebih besar, lengkap dengan animasi serangan 
-                                        terpisah untuknya. Konsep yang mungkin terasa familiar untuk Anda yang sempat 
-                                        menjajal game Atlus yang lain – Tokyo Mirage Sessions di masa lalu. Tentu saja, akses 
-                                        serangan ini akan bergabung pada seberapa “dalam” hubungan antar karakter terkait.
-                                    <img width="500" height="500" src="../assets/img/photo/p5r3.jpg"
-                                        class="img-fluid" />><br>
-                                        Persona 5 Royal sendiri rencananya akan dirilis pada tanggal 31 Oktober 2019 
-                                        mendatang untuk Playstation 4 di pasar Jepang. Gamer di region lain baru bisa 
-                                        menikmatinya di tahun 2020 nanti, tanpa tanggal rilis pasti. Mekanik ini terlihat 
-                                        menarik di mata Anda?
+                                        Buat kamu yang ingin mencari daftar game baru dengan harga murah, 
+                                        berikut adalah daftar game PC dengan penawaran terbaik di Steam Summer 
+                                        Sale Event yang paling ditunggu para Gamer, yaitu Steam Summer Sale 
+                                        memang sudah dimulai. Ratusan hingga ribuan game bisa kamu dapatkan 
+                                        di event yang satu ini. Maulai dari game lawas hingga terbaru bisa kamu 
+                                        dapatkan. Buat kamu yang masih bingung ingin membeli game apa saja, berikut adalah daftar game PC dengan penawaran terbaik di Steam Summer Sale.
+
+                                    <img width="500" height="500" src="../assets/img/photo/66.jpg"class="img-fluid" /><br>
+                                    <img width="500" height="500" src="../assets/img/photo/ne.jpg"
+                                        class="img-fluid" /><br>
+                                        1.	Dragon Ball FighterZ , Rp147.000 (memiliki harga normal sebesar Rp590.000)<br>
+                                        2.	Secret of Mana, Rp242.000 (memiliki harga normal sebesar Rp485.000)<br>
+                                        3.	Shadow of the Tomb Raider, Rp272.000 (memiliki harga normal sebesar Rp680.000)<br>
+                                        4.	Tropico 6, Rp167.999 (memiliki harga normal sebesar Rp209.999)<br>
+                                        5.	Monster Hunter: World, Rp249.999 (memiliki harga normal sebesar Rp499.999)<br>
+                                        6.	Hitman 2, Rp275.600 (memiliki harga normal sebesar Rp689.000)<br>
+                                        7.	Dark Souls III, Rp146.750 (memiliki harga normal sebesar Rp587.000)<br>
+                                        8.	Just Cause 4, Rp272.000 (memiliki harga normal sebesar Rp680.000)<br>
+                                        9.	Tom Clancy's Rainbow Six Siege, Rp114.500 (memiliki harga normal sebesar Rp229.000)<br>
+                                        10.	Stardew Valley, Rp92.799 (memiliki harga normal sebesar Rp115.999)<br>
+                                        11.	Ark: Survival Evolved, Rp73.499 (memiliki harga normal sebesar Rp209.999)<br>
+                                        12.	Celeste, Rp81.599 (memiliki harga normal sebesar Rp135.999)<br>
+                                        13.	Total War: Three Kingdoms, Rp383.399 (memiliki harga normal sebesar Rp425.999)<br>
+                                        14.	Rage 2, Rp535.330 (memiliki harga normal sebesar Rp799.000)<br>
+                                        15.	Divinity: Original Sin 2, Rp201.599 (memiliki harga normal sebesar Rp335.999)<br>
+                                        16.	Resident Evil 2 Remake, Rp329.999 (memiliki harga normal sebesar Rp499.999)<br>
+                                        17.	Far Cry: New Dawn, Rp259.500 (memiliki harga normal sebesar Rp519.000)<br>
+                                        18.	Sekiro: Shadows Die Twice, Rp583.200 (memiliki harga normal sebesar Rp729.000)<br>
+                                        19.	Kingdom Come: Deliverance, Rp83.999 (memiliki harga normal sebesar Rp139.999)<br>
+                                        20.	Devil May Cry 5, Rp329.999 (memiliki harga normal sebesar Rp499.999)<br>
+                                        21.	Assassin's Creed Odyssey, Rp344.500 (memiliki harga normal sebesar Rp689.000)<br>
+                                        22.	Soulcalibur VI, Rp181.500 (memiliki harga normal sebesar Rp550.000)<br>
+                                        23.	Astroneer, Rp127.499 (memiliki harga normal sebesar Rp169.999)<br>
+
+                                        Nah itulah 24 daftar game PC dengan penawaran terbaik yang bisa kamu beli. 
+                                        Buat kamu yang ingin mencari informasi menarik seputar game-game lainnya, 
+                                        bisa langsung follow akun media sosial Dunia Games sekarang juga
+                                    
+                    
+
+
+
 
                                 </p>
                             </div>
@@ -200,6 +219,51 @@ include '../sql.php';
                         <hr>
                         <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
                         <hr>
+                        <div class="col-lg-12">
+                            <table>
+                                <tr>
+                                <hr>
+                                    <td><?php echo $namegame; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Recomended Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nram; ?></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div>CPU nilai: </div>
+                            <div id="v-cpu">-</div>
+                            <div>VGA nilai: </div>
+                            <div id="v-vga">-</div>
+                            <div>RAM nilai: </div>
+                            <div id="v-ram">-</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -273,9 +337,31 @@ include '../sql.php';
     </footer>
 
 </body>
+<script>
+function compare() {
+    var u_cpu = "<?php echo $u_idcpu; ?>";
+    var r_cpu = "<?php echo $r_idcpu; ?>";
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    var u_cpu = u_cpu.toFixed(2);
+    document.getElementById("v-cpu").innerHTML = u_cpu;
+
+    var u_vga = "<?php echo $u_idvga; ?>";
+    var r_vga = "<?php echo $r_idvga; ?>";
+    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    var u_vga = u_vga.toFixed(2);
+    document.getElementById("v-vga").innerHTML = u_vga;
+
+    var u_ram = "<?php echo $u_idram; ?>";
+    var r_ram = "<?php echo $r_idram; ?>";
+    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    var u_ram = u_ram.toFixed(2);
+    document.getElementById("v-ram").innerHTML = u_ram;
+}
+</script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

@@ -101,8 +101,13 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" onclick="keluar();"
-                                                    class="btn btn-sm input-btn w100">
+                                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
                                             </td>
                                         </tr>
                                     </table>
@@ -170,8 +175,7 @@ include '../sql.php';
         </a>
     </div>
 
-    <div class="container-fluid px-5 ">
-        <button onclick="keluar()">Try it</button>
+    <div class="container-fluid px-5">
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
@@ -425,18 +429,13 @@ include '../sql.php';
         </div>
     </footer>
 
-<script>
-function keluar() {
-    alert("jancuk")
-        window.location.href = "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://punyakita.tech";
-}
-</script>
+    
 
 </body>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
-
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

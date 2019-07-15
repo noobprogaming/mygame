@@ -30,6 +30,7 @@ if($_SESSION['status']!="login"){
 
 include '../koneksi.php';
 $email=$_SESSION['email'];
+$id_game=$_GET['id'];
 include '../sql.php';
 ?>
 
@@ -125,16 +126,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                MAN OF MEDAN
+                FROSTPUNK
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                    <img class="img-fluid" src="../assets/img/photo/mom5.jpg">
+                    <img class="img-fluid" src="../assets/img/photo/fp7.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/mom3.jpg">
-                        <img class="img-fluid" src="../assets/img/photo/mom4.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/fp5.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/fp6.jpg">
                     </div>
                 </div>
             </div>
@@ -145,24 +146,25 @@ include '../sql.php';
                     <div class="col-md-9">
                         <div class="row">
                         <div class="col-md-12">
-                                <h2>Game MAN OF MEDAN telah hadir di Indonesia</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/mom1.jpg"
+                                <h2>Frostpunk Tentukan Tanggal Rilis Pasti</h2>
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/fp1.jpg"
                                         class="img-fluid" /><br>
-                                        Kejutan yang pantas untuk disambut dengan tangan terbuka, 
-                                        ini mungkin reaksi sebagian besar gamer dengan langkah yang dilakukan oleh Supermassive Games dengan The Dark Pictures Anthology. 
-                                        Setelah punya citra yang kuat sebagai developer “eksklusif” Sony lewat game-game mereka di masa lalu, 
-                                        Supermassive Games akhirnya bergerak menuju multi-platform dengan proyek terbaru yang akan dimulai dengan Man of Medan ini. 
-                                        Bagi gamer PC, ini tentu jadi ekstra pekerjaan baru untuk mulai mempersiapkan diri, 
-                                        apalagi dengan detail visual game Supermassive Games yang terhitung memesona. Berita baiknya? 
-                                        Informasi tersebut akhirnya mengemuka.<br>
-                                    <img width="500" height="500" src="../assets/img/photo/mom2.jpg"
+                                        Frostpunk? Sebagian besar dari Anda mungkin melewatkan nama game yang satu ini dan tidak memasukkannya sebagai salah satu game yang Anda antisipasi tahun ini. 
+                                        Namun bagi yang mengikuti sepak terjangnya, game strategi simulasi yang satu ini memang menggoda. 
+                                        Frostpunk adalah game strategi racikan 11 Bit Studios – developer sama yang meracik game 
+                                        fenomenal “This War of Mine” – game yang alih-alih menjadikan perang sebagai taman bermain “menyenangkan” seperti game pada umumnya, 
+                                        justru lebih berfokus pada sisi gelapnya yang realistis. Frostpunk juga berusaha menawarkan tema yang sama<br>
+                                    <img width="500" height="500" src="../assets/img/photo/fp2.jpg"
                                         class="img-fluid" /><br>
-                                        Mendekati waktu rilis yang rencananya akan meluncur akhir bulan depan, 
-                                        Bandai Namco dan Supermassive Games akhirnya membuka halaman Store Man of Medan untuk Steam. 
-                                        Proses pre-order bahkan sudah dibuka dengan harga “hanya” 219 ribu Rupiah saja, 
-                                        walaupun tanpa detail informasi berapa panjang sisi cerita yang akan ia usung. 
-                                        Untuk Anda yang tidak familiar, Man of Medan akan memuat cerita soal sekelompok anak muda yang terjebak di sebuah kapal hantu. 
-                                        Mekanik khas Supermassive – dimana opsi yang Anda pilih akan menentukan siapa yang hidup dan mati juga akan dipertahankan di sini<br>
+                                        Sebagai game simulasi bangun kota, Frostpunk membawa Anda pada setting post-apocalyptic dimana satu-satunya teknologi untuk bertahan hidup mengakar pada mesin uap. 
+                                        Anda akan berperan sebagai pengelola, mengatur resource yang terbatas untuk terus membuatnya tumbuh, 
+                                        berkembang, dan bertahan di tengah keterbatasan yang ada. Pada beberapa titik permainan, seperti halnya This War of Mine, 
+                                        akan ada pilihan penuh konflik moral yang tentu saja, akan berujung pada konsekuensi tertentu. Sempat jadi misteri, 
+                                        Frostpunk akhirnya punya tanggal rilis pasti.<br>
+                                    <img width="500" height="500" src="../assets/img/photo/fp3.jpg" class="img-fluid"/>><br>
+                                        Frostpunk akan dirilis pada tanggal 24 April 2018 mendatang, eksklusif untuk PC. Proses PO sendiri masih belum dibuka, 
+                                        namun bersama dengan pengumuman ini, 11 bit Studios juga melepas trailer sinematik yang mereka beri nama “Serenity” 
+                                        untuk memberikan gambaran seperti apa kehidupan di dalam Frostpunk itu sendiri. Tertarik?
                                 </p>
                             </div>
                         </div>
@@ -190,6 +192,51 @@ include '../sql.php';
                         <hr>
                         <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
                         <hr>
+                        <div class="col-lg-12">
+                            <table>
+                                <tr>
+                                <hr>
+                                    <td><?php echo $namegame; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $m_nram; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><hr></td>
+                                </tr>
+                                <tr>
+                                    <td>Recomended Specification:</td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_ncpu; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nvga; ?></td>
+                                </tr>
+                                <tr>
+                                    <td><?php echo $r_nram; ?></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div>CPU nilai: </div>
+                            <div id="v-cpu">-</div>
+                            <div>VGA nilai: </div>
+                            <div id="v-vga">-</div>
+                            <div>RAM nilai: </div>
+                            <div id="v-ram">-</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -263,9 +310,31 @@ include '../sql.php';
     </footer>
 
 </body>
+<script>
+function compare() {
+    var u_cpu = "<?php echo $u_idcpu; ?>";
+    var r_cpu = "<?php echo $r_idcpu; ?>";
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    var u_cpu = u_cpu.toFixed(2);
+    document.getElementById("v-cpu").innerHTML = u_cpu;
+
+    var u_vga = "<?php echo $u_idvga; ?>";
+    var r_vga = "<?php echo $r_idvga; ?>";
+    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    var u_vga = u_vga.toFixed(2);
+    document.getElementById("v-vga").innerHTML = u_vga;
+
+    var u_ram = "<?php echo $u_idram; ?>";
+    var r_ram = "<?php echo $r_idram; ?>";
+    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    var u_ram = u_ram.toFixed(2);
+    document.getElementById("v-ram").innerHTML = u_ram;
+}
+</script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
 <script src="../assets/search.js"></script>
+<script src="../assets/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>

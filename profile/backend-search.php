@@ -4,7 +4,7 @@ include '../koneksi.php';
  
 if(isset($_REQUEST["term"])){
     // Prepare a select statement
-    $sql = "SELECT name_game FROM game WHERE name_game LIKE ?";
+    $sql = "SELECT * FROM game WHERE name_game LIKE ?";
     
     if($stmt = mysqli_prepare($koneksi, $sql)){
         // Bind variables to the prepared statement as parameters
@@ -21,7 +21,8 @@ if(isset($_REQUEST["term"])){
             if(mysqli_num_rows($result) > 0){
                 // Fetch result rows as an associative array
                 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                    echo "<p>" . $row["name_game"] . "</p>";
+                    echo "<a href='". $row["id_game"] .".php?id=".$row["id_game"]."'><p>" . $row["name_game"] . "</p></a>";
+                    $id_game=$row["id_game"];
                 }
             } else{
                 echo "<p>Tidak ditemukan . .</p>";

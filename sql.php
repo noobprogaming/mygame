@@ -20,14 +20,14 @@
     FROM game
         INNER JOIN cpu ON cpu.id_cpu=game.min_cpu
         INNER JOIN vga ON vga.id_vga=game.min_vga 
-        INNER JOIN ram ON ram.id_ram=game.min_ram WHERE game.id_game=1;
+        INNER JOIN ram ON ram.id_ram=game.min_ram WHERE game.id_game='$id_game';
     ");
     $sql_rec = ("
     SELECT id_game, name_game, rec_cpu, rec_vga, rec_ram, rec_storage, cpu.name_cpu, vga.name_vga, ram.name_ram
     FROM game
         INNER JOIN cpu ON cpu.id_cpu=game.rec_cpu
         INNER JOIN vga ON vga.id_vga=game.rec_vga 
-        INNER JOIN ram ON ram.id_ram=game.rec_ram WHERE game.id_game=1;
+        INNER JOIN ram ON ram.id_ram=game.rec_ram WHERE game.id_game='$id_game';
     ");
     $sql_cpu = ("SELECT * FROM cpu ORDER BY name_cpu ASC;");
     $sql_vga = ("SELECT * FROM vga ORDER BY name_vga ASC;");
