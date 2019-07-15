@@ -125,16 +125,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                GAME GENRE
+                DEUS EX
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/1.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/de1.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/2.jpg">
-                        <img class="img-fluid" src="../assets/img/3.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/de2.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/de3.jpg">
                     </div>
                 </div>
             </div>
@@ -145,8 +145,8 @@ include '../sql.php';
                     <div class="col-md-9">
                         <div class="row">
                         <div class="col-md-12">
-                                <h2>Review Deus Ex : Mabkind Divided Semakin Semakin sempurna</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/2 (2).jpg"
+                                <h2>Review Deus Ex : Mankind Divided Semakin Semakin sempurna</h2>
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/deu.jpg"
                                         class="img-fluid" /><br>
                                     Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu ruang yang
                                     sama, memang sulit untuk membedakan mana yang
@@ -174,7 +174,7 @@ include '../sql.php';
                                     tentu saja, jadi pertanyaan utamanya.
                                     Lantas, apa yang sebenarnya ditawarkan oleh Deus Ex: Mankind Divided ini? Mengapa
                                     kami menyebutnya sebagai game yang semakin
-                                    sempurna? Review ini akan membahasnya lebih dalam untuk Anda!
+                                    sempurna? Review ini akan membahasnya lebih dalam untuk Anda!<br>
                                     <img width="500" height="500" src="../assets/img/photo/deus.jpg"
                                         class="img-fluid" />><br>
                                     Deus Ex: Mankind Divided sendiri diposisikan sebagai sebuah seri sekuel langsung
