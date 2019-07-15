@@ -145,33 +145,31 @@ include '../sql.php';
                     <div class="col-md-9">
                         <div class="row">
                         <div class="col-md-12">
-                                <h2>Persona 5 Royal Usung Serangan Kombinasi Baru – Show Time</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/p5r.png"
+                                
+                                    <h2>Bocoran Sebut Red Dead Redemption 2 Juga Segera Meluncur untuk PC</h2>`
+                                    <img width="500" height="500" src="../assets/img/photo/55.jpg"
                                         class="img-fluid" /><br>
-                                        Mengkombinasikan konsep menjadi sekelompok anak muda penyelamat dunia yang 
-                                        masih tetap harus menjalani hidup mereka sehari-hari sebagai pelajar adalah
-                                        hal yang membuat seri Persona tampil sebagai JRPG yang unik dan memesona 
-                                        di saat yang sama. Namun balutan mekanik JRPG dengan tingkat kesullitan 
-                                        menantang yang juga butuh strategi dan pemahaman soal kelemahan musuh juga
-                                        lah yang membuat banyak gamer terus bergerak menembus cerita yang penuh misteri.
-                                        Mengikuti format rilis di seri-seri Persona sebelumnya, Persona 5 juga memastikan 
-                                        rilis ulang dengan konten baru yang disebut sebagai Persona 5 Royal beberapa waktu yang lalu.<br>
-                                    <img width="500" height="500" src="../assets/img/photo/p5r2.png"
-                                        class="img-fluid" />><br>
-                                        eperti seri Golden untuk Persona 4, Persona 5 Royal juga akan memuat beberapa
-                                        konten yang akan menyempurnakan pengalaman yang ada, termasuk kehadiran karakter
-                                        dan mekanik baru di dalamnya. Salah satu tambahan mekanik yang ditawarkan disebut 
-                                        sebagai Show Time – yang notabene merupakan serangan kolaborasi dua karakter yang 
-                                        tentu saja siap menghasilkan damage lebih besar, lengkap dengan animasi serangan 
-                                        terpisah untuknya. Konsep yang mungkin terasa familiar untuk Anda yang sempat 
-                                        menjajal game Atlus yang lain – Tokyo Mirage Sessions di masa lalu. Tentu saja, akses 
-                                        serangan ini akan bergabung pada seberapa “dalam” hubungan antar karakter terkait.
-                                    <img width="500" height="500" src="../assets/img/photo/p5r3.jpg"
-                                        class="img-fluid" />><br>
-                                        Persona 5 Royal sendiri rencananya akan dirilis pada tanggal 31 Oktober 2019 
-                                        mendatang untuk Playstation 4 di pasar Jepang. Gamer di region lain baru bisa 
-                                        menikmatinya di tahun 2020 nanti, tanpa tanggal rilis pasti. Mekanik ini terlihat 
-                                        menarik di mata Anda?
+
+                                        Tidak lagi eksklusif dikonsol, Red Dead Redemption 2 dikabarkan juga akan hadir untuk PC.
+                                        Red Dead Redemption 2 merupakan game bertema kehidupan koboi buatan Rockstar Games. 
+                                        Setelah lebih dulu meluncur dikonsol PlayStation 4 dan Xbox One, kini RDR2 digosipkan 
+                                        juga akan segera menuju PC.
+                                        Mengutip VG247.com, seorang bernama @JakoMako51 mengklaim telah menemukan petunjuk 
+                                        tentang adanya Red Dead Redemption 2 di PC.
+                                        Melalui akun Twitternya @JakoMako51, ia menjelaskan jika petunjuk tersebut berupa 
+                                        'source code' di situs Rockstar Social Club. Petunjuk ini berisi referensi 
+                                        'RDR2_PC_Accomplishments' yang menunjukkan jika Red Redemption 2 versi PC memang ada.
+                                    
+                                    <img width="500" height="500" src="../assets/img/photo/6.jpg"
+                                        class="img-fluid" /><br>
+                                        Ini bukan satu-satunya petunjuk mengenai keberadaan RDR2 2 versi PC. Program 
+                                        di dalam aplikasi companion app buat Rockstar juga mencantumkan referensi RDR 2 
+                                        versi PC. Belum lagi halaman Linkedin salah satu developer juga mencantumkan bukti 
+                                        yang seakan menunjukkan keberadaan RDR2 versi PC, di mana ia menulis jika ia ikut 
+                                        terlibat dalam pembuatan RDR2 untuk versi konsol dan juga PC. 
+                                        Bagaimana menurut kalian nih gaes, apakah Rockstar Games akan mencari keuntungan 
+                                        lebih dengan merilis Red Dead Redemption 2 di PC? Ikuti terus DuniaGames.co.id 
+                                        untuk informasi menarik seputar game lainnya ya
 
                                 </p>
                             </div>

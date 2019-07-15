@@ -145,34 +145,32 @@ include '../sql.php';
                     <div class="col-md-9">
                         <div class="row">
                         <div class="col-md-12">
-                                <h2>Persona 5 Royal Usung Serangan Kombinasi Baru – Show Time</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/p5r.png"
+                                
+                                    <h2>Bandai Namco Umumkan Digimon Story: Cyber Sleuth Segera Hadir di PC Via Steam</h2>
+                                    <img width="500" height="500" src="../assets/img/photo/33.jpg"
                                         class="img-fluid" /><br>
-                                        Mengkombinasikan konsep menjadi sekelompok anak muda penyelamat dunia yang 
-                                        masih tetap harus menjalani hidup mereka sehari-hari sebagai pelajar adalah
-                                        hal yang membuat seri Persona tampil sebagai JRPG yang unik dan memesona 
-                                        di saat yang sama. Namun balutan mekanik JRPG dengan tingkat kesullitan 
-                                        menantang yang juga butuh strategi dan pemahaman soal kelemahan musuh juga
-                                        lah yang membuat banyak gamer terus bergerak menembus cerita yang penuh misteri.
-                                        Mengikuti format rilis di seri-seri Persona sebelumnya, Persona 5 juga memastikan 
-                                        rilis ulang dengan konten baru yang disebut sebagai Persona 5 Royal beberapa waktu yang lalu.<br>
-                                    <img width="500" height="500" src="../assets/img/photo/p5r2.png"
-                                        class="img-fluid" />><br>
-                                        eperti seri Golden untuk Persona 4, Persona 5 Royal juga akan memuat beberapa
-                                        konten yang akan menyempurnakan pengalaman yang ada, termasuk kehadiran karakter
-                                        dan mekanik baru di dalamnya. Salah satu tambahan mekanik yang ditawarkan disebut 
-                                        sebagai Show Time – yang notabene merupakan serangan kolaborasi dua karakter yang 
-                                        tentu saja siap menghasilkan damage lebih besar, lengkap dengan animasi serangan 
-                                        terpisah untuknya. Konsep yang mungkin terasa familiar untuk Anda yang sempat 
-                                        menjajal game Atlus yang lain – Tokyo Mirage Sessions di masa lalu. Tentu saja, akses 
-                                        serangan ini akan bergabung pada seberapa “dalam” hubungan antar karakter terkait.
-                                    <img width="500" height="500" src="../assets/img/photo/p5r3.jpg"
-                                        class="img-fluid" />><br>
-                                        Persona 5 Royal sendiri rencananya akan dirilis pada tanggal 31 Oktober 2019 
-                                        mendatang untuk Playstation 4 di pasar Jepang. Gamer di region lain baru bisa 
-                                        menikmatinya di tahun 2020 nanti, tanpa tanggal rilis pasti. Mekanik ini terlihat 
-                                        menarik di mata Anda?
+                                        Lebih dulu rilis dikonsol 4 tahun lalu, akhirnya Digimon Story: Cyber 
+                                        Sleuth juga segera rilis di PC.
+                                        Setelah 4 tahun lebih dulu muncul dikonsol, akhirnya Bandai Namco mengumumkan 
+                                        Digimon Story: Cyber Sleuth juga akan segera hadir di PC dan Nintendo Switch 
+                                        dalam versi Complete Edition.
+                                        Digimon Story: Cyber Sleuth Complete Edition sendiri adalah kompilasi dari 
+                                        dua game, yaitu Digimon Story: Cyber Sleuth dan Digimon Story: Cyber 
+                                        Sleuth-Hacker's Memory. Cerita dari kedua game Digimon inipun saling berhubungan, 
+                                        yaitu ketika dunia nyata dan dunia digital saling bersinggungan. 
+                                        Digimon Story: Cyber Sleuth akan menjadi alur cerita utama, sedangkan Hacker's Memory menjadi pelengkapnya.
 
+                                    <img width="500" height="500" src="../assets/img/photo/44.jpg"
+                                        class="img-fluid" /><br>
+                                        Dari segi gameplay, Digimon Story: Cyber Sleuth Complete Edition masih menerapkan 
+                                        turn-based dan tidak akan memiliki perbedaan. Dalam game tersebut, kalian dapat 
+                                        merasakan 300 jenis Digimon yang bisa digunakan pada kedua game tersebut.
+                                        Rencananya, Digimon Story: Cyber Sleuth Complete Edition akan segera rilis untuk 
+                                        PC dan Switch pada tanggal 18 Oktober 2019. Berikut ini adalah cuplikan trailer 
+                                        yang bisa kalian saksikan.
+                                        Ikuti terus DuniaGames.co.id untuk informasi menarik seputar game lainnya ya.
+
+                                    
                                 </p>
                             </div>
                         </div>
