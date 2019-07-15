@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 15, 2019 at 04:24 PM
+-- Generation Time: Jul 15, 2019 at 04:49 PM
 -- Server version: 10.1.39-MariaDB
 -- PHP Version: 7.3.5
 
@@ -2572,7 +2572,7 @@ INSERT INTO `game` (`id_game`, `name_game`, `min_cpu`, `min_vga`, `min_ram`, `re
 (9, 'Apex Legends', 1, 1, 1, 1, 1, 1, 1),
 (10, 'Overwatch', 1, 1, 1, 1, 1, 1, 1),
 (11, 'Fortnite', 1, 1, 1, 1, 1, 1, 1),
-(12, 'PlayerUnknown\'s Battlegrounds (PUBG)', 1, 1, 1, 1, 1, 1, 1),
+(12, "PlayerUnknown's Battlegrounds (PUBG)", 1, 1, 1, 1, 1, 1, 1),
 (13, 'Forza Horizon 4', 1, 1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
