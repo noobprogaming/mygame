@@ -23,8 +23,8 @@
         margin-top: 8%;
         text-align: center;
         border: 1px solid rgb(201, 201, 201);
-        width: 350px;
-        height: 350px;
+        width: 400px;
+        height: 450px;
     }
 
     td {
@@ -75,7 +75,14 @@
             </tr>
             <tr>
                 <td>
-                    <a href="register.php" class="form-text">Belum punya akun?</a><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="reset.php" class="form-text">Lupa password</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="register.php" class="form-text">Belum punya akun</a>
+                        </div>
+                    </div>
                 </td>
             </tr>
         </table>

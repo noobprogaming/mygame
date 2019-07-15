@@ -242,45 +242,44 @@ include '../sql.php';
             </div>
             <div class="col-md-4 p5rem text-white">
                 <ul class="fo-ul">
-                    <li class="text-white">TEXT-JUDUL</li>
+                    <li class="text-white">Artikel</li>
                     <li>
-                        <a href="#">
-                            ABC
+                        <a href>
+                            NEWS
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            DEF
+                        <a href>
+                            GAME
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            GHI
+                        <a href>
+                            PERIPHERAL
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-4 p5rem text-white">
                 <ul class="fo-ul">
-                    <li class="text-white">TEXT-JUDUL</li>
+                    <li class="text-white">Artikel</li>
                     <li>
-                        <a href="#">
-                            ABC
+                        <a href>
+                            NEWS
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            DEF
+                        <a href>
+                            GAME
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            GHI
+                        <a href>
+                            PERIPHERAL
                         </a>
                     </li>
                 </ul>
             </div>
-        </div>
         <div class="red" style="height: 1px;">
         </div>
         <div class="pb-4 black text-white" style="height: 50px; padding-top: 10px;">

@@ -379,40 +379,40 @@ include '../sql.php';
             </div>
             <div class="col-md-4 p5rem text-white">
                 <ul class="fo-ul">
-                    <li class="text-white">TEXT-JUDUL</li>
+                    <li class="text-white">Artikel</li>
                     <li>
-                        <a href="#">
-                            ABC
+                        <a href>
+                            NEWS
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            DEF
+                        <a href>
+                            GAME
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            GHI
+                        <a href>
+                            PERIPHERAL
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-4 p5rem text-white">
                 <ul class="fo-ul">
-                    <li class="text-white">TEXT-JUDUL</li>
+                    <li class="text-white">Artikel</li>
                     <li>
-                        <a href="#">
-                            ABC
+                        <a href>
+                            NEWS
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            DEF
+                        <a href>
+                            GAME
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            GHI
+                        <a href>
+                            PERIPHERAL
                         </a>
                     </li>
                 </ul>
@@ -425,7 +425,7 @@ include '../sql.php';
         </div>
     </footer>
 
-    
+
 
 </body>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -437,4 +437,5 @@ include '../sql.php';
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
+
 </html>

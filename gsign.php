@@ -15,7 +15,7 @@
 	if(!empty($gresult->fetch_assoc())){
 		$gsql2 = "UPDATE user SET id='".$_POST["id"]."', name='".$_POST["name"]."', pp='".$_POST["pp"]."' WHERE email='".$_POST["email"]."'";
 	}else{
-		$gsql2 = "INSERT INTO user VALUES ('".$_POST["id"]."', '".$_POST["name"]."', '".$_POST["email"]."', '".$_POST["pp"]."',now())";
+		$gsql2 = "INSERT INTO user(id,name,password,gender,email,birth,joined,pp) VALUES ('".$_POST["id"]."', '".$_POST["name"]."', '".$_POST["email"]."', '".$_POST["pp"]."',now())";
 		$gsql3 = "INSERT INTO rig VALUES ('".$_POST["id"]."','1','1','1','60','60','1','1','1')";
 		$koneksi->query($gsql3);
 	}

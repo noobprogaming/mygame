@@ -21,7 +21,7 @@
     $cek = mysqli_num_rows($data);
     if($cek == 0){
         $sql_signup = "
-        INSERT INTO user VALUES ('$uname','$name','$pass','$gend','$mail','$born',now(),'$pp'); 
+        INSERT INTO user(id,name,password,gender,email,birth,joined,pp) VALUES ('$uname','$name','$pass','$gend','$mail','$born',now(),'$pp'); 
         INSERT INTO rig(id) SELECT id FROM user WHERE id='$uname'; 
         UPDATE rig SET 
         id_cpu='$in_cpu', 
