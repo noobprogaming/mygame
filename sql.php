@@ -29,14 +29,14 @@
         INNER JOIN vga ON vga.id_vga=game.rec_vga 
         INNER JOIN ram ON ram.id_ram=game.rec_ram WHERE game.id_game=1;
     ");
-    $sql_cpu = ("SELECT * FROM cpu;");
-    $sql_vga = ("SELECT * FROM vga;");
+    $sql_cpu = ("SELECT * FROM cpu ORDER BY name_cpu ASC;");
+    $sql_vga = ("SELECT * FROM vga ORDER BY name_vga ASC;");
     $sql_ram = ("SELECT * FROM ram;");
-    $sql_psu = ("SELECT * FROM psu;");
+    $sql_psu = ("SELECT * FROM psu ORDER BY name_psu ASC;");
     $sql_ssd = ("SELECT * FROM ssd;");
     $sql_hdd = ("SELECT * FROM hdd;");
-    $sql_kb = ("SELECT * FROM kb;");
-    $sql_mouse = ("SELECT * FROM mouse;");
+    $sql_kb = ("SELECT * FROM kb ORDER BY name_kb ASC;");
+    $sql_mouse = ("SELECT * FROM mouse ORDER BY name_mouse ASC;");
     
     $result = $koneksi->query($sql_user);
     while($row=$result->fetch_assoc()){
