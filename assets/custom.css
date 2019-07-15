@@ -1,5 +1,5 @@
 * {
-    font-family: my, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Biko, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-transition: 0.2s;
     -webkit-transition-delay: 0.1s;
 }
@@ -9,10 +9,11 @@
 }
 
 @font-face {
-    font-family: my;
+    font-family: Biko;
     src: url("Biko_Regular.otf");
 }
 
+/* Scroll Bar */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -31,6 +32,10 @@
     background: rgb(148, 148, 148);
 }
 
+/* -- */
+
+/* Text Shadow */
+
 .text-shadow {
     text-shadow: 0 0 1px rgb(255, 23, 23), 0 0 5px rgb(139, 23, 23);
 }
@@ -38,6 +43,10 @@
 .box-shadow {
     box-shadow: 0 0 1rem rgb(19, 19, 19);
 }
+
+/* -- */
+
+/* Image Profile */
 
 .img-profile {
     border-radius: 50%;
@@ -50,6 +59,10 @@
     filter: brightness(130%);
     transform: scale(1.05, 1.05);
 }
+
+/* -- */
+
+/* Button & Input */
 
 .btn-menu {
     display: inline;
@@ -68,6 +81,7 @@
 .btn-menu:focus,
 .btn-menu:active {
     outline: none !important;
+
 }
 
 .input-btn {
@@ -98,7 +112,10 @@
     box-shadow: 0 0 5px rgb(255, 23, 23);
 }
 
-/*radio*/
+/* -- */
+
+/* Radio Button */
+
 .rdb {
     display: block;
     position: relative;
@@ -140,14 +157,63 @@
     background: rgb(255, 255, 255);
 }
 
-/*hide default rdb*/
 .rdb input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-/*font awesome in input-text*/
+/* -- */
+
+/* Input File */
+.tab {
+    overflow: hidden;
+    border: 1px solid rgb(201, 201, 201);
+    background-color: rgb(255, 255, 255);
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: rgb(148, 148, 148);
+}
+
+input[type='file'] {
+    color: transparent;
+}
+
+.input-file::-webkit-file-upload-button {
+    width: 0px;
+    visibility: hidden;
+}
+
+.input-file::before {
+    content: 'Pilih fotomu';
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 0.1rem;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+    color: rgb(19, 19, 19);
+}
+
+.input-file:hover::before {
+    border-color: rgb(19, 19, 19);
+}
+
+/* -- */
+
+
+/* Font Awesome in input-text */
 .inner-addon {
     position: relative;
 }
@@ -166,23 +232,22 @@
     padding: 0.5rem;
 }
 
-.dropdown {
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+/* -- */
+
+/* - Judul Artikel - */
+
+.artikel {
+    color: rgb(255, 23, 23);
 }
 
-.sosmed {
-    background-color: rgb(201, 201, 201);
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    padding-top: 8px;
+.artikel:hover {
+    color: rgb(139, 23, 23);
+    cursor: pointer;
 }
+/* -- */
 
-.sosmed:hover {
-    background-color: rgb(255, 23, 23);
-    color: rgb(255, 255, 255);
-}
 
+/* Color */
 .black {
     background-color: rgb(19, 19, 19);
 }
@@ -203,6 +268,9 @@
     color: rgb(255, 23, 23);
 }
 
+/* -- */
+
+/* Layout */
 .w100 {
     width: 100px;
 }
@@ -210,6 +278,49 @@
 .p5rem {
     padding: 5rem;
 }
+/* -- */
+
+/* Sosmed Icon */
+
+.sosmed .fa-facebook {
+    background-color: rgb(59, 89, 152);
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+}
+
+.sosmed .fa-twitter {
+    background-color: rgb(0, 132, 180);
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+}
+
+.sosmed .fa-instagram {
+    background-color: rgb(253, 29, 29);
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+}
+
+.sosmed:hover {
+    filter: brightness(130%);
+    transform: scale(1.1, 1.1);
+}
+
+.sosmed:active {
+    filter: brightness(100%);
+}
+
+/* -- */
+
+/* Header Judul */
 
 .fo-ul {
     color: rgb(255, 255, 255);
@@ -233,6 +344,125 @@ ul.fo-ul a:hover {
     color: rgb(255, 23, 23);
     text-decoration: none;
 }
+
+/* -- */
+
+
+
+/* Dropdown Header */
+
+.dropdown {
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.dd {
+    color: rgb(255, 255, 255);
+}
+
+.dd:hover {
+    color: rgb(255, 23, 23);
+}
+
+/* -- */
+
+/* Table */
+td {
+    margin: 0 auto;
+    padding: 5px;
+}
+/* -- */
+
+/* Search Box */
+.search-box {
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.search-box input[type="text"] {
+    height: 28px;
+    padding: 5px 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.result {
+    position: absolute;
+    z-index: 998;
+}
+
+.search-box input[type="text"],
+.result {
+    width: 100%;
+}
+
+/* Formatting result items */
+.result p {
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.result p:hover {
+    background: rgb(201, 201, 201);
+}
+
+/* -- */
+
+/* Mbuh Opo*/
+.navbar {
+    background-color: rgb(19, 19, 19);
+    box-shadow: 0 0 1rem rgb(19, 19, 19);
+    position: relative;
+}
+
+.gg {
+    color: rgb(255, 23, 23);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/**/
+
+
+/* Alert */
+#message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#inner-message {
+    margin: 0 auto;
+}
+
+.alert-top {
+    z-index: 999;
+    position: fixed;
+    top: 10%;
+    width: 50%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.alert {
+    animation-name: fadeInOpacity;
+    animation-duration: 0.2s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/**/
 
 /* Carousel base class */
 .carousel {
@@ -259,6 +489,38 @@ ul.fo-ul a:hover {
     height: 32rem;
 }
 
+
+/* Logo */
+
+.logo-small {
+    height: 30px; 
+    width: 30px;
+}
+
+.logo-big {
+    height: 140px; 
+    width: 140px;
+}
+
+.logo {
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+            transition:         transform .1s ease-in-out;
+  }
+.logo:hover {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+            filter: brightness(200%)
+  }
+.logo:active {
+-webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+        filter: brightness(150%)
+}
+
+.navbar-brand:hover {
+    filter: brightness(150%)
+}
+/**/
 
 @media (max-width: 480px) {
     .px-5 {
@@ -360,49 +622,5 @@ ul.fo-ul a:hover {
     .bright:hover {
         filter: brightness(130%);
         transform: scale(1.1, 1.1);
-    }
-}
-
-/* MARKETING CONTENT
-  -------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.marketing h2 {
-    font-weight: 400;
-}
-
-.marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-}
-
-/* Featurettes
-  ------------------------- */
-
-.featurette-divider {
-    margin: 5rem 0;
-    /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
-}
-
-
-/* RESPONSIVE CSS
-  -------------------------------------------------- */
-
-
-@media (min-width: 62em) {
-    .featurette-heading {
-        margin-top: 7rem;
     }
 }

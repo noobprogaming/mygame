@@ -79,13 +79,13 @@ include '../sql.php';
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="profile.php"><i class="fa fa-user"> </i> <?php echo $u_id; ?></a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-content black-soft box-shadow"
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
-                                    <table align="center">
+                                    <table>
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
@@ -106,6 +106,10 @@ include '../sql.php';
                                             <td>
                                                 <input type="submit" value="Logout" onclick="signOut();"
                                                     class="btn btn-sm input-btn w100">
+                                                <button onclick="signOut();">Out
+                                                </button>
+                                                <button onclick="myFunction();">Out
+                                                </button>
                                             </td>
                                         </tr>
                                     </table>
@@ -140,58 +144,94 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-md-7 order-md-2">
+                        <div class="col-md-12">
                                 <h2>Review Deus Ex : Mabkind Divided Semakin Semakin sempurna</h2>
-                                <p class="lead">Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu
-                                    ruang yang sama,
-                                    memang sulit untuk membedakan mana yang sejatinya sebuah game RPG, mana game action,
-                                    dan mana sebuah platfomer murni.
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/2 (2).jpg"
+                                        class="img-fluid" /><br>
+                                    Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu ruang yang
+                                    sama, memang sulit untuk membedakan mana yang
+                                    sejatinya sebuah game RPG, mana game action, dan mana sebuah platfomer murni. Ada
+                                    kecenderungan untuk mengambil elemen-elemen
+                                    terbaik dari masing-masing genre tersebut dan kemudian melahirkan sesuatu yang lebih
+                                    kompleks, namun tetap punya identitas kuat
+                                    di dalamnya. Bagi para penggemar action RPG, Deus Ex dari Eidos Montreal dan Square
+                                    Enix memang punya posisi tersendiri di hati.
+                                    Sempat populer di masa lalu, franchise ini seolah berhasil menemukan kembali denyut
+                                    jantungnya setelah rilis Human Revolution
+                                    yang berhasil secara kualitas dan kuantitas penjualan. Dan kini sang seri sekuel –
+                                    Deus Ex: Mankind Divided akhirnya tiba.
+                                    Anda yang sempat membaca artikel preview kami sebelumnya tentu sudah punya sedikit
+                                    gambaran soal apa yang ditawarkan game
+                                    yang satu ini. Dari core gameplay yang ada, ia masih menawarkan cita rasa yang sama
+                                    dengan Human Revolution sebagai basis.
+                                    Implementasi engine terbaru – Dawn Engine memang meninggalkan kesan kualitas visual
+                                    yang lebih modern dengan peralihan platform
+                                    generasi saat ini. Namun satu yang membuat kami jatuh hati adalah keberhasilan untuk
+                                    memperbaiki beberapa masalah krusial di seri
+                                    sebelumnya, terutama yang berhubungan dengan keputusan untuk terus memainkan game
+                                    ini dengan pendekatan non-lethal. Apakah
+                                    impresi pertama yang super positif tersebut berakhir hingga permainan selesai? Ini
+                                    tentu saja, jadi pertanyaan utamanya.
+                                    Lantas, apa yang sebenarnya ditawarkan oleh Deus Ex: Mankind Divided ini? Mengapa
+                                    kami menyebutnya sebagai game yang semakin
+                                    sempurna? Review ini akan membahasnya lebih dalam untuk Anda!
+                                    <img width="500" height="500" src="../assets/img/photo/deus.jpg"
+                                        class="img-fluid" />><br>
+                                    Deus Ex: Mankind Divided sendiri diposisikan sebagai sebuah seri sekuel langsung
+                                    dari Human Revolution, seri yang sempat
+                                    dirilis tahun 2011 silam. Dua tahun setelah event di Human Revolution dimana
+                                    manusia-manusia dengan Augmentasi sempat tak
+                                    terkontrol karena aksi dari sebuah organisasi rahasia bernama Illuminati, manusia
+                                    mulai mengembangkan rasa takut yang tak
+                                    rasional untuk kelompok yang satu ini. Rasisme tumbuh dan menjadikan manusia dengan
+                                    augmentasi seperti ini sebagai kelas
+                                    sosial kedua yang pantas untuk dijauhi, dengan sebuah kota yang bahkan dibangun
+                                    eksklusif untuk memuat mereka.
+                                    Namun alih-alih semakin membaik, teror tersebut justru semakin menguat setelah
+                                    sebuah kelompok teroris berisikan manusia-
+                                    manusia dengan augmentasi mulai melancarkan serangan mereka. Tak jelas motif seperti
+                                    apa yang diusung, tak jelas pula siapa
+                                    yang bergerak di belakangnya, namun aksi mereka membuat banyak mereka yang tak
+                                    berdosa harus meregang nyawa. Adam Jensen
+                                    kini bergabung dengan pasukan anti-teroris bernama Task Force 29 untuk memecahkan
+                                    kasus yang satu ini. Operasi yang mereka
+                                    lakukan di Dubai mengkonfirmasikan bahwa memang, ada kelompok manusia dengan
+                                    augmentasi yang terlibat.
+                                    <img width="500" height="500" src="../assets/img/photo/ds ex.jpg"
+                                        class="img-fluid" />><br>
+                                    Dari siapa dan
+                                    atas kepentingan siapa? Itu jadi salah satu misteri yang harus dijawab Jensen.Terus
+                                    ditekan karena manusia yang paranoid
+                                    terhadap kemampuan mereka, beberapa manusia augmentasi yang berusaha melawan balik
+                                    melakukan serangakaian aksi terorisme.
+                                    Adam Jensen dipanggil untuk menyelidiki siapa yang sebenarnya bertanggung jawab.Di
+                                    sisi lain, ia bekerja sebagai seorang
+                                    double agent. Fakta bahwa siapa sebenarnya Illuminati membuat Jensen terlibat dalam
+                                    sebuah kelompok hacktivist bernama
+                                    Juggernaut Collective yang juga bertanya-tanya soal hal yang sama. Kelompok ini
+                                    dipimpin oleh seorang hacker tanpa wajah
+                                    bernama Janus yang sepertinya selalu mendapatkan informasi yang dibutuhkan tanpa
+                                    kesulitan apapun. Jensen pun kini terlibat
+                                    dalam dua kepentingan yang bisa saja saling bertabrakan satu sama lain – usaha untuk
+                                    menemukan siapa yang bertanggung
+                                    jawab di rangkaian aksi teror manusia dengan augmentasi yang terjadi dan tentu saja,
+                                    membongkar siapa itu Illuminati.
+                                    Namun di sisi lain, Jensen berfungsi sebagai double agent untuk membongkar
+                                    Illuminati – pihak yang bertanggung jawab
+                                    atas event dua tahun yang lalu.Berita baiknya? Anda yang tidak pernah mencicipi Deus
+                                    Ex: Human Revolution tak usah khawatir
+                                    bahwa Anda tak akan mendapatkan esensi cerita yang tentu saja, dibutuhkan untuk
+                                    menikmati seri sekuel ini. Anda bisa
+                                    memulai game ini dengan menonton sebuah video re-cap berdurasi 11 menit yang
+                                    disediakan oleh Eidos Montreal untuk
+                                    memberikan secara langsung plot seperti apa yang menjadi basis untuk Mankind Divided
+                                    ini. Tak perlu lagi harus mencari
+                                    internet hanya untuk mengerti, sebuah fitur yang tentu saja pantas untuk disambut
+                                    baik.
+
                                 </p>
-                                <div class="artikel">Baca Selanjutnya</div>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                                <img width="500" height="500" src="../assets/img/photo/2 (2).jpg" class="img-fluid" />
                             </div>
                         </div>
-
-                        <hr class="my-5">
-
-                        <div class="row">
-                            <div class="col-md-7 order-md-2">
-                            <h2>Review Metro Exodus: Arah Baru Mengagumkan!</h2>
-                                <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang
-                                    lebih banyak didominasi soal kebijakan publishing aneh yang diambil oleh Koch Media
-                                    dan Deep Silver.
-                                    Bahwa alih-alih memanfaatkan user masif Steam yang sudah menempuh angka ratusan
-                                    juta,
-                                    mereka lebih memilih untuk “mengunci” deal eksklusivitas dengan Epic Games Store
-                                    yang memang menjanjikan bagi hasil yang lebih
-                                    menguntungkan.</p>
-                                <div class="artikel">Baca Selanjutnya</div>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                            <img width="500" height="500" src="../assets/img/photo/MET.jpg" class="img-fluid" />
-                            </div>
-                        </div>
-
-                        <hr class="my-5">
-
-                        <div class="row">
-                            <div class="col-md-7 order-md-2">
-                            <h2>Review Anthem: Frostbite Engine di Game Open-World </h2>
-                                <p class="lead">Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
-                                    Gamer mana yang belum pernah mendengar nama Frostbite Engine sebelumnya? Engine
-                                    racikan DICE tersebut kini
-                                    memang menjadi basis untuk hampir semua game yang diracik oleh EA, terlepas dari
-                                    genre apapun yang mereka usung. </p>
-                                <div class="artikel">Baca Selanjutnya</div>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                            <img width="500" height="500" src="../assets/img/photo/8.jpg" class="img-fluid" />
-                            </div>
-                        </div>
-
-                        <hr class="my-5">
                     </div>
 
                     <div class="col-md-3">

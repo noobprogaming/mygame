@@ -16,31 +16,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="../assets/custom.css">
-    <style>
-        table,
-        td {
-            margin: 0 auto;
-            padding: 5px;
-            text-align: center;
-        }
-
-        .dd {
-            color: rgb(255, 255, 255);
-        }
-
-        .dd:hover {
-            color: rgb(255, 23, 23);
-        }
-
-        .artikel {
-            color:rgb(255, 23, 23);
-        }
-
-        .artikel:hover {
-            color:rgb(139, 23, 23);
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
@@ -57,7 +32,7 @@ include '../sql.php';
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
-            <img src="../assets/img/lg.png" style="height: 30px; width: 30px;">
+            <img src="../assets/img/lg.png" class="logo logo-small">
             <a class="navbar-brand text-shadow mx-3" href="index.php">Punyakita</a>
             <button class="btn-menu" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,6 +68,12 @@ include '../sql.php';
                             </div>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <div class="search-box">
+                            <input type="text" autocomplete="off" placeholder="Cari . . " />
+                            <div class="result"></div>
+                        </div>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item dropdown">
@@ -101,7 +82,7 @@ include '../sql.php';
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
-                                    <table>
+                                    <table align="center">
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
@@ -122,11 +103,9 @@ include '../sql.php';
                                             <td>
                                                 <input type="submit" value="Logout" onclick="signOut();"
                                                     class="btn btn-sm input-btn w100">
-                                                
                                             </td>
                                         </tr>
                                     </table>
-                                    
                                 </div>
                             </form>
                         </div>
@@ -191,8 +170,8 @@ include '../sql.php';
         </a>
     </div>
 
-    <div class="container-fluid px-5 marketing">
-    <button onclick="signOut()">Try it</button>
+    <div class="container-fluid px-5 ">
+        <button onclick="signOut()">Try it</button>
         <div class="row">
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
@@ -202,9 +181,6 @@ include '../sql.php';
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
                         </div>
                     </div>
                 </a>
@@ -217,9 +193,6 @@ include '../sql.php';
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
                         </div>
                     </div>
                 </a>
@@ -233,9 +206,6 @@ include '../sql.php';
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
                         </div>
                     </div>
                 </a>
@@ -248,77 +218,76 @@ include '../sql.php';
                             <p class="card-text">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">9 mins</small>
-                            </div>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr class="my-5">
 
         <div class="row">
             <div class="col-md-3">
-            <h4>Artikel</h4>
-                                <hr class="divider">
-                                <p class="artikel">Spesifikasi PC untuk Man of Medan</p>
-                                <hr class="divider">
-                                <p class="artikel">Spesifikasi PC untuk Code Vein</p>
-                                <hr class="divider">
-                                <p class="artikel">Kingdom Under Fire II Tetap Hidup, 
-                                Versi PC Tuju Barat Tahun Ini</p>
-                                <hr class="divider">
-                                <p class="artikel">Menjajal DEMO Pamali: Horror Indonesia Potensial!</p>
-                                <hr class="divider">
-                                <p class="artikel">Microsoft akan Hadirkan Login Windows 10 Tanpa Password</p>
-                                <hr class="divider">
-                                <p class="artikel">Review Cuphead: Kartun untuk Kaum Masokis!</p>
-                                <hr class="divider">
-                                <p class="artikel">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
-                                <hr class="divider">
-                                <p class="artikel">Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!L</p>
-                                <hr class="divider">
-                                <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
-                                <hr class="divider">
+                <h4>Artikel</h4>
+                <hr>
+                <p class="artikel">Spesifikasi PC untuk Man of Medan</p>
+                <hr>
+                <p class="artikel">Spesifikasi PC untuk Code Vein</p>
+                <hr>
+                <p class="artikel">Kingdom Under Fire II Tetap Hidup,
+                    Versi PC Tuju Barat Tahun Ini</p>
+                <hr>
+                <p class="artikel">Menjajal DEMO Pamali: Horror Indonesia Potensial!</p>
+                <hr>
+                <p class="artikel">Microsoft akan Hadirkan Login Windows 10 Tanpa Password</p>
+                <hr>
+                <p class="artikel">Review Cuphead: Kartun untuk Kaum Masokis!</p>
+                <hr>
+                <p class="artikel">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
+                <hr>
+                <p class="artikel">Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!L</p>
+                <hr>
+                <p class="artikel">Review Outlast 2: Tidak Lebih Baik!</p>
+                <hr>
             </div>
             <div class="col-md-6">
                 <div>
                     <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
-                    <h2 class="featurette-heading">Review Metro Exodus:  <span class="text-muted">Arah Baru Mengagumkan!</span></h2>
-                    <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang lebih banyak didominasi soal 
+                    <h2>Review Metro Exodus: <span class="text-muted">Arah Baru Mengagumkan!</span></h2>
+                    <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang lebih banyak
+                        didominasi soal
                         kebijakan publishing aneh yang diambil oleh Koch Media dan Deep Silver.</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                <hr class="divider">
+                <hr>
                 <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                <hr class="divider">
+                <hr>
                 <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                <hr class="divider">
+                <hr>
                 <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                <hr class="divider">
+                <hr>
                 <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
                 <p>ARTIKEL</p>
-                <hr class="divider">
+                <hr>
             </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr class="my-5">
 
         <div class="row">
             <div class="col-md-9">
-                <div class="row featurette">
+                <div class="row">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading">Review Anthem: <span class="text-muted">Frostbite Engine di Game Open-World</span></h2>
+                        <h2>Review Anthem: <span class="text-muted">Frostbite Engine di Game Open-World</span></h2>
                         <p class="lead">Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
-                            Gamer mana yang belum pernah mendengar nama Frostbite Engine sebelumnya? Engine racikan DICE tersebut kini memang menjadi basis untuk hampir semua 
+                            Gamer mana yang belum pernah mendengar nama Frostbite Engine sebelumnya? Engine racikan DICE
+                            tersebut kini memang menjadi basis untuk hampir semua
                             game yang diracik oleh EA, terlepas dari genre apapun yang mereka usung. </p>
                     </div>
                     <div class="col-md-5">
@@ -326,11 +295,11 @@ include '../sql.php';
                     </div>
                 </div>
 
-                <hr class="featurette-divider">
+                <hr class="my-5">
 
-                <div class="row featurette">
+                <div class="row">
                     <div class="col-md-7 order-md-2">
-                        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
+                        <h2>Oh yeah, it’s that good. <span class="text-muted">See for
                                 yourself.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
                             felis
@@ -385,7 +354,7 @@ include '../sql.php';
 
         </div>
 
-        <hr class="featurette-divider">
+        <hr class="my-5">
 
     </div>
 
@@ -394,7 +363,7 @@ include '../sql.php';
         <div class="row" style="margin-right: 0!important;">
             <div class="col-md-4 p5rem" style="height: 300px;">
                 <div class="row">
-                    <img src="../assets/img/lg.png" style="height: 140px; width: 140px;">
+                    <img src="../assets/img/lg.png" class="logo logo-big">
                 </div>
                 <div class="row my-3">
                     <div class="sosmed mx-1 my-1">
@@ -456,16 +425,16 @@ include '../sql.php';
         </div>
     </footer>
 
+    
+
 </body>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
+<script src="../assets/search.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
-
 </html>
