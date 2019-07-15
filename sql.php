@@ -13,7 +13,7 @@
         INNER JOIN mouse ON mouse.id_mouse=rig.id_mouse WHERE user.email='$email';
     ");
     $sql_age = ("
-    SELECT DATEDIFF((SELECT CURDATE()), (SELECT birth FROM user WHERE id='alvin'))/365 AS age;
+    SELECT DATEDIFF((SELECT CURDATE()), (SELECT birth FROM user WHERE email='$email'))/365 AS age;
     ");    
     $sql_min = ("
     SELECT id_game, name_game, min_cpu, min_vga, min_ram, cpu.name_cpu, vga.name_vga, ram.name_ram

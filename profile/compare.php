@@ -73,7 +73,7 @@ include '../sql.php';
                     </li>
                     <li class="nav-item">
                         <div class="search-box">
-                            <input type="text" autocomplete="off" placeholder="Cari . . " />
+                            <input type="text" autocomplete="off" placeholder="Cari Game . . " />
                             <div class="result"></div>
                         </div>
                     </li>
