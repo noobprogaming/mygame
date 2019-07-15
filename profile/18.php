@@ -21,7 +21,7 @@
     </style>
 </head>
 
-<body onload="gender()">
+<body onload="compare()">
     <?php 
 session_start();
 if($_SESSION['status']!="login"){
@@ -59,7 +59,7 @@ include '../sql.php';
                             aria-labelledby="navbarDropdown">
                             <div class="px-3 py-1" style="color: rgb(255, 255, 255);">
                                 <ul style="list-style: none; width: 170px;">
-                                    <a href="news.php" style="text-decoration: none;">
+                                    <a style="text-decoration: none;">
                                         <li class="dd my-3">News</li>
                                     </a>
                                     <a href="genre.php" style="text-decoration: none;">

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../assets/custom.css">
 </head>
 
-<body onload="gender()">
+<body onload="compare()">
     <?php 
 session_start();
 if($_SESSION['status']!="login"){
@@ -56,7 +56,7 @@ include '../sql.php';
                             aria-labelledby="navbarDropdown">
                             <div class="px-3 py-1" style="color: rgb(255, 255, 255);">
                                 <ul style="list-style: none; width: 170px;">
-                                    <a href="news.php" style="text-decoration: none;">
+                                    <a style="text-decoration: none;">
                                         <li class="dd my-3">News</li>
                                     </a>
                                     <a href="genre.php" style="text-decoration: none;">
@@ -164,6 +164,7 @@ include '../sql.php';
                                 yang sebenarnya ditawarkan oleh GTA V Versi PC ini? Mengapa kami menyebutnya sebagai versi yang paling sempurna?<br>
                                 <h2>Optimalisasi Mumpuni</h2>
                                 <img width="500" height="500" src="../assets/img/photo/gta2.jpg" class="img-fluid"/><br>
+                                <p class="lead">
                                 “Mohon maaf, kami butuh waktu ekstra untuk memastikan kualitas sesuai dengan standar yang kami inginkan”, 
                                 Anda sudah pasti pernah mendengar alasan klise yang boleh terbilang, selalu meluncur bersama dengan 
                                 pengumuman penundaan rilis ini. Rockstar sempat melemparkan kalimat yang sama dua kali, setelah GTA V 
@@ -179,14 +180,15 @@ include '../sql.php';
                                 yang punya PC dengan kemampuan di ambang batas, bisa mengurangi elemen-elemen yang menurut Anda pribadi, 
                                 memang tidak akan berkontribusi signifikan pada pengalaman bermain yang Anda dapatkan. Jika ada satu 
                                 kata yang bisa disimpulkan untuk mendefinisikan kerja keras Rockstar di GTA V PC, maka tidak ada kata 
-                                lain yang lebih tepat selain kata: NIAT!<br><br>
+                                lain yang lebih tepat selain kata: NIAT!</p><br><br>
                                 <img width="500" height="500" src="../assets/img/photo/gta3.jpg" class="img-fluid"/><br>
                                 Segudang opsi grafis yang bisa Anda tweak. Rockstar mendefinisikan ulang sebuah game “port” yang niat. <br><br>
                                 <img width="500" height="500" src="../assets/img/photo/gta4.jpg" class="img-fluid"/><br>
                                 Dukungan DX10 yang dipertahankan membuat banyak rig lawas tetap relevan dan bisa diandalkan untuk memainkan game ini.<br><br>
                                 <img width="500" height="500" src="../assets/img/photo/det.jpg" class="img-fluid"/><br> 
-                                Dat detail..<br><br>
-                                Lantas, seberapa hebatnya optimalisasi ini? Kami sendiri memang masih belum bisa berbicara banyak saat ini, namun pengujian awal yang dilakukan oleh kru JagatReview membuktikan bahwa ia bisa berjalan dalam kualitas visual yang lebih baik dari versi Playstation 3, dengan sebuah PC yang dibangun dengan teknologi tujuh tahun yang lalu. Benar sekali, Anda tidak salah membaca kalimat kami sebelumnya. Komponen PC berumur tujuh tahun masih bisa menikmati game ini dengan pengalaman bermain yang cukup mumpuni. Dukungan DirectX10 adalah keputusan terbaik yang bisa dilakukan Rockstar, membuat game ini terasa begitu “terjangkau”, bahkan untuk gamer yang sudah angkat tangan bisa mampu menikmati game-game teranyar.
+                                <p class="lead">
+                                Dan detail..<br><br>
+                                Lantas, seberapa hebatnya optimalisasi ini? Kami sendiri memang masih belum bisa berbicara banyak saat ini, namun pengujian awal yang dilakukan oleh kru JagatReview membuktikan bahwa ia bisa berjalan dalam kualitas visual yang lebih baik dari versi Playstation 3, dengan sebuah PC yang dibangun dengan teknologi tujuh tahun yang lalu. Benar sekali, Anda tidak salah membaca kalimat kami sebelumnya. Komponen PC berumur tujuh tahun masih bisa menikmati game ini dengan pengalaman bermain yang cukup mumpuni. Dukungan DirectX10 adalah keputusan terbaik yang bisa dilakukan Rockstar, membuat game ini terasa begitu “terjangkau”, bahkan untuk gamer yang sudah angkat tangan bisa mampu menikmati game-game teranyar.</p>
 
                             </div>
                         </div>
