@@ -2,10 +2,10 @@
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Waktu pembuatan: 11 Jul 2019 pada 05.21
--- Versi server: 10.2.23-MariaDB
--- Versi PHP: 7.2.18
+-- Host: 127.0.0.1
+-- Generation Time: Jul 15, 2019 at 08:13 AM
+-- Server version: 10.1.40-MariaDB
+-- PHP Version: 7.3.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,131 +19,140 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u614737895_pk`
+-- Database: `mygame`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `cpu`
+-- Table structure for table `cpu`
 --
 
 CREATE TABLE `cpu` (
-  `id_cpu` int(11) NOT NULL,
+  `id_cpu` int(4) NOT NULL,
   `name_cpu` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `cpu`
+-- Dumping data for table `cpu`
 --
 
 INSERT INTO `cpu` (`id_cpu`, `name_cpu`) VALUES
-(1, 'intel i3'),
-(2, 'intel i5'),
-(3, 'intel i7'),
-(4, 'intel i9');
+(1, 'Generic');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `game`
+-- Table structure for table `game`
 --
 
 CREATE TABLE `game` (
-  `id_game` int(11) NOT NULL,
+  `id_game` int(4) NOT NULL,
   `name_game` varchar(255) DEFAULT NULL,
-  `min_cpu` int(11) DEFAULT NULL,
-  `min_vga` int(11) DEFAULT NULL,
-  `min_ram` int(11) DEFAULT NULL,
-  `rec_cpu` int(11) DEFAULT NULL,
-  `rec_vga` int(11) DEFAULT NULL,
-  `rec_ram` int(11) DEFAULT NULL,
-  `rec_storage` int(11) DEFAULT NULL
+  `min_cpu` int(4) DEFAULT '1',
+  `min_vga` int(4) DEFAULT '1',
+  `min_ram` int(4) DEFAULT '1',
+  `rec_cpu` int(4) DEFAULT '1',
+  `rec_vga` int(4) DEFAULT '1',
+  `rec_ram` int(4) DEFAULT '1',
+  `rec_storage` int(4) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `game`
+-- Dumping data for table `game`
 --
 
 INSERT INTO `game` (`id_game`, `name_game`, `min_cpu`, `min_vga`, `min_ram`, `rec_cpu`, `rec_vga`, `rec_ram`, `rec_storage`) VALUES
-(1, 'GTA5', 2, 2, 2, 3, 3, 3, 60);
+(1, 'GTA5', 1, 1, 1, 1, 1, 1, 1),
+(2, 'Dota 2', 1, 1, 1, 1, 1, 1, 1),
+(3, 'The Witcher 3', 1, 1, 1, 1, 1, 1, 1),
+(4, 'Anthem', 1, 1, 1, 1, 1, 1, 1),
+(5, 'Deus Ex : Mankind Divided', 1, 1, 1, 1, 1, 1, 1),
+(6, 'Metro Exodus', 1, 1, 1, 1, 1, 1, 1),
+(7, 'Cyberpunk 2077', 1, 1, 1, 1, 1, 1, 1),
+(8, 'Counter Strike : Global Offensive (CSGO)', 1, 1, 1, 1, 1, 1, 1),
+(9, 'Apex Legends', 1, 1, 1, 1, 1, 1, 1),
+(10, 'Overwatch', 1, 1, 1, 1, 1, 1, 1),
+(11, 'Fortnite', 1, 1, 1, 1, 1, 1, 1),
+(12, 'PlayerUnknowns Battlegrounds (PUBG)', 1, 1, 1, 1, 1, 1, 1),
+(13, 'Forza Horizon 4', 1, 1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `hdd`
+-- Table structure for table `hdd`
 --
 
 CREATE TABLE `hdd` (
-  `id_hdd` int(11) NOT NULL,
+  `id_hdd` int(4) NOT NULL,
   `name_hdd` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `hdd`
+-- Dumping data for table `hdd`
 --
 
 INSERT INTO `hdd` (`id_hdd`, `name_hdd`) VALUES
-(60, 'WD Black Scorpio');
+(1, 'Generic');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kb`
+-- Table structure for table `kb`
 --
 
 CREATE TABLE `kb` (
-  `id_kb` int(11) NOT NULL,
+  `id_kb` int(4) NOT NULL,
   `name_kb` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kb`
+-- Dumping data for table `kb`
 --
 
 INSERT INTO `kb` (`id_kb`, `name_kb`) VALUES
-(1, 'Rexus Gaming KB');
+(1, 'Generic');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `mouse`
+-- Table structure for table `mouse`
 --
 
 CREATE TABLE `mouse` (
-  `id_mouse` int(11) NOT NULL,
+  `id_mouse` int(4) NOT NULL,
   `name_mouse` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `mouse`
+-- Dumping data for table `mouse`
 --
 
 INSERT INTO `mouse` (`id_mouse`, `name_mouse`) VALUES
-(1, 'Rexus Gaming Mouse');
+(1, 'Generic');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `psu`
+-- Table structure for table `psu`
 --
 
 CREATE TABLE `psu` (
-  `id_psu` int(11) NOT NULL,
+  `id_psu` int(4) NOT NULL,
   `name_psu` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `psu`
+-- Dumping data for table `psu`
 --
 
 INSERT INTO `psu` (`id_psu`, `name_psu`) VALUES
-(1, 'Corsair Gold 80+');
+(1, 'Generic');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ram`
+-- Table structure for table `ram`
 --
 
 CREATE TABLE `ram` (
@@ -152,64 +161,59 @@ CREATE TABLE `ram` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ram`
+-- Dumping data for table `ram`
 --
 
 INSERT INTO `ram` (`id_ram`, `name_ram`) VALUES
-(1, '2GB'),
-(2, '4GB'),
-(3, '8GB'),
-(4, '16GB');
+(1, 'Generic');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `rig`
+-- Table structure for table `rig`
 --
 
 CREATE TABLE `rig` (
   `id` char(21) NOT NULL,
-  `id_cpu` int(11) DEFAULT 1,
-  `id_vga` int(11) DEFAULT 1,
-  `id_ram` int(11) DEFAULT 1,
-  `id_ssd` int(11) DEFAULT 60,
-  `id_hdd` int(11) DEFAULT 60,
-  `id_psu` int(11) DEFAULT 1,
-  `id_kb` int(11) DEFAULT 1,
-  `id_mouse` int(11) DEFAULT 1
+  `id_cpu` int(4) DEFAULT '1',
+  `id_vga` int(4) DEFAULT '1',
+  `id_ram` int(4) DEFAULT '1',
+  `id_ssd` int(4) DEFAULT '1',
+  `id_hdd` int(4) DEFAULT '1',
+  `id_psu` int(4) DEFAULT '1',
+  `id_kb` int(4) DEFAULT '1',
+  `id_mouse` int(4) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `rig`
+-- Dumping data for table `rig`
 --
 
 INSERT INTO `rig` (`id`, `id_cpu`, `id_vga`, `id_ram`, `id_ssd`, `id_hdd`, `id_psu`, `id_kb`, `id_mouse`) VALUES
-('alvin', 4, 2, 4, 60, 60, 1, 1, 1),
-('107689815419695513268', 1, 1, 1, 60, 60, 1, 1, 1),
-('115870629020183890718', 1, 1, 1, 60, 60, 1, 1, 1);
+('alvin', 1, 1, 1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ssd`
+-- Table structure for table `ssd`
 --
 
 CREATE TABLE `ssd` (
-  `id_ssd` int(11) NOT NULL,
+  `id_ssd` int(4) NOT NULL,
   `name_ssd` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ssd`
+-- Dumping data for table `ssd`
 --
 
 INSERT INTO `ssd` (`id_ssd`, `name_ssd`) VALUES
-(60, 'Samsung EVO');
+(1, 'Generic');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -220,112 +224,108 @@ CREATE TABLE `user` (
   `email` varchar(255) DEFAULT NULL,
   `birth` date DEFAULT NULL,
   `joined` date DEFAULT NULL,
-  `pp` varchar(255) DEFAULT NULL
+  `pp` longtext NOT NULL,
+  `hp` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `name`, `password`, `gender`, `email`, `birth`, `joined`, `pp`) VALUES
-('107689815419695513268', '', NULL, NULL, 'alvin.1157@students.amikom.ac.id', NULL, '2019-07-11', 'https://lh5.googleusercontent.com/-17K7hkI2XEA/AAAAAAAAAAI/AAAAAAAAABU/sE2UcGuUZ4c/s96-c/photo.jpg'),
-('115870629020183890718', 'aurel lintang', NULL, NULL, 'aurellintang@gmail.com', NULL, '2019-07-11', 'https://lh5.googleusercontent.com/-OP3w0fCCq6g/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcBUCO2LDILi_nmX9Oqx9lriRHR_w/s96-c/photo.jpg'),
-('alvin', 'Alvin Bintang R', 'alvin', 'l', 'alvinbintang@punyakita.tech', '1999-03-02', '2019-05-14', '');
+INSERT INTO `user` (`id`, `name`, `password`, `gender`, `email`, `birth`, `joined`, `pp`, `hp`) VALUES
+('alvin', 'Alvin Bintang R', 'alvin', 'l', 'alvinbintang@punyakita.tech', '1998-03-02', '2019-05-14', '../assets/img/photo/alvin.jpg', '6289672747092');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `vga`
+-- Table structure for table `vga`
 --
 
 CREATE TABLE `vga` (
-  `id_vga` int(11) NOT NULL,
+  `id_vga` int(4) NOT NULL,
   `name_vga` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `vga`
+-- Dumping data for table `vga`
 --
 
 INSERT INTO `vga` (`id_vga`, `name_vga`) VALUES
-(1, 'nvidia gt210'),
-(2, 'nvidia gt730'),
-(3, 'nvidia gtx1050'),
-(4, 'nvidia rtx2080');
+(1, 'Generic');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `cpu`
+-- Indexes for table `cpu`
 --
 ALTER TABLE `cpu`
   ADD PRIMARY KEY (`id_cpu`);
 
 --
--- Indeks untuk tabel `game`
+-- Indexes for table `game`
 --
 ALTER TABLE `game`
   ADD PRIMARY KEY (`id_game`);
 
 --
--- Indeks untuk tabel `hdd`
+-- Indexes for table `hdd`
 --
 ALTER TABLE `hdd`
   ADD PRIMARY KEY (`id_hdd`);
 
 --
--- Indeks untuk tabel `kb`
+-- Indexes for table `kb`
 --
 ALTER TABLE `kb`
   ADD PRIMARY KEY (`id_kb`);
 
 --
--- Indeks untuk tabel `mouse`
+-- Indexes for table `mouse`
 --
 ALTER TABLE `mouse`
   ADD PRIMARY KEY (`id_mouse`);
 
 --
--- Indeks untuk tabel `psu`
+-- Indexes for table `psu`
 --
 ALTER TABLE `psu`
   ADD PRIMARY KEY (`id_psu`);
 
 --
--- Indeks untuk tabel `ram`
+-- Indexes for table `ram`
 --
 ALTER TABLE `ram`
   ADD PRIMARY KEY (`id_ram`);
 
 --
--- Indeks untuk tabel `ssd`
+-- Indexes for table `ssd`
 --
 ALTER TABLE `ssd`
   ADD PRIMARY KEY (`id_ssd`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `vga`
+-- Indexes for table `vga`
 --
 ALTER TABLE `vga`
   ADD PRIMARY KEY (`id_vga`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `game`
+-- AUTO_INCREMENT for table `game`
 --
 ALTER TABLE `game`
-  MODIFY `id_game` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_game` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
