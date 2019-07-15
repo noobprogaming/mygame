@@ -4,14 +4,14 @@ include '../koneksi.php';
  
 if(isset($_REQUEST["term"])){
     // Prepare a select statement
-    $sql = "SELECT * FROM user WHERE id LIKE ?";
+    $sql = "SELECT name_game FROM game WHERE name_game LIKE ?";
     
     if($stmt = mysqli_prepare($koneksi, $sql)){
         // Bind variables to the prepared statement as parameters
         mysqli_stmt_bind_param($stmt, "s", $param_term);
         
         // Set parameters
-        $param_term = $_REQUEST["term"] . '%';
+        $param_term = '%' . $_REQUEST["term"] . '%';
         
         // Attempt to execute the prepared statement
         if(mysqli_stmt_execute($stmt)){
@@ -21,10 +21,10 @@ if(isset($_REQUEST["term"])){
             if(mysqli_num_rows($result) > 0){
                 // Fetch result rows as an associative array
                 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                    echo "<p>" . $row["id"] . "</p>";
+                    echo "<p>" . $row["name_game"] . "</p>";
                 }
             } else{
-                echo "<p>No matches found</p>";
+                echo "<p>Tidak ditemukan . .</p>";
             }
         } else{
             echo "ERROR: Could not able to execute $sql. " . mysqli_error($koneksi);
