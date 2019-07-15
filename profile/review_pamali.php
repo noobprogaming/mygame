@@ -79,13 +79,13 @@ include '../sql.php';
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="profile.php"><i class="fa fa-user"> </i> <?php echo $u_id; ?></a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-content black-soft box-shadow"
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
-                                    <table align="center">
+                                    <table>
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
@@ -106,6 +106,10 @@ include '../sql.php';
                                             <td>
                                                 <input type="submit" value="Logout" onclick="signOut();"
                                                     class="btn btn-sm input-btn w100">
+                                                <button onclick="signOut();">Out
+                                                </button>
+                                                <button onclick="myFunction();">Out
+                                                </button>
                                             </td>
                                         </tr>
                                     </table>
@@ -121,16 +125,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                GAME GENRE
+                PAMALI : INDONESIAN FOLKLORE HORROR
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/1.jpg">
+                    <img class="img-fluid" src="../assets/img/photo/pamraw3.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/2.jpg">
-                        <img class="img-fluid" src="../assets/img/3.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/pamraw2.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/pamraw1.jpg">
                     </div>
                 </div>
             </div>
@@ -140,58 +144,66 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-md-7 order-md-2">
-                                <h2>Review Deus Ex : Mabkind Divided Semakin Semakin sempurna</h2>
-                                <p class="lead">Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu
-                                    ruang yang sama,
-                                    memang sulit untuk membedakan mana yang sejatinya sebuah game RPG, mana game action,
-                                    dan mana sebuah platfomer murni.
+                        <div class="col-md-12">
+                                <h2>Review PAMALI: Kreativitas dalam Ketakutan!</h2>
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/pam1.jpg"
+                                        class="img-fluid" /><br>
+                                        Hype terkait PAMALI memang sempat kuat ketika versi demo perdana yang keluar memperlihatkan konten
+                                        potensial yang menjanjikan. Sang studio developer – StoryTale Studios punya visi dan misi yang
+                                        jelas soal apa yang hendak mereka racik dan tema seperti apa yang hendak didorong. Namun kami
+                                        sendiri termasuk gamer yang cukup pesimis dengan demo tersebut, terutama karena struktur cerita
+                                        tidak jelas yang mengitari konsep “Pamali” – yang memang begitu kuat cita rasa kultural
+                                        Indonesia-nya. Di sisi lain, ia juga hadir dengan tingkat cahaya yang begitu rendah hingga
+                                        sulit menikmati atmosfer yang ada. Setelah menantikannya cukup lama, versi finalnya akhirnya
+                                        tersedia. Sebagai game episodik yang rencananya akan menghadirkan 4 skenario berbeda dengan
+                                        fokus pada makhluk halus yang juga berbeda-beda, proses review ini didasarkan pada skenario
+                                        yang tersedia saat ia ditulis – yakni Skenario 1 – “The White Lady” yang difokuskan pada
+                                        sosok Kuntilanak itu sendiri. Ia tentu saja tidak merepresentasikan kualitas 3 skenario
+                                        sisa yang tentu saja, belum kami jajal sama sekali.Lantas, apa yang sebenarnya ditawarkan
+                                        oleh PAMALI ini? Mengapa kami menyebutnya sebagai game yang menawarkan kreativitas dalam
+                                        ketakutan? Review ini akan membahasnya lebih dalam untuk Anda.<br>
+                                        <h2>Plot</h2>
+                                    <img width="500" height="500" src="../assets/img/photo/pam2.jpg"
+                                        class="img-fluid" /><br>
+                                        Mengejutkan dan kreatif adalah dua kata yang akan kami pilih untuk menjelaskan plot yang
+                                        ditawarkan oleh StoryTale Studios di skenario “The White Lady” PAMALI. Di versi demo, 
+                                        ada sinyal bahwa Anda sekedar berperan sebagai anak muda yang kebetulan mendapatkan warisan
+                                        rumah dari saudara perempuannya yang baru saja meninggal. Namun kedangkalan cerita tersebut 
+                                        ternyata berujung menjadi sesuatu yang lebih di versi finalnya. PAMALI hadir dengan kisah 
+                                        yang secara cerdas, rasional untuk menyatukan empat episode cerita yang ia persiapkan.Anda 
+                                        ternyata berperan sebagai seorang developer game horror yang tengah sibuk meracik game 
+                                        terbarunya. Di tengah kesibukan Anda merampungkannya, ada perintah dari atasan untuk melakukan 
+                                        proses research soal cerita-cerita supranatural dari beragam pelosok untuk memastikan bahwa 
+                                        game yang Anda racik merepresentasikan hal yang seharusnya. Salah satu dari cerita tersebut 
+                                        melibatkan “White Lady” itu sendiri dan berujung menjadi kisah yang harus Anda selami dan 
+                                        cermati. Pola cerita kreatif yang kini membuat format episodiknya menjadi sesuatu yang bisa 
+                                        dicerna secara rasional. Sementara untuk skenario “The White Lady” itu sendiri, Anda berperan 
+                                        sebagai seorang anak muda yang berusaha menjual rumah milik orang tuanya. Kotor dan cukup lama 
+                                        ditinggalkan, Anda juga diharuskan untuk mengumpulkan berkas-berkas penting di dalamnya sekaligus 
+                                        membantu membersihkannya agar terlihat menarik di mata para peminat. Namun seperti yang bisa 
+                                        diprediksi, rumah ini bukanlah rumah sembarangan. Ada aura yang ketidaktenangan yang kental 
+                                        di sini, dimana suara dan penampakan terjadi di beragam sudut. Lampu yang menyala sendiri, nomor 
+                                        rumah yang menolak untuk ditegakkan, hingga beragam benda paranormal tersimpan di ragam sudut. 
+                                        Aksi hendak menjual rumah ini berujung menjadi soal mempertahankan kewarasan.
+                                    <br>
+                                    <h2>META</h2>
+                                    <img width="500" height="500" src="../assets/img/photo/pam3.jpg" class="img-fluid"/><br>
+                                    Salah satu desain yang membuat kami jatuh hati dengan PAMALI adalah bagaimana ia berujung 
+                                    meracik sebuah cerita yang tidak hanya cerdas saja untuk membuat presentasi empat skenario 
+                                    tersebut sebagai sesuatu yang rasional, tetapi juga membangunnya sebagai sesuatu yang meta 
+                                    di dalamnya. Berperan sebagai developer yang berusaha meracik sebuah game horror adalah keputusan 
+                                    yang fantastis di mata kami. Perasaan meta yang Anda dapatkan membuat Anda merasa seolah tengah 
+                                    berperan sebagai salah satu anggota tim developer StoryTale Studios itu sendiri, dan kami 
+                                    menyukainya. Hal ini diperkuat dengan beragam email balasan yang masuk ke dalam komputer 
+                                    Anda salah satu objek interaktif yang bisa Anda buka dalam permainan, semakin mendorong sensasi 
+                                    tersebut. Email-email yang kebanyakan bercerita soal demo game horror terbaru sang developer 
+                                    in-game tersebut juga terasa mewakili beragam komentar yang mungkin masuk ketika demo PAMALI 
+                                    pertama kali beredar. Mengambil kacamata seorang developer sebagai fokus juga memungkinkan 
+                                    developer menyuntikkan ragam pesan “PSA” dan “Tutorial” yang diarahkan pada Anda, tapi didesain 
+                                    seolah-olah sebagai pesan untuk sang developer, karakter utama yang Anda gunakan. Cerdas!
                                 </p>
-                                <div class="artikel">Baca Selanjutnya</div>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                                <img width="500" height="500" src="../assets/img/photo/deu.jpg" class="img-fluid" />
                             </div>
                         </div>
-
-                        <hr class="my-5">
-
-                        <div class="row">
-                            <div class="col-md-7 order-md-2">
-                            <h2>Review Metro Exodus: Arah Baru Mengagumkan!</h2>
-                                <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang
-                                    lebih banyak didominasi soal kebijakan publishing aneh yang diambil oleh Koch Media
-                                    dan Deep Silver.
-                                    Bahwa alih-alih memanfaatkan user masif Steam yang sudah menempuh angka ratusan
-                                    juta,
-                                    mereka lebih memilih untuk “mengunci” deal eksklusivitas dengan Epic Games Store
-                                    yang memang menjanjikan bagi hasil yang lebih
-                                    menguntungkan.</p>
-                                <div class="artikel">Baca Selanjutnya</div>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                            <img width="500" height="500" src="../assets/img/photo/MET.jpg" class="img-fluid" />
-                            </div>
-                        </div>
-
-                        <hr class="my-5">
-
-                        <div class="row">
-                            <div class="col-md-7 order-md-2">
-                            <h2>Review Anthem: Frostbite Engine di Game Open-World </h2>
-                                <p class="lead">Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
-                                    Gamer mana yang belum pernah mendengar nama Frostbite Engine sebelumnya? Engine
-                                    racikan DICE tersebut kini
-                                    memang menjadi basis untuk hampir semua game yang diracik oleh EA, terlepas dari
-                                    genre apapun yang mereka usung. </p>
-                                <div class="artikel">Baca Selanjutnya</div>
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                            <img width="500" height="500" src="../assets/img/photo/8.jpg" class="img-fluid" />
-                            </div>
-                        </div>
-
-                        <hr class="my-5">
                     </div>
 
                     <div class="col-md-3">
