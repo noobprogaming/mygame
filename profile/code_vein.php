@@ -16,9 +16,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="../assets/custom.css">
-    <style>
-
-    </style>
 </head>
 
 <body onload="gender()">
@@ -85,7 +82,7 @@ include '../sql.php';
                             aria-labelledby="navbarDropdown">
                             <form action="logout.php" method="post">
                                 <div class="px-3 py-1" style="width: 15rem">
-                                    <table>
+                                    <table align="center">
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
@@ -106,10 +103,6 @@ include '../sql.php';
                                             <td>
                                                 <input type="submit" value="Logout" onclick="signOut();"
                                                     class="btn btn-sm input-btn w100">
-                                                <button onclick="signOut();">Out
-                                                </button>
-                                                <button onclick="myFunction();">Out
-                                                </button>
                                             </td>
                                         </tr>
                                     </table>
@@ -125,16 +118,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                FINAL FANTASY 7
+                CODE VEIN
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/ffr3.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/vein3.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/ffr1.jpg">
-                        <img class="img-fluid" src="../assets/img/photo/ffr2.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/vein4.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/vein5.jpg">
                     </div>
                 </div>
             </div>
@@ -144,44 +137,21 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                        <div class="col-md-12">
-                                <h2>Square Enix Bantah Rilis FF VII Remake untuk Xbox One</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/fin.jpg"
-                                        class="img-fluid" /><br>
-                                        Apakah Final Fantasy VII Remake akan menjadi game multi-platform? Indikasi 
-                                        yang muncul memang mengarah demikian. Ketika trailer perdananya diperkenalkan 
-                                        kepada publik via panggung utama E3 beberapa tahun yang lalu, ia ditutup 
-                                        dengan kelimat “Play it first on Playstation 4” yang memang jadi jargon dan 
-                                        konfirmasi tidak langsung, bahwa pada akhirnya Final Fantasy VII Remake akan 
-                                        dirilis di platform lain. Tetapi ada sesuatu yang berubah di trailer-trailer 
-                                        teranyarnya. Tulisan tersebut tidak lagi mengemuka dan hanya digantikan 
-                                        “Playstation 4” saja membuat pertanyaan soal rilis multi-platformnya kembali 
-                                        menjadi misteri. Hingga halaman Xbox tak sengaja melepas iklan di akun Facebook 
-                                        resmi lengkap dengan tanggal rilis yang sama.<br>
-                                    <img width="500" height="500" src="../assets/img/photo/fina.jpg"
-                                        class="img-fluid" /><br>
-                                        Iklan tersebut langsung ditangkap gamer dan memicu diskusi, walaupun pada 
-                                        akhirnya dibantah sendiri oleh tim Xbox yang menyebutnya tidak lebih dari 
-                                        sekedar kekeliruan internal semata dengan post yang berakhir dihapus. 
-                                        Tetapi tidak sedikit gamer yang yakin bahwa alih-alih “kekeliruan”, ini 
-                                        adalah sebuah pengumuman resmi yang tidak sengaja bocor lebih awal, bahwa 
-                                        FF VII Remake akan dirilis di Xbox One bersama dengan versi PS4 di bulan Maret 2020 mendatang.<br>
-                                    <img width="500" height="500" src="../assets/img/photo/final.jpg"
-                                        class="img-fluid" /><br>
-                                        Untungnya, Square Enix akhirnya angkat bicara. Dalam pernyataan resmi yang 
-                                        mereka bagi ke beberapa media gaming besar, Square Enix secara tegas menyebut 
-                                        bahwa Final Fantasy VII Remake hanya akan tersedia di Playstation 4 pada hari 
-                                        rilisnya nanti – 3 Maret 2020 mendatang. Untuk saat ini, mereka tidak memiliki 
-                                        rencana apapun untuk merilisnya di platform yang lain. Walaupun tidak lantas 
-                                        “mengubur” potensi rilis multi-platform, namun informasi ini secara otomatis 
-                                        mematikan harapan bahwa FF VII Remake akan tersedia di luar PS4 pada saat hari 
-                                        rilis nanti.
-
-                                        Bagaimana dengan Anda sendiri? Berapa banyak dari Anda yang akan tertarik 
-                                        melirik PS4 hanya untuk memainkan proyek yang begitu diantisipasi ini?
-
-
-                                </p>
+                            <div class="col-md-12">
+                            <h2>Code Vein akan dirilis pada tanggal 27 September 2019</h2>
+                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/vein.jpg" class="img-fluid" /><br>
+                                Dalam beberapa bulan ke depan, setelah melewati fase absen informasi yang mengkhawatirkan, 
+                                Bandai Namco akhirnya siap untuk menawarkan Code Vein ke publik lewat platform rilis yang sudah diumumkan sebelumnya. 
+                                Ia memang seringkali disebut sebagai Dark Souls dengan cita rasa anime yang kental, walaupun pada akhirnya, 
+                                ia harus diakui mengusung beberapa mekanik baru dan berbeda. Kita berbicara soal sistem companion, persenjataan, 
+                                hingga ritme pertarungan yang begitu Anda jajal, akan terasa memiliki identitas uniknya sendiri. Maka bagi gamer PC, 
+                                seiring dengan waktu rilis yang semakin dekat, ini berarti kebutuhan untuk mulai mempersiapkan diri.<br>
+                                <img width="500" height="500" src="../assets/img/photo/vein2.jpg" class="img-fluid"/>><br>
+                                Setelah menunggu cukup lama, halaman pre-order Code Vein untuk Steam akhirnya dibuka juga. 
+                                Bersama dengan harga resmi untuk proses pre-order yang sudah ditentukan (sekitar 499 ribu Rupiah untuk region Indonesia), 
+                                informasi terkait spesifikasi PC resmi untuk bisa menjalankannya di kualitas paling optimal juga akhirnya dilepas. 
+                                Diracik dengan menggunakan Unreal Engine 4, 
+                                gamer yang tertarik untuk membeli Deluxe Edition yang lebih mahal juga akan otomatis dipersenjatai dengan “Season Pass” dan set kostum di dalamnya.
                             </div>
                         </div>
                     </div>
