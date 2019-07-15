@@ -123,39 +123,37 @@ include '../sql.php';
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="#">
-                    <img class="img-fluid" src="../assets/img/1.jpg" style="position: relative;">
+                    <img class="img-fluid" src="../assets/img/peripheral/1.jpg" style="position: relative;">
                     <div class="container ">
                         <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, fdghfghfac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                vehicula ut id elit.</p>
+                            <h1>LOGITECH G433 7.1 SURROUND GAMING HEADSET</h1>
+                            <p>Gamer membutuhkan kinerja audio yang mendalam dan untuk alasan yang baik karena setiap 
+                            judul baru membawa desain suara yang lebih besar. G433 mengemas kinerja audio yang luar biasa ke dalam 
+                            desain yang sangat ringan, tahan lama, dan nyaman.</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="#">
-                    <img class="img-fluid" src="../assets/img/2.jpg">
+                    <img class="img-fluid" src="../assets/img/peripheral/2.jpg">
                     <div class="container">
                         <div class="carousel-caption text-left">
-                            <h1>Another example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                vehicula ut id elit.</p>
+                            <h1>RAZER BLACKWIDOW CHROMA V2</h1>
+                            <p>BlackWidow Chroma V2 adalah keyboard gaming mekanis terbaik di dunia dan semuanya pantas untuk judulnya. 
+                            Keyboard andalannya memiliki tiga variasi sakelar mekanis, tombol makro, dan kenyamanan terbaik untuk permainan selama berjam-jam.</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="#">
-                    <img class="img-fluid" src="../assets/img/3.jpg">
+                    <img class="img-fluid" src="../assets/img/peripheral/3.jpg">
                     <div class="container">
                         <div class="carousel-caption text-left">
-                            <h1>One more for good measure.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
-                                vehicula ut id elit.</p>
+                            <h1>GEFORCE RTX 2080 Ti</h1>
+                            <p>Kartu grafis andalan terbaru NVIDIA adalah revolusi dalam realisme dan kinerja game. Arsitektur NVIDIA Turing ™ GPU yang kuat, 
+                            teknologi terobosan, dan memori GDDR6 ultra-cepat generasi terbaru, menjadikannya GPU gaming terbaik di dunia.</p>
                         </div>
                     </div>
                 </a>
@@ -174,9 +172,9 @@ include '../sql.php';
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
+                        <img width="100%" height="140" src="../assets/img/peripheral/case.jpg" class="img-fluid" />
                         <div class="card-body">
-                            <h3 class="text-center">MOUSE</h3>
+                            <h3 class="text-center">CASE</h3>
                         </div>
                     </div>
                 </a>
@@ -184,7 +182,7 @@ include '../sql.php';
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div>
-                        <img width="100%" height="140" src="../assets/img/2.jpg" class="img-fluid" />
+                        <img width="100%" height="140" src="../assets/img/peripheral/mouse.jpg" class="img-fluid" />
                         <div class="card-body">
                             <h3 class="text-center">MOUSE</h3>
                         </div>
@@ -195,9 +193,9 @@ include '../sql.php';
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div>
-                        <img width="100%" height="140" src="../assets/img/3.jpg" class="img-fluid" />
+                        <img width="100%" height="140" src="../assets/img/peripheral/monitor.jpg" class="img-fluid" />
                         <div class="card-body">
-                            <h3 class="text-center">MOUSE</h3>
+                            <h3 class="text-center">MONITOR</h3>
                         </div>
                     </div>
                 </a>
@@ -205,9 +203,9 @@ include '../sql.php';
             <div class="col-lg-3 bright">
                 <a href="#" style="text-decoration: none;">
                     <div>
-                        <img width="100%" height="140" src="../assets/img/1.jpg" class="img-fluid" />
+                        <img width="72%" height="140" src="../assets/img/peripheral/headset.jpg" class="img-fluid" />
                         <div class="card-body">
-                            <h3 class="text-center">MOUSE</h3>
+                            <h3 class="text-center">HEADSET</h3>
                         </div>
                     </div>
                 </a>
