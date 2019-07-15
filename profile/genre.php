@@ -357,6 +357,7 @@ include '../sql.php';
                     </li>
                 </ul>
             </div>
+        </div>
         <div class="red" style="height: 1px;">
         </div>
         <div class="pb-4 black text-white" style="height: 50px; padding-top: 10px;">
