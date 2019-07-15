@@ -180,41 +180,48 @@ include '../sql.php';
                         <hr class="my-5">
                     </div>
                     <div class="col-lg-2">
-                        <hr class="featurette-divider" style="transform: rotate(90deg);">
                     </div>
                     <div class="col-lg-5">
 
                         <table>
                             <tr>
-                                <td>Processor</td>
-                                <td><?php echo $u_cpu; ?></td>
+                                <td><i class="fa fa-microchip"></td>
+                                <td></i>Processor</td>
+                                <td style="width: 100%"><?php echo $u_cpu; ?></td>
                             </tr>
                             <tr>
-                                <td>Graphic Card</td>
-                                <td><?php echo $u_vga; ?></td>
+                                <td><i class="fa fa-mobile"></td>
+                                <td></i>Graphic Card</td>
+                                <td style="widht: 100%"><?php echo $u_vga; ?></td>
                             </tr>
                             <tr>
-                                <td>RAM</td>
-                                <td><?php echo $u_ram; ?></td>
+                                <td><i class="fas fa-memory"></td>
+                                <td></i>RAM</td>
+                                <td style="widht: 100%"><?php echo $u_ram; ?></td>
                             </tr>
                             <tr>
-                                <td>SSD</td>
-                                <td><?php echo $u_ssd; ?></td>
+                                <td><i class="fa fa-microchip"></td>
+                                <td></i>SSD</td>
+                                <td style="widht: 100%"><?php echo $u_ssd; ?></td>
                             </tr>
                             <tr>
-                                <td>Hard Disk</td>
-                                <td><?php echo $u_hdd; ?></td>
+                                <td><i class="fas fa-hdd"></td>
+                                <td></i>Hard Disk</td>
+                                <td style="widht: 100%"><?php echo $u_hdd; ?></td>
                             </tr>
                             <tr>
+                                <td><i class="fa fa-bolt"></td>
                                 <td>Power Supply</td>
-                                <td><?php echo $u_psu; ?></td>
+                                <td style="widht: 100%"><?php echo $u_psu; ?></td>
                             </tr>
                             <tr>
+                                <td><i class="fas fa-keyboard"></td>
                                 <td>Keyboard</td>
-                                <td><?php echo $u_kb; ?></td>
+                                <td style="widht: 100%"><?php echo $u_kb; ?></td>
                             </tr>
                             <tr>
-                                <td>Mouse</td>
+                                <td><i class="fas fa-mouse-pointer"></td>
+                                <td></i>Mouse</td>
                                 <td><?php echo $u_mouse; ?></td>
                             </tr>
                         </table>
