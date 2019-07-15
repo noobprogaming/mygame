@@ -118,16 +118,16 @@ include '../sql.php';
     <div class="row">
         <div class="mx-5 my-5">
             <p class="gg" style="font-size: 30px;">
-                GAME GENRE
+                FAR CRY 5
             </p>
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/1.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/fc1.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
                         <img class="img-fluid" src="../assets/img/2.jpg">
-                        <img class="img-fluid" src="../assets/img/3.jpg">
+                        <img class="img-fluid" src="../assets/img/photo/fc3.jpg">
                     </div>
                 </div>
             </div>

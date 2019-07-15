@@ -152,6 +152,28 @@ include '../sql.php';
                                 informasi terkait spesifikasi PC resmi untuk bisa menjalankannya di kualitas paling optimal juga akhirnya dilepas. 
                                 Diracik dengan menggunakan Unreal Engine 4, 
                                 gamer yang tertarik untuk membeli Deluxe Edition yang lebih mahal juga akan otomatis dipersenjatai dengan “Season Pass” dan set kostum di dalamnya.
+                                <br>
+                                <br>
+                                <br>
+                                Minimum Requirements<br>
+                                •	Requires a 64-bit processor and operating system<br>
+                                •	OS: Windows 7 SP1 or Windows 10 (64-bit)<br>
+                                •	Processor: Intel Core i5-2300<br>
+                                •	Memory: 6 GB RAM<br>
+                                •	Graphics: GeForce GTX 760 or Radeon HD 7850<br>
+                                •	DirectX: Version 11<br>
+                                •	Network: Broadband Internet connection<br>
+                                •	Sound Card: DirectX compatible soundcard or onboard chipset<br><br>
+                                Recommended Requirements<br>
+                                •	Requires a 64-bit processor and operating system<br>
+                                •	OS: Windows 7 SP1 or Windows 10 (64-bit)<br>
+                                •	Processor: Intel Core i5-7400 or AMD Ryzen 3 2200G<br>
+                                •	Memory: 8 GB RAM<br>
+                                •	Graphics: GeForce GTX 960 or Radeon R9 380X<br>
+                                •	DirectX: Version 12<br>
+                                •	Network: Broadband Internet connection<br>
+                                •	Sound Card: DirectX compatible soundcard or onboard chipset<br>
+
                             </div>
                         </div>
                     </div>
