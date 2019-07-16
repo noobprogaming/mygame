@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 15, 2019 at 04:49 PM
--- Server version: 10.1.39-MariaDB
+-- Generation Time: Jul 16, 2019 at 02:58 AM
+-- Server version: 10.1.40-MariaDB
 -- PHP Version: 7.3.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -2561,19 +2561,25 @@ CREATE TABLE `game` (
 --
 
 INSERT INTO `game` (`id_game`, `name_game`, `min_cpu`, `min_vga`, `min_ram`, `rec_cpu`, `rec_vga`, `rec_ram`, `rec_storage`) VALUES
-(1, 'GTA5', 1, 1, 1, 1, 1, 1, 1),
-(2, 'Dota 2', 1, 1, 1, 1, 1, 1, 1),
-(3, 'The Witcher 3', 1, 1, 1, 1, 1, 1, 1),
-(4, 'Anthem', 1, 1, 1, 1, 1, 1, 1),
-(5, 'Deus Ex : Mankind Divided', 1, 1, 1, 1, 1, 1, 1),
-(6, 'Metro Exodus', 1, 1, 1, 1, 1, 1, 1),
-(7, 'Cyberpunk 2077', 1, 1, 1, 1, 1, 1, 1),
-(8, 'Counter Strike : Global Offensive (CSGO)', 1, 1, 1, 1, 1, 1, 1),
-(9, 'Apex Legends', 1, 1, 1, 1, 1, 1, 1),
-(10, 'Overwatch', 1, 1, 1, 1, 1, 1, 1),
-(11, 'Fortnite', 1, 1, 1, 1, 1, 1, 1),
-(12, "PlayerUnknown's Battlegrounds (PUBG)", 1, 1, 1, 1, 1, 1, 1),
-(13, 'Forza Horizon 4', 1, 1, 1, 1, 1, 1, 1);
+(1, 'GTA5', 1669, 1312, 26, 1969, 1189, 28, 1),
+(2, 'Dota 2', 709, 722, 26, 912, 1502, 27, 1),
+(3, 'The Witcher 3', 1837, 1537, 27, 2132, 1608, 33, 1),
+(4, 'Anthem', 1904, 1579, 27, 1940, 1654, 33, 1),
+(5, 'Deus Ex : Mankind Divided', 1370, 1537, 27, 2132, 1649, 39, 1),
+(6, 'Metro Exodus', 1330, 1515, 27, 2181, 1654, 39, 1),
+(7, 'Cyberpunk 2077', 1943, 1606, 39, 1943, 1689, 45, 1),
+(8, 'Counter Strike : Global Offensive (CSGO)', 2133, 11109, 27, 997, 1537, 33, 1),
+(10, 'Code Vein', 1, 1, 1, 1, 1, 1, 1),
+(11, 'Far Cry', 1, 1, 1, 1, 1, 1, 1),
+(12, 'Final Fantasy', 1, 1, 1, 1, 1, 1, 1),
+(13, 'Frost Punk', 1, 1, 1, 1, 1, 1, 1),
+(14, 'Man of Medan', 1, 1, 1, 1, 1, 1, 1),
+(15, 'Personal 5: Royal', 1, 1, 1, 1, 1, 1, 1),
+(16, 'Pamali', 1, 1, 1, 1, 1, 1, 1),
+(17, 'Deus Ex : Mabkind Divided', 1, 1, 1, 1, 1, 1, 1),
+(18, 'Daftar Game PC dengan Penawaran Terbaik di Steam Summer Sale', 1, 1, 1, 1, 1, 1, 1),
+(19, 'Cyber Sleuth Segera Hadir di PC Via Steam', 1, 1, 1, 1, 1, 1, 1),
+(20, 'Red Dead Redemption 2', 1, 1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -5293,7 +5299,58 @@ CREATE TABLE `ram` (
 --
 
 INSERT INTO `ram` (`id_ram`, `name_ram`) VALUES
-(1, 'Generic');
+(1, 'Generic'),
+(2, '256MB DDR1 266Mhz'),
+(3, '256MB DDR1 333Mhz'),
+(4, '256MB DDR1 400Mhz'),
+(5, '512MB DDR1 200Mhz'),
+(6, '512MB DDR1 266Mhz'),
+(7, '512MB DDR1 333Mhz'),
+(8, '512MB DDR1 400Mhz'),
+(9, '512MB DDR2 400Mhz'),
+(10, '1GB DDR1 400Mhz'),
+(11, '1GB DDR2 533Mhz'),
+(12, '1GB DDR2 667Mhz'),
+(13, '1GB DDR2 800Mhz'),
+(14, '1GB DDR3 800Mhz'),
+(15, '1GB DDR2 1066Mhz'),
+(16, '1GB DDR3 1066Mhz'),
+(17, '1GB DDR3 1333Mhz'),
+(18, '2GB DDR1 400Mhz'),
+(19, '2GB DDR4 800Mhz'),
+(20, '2GB DDR3 1333Mhz'),
+(21, '2GB DDR3 1600Mhz'),
+(22, '2GB DDR4 1600Mhz'),
+(23, '2GB DDR3 1866Mhz'),
+(24, '4GB DDR4 800Mhz'),
+(25, '4GB DDR3 1333Mhz'),
+(26, '4GB DDR4 1600Mhz'),
+(27, '4GB DDR3 1866Mhz'),
+(28, '8GB DDR3 1866Mhz'),
+(29, '8GB DDR4 2133Mhz'),
+(30, '8GB DDR4 2400Mhz'),
+(31, '8GB DDR4 2666Mhz'),
+(32, '8GB DDR4 2800Mhz'),
+(33, '8GB DDR4 3000Mhz'),
+(34, '8GB DDR4 3200Mhz'),
+(35, '16GB DDR4 2133Mhz'),
+(36, '16GB DDR4 2400Mhz'),
+(37, '16GB DDR4 2666Mhz'),
+(38, '16GB DDR4 2800Mhz'),
+(39, '16GB DDR4 3000Mhz'),
+(40, '16GB DDR4 3200Mhz'),
+(41, '32GB DDR4 2133Mhz'),
+(42, '32GB DDR4 2400Mhz'),
+(43, '32GB DDR4 2666Mhz'),
+(44, '32GB DDR4 2800Mhz'),
+(45, '32GB DDR4 3000Mhz'),
+(46, '32GB DDR4 3200Mhz'),
+(47, '64GB DDR4 2133Mhz'),
+(48, '64GB DDR4 2400Mhz'),
+(49, '64GB DDR4 2666Mhz'),
+(50, '64GB DDR4 2800Mhz'),
+(51, '64GB DDR4 3000Mhz'),
+(52, '64GB DDR4 3200Mhz');
 
 -- --------------------------------------------------------
 
@@ -5318,7 +5375,7 @@ CREATE TABLE `rig` (
 --
 
 INSERT INTO `rig` (`id`, `id_cpu`, `id_vga`, `id_ram`, `id_ssd`, `id_hdd`, `id_psu`, `id_kb`, `id_mouse`) VALUES
-('alvin', 1, 1, 1, 1, 1, 1, 1, 1);
+('alvin', 1003, 65, 37, 30, 1442, 310, 295, 349);
 
 -- --------------------------------------------------------
 
@@ -7265,7 +7322,7 @@ ALTER TABLE `vga`
 -- AUTO_INCREMENT for table `game`
 --
 ALTER TABLE `game`
-  MODIFY `id_game` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_game` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
