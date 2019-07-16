@@ -1,4 +1,5 @@
 <?php
+
     $sql_user = ("
     SELECT user.id, name, password, gender, email, birth, joined, pp, rig.id_cpu, rig.id_vga, rig.id_ram, rig.id_ssd, rig.id_hdd, rig.id_psu, rig.id_kb, rig.id_mouse, cpu.name_cpu, vga.name_vga, ram.name_ram, ssd.name_ssd, hdd.name_hdd, psu.name_psu, kb.name_kb, mouse.name_mouse 
     FROM user 

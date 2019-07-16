@@ -249,26 +249,24 @@ include '../sql.php';
                     <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
                     <h2>First heading. <span class="text-muted">It’ll blow your
                             mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                    <p class="lead">Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!</p>
                 </div>
             </div>
             <div class="col-md-3">
-                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
-                <p>ARTIKEL</p>
+            <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
+                <p>Review Doki: Doki Literature Club</p>
                 <hr>
-                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
-                <p>ARTIKEL</p>
+                <img width="100" height="100" src="../assets/img/2.jpg" class="img-fluid" />
+                <p>Menjajal DEMO Pamali: Horror Indonesia Potensial!</p>
                 <hr>
-                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
-                <p>ARTIKEL</p>
+                <img width="100" height="100" src="../assets/img/3.jpg" class="img-fluid" />
+                <p>Review Outlast 2: Tidak Lebih Baik!</p>
                 <hr>
-                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
-                <p>ARTIKEL</p>
+                <img width="100" height="100" src="../assets/img/fin.jpg" class="img-fluid" />
+                <p>Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
                 <hr>
-                <img width="100" height="100" src="../assets/img/1.jpg" class="img-fluid" />
-                <p>ARTIKEL</p>
+                <img width="100" height="100" src="../assets/img/fina.jpg" class="img-fluid" />
+                <p>Review Cuphead: Kartun untuk Kaum Masokis!</p>
                 <hr>
             </div>
         </div>
@@ -282,11 +280,9 @@ include '../sql.php';
                         <h2>First heading. <span class="text-muted">It’ll blow
                                 your
                                 mind.</span></h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
-                            felis
-                            euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
-                            dapibus,
-                            tellus ac cursus commodo.</p>
+                        <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang lebih banyak
+                        didominasi soal
+                        kebijakan publishing</p>
                     </div>
                     <div class="col-md-5">
                         <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
@@ -297,13 +293,10 @@ include '../sql.php';
 
                 <div class="row">
                     <div class="col-md-7 order-md-2">
-                        <h2>Oh yeah, it’s that good. <span class="text-muted">See for
-                                yourself.</span></h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
-                            felis
-                            euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
-                            dapibus,
-                            tellus ac cursus commodo.</p>
+                        <h2>Berita tentang<span class="text-muted">Metro Exodus</span></h2>
+                        <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang lebih banyak
+                        didominasi soal
+                        kebijakan publishing</p>
                     </div>
                     <div class="col-md-5 order-md-1">
                         <img width="500" height="500" src="../assets/img/1.jpg" class="img-fluid" />
@@ -316,9 +309,7 @@ include '../sql.php';
                     <a href="#" style="text-decoration: none;">
                         <div class="card mb-3 shadow">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content.</p>
+                                <p class="card-text">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
                             </div>
                         </div>
                     </a>
@@ -327,9 +318,7 @@ include '../sql.php';
                     <a href="#" style="text-decoration: none;">
                         <div class="card mb-3 shadow">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content.</p>
+                                <p class="card-text">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
                             </div>
                         </div>
                     </a>
@@ -338,9 +327,7 @@ include '../sql.php';
                     <a href="#" style="text-decoration: none;">
                         <div class="card mb-3 shadow">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content.</p>
+                                <p class="card-text">Review Frostpunk: Semua Demi Sebuah Kehangatan!</p>
                             </div>
                         </div>
                     </a>

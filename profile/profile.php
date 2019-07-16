@@ -281,12 +281,8 @@ include '../sql.php';
                                     <td>
                                         <div class="inner-addon left-addon inner-addon-tall">
                                             <i class="fa fa-envelope"></i>
-                                            <?php
-                                            if($_SESSION['google'] != "true"){
-                                                echo "<input type='email' name='email' placeholder='E-mail' class='input-text'
-                                                value='$u_email'>";
-                                            }
-                                            ?>
+                                            <input type='email' name='email' placeholder='E-mail' class='input-text'
+                                                value="<?php echo $u_email; ?>">
                                         </div>
                                     </td>
                                 </tr>
