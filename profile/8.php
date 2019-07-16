@@ -131,7 +131,7 @@ include '../sql.php';
             <div class="col-lg-12 mx-auto my-5">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-0">
-                        <img class="img-fluid" src="../assets/img/photo/cs1.png">
+                        <img class="img-fluid" src="../assets/img/photo/cs1.jpg">
                     </div>
                     <div class="col-lg-4 px-0 py-0">
                         <img class="img-fluid" src="../assets/img/photo/cs2.jpg">
