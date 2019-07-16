@@ -153,7 +153,7 @@ if(isset($_GET['msg'])){
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="#">
-                    <img class="img-fluid" src="assets/img/2.jpg">
+                    <img class="img-fluid" src="assets/img/photo/7.jpg">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1>Anthem: Seperti Istana Pasir!</h1>
