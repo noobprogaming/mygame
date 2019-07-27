@@ -102,14 +102,32 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" onclick="signOut();"
-                                                    class="btn btn-sm input-btn w100">
+                                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
                                             </td>
                                         </tr>
                                     </table>
                                 </div>
                             </form>
                         </div>
+                    </li>
+                    <li class="nav-item mini">
+                        <form action="logout.php" method="post">
+                            <div class="px-3 py-1" style="width: 15rem">
+                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
+                            </div>
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -138,57 +156,109 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-md-12">
-                            <h2>Review GTA V (PC): Versi Paling Sempurna!</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/gta1.jpg" class="img-fluid" /><br>
-                                Sebuah skenario yang tidak pernah kami pikirkan sebenarnya, bahwa kami, dengan tanpa rasa berkeberatan, 
-                                rela menggelontorkan dana ekstra untuk membeli game yang sama tiga kali, di tiga platform yang berbeda. 
-                                Menarik, karena di sisi lain, kerelaan kami juga menjadi semacam bukti bahwa Rockstar telah mengeksekusi 
-                                sebuah strategi marketing yang luar biasa. Di Playstation 3, kami menyebutnya sebagai game open world 
-                                terbaik karena impresi gameplay yang fantastis. Sebuah dunia yang terbuka dengan segudang aktivitas, 
-                                dari perspektif tiga karakter dengan kepribadian yang unik, bersama dengan dukungan GTA Online – yang 
-                                bisa disimpulkan, sebagai fitur impian para pecinta GTA selama ini. Namun siapa yang menyangka, GTA V 
-                                versi Playstation 3 ternyata bukanlah yang terakhir.<br>Mata gamer mana yang tidak tergoda setelah Rockstar 
-                                memastikan sebuah proses Remaster GTA V untuk konsol platform generasi terbaru – Playstation 4 dan Xbox 
-                                One. Ia tidak menawarkan ekstra konten di sisi cerita yang menggoda, namun dukungan fitur unik, membuat 
-                                versi ini kembali sulit ditolak. GTA V versi Playstation 4 yang kami cicipi menghadirkan Los Santos yang 
-                                lebih indah, lewat kepadatan dan variasi beragam elemen pendukung – seperti NPC, tanaman, dan hewan di 
-                                tekstur lebih tinggi. Tidak hanya itu saja, dukungan sudut pandang baru ala FPS memungkinkan gamer untuk 
-                                mencicipi game yang sama, namun dengan pengalaman yang berbeda. Semua momen ikoniknya terasa lebih 
-                                personal ketika dicicipi dari sudut pandang orang pertama.<br>Namun resolusi kami untuk menjadikan Playstation 
-                                4 sebagai versi terakhir yang kami cicipi, apalagi didukung dengan betapa tidak masuk akalnya sebuah 
-                                skenario dimana kami harus menggelontorkan uang untuk tiga game sama yang tidak punya konten ekstra 
-                                apapun seolah hancur berantakan setelah versi PC ini akhirnya tiba di pasaran. Rockstar menyebutnya 
-                                sebagai versi yang terbaik, sebuah versi bagaimana seharusnya GTA V dinikmati. Resolusi lebih tinggi, 
-                                framerate lebih baik, hingga dukunga fitur eksklusif membuatnya kembali terlihat menggoda.Lantas, apa 
-                                yang sebenarnya ditawarkan oleh GTA V Versi PC ini? Mengapa kami menyebutnya sebagai versi yang paling sempurna?<br>
-                                <h2>Optimalisasi Mumpuni</h2>
-                                <img width="500" height="500" src="../assets/img/photo/gta2.jpg" class="img-fluid"/><br>
-                                <p class="lead">
-                                “Mohon maaf, kami butuh waktu ekstra untuk memastikan kualitas sesuai dengan standar yang kami inginkan”, 
-                                Anda sudah pasti pernah mendengar alasan klise yang boleh terbilang, selalu meluncur bersama dengan 
-                                pengumuman penundaan rilis ini. Rockstar sempat melemparkan kalimat yang sama dua kali, setelah GTA V 
-                                PC diundur dari akhir Januari, menuju ke Maret, yang tanggal rilisnya kemudian dipindahkan kembli ke 
-                                14 April 2015 kemarin.Alasan seperti ini memang terdengar begitu “manis”, sebuah pembelaan yang bisa 
-                                dimengerti apalagi melihat banyak game yang terburu-buru berakhir menjadi produk bencana yang sulit 
-                                untuk dinikmati. Berita baik untuk Anda – semua gamer PC yang sudah lama menantikan game ini? Rockstar 
-                                tidak mengumbar omong kosong.<br>Rockstar berhasil  menghadirkan optimalisasi yang luar biasa dan pantas 
-                                untuk diacungi jempol di GTA V versi PC ini. Salah satu bukti yang paling kuat mengakar pada segudang 
-                                opsi grafis yang disematkan untuk membantu gamer yang berangkat dari varian kemampuan rig untuk 
-                                beradaptasi dengan mesin gaming mereka. Semua detail ditawarkan, bahkan hingga kesempatan untuk mengatur 
-                                seberapa padat NPC yang akan Anda temui di Los Santos dan seberapa bervariasinya bentuk mereka. Anda 
-                                yang punya PC dengan kemampuan di ambang batas, bisa mengurangi elemen-elemen yang menurut Anda pribadi, 
-                                memang tidak akan berkontribusi signifikan pada pengalaman bermain yang Anda dapatkan. Jika ada satu 
-                                kata yang bisa disimpulkan untuk mendefinisikan kerja keras Rockstar di GTA V PC, maka tidak ada kata 
-                                lain yang lebih tepat selain kata: NIAT!</p><br><br>
-                                <img width="500" height="500" src="../assets/img/photo/gta3.jpg" class="img-fluid"/><br>
-                                Segudang opsi grafis yang bisa Anda tweak. Rockstar mendefinisikan ulang sebuah game “port” yang niat. <br><br>
-                                <img width="500" height="500" src="../assets/img/photo/gta4.jpg" class="img-fluid"/><br>
-                                Dukungan DX10 yang dipertahankan membuat banyak rig lawas tetap relevan dan bisa diandalkan untuk memainkan game ini.<br><br>
-                                <img width="500" height="500" src="../assets/img/photo/det.jpg" class="img-fluid"/><br> 
-                                <p class="lead">
-                                Dan detail..<br><br>
-                                Lantas, seberapa hebatnya optimalisasi ini? Kami sendiri memang masih belum bisa berbicara banyak saat ini, namun pengujian awal yang dilakukan oleh kru JagatReview membuktikan bahwa ia bisa berjalan dalam kualitas visual yang lebih baik dari versi Playstation 3, dengan sebuah PC yang dibangun dengan teknologi tujuh tahun yang lalu. Benar sekali, Anda tidak salah membaca kalimat kami sebelumnya. Komponen PC berumur tujuh tahun masih bisa menikmati game ini dengan pengalaman bermain yang cukup mumpuni. Dukungan DirectX10 adalah keputusan terbaik yang bisa dilakukan Rockstar, membuat game ini terasa begitu “terjangkau”, bahkan untuk gamer yang sudah angkat tangan bisa mampu menikmati game-game teranyar.</p>
+                            <div class="col-md-12" style ="text-align: justify; text-justify: inter-word;">
+                                <h2>Review GTA V (PC): Versi Paling Sempurna!</h2>
+                                <img style="width: 100%"src="../assets/img/photo/gta1.jpg"
+                                        class="img-fluid" /><br>
+                                    Sebuah skenario yang tidak pernah kami pikirkan sebenarnya, bahwa kami, dengan tanpa
+                                    rasa berkeberatan,
+                                    rela menggelontorkan dana ekstra untuk membeli game yang sama tiga kali, di tiga
+                                    platform yang berbeda.
+                                    Menarik, karena di sisi lain, kerelaan kami juga menjadi semacam bukti bahwa
+                                    Rockstar telah mengeksekusi
+                                    sebuah strategi marketing yang luar biasa. Di Playstation 3, kami menyebutnya
+                                    sebagai game open world
+                                    terbaik karena impresi gameplay yang fantastis. Sebuah dunia yang terbuka dengan
+                                    segudang aktivitas,
+                                    dari perspektif tiga karakter dengan kepribadian yang unik, bersama dengan dukungan
+                                    GTA Online – yang
+                                    bisa disimpulkan, sebagai fitur impian para pecinta GTA selama ini. Namun siapa yang
+                                    menyangka, GTA V
+                                    versi Playstation 3 ternyata bukanlah yang terakhir.<br>Mata gamer mana yang tidak
+                                    tergoda setelah Rockstar
+                                    memastikan sebuah proses Remaster GTA V untuk konsol platform generasi terbaru –
+                                    Playstation 4 dan Xbox
+                                    One. Ia tidak menawarkan ekstra konten di sisi cerita yang menggoda, namun dukungan
+                                    fitur unik, membuat
+                                    versi ini kembali sulit ditolak. GTA V versi Playstation 4 yang kami cicipi
+                                    menghadirkan Los Santos yang
+                                    lebih indah, lewat kepadatan dan variasi beragam elemen pendukung – seperti NPC,
+                                    tanaman, dan hewan di
+                                    tekstur lebih tinggi. Tidak hanya itu saja, dukungan sudut pandang baru ala FPS
+                                    memungkinkan gamer untuk
+                                    mencicipi game yang sama, namun dengan pengalaman yang berbeda. Semua momen
+                                    ikoniknya terasa lebih
+                                    personal ketika dicicipi dari sudut pandang orang pertama.<br>Namun resolusi kami
+                                    untuk menjadikan Playstation
+                                    4 sebagai versi terakhir yang kami cicipi, apalagi didukung dengan betapa tidak
+                                    masuk akalnya sebuah
+                                    skenario dimana kami harus menggelontorkan uang untuk tiga game sama yang tidak
+                                    punya konten ekstra
+                                    apapun seolah hancur berantakan setelah versi PC ini akhirnya tiba di pasaran.
+                                    Rockstar menyebutnya
+                                    sebagai versi yang terbaik, sebuah versi bagaimana seharusnya GTA V dinikmati.
+                                    Resolusi lebih tinggi,
+                                    framerate lebih baik, hingga dukunga fitur eksklusif membuatnya kembali terlihat
+                                    menggoda.Lantas, apa
+                                    yang sebenarnya ditawarkan oleh GTA V Versi PC ini? Mengapa kami menyebutnya sebagai
+                                    versi yang paling sempurna?<br>
+                                    <h2>Optimalisasi Mumpuni</h2>
+                                    <img style="width: 100%"src="../assets/img/photo/gta2.jpg"
+                                        class="img-fluid" /><br>
+                                    
+                                        “Mohon maaf, kami butuh waktu ekstra untuk memastikan kualitas sesuai dengan
+                                        standar yang kami inginkan”,
+                                        Anda sudah pasti pernah mendengar alasan klise yang boleh terbilang, selalu
+                                        meluncur bersama dengan
+                                        pengumuman penundaan rilis ini. Rockstar sempat melemparkan kalimat yang sama
+                                        dua kali, setelah GTA V
+                                        PC diundur dari akhir Januari, menuju ke Maret, yang tanggal rilisnya kemudian
+                                        dipindahkan kembli ke
+                                        14 April 2015 kemarin.Alasan seperti ini memang terdengar begitu “manis”, sebuah
+                                        pembelaan yang bisa
+                                        dimengerti apalagi melihat banyak game yang terburu-buru berakhir menjadi produk
+                                        bencana yang sulit
+                                        untuk dinikmati. Berita baik untuk Anda – semua gamer PC yang sudah lama
+                                        menantikan game ini? Rockstar
+                                        tidak mengumbar omong kosong.<br>Rockstar berhasil menghadirkan optimalisasi
+                                        yang luar biasa dan pantas
+                                        untuk diacungi jempol di GTA V versi PC ini. Salah satu bukti yang paling kuat
+                                        mengakar pada segudang
+                                        opsi grafis yang disematkan untuk membantu gamer yang berangkat dari varian
+                                        kemampuan rig untuk
+                                        beradaptasi dengan mesin gaming mereka. Semua detail ditawarkan, bahkan hingga
+                                        kesempatan untuk mengatur
+                                        seberapa padat NPC yang akan Anda temui di Los Santos dan seberapa bervariasinya
+                                        bentuk mereka. Anda
+                                        yang punya PC dengan kemampuan di ambang batas, bisa mengurangi elemen-elemen
+                                        yang menurut Anda pribadi,
+                                        memang tidak akan berkontribusi signifikan pada pengalaman bermain yang Anda
+                                        dapatkan. Jika ada satu
+                                        kata yang bisa disimpulkan untuk mendefinisikan kerja keras Rockstar di GTA V
+                                        PC, maka tidak ada kata
+                                        lain yang lebih tepat selain kata: NIAT!</p><br><br>
+                                    <img style="width: 100%"src="../assets/img/photo/gta3.jpg"
+                                        class="img-fluid" /><br>
+                                    Segudang opsi grafis yang bisa Anda tweak. Rockstar mendefinisikan ulang sebuah game
+                                    “port” yang niat. <br><br>
+                                    <img style="width: 100%"src="../assets/img/photo/gta4.jpg"
+                                        class="img-fluid" /><br>
+                                    Dukungan DX10 yang dipertahankan membuat banyak rig lawas tetap relevan dan bisa
+                                    diandalkan untuk memainkan game ini.<br><br>
+                                    <img style="width: 100%"src="../assets/img/photo/det.jpg"
+                                        class="img-fluid" /><br>
+                                    
+                                        Dan detail..<br><br>
+                                        Lantas, seberapa hebatnya optimalisasi ini? Kami sendiri memang masih belum bisa
+                                        berbicara banyak saat ini, namun pengujian awal yang dilakukan oleh kru
+                                        JagatReview membuktikan bahwa ia bisa berjalan dalam kualitas visual yang lebih
+                                        baik dari versi Playstation 3, dengan sebuah PC yang dibangun dengan teknologi
+                                        tujuh tahun yang lalu. Benar sekali, Anda tidak salah membaca kalimat kami
+                                        sebelumnya. Komponen PC berumur tujuh tahun masih bisa menikmati game ini dengan
+                                        pengalaman bermain yang cukup mumpuni. Dukungan DirectX10 adalah keputusan
+                                        terbaik yang bisa dilakukan Rockstar, membuat game ini terasa begitu
+                                        “terjangkau”, bahkan untuk gamer yang sudah angkat tangan bisa mampu menikmati
+                                        game-game teranyar.</p>
 
                             </div>
                         </div>
@@ -219,11 +289,13 @@ include '../sql.php';
                         <div class="col-lg-12">
                             <table>
                                 <tr>
-                                <hr>
+                                    <hr>
                                     <td><?php echo $namegame; ?></td>
                                 </tr>
                                 <tr>
-                                    <td><hr></td>
+                                    <td>
+                                        <hr>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Minimum Specification:</td>
@@ -238,7 +310,9 @@ include '../sql.php';
                                     <td><?php echo $m_nram; ?></td>
                                 </tr>
                                 <tr>
-                                    <td><hr></td>
+                                    <td>
+                                        <hr>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Recomended Specification:</td>
@@ -254,12 +328,36 @@ include '../sql.php';
                                 </tr>
                             </table>
                             <hr>
-                            <div>CPU nilai: </div>
-                            <div id="v-cpu">-</div>
-                            <div>VGA nilai: </div>
-                            <div id="v-vga">-</div>
-                            <div>RAM nilai: </div>
-                            <div id="v-ram">-</div>
+                            <table>
+                                <tr>
+                                    <td colspan="3">Spesifikasi PC Anda:</td>
+                                </tr>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-cpu">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_cpu; ?></td>
+                                </tr>
+                                <tr>
+                                <td>VGA</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-vga">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_vga; ?></td>
+                                </tr>
+                                <tr>
+                                <td>RAM</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-ram">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_ram; ?></td>
+                                </tr>
+                            </table>
+                            <hr>
                         </div>
                     </div>
                 </div>
@@ -335,25 +433,37 @@ include '../sql.php';
 
 </body>
 <script>
-function compare() {
+    function compare() {
     var u_cpu = "<?php echo $u_idcpu; ?>";
     var r_cpu = "<?php echo $r_idcpu; ?>";
-    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100) * 0.81;
     var u_cpu = u_cpu.toFixed(2);
     document.getElementById("v-cpu").innerHTML = u_cpu;
 
     var u_vga = "<?php echo $u_idvga; ?>";
     var r_vga = "<?php echo $r_idvga; ?>";
-    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    u_vga = u_vga / r_vga * 100 * (95 / 100) * 1.03;
     var u_vga = u_vga.toFixed(2);
     document.getElementById("v-vga").innerHTML = u_vga;
 
     var u_ram = "<?php echo $u_idram; ?>";
     var r_ram = "<?php echo $r_idram; ?>";
-    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    u_ram = u_ram / r_ram * 100 * (97 / 100) * 0.89;
     var u_ram = u_ram.toFixed(2);
     document.getElementById("v-ram").innerHTML = u_ram;
-}
+
+    var u_ssd = "<?php echo $u_idssd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_ssd = u_ssd / r_storage * 100 * (95 / 99) * 0.01 + 4.99;
+    var u_ssd = u_ssd.toFixed(2);
+    document.getElementById("v-ssd").innerHTML = u_ssd;
+
+    var u_hdd = "<?php echo $u_idhdd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_hdd = u_hdd / r_storage * 100 * (90 / 99) * 0.001 - 49.46;
+    var u_hdd = u_hdd.toFixed(2);
+    document.getElementById("v-hdd").innerHTML = u_hdd;
+    }
 </script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../assets/custom.js"></script>
@@ -365,4 +475,5 @@ function compare() {
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
+
 </html>

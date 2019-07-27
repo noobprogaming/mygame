@@ -180,7 +180,7 @@ if(isset($_GET['msg'])){
                     <img class="img-fluid" src="assets/img/3.jpg">
                     <div class="container">
                         <div class="carousel-caption text-left">
-                            <h1>One more for good measure.</h1>
+                            <h1>Doki Doki Literature Club</h1>
                             <p>Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!</p>
                         </div>
                     </div>
@@ -202,7 +202,7 @@ if(isset($_GET['msg'])){
                     <div class="card shadow">
                         <img width="100%" height="140" src="assets/img/1.jpg" class="img-fluid" />
                         <div class="card-body">
-                            <p class="card-text">Review Game</p>
+                            <p class="card-text">Metro Exodus: Arah Baru Mengagumkan!</p>
                         </div>
                     </div>
                 </a>
@@ -212,7 +212,7 @@ if(isset($_GET['msg'])){
                     <div class="card shadow">
                         <img width="100%" height="140" src="assets/img/2.jpg" class="img-fluid" />
                         <div class="card-body">
-                            <p class="card-text">Review Game</p>
+                            <p class="card-text">Preview Far Cry New Dawn: Kiamat Artistik!</p>
                         </div>
                     </div>
                 </a>
@@ -223,7 +223,7 @@ if(isset($_GET['msg'])){
                     <div class="card shadow">
                         <img width="100%" height="140" src="assets/img/3.jpg" class="img-fluid" />
                         <div class="card-body">
-                            <p class="card-text">Review Game</p>
+                            <p class="card-text">Suasana kota di malam hari bersama Keanu Reeves!</p>
                         </div>
                     </div>
                 </a>
@@ -233,7 +233,7 @@ if(isset($_GET['msg'])){
                     <div class="card shadow">
                         <img width="100%" height="140" src="assets/img/1.jpg" class="img-fluid" />
                         <div class="card-body">
-                            <p class="card-text">Review Game</p>
+                            <p class="card-text">Metro Exodus: Arah Baru Mengagumkan!</p>
                         </div>
                     </div>
                 </a>
@@ -268,9 +268,9 @@ if(isset($_GET['msg'])){
             </div>
             <div class="col-md-6">
                 <div>
-                    <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
+                    <img style="width: 100%"src="assets/img/1.jpg" class="img-fluid" />
                     <h2>Review Metro Exodus: <span class="text-muted">Arah Baru Mengagumkan!</span></h2>
-                    <p class="lead">Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang lebih banyak
+                    Pembicaraan terkait nama Metro Exodus, terutama untuk versi PC, memang lebih banyak
                         didominasi soal
                         kebijakan publishing aneh yang diambil oleh Koch Media dan Deep Silver.</p>
                 </div>
@@ -301,13 +301,13 @@ if(isset($_GET['msg'])){
                 <div class="row">
                     <div class="col-md-7">
                         <h2>Review Anthem: <span class="text-muted">Frostbite Engine di Game Open-World</span></h2>
-                        <p class="lead">Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
+                        Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
                             Gamer mana yang belum pernah mendengar nama Frostbite Engine sebelumnya? Engine racikan DICE
                             tersebut kini memang menjadi basis untuk hampir semua
                             game yang diracik oleh EA, terlepas dari genre apapun yang mereka usung. </p>
                     </div>
                     <div class="col-md-5">
-                        <img width="500" height="500" src="assets\img\photo\8.jpg" class="img-fluid" />
+                        <img style="width: 100%"src="assets\img\photo\8.jpg" class="img-fluid" />
                     </div>
                 </div>
 
@@ -315,12 +315,11 @@ if(isset($_GET['msg'])){
 
                 <div class="row">
                     <div class="col-md-7 order-md-2">
-                        <h2>Oh yeah, it’s that good. <span class="text-muted">See for
-                                yourself.</span></h2>
-                        <p class="lead">Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!</p>
+                        <h2>Doki Doki Literature Club</h2>
+                        Review Doki Doki Literature Club: Jangan Baca, Main Saja Dulu!</p>
                     </div>
                     <div class="col-md-5 order-md-1">
-                        <img width="500" height="500" src="assets/img/1.jpg" class="img-fluid" />
+                        <img style="width: 100%"src="assets/img/1.jpg" class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -330,7 +329,7 @@ if(isset($_GET['msg'])){
                     <a href="#" style="text-decoration: none;">
                         <div class="card mb-3 shadow">
                             <div class="card-body">
-                                <p class="card-text">Review Game</p>
+                                <p class="card-text">Menjajal DEMO Pamali: Horror Indonesia Potensial!</p>
                             </div>
                         </div>
                     </a>
@@ -339,7 +338,7 @@ if(isset($_GET['msg'])){
                     <a href="#" style="text-decoration: none;">
                         <div class="card mb-3 shadow">
                             <div class="card-body">
-                                <p class="card-text">Review Game</p>
+                                <p class="card-text">Metro Exodus: Arah Baru Mengagumkan!</p>
                             </div>
                         </div>
                     </a>
@@ -348,7 +347,7 @@ if(isset($_GET['msg'])){
                     <a href="#" style="text-decoration: none;">
                         <div class="card mb-3 shadow">
                             <div class="card-body">
-                                <p class="card-text">Review Game</p>
+                                <p class="card-text">Cuphead: Kartun untuk Kaum Masokis!</p>
                             </div>
                         </div>
                     </a>

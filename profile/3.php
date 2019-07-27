@@ -116,6 +116,19 @@ include '../sql.php';
                             </form>
                         </div>
                     </li>
+                    <li class="nav-item mini">
+                        <form action="logout.php" method="post">
+                            <div class="px-3 py-1" style="width: 15rem">
+                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
+                            </div>
+                        </form>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -143,9 +156,9 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12" style ="text-align: justify; text-justify: inter-word;">
                             <h2>Review The Witcher 3: Pengalaman RPG Tanpa Banding!</h2>
-                            <p class="lead"><img width="500" height="500" src="../assets/img/photo/cher1.jpg" class="img-fluid" />><br>
+                            <img style="width: 100%"src="../assets/img/photo/cher1.jpg" class="img-fluid" />><br>
                                 Sebuah perasaan lega yang mungkin tidak akan dipahami oleh mereka yang awam, inilah yang mungkin 
                                 dirasakan oleh sebagian besar gamer dengan The Witcher 3: Wild Hunt saat ini. Bagaimana tidak? 
                                 Menjadi salah satu game RPG yang paling diantisipasi sejak tahun 2014 silam, ia terus memperlihatkan 
@@ -165,8 +178,8 @@ include '../sql.php';
                                 game RPG tiada banding? Review ini akan membahasnya lebih dalam untuk Anda.<br></p>
 
                             <h2>Plot</h2>
-                            <p class="lead">
-                            <img width="500" height="500" src="../assets/img/photo/cher2.jpg" class="img-fluid"/><br>
+                            
+                            <img style="width: 100%"src="../assets/img/photo/cher2.jpg" class="img-fluid"/><br>
                                 The Witcher 3 kembali membawa Anda pada sosok Geralt yang kini harus berkutat dengan konflik pribadinya.<br><br>
                                 Melanjutkan kisah dari The Witcher 2 dengan dunia yang mulai berubah sejak aksinya yang terakhir, 
                                 Geralt of Rivia – sang Witcher yang kisah perjalanannya mengalun lewat alunan musik para Bard dari 
@@ -175,10 +188,10 @@ include '../sql.php';
                                 ia lupakan begitu saja – Yennefer. Namun di atas semuanya, ia secara konsisten mendapatkan mimpi buruk 
                                 soal datangnya Wild Hunt. Rombongan pasukan misterius dengan armor berwarna hitam, yang kedatangannya 
                                 cukup untuk membekukan dan membunuh nafas hidup apapun yang berada di dekat mereka.<br>
-                            <img width="500" height="500" src="../assets/img/photo/cher3.jpg" class="img-fluid"/><br>
+                            <img style="width: 100%"src="../assets/img/photo/cher3.jpg" class="img-fluid"/><br>
                                 Mimpinya terus mengarah pada sosok Ciri yang sudah menghilang cukup lama. Geralt bisa merasakan bahwa "anak 
                                 angkat"nya bersama dengan Yennefer ini tengah dirudung bahaya.<br><br>
-                            <img width="500" height="500" src="../assets/img/photo/cher4.jpg" class="img-fluid"/><br> 
+                            <img style="width: 100%"src="../assets/img/photo/cher4.jpg" class="img-fluid"/><br> 
                                 Sumber ancaman tersebut muncul dari pasukan dengan armor berwarna hitam - Wild Hunt yang terus memburu Ciri. Kedatangan 
                                 mereka selalu hadir dengan aura es yang membekukan semua makhluk hidup di sekitar mereka.<br> <br>
                                 Terlepas dari kisah cinta mereka, Geralt sebagai seorang Witcher dan Yennefer sebagai seorang Sorceress tidak pernah bisa 
@@ -187,12 +200,12 @@ include '../sql.php';
                                 cerita ini tidak berakhir bahagia. Ciri menghilang untuk waktu yang begitu lama dan sulit untuk ditemukan 
                                 kembali. Kompleksitas masa lalu membuat Geralt yakin bahwa Ciri adalah target utama yang berusaha diburu oleh 
                                 Wild Hunt. Baginya, tidak ada yang lebih penting, selain menemukan “anak” yang begitu ia sayangi ini.<br>
-                            <img width="500" height="500" src="../assets/img/photo/cher5.jpg" class="img-fluid"/><br>
+                            <img style="width: 100%"src="../assets/img/photo/cher5.jpg" class="img-fluid"/><br>
                                 Semuanya harus dilakukan Geralt di tengah kondisi politik sosial yang juga tidak stabil. Invasi Nilfgaard dari 
                                 selatan yang kian sukses, sikap Novigrad yang kian rasis hanyalah sedikit perubahan yang terjadi. <br><br>
-                            <img width="500" height="500" src="../assets/img/photo/cher6.jpg" class="img-fluid"/><br>
+                            <img style="width: 100%"src="../assets/img/photo/cher6.jpg" class="img-fluid"/><br>
                                 Akankah Geralt bertemu dengan Ciri? Konflik seperti apa yang harus ia lalui untuk mencapai anak yang ia sayangi ini?<br> <br>
-                            <img width="500" height="500" src="../assets/img/photo/wit3.jpg" class="img-fluid"/><br>
+                            <img style="width: 100%"src="../assets/img/photo/wit3.jpg" class="img-fluid"/><br>
                                 Perjalanan Geralt ini membuatnya melintasi Northern Kingdom yang posisinya terus terdesak karena invasi pasukan 
                                 dari Selatan – Nilfgaard. Di tengah ketidakpastian politik dan kehidupan sosial yang kacau, penuh dengan prasangka 
                                 rasis dan ketakutan akan monster-monster yang terus berkeliaran dan mengancam, Geralt menempuh “misi suci” personalnya ini.
@@ -263,13 +276,37 @@ include '../sql.php';
                                     <td><?php echo $r_nram; ?></td>
                                 </tr>
                             </table>
+                                                        <hr>
+                            <table>
+                                <tr>
+                                    <td colspan="3">Spesifikasi PC Anda:</td>
+                                </tr>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-cpu">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_cpu; ?></td>
+                                </tr>
+                                <tr>
+                                <td>VGA</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-vga">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_vga; ?></td>
+                                </tr>
+                                <tr>
+                                <td>RAM</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-ram">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_ram; ?></td>
+                                </tr>
+                            </table>
                             <hr>
-                            <div>CPU nilai: </div>
-                            <div id="v-cpu">-</div>
-                            <div>VGA nilai: </div>
-                            <div id="v-vga">-</div>
-                            <div>RAM nilai: </div>
-                            <div id="v-ram">-</div>
                         </div>
                     </div>
                 </div>
@@ -348,21 +385,33 @@ include '../sql.php';
 function compare() {
     var u_cpu = "<?php echo $u_idcpu; ?>";
     var r_cpu = "<?php echo $r_idcpu; ?>";
-    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100) * 0.81;
     var u_cpu = u_cpu.toFixed(2);
     document.getElementById("v-cpu").innerHTML = u_cpu;
 
     var u_vga = "<?php echo $u_idvga; ?>";
     var r_vga = "<?php echo $r_idvga; ?>";
-    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    u_vga = u_vga / r_vga * 100 * (95 / 100) * 1.03;
     var u_vga = u_vga.toFixed(2);
     document.getElementById("v-vga").innerHTML = u_vga;
 
     var u_ram = "<?php echo $u_idram; ?>";
     var r_ram = "<?php echo $r_idram; ?>";
-    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    u_ram = u_ram / r_ram * 100 * (97 / 100) * 0.89;
     var u_ram = u_ram.toFixed(2);
     document.getElementById("v-ram").innerHTML = u_ram;
+
+    var u_ssd = "<?php echo $u_idssd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_ssd = u_ssd / r_storage * 100 * (95 / 99) * 0.01 + 4.99;
+    var u_ssd = u_ssd.toFixed(2);
+    document.getElementById("v-ssd").innerHTML = u_ssd;
+
+    var u_hdd = "<?php echo $u_idhdd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_hdd = u_hdd / r_storage * 100 * (90 / 99) * 0.001 - 49.46;
+    var u_hdd = u_hdd.toFixed(2);
+    document.getElementById("v-hdd").innerHTML = u_hdd;
 }
 </script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>

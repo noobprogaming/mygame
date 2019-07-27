@@ -105,18 +105,32 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" onclick="signOut();"
-                                                    class="btn btn-sm input-btn w100">
-                                                <button onclick="signOut();">Out
-                                                </button>
-                                                <button onclick="myFunction();">Out
-                                                </button>
+                                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
                                             </td>
                                         </tr>
                                     </table>
                                 </div>
                             </form>
                         </div>
+                    </li>
+                    <li class="nav-item mini">
+                        <form action="logout.php" method="post">
+                            <div class="px-3 py-1" style="width: 15rem">
+                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
+                            </div>
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -145,35 +159,35 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                        <div class="col-md-12">
+                            <div class="col-md-12" style ="text-align: justify; text-justify: inter-word;">
                                 <h2>Review Anthem: Seperti Istana Pasir!</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/anth1.jpg"
+                                <img style="width: 100%"src="../assets/img/photo/anth1.jpg"
                                         class="img-fluid" /><br>
                                         Seperti tidak ada alasan untuk tidak menantikan rilisnya, ini mungkin kalimat yang tepat untuk menjelaskan Anthem – game action RPG melebur loot shooter yang lahir dari tangan dingin Bioware dan EA. Ia sempat menyabet penghargaan sebagai game action yang paling diantipasi di beberapa event gaming raksasa selama tahun 2018. Ia juga ditangani oleh Bioware Edmonton – developer dari seri trilogi Mass Effect dan bukannya Bioware Montreal yang kini sudah pecah dan melebur setelah kasus Mass Effect Andromeda. Ia juga dibangun dengan Frostbite Engine, salah satu engine paling memesona secara visual dan optimal terutama di PC. Dengan semua kombinasi yang ia suntikkan, mustahil rasanya untuk tidak menunggu kehadiran Anthem dan apa yang hendak ia tawarkan.<br><br>
                                         Terlepas dari fakta bahwa dengan Frostbite Engine ia berhasil terlihat memesona dari segi visual dengan kekuatan cerita khas Bioware yang tetap menarik, game ini terasa seperti sebuah “proyek pembelajaran” bagi Bioware untuk meracik sebuah game loot shooter yang memesona. Berita buruknya? Alih-alih belajar dari Blizzard dengan Diablo 3 dan Bungie dengan Destiny, ia justru menyimpan masalah yang sempat terjadi dengan kemunculan perdana game-game tersebut. Lebih buruknya lagi? Beragam masalah teknis seperti bug dan loading time juga mengacaukan sensasi bermain yang seharusnya, menyenangkan.<br><br>
                                         Lantas, apa yang sebenarnya ditawarkan oleh Anthem? Mengapa kami menyebutnya seperti sebuah game yang mirip dengan istana pasir? Review ini akan membahasnya lebih dalam untuk Anda.<br><br>
                                         <h2>Plot</h2>
-                                    <img width="500" height="500" src="../assets/img/photo/anth2.jpg"
+                                    <img style="width: 100%"src="../assets/img/photo/anth2.jpg"
                                         class="img-fluid" /><br>
                                         Anthem mengambil setting di sebuah dunia misterius dimana sebuah ras bernama Shapers sempat menempatinya. Ras super misterius ini punya satu teknologi mumpuni yang disebut sebagai Anthem of Creation yang kekuatannya begitu besar hingga sulit Anda bayangkan. Lewatnya, Shapers membentuk dunia yang mereka inginkan, menciptakan tumbuhan, binatang, menentukan cuaca, hingga meracik portal. Namun sayangnya, Shapers menghilang sebelum mereka “menyelesaikan” dunia Anthem itu sembari dan meninggalkan teknologi mumpuni mereka yang seiring waktu, tumbuh menjadi artifak.
                                         Seperti yang bisa diprediksi, teknologi super kuat ini menjadi fokus cerita. Salah satu artifak bernama “Cenotaph” yang diyakini akan menjadi pintu untuk mengendalikan Anthem of Creation akhirnya mendorong sebuah faksi manusia militan bernama “Dominion” menyerang kota para Javelins – Freemark. Hampir berhasil menguasainya namun berujung katastropik karena cara penanganan yang salah, Cenotaph tersebut meledak dan menghancurkan Freemark itu sendiri. Tidak hanya itu saja, kejadian ini juga melahirkan sebuah mata badai bernama “Heart of Rage” yang tidak tertembus. Momen itu banyak pilot Javelins yang berujung tewas.
-                                    <img width="500" height="500" src="../assets/img/photo/anth3.jpg"
+                                    <img style="width: 100%"src="../assets/img/photo/anth3.jpg"
                                         class="img-fluid" /><br>
                                         Diserang oleh faksi manusia militan “Dominion” yang berambisi untuk menguasai teknologi bernama Cenotaph, sebuah event katastropik lahir.
-                                    <img width="500" height="500" src="../assets/img/photo/anth4.jpg"
+                                    <img style="width: 100%"src="../assets/img/photo/anth4.jpg"
                                         class="img-fluid" /><br>
                                         Faksi ini dipimpin oleh seorang pilot Javelin sekaligus Cypher bernama – The Monitor.
                                         Faksi ini dipimpin oleh seorang pilot Javelin sekaligus Cypher bernama – The Monitor.
                                         Berusaha menembus “Heart of Rage” dan mematikan Cenotaph di dalamnya kini menjadi fokus para Javelins yang berhasil bertahan hidup setelah apa yang terjadi di Freemark. Seperti yang bisa diprediksi, Anda merupakan salah satu pilot Javelin tersebut dengan Owen yang berperan sebagai pendamping misi Anda, seorang Cypher yang menerjemahkan data-data lewat kedekatan mereka dengan Anthem of Creation itu sendiri. Namun seperti yang bisa diprediksi, perjalanan tersebut tidaklah mudah. Dominion tetap memperlihatkan ketertarikan pada Cenotaph, sembari bertahan di bawah kepimpinan baru The Monitor, seorang pilot Javelin sekaligus seorang Cypher. Pertempuran pun tidak terhindarkan.<br>
-                                    <img width="500" height="500" src="../assets/img/photo/anth5.jpg"
+                                    <img style="width: 100%"src="../assets/img/photo/anth5.jpg"
                                         class="img-fluid" /><br>
                                         Menembus badai Heart of Rage dan mematikan Cenotaph adalah misi utama Anda!
-                                    <img width="500" height="500" src="../assets/img/photo/anth6.jpg"
+                                    <img style="width: 100%"src="../assets/img/photo/anth6.jpg"
                                         class="img-fluid" /><br>
                                         Tantangan seperti apa yang harus Anda hadapi?
                                         Lantas, mampukah karakter Anda menembus Heart of Rage dan mematikan Cenotaph tersebut? Tantangan seperti apa yang harus ia hadapi? Apa yang menunggunya di balik mata badai yang tak tertembus tersebut? Semua jawaban dari pertanyaan tersebut bisa Anda dapatkan dengan memainkan Anthem itu sendiri.
 
-                                    <img width="500" height="500" src="../assets/img/photo/anth7.jpg"
+                                    <img style="width: 100%"src="../assets/img/photo/anth7.jpg"
                                         class="img-fluid" /><br>
                                     
                                         Seperti game berbasis Frostbite yang lain, Anthem terlihat indah.
@@ -244,13 +258,37 @@ include '../sql.php';
                                     <td><?php echo $r_nram; ?></td>
                                 </tr>
                             </table>
+                                                        <hr>
+                            <table>
+                                <tr>
+                                    <td colspan="3">Spesifikasi PC Anda:</td>
+                                </tr>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-cpu">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_cpu; ?></td>
+                                </tr>
+                                <tr>
+                                <td>VGA</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-vga">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_vga; ?></td>
+                                </tr>
+                                <tr>
+                                <td>RAM</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-ram">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_ram; ?></td>
+                                </tr>
+                            </table>
                             <hr>
-                            <div>CPU nilai: </div>
-                            <div id="v-cpu">-</div>
-                            <div>VGA nilai: </div>
-                            <div id="v-vga">-</div>
-                            <div>RAM nilai: </div>
-                            <div id="v-ram">-</div>
                         </div>
                     </div>
                 </div>

@@ -105,18 +105,32 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" onclick="signOut();"
-                                                    class="btn btn-sm input-btn w100">
-                                                <button onclick="signOut();">Out
-                                                </button>
-                                                <button onclick="myFunction();">Out
-                                                </button>
+                                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
                                             </td>
                                         </tr>
                                     </table>
                                 </div>
                             </form>
                         </div>
+                    </li>
+                    <li class="nav-item mini">
+                        <form action="logout.php" method="post">
+                            <div class="px-3 py-1" style="width: 15rem">
+                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
+                            </div>
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -145,9 +159,9 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                        <div class="col-md-12">
+                            <div class="col-md-12" style ="text-align: justify; text-justify: inter-word;">
                                 <h2>Persona 5 Royal Usung Serangan Kombinasi Baru – Show Time</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/p5r.png"
+                                <img style="width: 100%"src="../assets/img/photo/p5r.png"
                                         class="img-fluid" /><br>
                                         Mengkombinasikan konsep menjadi sekelompok anak muda penyelamat dunia yang 
                                         masih tetap harus menjalani hidup mereka sehari-hari sebagai pelajar adalah
@@ -157,7 +171,7 @@ include '../sql.php';
                                         lah yang membuat banyak gamer terus bergerak menembus cerita yang penuh misteri.
                                         Mengikuti format rilis di seri-seri Persona sebelumnya, Persona 5 juga memastikan 
                                         rilis ulang dengan konten baru yang disebut sebagai Persona 5 Royal beberapa waktu yang lalu.<br>
-                                    <img width="500" height="500" src="../assets/img/photo/p5r2.png"
+                                    <img style="width: 100%"src="../assets/img/photo/p5r2.png"
                                         class="img-fluid" />><br>
                                         eperti seri Golden untuk Persona 4, Persona 5 Royal juga akan memuat beberapa
                                         konten yang akan menyempurnakan pengalaman yang ada, termasuk kehadiran karakter
@@ -167,7 +181,7 @@ include '../sql.php';
                                         terpisah untuknya. Konsep yang mungkin terasa familiar untuk Anda yang sempat 
                                         menjajal game Atlus yang lain – Tokyo Mirage Sessions di masa lalu. Tentu saja, akses 
                                         serangan ini akan bergabung pada seberapa “dalam” hubungan antar karakter terkait.
-                                    <img width="500" height="500" src="../assets/img/photo/p5r3.jpg"
+                                    <img style="width: 100%"src="../assets/img/photo/p5r3.jpg"
                                         class="img-fluid" />><br>
                                         Persona 5 Royal sendiri rencananya akan dirilis pada tanggal 31 Oktober 2019 
                                         mendatang untuk Playstation 4 di pasar Jepang. Gamer di region lain baru bisa 
@@ -238,13 +252,37 @@ include '../sql.php';
                                     <td><?php echo $r_nram; ?></td>
                                 </tr>
                             </table>
+                                                        <hr>
+                            <table>
+                                <tr>
+                                    <td colspan="3">Spesifikasi PC Anda:</td>
+                                </tr>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-cpu">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_cpu; ?></td>
+                                </tr>
+                                <tr>
+                                <td>VGA</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-vga">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_vga; ?></td>
+                                </tr>
+                                <tr>
+                                <td>RAM</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-ram">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_ram; ?></td>
+                                </tr>
+                            </table>
                             <hr>
-                            <div>CPU nilai: </div>
-                            <div id="v-cpu">-</div>
-                            <div>VGA nilai: </div>
-                            <div id="v-vga">-</div>
-                            <div>RAM nilai: </div>
-                            <div id="v-ram">-</div>
                         </div>
                     </div>
                 </div>
@@ -323,21 +361,33 @@ include '../sql.php';
 function compare() {
     var u_cpu = "<?php echo $u_idcpu; ?>";
     var r_cpu = "<?php echo $r_idcpu; ?>";
-    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100) * 0.81;
     var u_cpu = u_cpu.toFixed(2);
     document.getElementById("v-cpu").innerHTML = u_cpu;
 
     var u_vga = "<?php echo $u_idvga; ?>";
     var r_vga = "<?php echo $r_idvga; ?>";
-    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    u_vga = u_vga / r_vga * 100 * (95 / 100) * 1.03;
     var u_vga = u_vga.toFixed(2);
     document.getElementById("v-vga").innerHTML = u_vga;
 
     var u_ram = "<?php echo $u_idram; ?>";
     var r_ram = "<?php echo $r_idram; ?>";
-    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    u_ram = u_ram / r_ram * 100 * (97 / 100) * 0.89;
     var u_ram = u_ram.toFixed(2);
     document.getElementById("v-ram").innerHTML = u_ram;
+
+    var u_ssd = "<?php echo $u_idssd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_ssd = u_ssd / r_storage * 100 * (95 / 99) * 0.01 + 4.99;
+    var u_ssd = u_ssd.toFixed(2);
+    document.getElementById("v-ssd").innerHTML = u_ssd;
+
+    var u_hdd = "<?php echo $u_idhdd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_hdd = u_hdd / r_storage * 100 * (90 / 99) * 0.001 - 49.46;
+    var u_hdd = u_hdd.toFixed(2);
+    document.getElementById("v-hdd").innerHTML = u_hdd;
 }
 </script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>

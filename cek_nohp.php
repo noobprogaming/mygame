@@ -9,6 +9,8 @@ $sql_id = mysqli_query($koneksi, "SELECT id, name FROM user WHERE id='$my_id'");
 
 $cek = mysqli_num_rows($sql_id);
 
+//6289672747092
+
 if($cek > 0){
 	$sql_id = ("SELECT email, hp, password FROM user WHERE id='$my_id'");
 	$result = $koneksi->query($sql_id);
@@ -20,7 +22,6 @@ if($cek > 0){
 	};
 	echo "<p>$reset_email - $reset_hp - $reset_pwd</p>";
 	
-
 	$fields_string  =   "";
 	$fields     =   array(
 						'api_key'       =>  '11291943',

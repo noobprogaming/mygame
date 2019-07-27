@@ -119,6 +119,19 @@ include '../sql.php';
                             </form>
                         </div>
                     </li>
+                    <li class="nav-item mini">
+                        <form action="logout.php" method="post">
+                            <div class="px-3 py-1" style="width: 15rem">
+                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
+                            </div>
+                        </form>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -187,7 +200,7 @@ include '../sql.php';
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img width="100%" height="140" src="../assets/img/1.jpg" />
+                    <img width="100%" height="160" src="../assets/img/Game/rpg/r2.jpg" />
                     <div class="card-body">
                         <p class="card-text">
                             <table>
@@ -229,17 +242,18 @@ include '../sql.php';
                     </div>
                 </div>
                 <div class="col-lg-4">
+                <img width="100%" height="160" src="../assets/img/photo/gtadep2.jpg" />
                     <div class="card-body">
                         <p class="card-text">
-                            <div>CPU nilai: </div>
+                            <div>CPU Anda bernilai : </div>
                             <div id="v-cpu">-</div>
-                            <div>VGA nilai: </div>
+                            <div>VGA Anda bernilai : </div>
                             <div id="v-vga">-</div>
-                            <div>RAM nilai: </div>
+                            <div>RAM Anda bernilai : </div>
                             <div id="v-ram">-</div>
-                            <div>SSD nilai: </div>
+                            <div>SSD Anda bernilai : </div>
                             <div id="v-ssd">-</div>
-                            <div>HDD nilai: </div>
+                            <div>HDD Anda bernilai : </div>
                             <div id="v-hdd">-</div>
                         </p>
                     </div>
@@ -320,31 +334,31 @@ include '../sql.php';
 function compare() {
     var u_cpu = "<?php echo $u_idcpu; ?>";
     var r_cpu = "<?php echo $r_idcpu; ?>";
-    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100) * 0.81;
     var u_cpu = u_cpu.toFixed(2);
     document.getElementById("v-cpu").innerHTML = u_cpu;
 
     var u_vga = "<?php echo $u_idvga; ?>";
     var r_vga = "<?php echo $r_idvga; ?>";
-    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    u_vga = u_vga / r_vga * 100 * (95 / 100) * 1.03;
     var u_vga = u_vga.toFixed(2);
     document.getElementById("v-vga").innerHTML = u_vga;
 
     var u_ram = "<?php echo $u_idram; ?>";
     var r_ram = "<?php echo $r_idram; ?>";
-    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    u_ram = u_ram / r_ram * 100 * (97 / 100) * 0.89;
     var u_ram = u_ram.toFixed(2);
     document.getElementById("v-ram").innerHTML = u_ram;
 
     var u_ssd = "<?php echo $u_idssd; ?>";
     var r_storage = "<?php echo $r_storage; ?>";
-    u_ssd = u_ssd / r_storage * 100 * (95 / 99);
+    u_ssd = u_ssd / r_storage * 100 * (95 / 99) * 0.01 + 4.99;
     var u_ssd = u_ssd.toFixed(2);
     document.getElementById("v-ssd").innerHTML = u_ssd;
 
     var u_hdd = "<?php echo $u_idhdd; ?>";
     var r_storage = "<?php echo $r_storage; ?>";
-    u_hdd = u_hdd / r_storage * 100 * (90 / 99);
+    u_hdd = u_hdd / r_storage * 100 * (90 / 99) * 0.001 - 49.46;
     var u_hdd = u_hdd.toFixed(2);
     document.getElementById("v-hdd").innerHTML = u_hdd;
 }

@@ -615,6 +615,11 @@ td {
     .btn-menu {
         display: none;
     }
+
+    .mini {
+        position: fixed;
+        visibility:  hidden;
+    }
 }
 
 @media (min-width: 960px) {

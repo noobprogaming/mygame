@@ -116,6 +116,19 @@ include '../sql.php';
                             </form>
                         </div>
                     </li>
+                    <li class="nav-item mini">
+                        <form action="logout.php" method="post">
+                            <div class="px-3 py-1" style="width: 15rem">
+                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
+                            </div>
+                        </form>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -143,9 +156,9 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12" style ="text-align: justify; text-justify: inter-word;">
                             <h2>Preview Far Cry New Dawn: Kiamat Artistik!</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/far.jpg" class="img-fluid" /><br>
+                                <img style="width: 100%"src="../assets/img/photo/far.jpg" class="img-fluid" /><br>
                                 Hampir sebagian besar gamer yang mengenal dengan baik franchise Far Cry sepertinya sudah mengetahui strategi rutin
                                 yang selalu ditawarkan oleh Ubisoft untuknya. Bahwa di sela-sela seri utama yang dilepas secara berkala, mereka
                                 selalu menghadirkan satu seri spin-off yang punya tema yang unik. Kita sempat bertemu dengan Blood Dragon yang
@@ -154,7 +167,7 @@ include '../sql.php';
                                 seri sebelumnya yang tidak punya keterkaitan cerita, New Dawn hadir sebagai sekuel langsung dari event yang
                                 terjadi di Far Cry 5. Setelah menunggu cukup lama, kesempatan untuk menjajalnya secara langsung akhirnya tiba!<br>
                                 <h2>Kesan Pertama</h2>
-                                <img width="500" height="500" src="../assets/img/photo/cry.jpg" class="img-fluid"/>><br>
+                                <img style="width: 100%"src="../assets/img/photo/cry.jpg" class="img-fluid"/>><br>
                                 Far Cry New Dawn bukanlah game post-apocalyptic. Ia sepertinya lebih tepat disebut sebagai game post post-apocalyptic,
                                 dimana dunia sudah berbenah dan membaik setelah apa yang terjadi di akhir Far Cry 5 yang lalu. Manusia kembali
                                 berusaha membangun peradaban lewat komunitas-komunitas kecil yang kini mulai membangun sistem ekonomi lewat 
@@ -167,7 +180,7 @@ include '../sql.php';
                                 Highwaymen yang notabene merupakan klan antagonis yang Anda lawan juga secara mengejutkan punya sisi
                                 artistik mereka sendiri yang disajikan lewat seni mural penuh warna cerah yang bisa Anda temukan di
                                 beragam sudut area. Ini membuat dunia Far Cry New Dawn tidak terasa mengancam sama sekali.
-                                <img width="500" height="500" src="../assets/img/photo/new.jpg" class="img-fluid"/>><br>
+                                <img style="width: 100%"src="../assets/img/photo/new.jpg" class="img-fluid"/>><br>
                                 Penelusuran menemukan sebuah kereta api aktif yang sempat memuat tawanan dari luar kota Moscow di dalamnya.
                                 Dalam misi ekspedisinya bersama dengan sang istri – Anna, Artyom tiba-tiba menemukan sebuah kereta api yang 
                                 berjalan aktif melintasi rel. Bersama dengannya adalah para tawanan yang mengaku bahwa mereka semua datang 
@@ -251,13 +264,37 @@ include '../sql.php';
                                     <td><?php echo $r_nram; ?></td>
                                 </tr>
                             </table>
+                                                        <hr>
+                            <table>
+                                <tr>
+                                    <td colspan="3">Spesifikasi PC Anda:</td>
+                                </tr>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-cpu">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_cpu; ?></td>
+                                </tr>
+                                <tr>
+                                <td>VGA</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-vga">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_vga; ?></td>
+                                </tr>
+                                <tr>
+                                <td>RAM</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-ram">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_ram; ?></td>
+                                </tr>
+                            </table>
                             <hr>
-                            <div>CPU nilai: </div>
-                            <div id="v-cpu">-</div>
-                            <div>VGA nilai: </div>
-                            <div id="v-vga">-</div>
-                            <div>RAM nilai: </div>
-                            <div id="v-ram">-</div>
                         </div>
                     </div>
                 </div>
@@ -336,21 +373,33 @@ include '../sql.php';
 function compare() {
     var u_cpu = "<?php echo $u_idcpu; ?>";
     var r_cpu = "<?php echo $r_idcpu; ?>";
-    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100) * 0.81;
     var u_cpu = u_cpu.toFixed(2);
     document.getElementById("v-cpu").innerHTML = u_cpu;
 
     var u_vga = "<?php echo $u_idvga; ?>";
     var r_vga = "<?php echo $r_idvga; ?>";
-    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    u_vga = u_vga / r_vga * 100 * (95 / 100) * 1.03;
     var u_vga = u_vga.toFixed(2);
     document.getElementById("v-vga").innerHTML = u_vga;
 
     var u_ram = "<?php echo $u_idram; ?>";
     var r_ram = "<?php echo $r_idram; ?>";
-    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    u_ram = u_ram / r_ram * 100 * (97 / 100) * 0.89;
     var u_ram = u_ram.toFixed(2);
     document.getElementById("v-ram").innerHTML = u_ram;
+
+    var u_ssd = "<?php echo $u_idssd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_ssd = u_ssd / r_storage * 100 * (95 / 99) * 0.01 + 4.99;
+    var u_ssd = u_ssd.toFixed(2);
+    document.getElementById("v-ssd").innerHTML = u_ssd;
+
+    var u_hdd = "<?php echo $u_idhdd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_hdd = u_hdd / r_storage * 100 * (90 / 99) * 0.001 - 49.46;
+    var u_hdd = u_hdd.toFixed(2);
+    document.getElementById("v-hdd").innerHTML = u_hdd;
 }
 </script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>

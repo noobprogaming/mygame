@@ -110,10 +110,23 @@ include '../sql.php';
                                                 ?>
                                             </td>
                                         </tr>
-                                    </table>  
+                                    </table>
                                 </div>
                             </form>
                         </div>
+                    </li>
+                    <li class="nav-item mini">
+                        <form action="logout.php" method="post">
+                            <div class="px-3 py-1" style="width: 15rem">
+                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
+                            </div>
+                        </form>
                     </li>
                 </ul>
             </div>

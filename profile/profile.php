@@ -19,7 +19,7 @@
 </head>
 
 <body onload="profile()">
-<?php 
+    <?php 
 session_start();
 if($_SESSION['status']!="login"){
 	header("location:../index.php?msg=warning");
@@ -100,8 +100,8 @@ include '../sql.php';
                                         <tr>
                                             <td>
                                                 <a href="profile.php">
-                                                    <img src="<?php echo $u_pp; ?>"
-                                                        alt="Tidak ada foto" class="img-profile">
+                                                    <img src="<?php echo $u_pp; ?>" alt="Tidak ada foto"
+                                                        class="img-profile">
                                                 </a>
                                             </td>
                                         </tr>
@@ -123,10 +123,23 @@ include '../sql.php';
                                                 ?>
                                             </td>
                                         </tr>
-                                    </table>                                    
+                                    </table>
                                 </div>
                             </form>
                         </div>
+                    </li>
+                    <li class="nav-item mini">
+                        <form action="logout.php" method="post">
+                            <div class="px-3 py-1" style="width: 15rem">
+                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
+                            </div>
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -247,12 +260,12 @@ include '../sql.php';
                                     <td>
                                         <img src="<?php echo $u_pp; ?>"
                                             style="border-radius: 50%; width: 150px; height: 150px;">
-                                            <?php
+                                        <?php
                                             if($_SESSION['google'] != "true"){
                                                 echo "<input type='file' name='pp' accept='image/*' class='input-file'>";
                                             }
                                             ?>
-                                        
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -305,8 +318,8 @@ include '../sql.php';
                                                     <?php if ($u_gender == 'l') { echo ' checked="checked"'; } ?>>
                                                 <span class="rdb-check"></span>
                                             </label>
-                                            </div>
-                                            <div style="display: inline-block">
+                                        </div>
+                                        <div style="display: inline-block">
                                             <label class="rdb">Perempuan
                                                 <input type="radio" id="p" name="gender" value="p"
                                                     <?php if ($u_gender == 'p') { echo ' checked="checked"'; } ?>>
@@ -376,7 +389,7 @@ include '../sql.php';
                                     <td>RAM</td>
                                     <td>
                                         <select name="u_idram" class="input-text" style="width: 200px;">
-                                        <option>-- RAM --</option>
+                                            <option>-- RAM --</option>
                                             <?php
                                                     $result = $koneksi->query($sql_ram);
                                                     while($row=$result->fetch_assoc()){
@@ -612,4 +625,5 @@ include '../sql.php';
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
+
 </html>

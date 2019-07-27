@@ -105,18 +105,32 @@ include '../sql.php';
 
                                         <tr>
                                             <td>
-                                                <input type="submit" value="Logout" onclick="signOut();"
-                                                    class="btn btn-sm input-btn w100">
-                                                <button onclick="signOut();">Out
-                                                </button>
-                                                <button onclick="myFunction();">Out
-                                                </button>
+                                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
                                             </td>
                                         </tr>
                                     </table>
                                 </div>
                             </form>
                         </div>
+                    </li>
+                    <li class="nav-item mini">
+                        <form action="logout.php" method="post">
+                            <div class="px-3 py-1" style="width: 15rem">
+                                <?php
+                                                if($_SESSION['google'] != "true"){
+                                                    echo "<input type='submit' value='Logout' class='btn btn-sm input-btn w100'>";
+                                                }else{
+                                                    echo "<div onclick='keluar()' class='g-signin2'>Logout</div>";
+                                                }
+                                                ?>
+                            </div>
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -145,9 +159,9 @@ include '../sql.php';
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row">
-                        <div class="col-md-12">
+                            <div class="col-md-12" style ="text-align: justify; text-justify: inter-word;">
                                 <h2>Review Deus Ex : Mankind Divided Semakin Semakin sempurna</h2>
-                                <p class="lead"><img width="500" height="500" src="../assets/img/photo/deu.jpg"
+                                <img style="width: 100%"src="../assets/img/photo/deu.jpg"
                                         class="img-fluid" /><br>
                                     Dengan begitu banyak usaha untuk melebur beragam genre di dalam satu ruang yang
                                     sama, memang sulit untuk membedakan mana yang
@@ -176,7 +190,7 @@ include '../sql.php';
                                     Lantas, apa yang sebenarnya ditawarkan oleh Deus Ex: Mankind Divided ini? Mengapa
                                     kami menyebutnya sebagai game yang semakin
                                     sempurna? Review ini akan membahasnya lebih dalam untuk Anda!<br>
-                                    <img width="500" height="500" src="../assets/img/photo/deus.jpg"
+                                    <img style="width: 100%"src="../assets/img/photo/deus.jpg"
                                         class="img-fluid" />><br>
                                     Deus Ex: Mankind Divided sendiri diposisikan sebagai sebuah seri sekuel langsung
                                     dari Human Revolution, seri yang sempat
@@ -198,7 +212,7 @@ include '../sql.php';
                                     kasus yang satu ini. Operasi yang mereka
                                     lakukan di Dubai mengkonfirmasikan bahwa memang, ada kelompok manusia dengan
                                     augmentasi yang terlibat.
-                                    <img width="500" height="500" src="../assets/img/photo/ds ex.jpg"
+                                    <img style="width: 100%"src="../assets/img/photo/ds ex.jpg"
                                         class="img-fluid" />><br>
                                     Dari siapa dan
                                     atas kepentingan siapa? Itu jadi salah satu misteri yang harus dijawab Jensen.Terus
@@ -294,13 +308,37 @@ include '../sql.php';
                                     <td><?php echo $r_nram; ?></td>
                                 </tr>
                             </table>
+                                                        <hr>
+                            <table>
+                                <tr>
+                                    <td colspan="3">Spesifikasi PC Anda:</td>
+                                </tr>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-cpu">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_cpu; ?></td>
+                                </tr>
+                                <tr>
+                                <td>VGA</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-vga">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_vga; ?></td>
+                                </tr>
+                                <tr>
+                                <td>RAM</td>
+                                    <td style="float: right"><i class="fa fa-star"></i></td>
+                                    <td style="width: 10px"><div id="v-ram">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><?php echo $u_ram; ?></td>
+                                </tr>
+                            </table>
                             <hr>
-                            <div>CPU nilai: </div>
-                            <div id="v-cpu">-</div>
-                            <div>VGA nilai: </div>
-                            <div id="v-vga">-</div>
-                            <div>RAM nilai: </div>
-                            <div id="v-ram">-</div>
                         </div>
                     </div>
                 </div>
@@ -379,21 +417,33 @@ include '../sql.php';
 function compare() {
     var u_cpu = "<?php echo $u_idcpu; ?>";
     var r_cpu = "<?php echo $r_idcpu; ?>";
-    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100);
+    u_cpu = (u_cpu / r_cpu * 100) * (96 / 100) * 0.81;
     var u_cpu = u_cpu.toFixed(2);
     document.getElementById("v-cpu").innerHTML = u_cpu;
 
     var u_vga = "<?php echo $u_idvga; ?>";
     var r_vga = "<?php echo $r_idvga; ?>";
-    u_vga = u_vga / r_vga * 100 * (95 / 100);
+    u_vga = u_vga / r_vga * 100 * (95 / 100) * 1.03;
     var u_vga = u_vga.toFixed(2);
     document.getElementById("v-vga").innerHTML = u_vga;
 
     var u_ram = "<?php echo $u_idram; ?>";
     var r_ram = "<?php echo $r_idram; ?>";
-    u_ram = u_ram / r_ram * 100 * (97 / 100);
+    u_ram = u_ram / r_ram * 100 * (97 / 100) * 0.89;
     var u_ram = u_ram.toFixed(2);
     document.getElementById("v-ram").innerHTML = u_ram;
+
+    var u_ssd = "<?php echo $u_idssd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_ssd = u_ssd / r_storage * 100 * (95 / 99) * 0.01 + 4.99;
+    var u_ssd = u_ssd.toFixed(2);
+    document.getElementById("v-ssd").innerHTML = u_ssd;
+
+    var u_hdd = "<?php echo $u_idhdd; ?>";
+    var r_storage = "<?php echo $r_storage; ?>";
+    u_hdd = u_hdd / r_storage * 100 * (90 / 99) * 0.001 - 49.46;
+    var u_hdd = u_hdd.toFixed(2);
+    document.getElementById("v-hdd").innerHTML = u_hdd;
 }
 </script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
